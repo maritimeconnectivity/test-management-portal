@@ -2880,10 +2880,7 @@
               return _this2.organizationControllerService.updateOrganization(body, entityMrn);
             } else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Role) {
               return _this2.roleControllerService.updateRole(body, orgMrn, _this2.numberId);
-            } else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Instance || context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.InstanceOfOrg) {
-              console.log(Object.assign({}, body, {
-                id: instanceId
-              }));
+            } else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Instance) {
               return _this2.instanceControllerService.updateInstance(Object.assign({}, body, {
                 id: instanceId
               }), instanceId);
@@ -2908,7 +2905,7 @@
             } else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Role) {
               return _this2.roleControllerService.deleteRole(orgMrn, _this2.numberId);
             } else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Instance) {
-              return _this2.instanceControllerService.deleteInstance(instanceId);
+              return _this2.instanceControllerService.deleteInstance(_this2.numberId);
             }
 
             return new rxjs_Observable__WEBPACK_IMPORTED_MODULE_10__.Observable();
@@ -2950,26 +2947,29 @@
             } else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Organization || context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuTypeNames.role) {
               return _this2.authService.authState.hasPermissionInMIR(_auth_auth_permission__WEBPACK_IMPORTED_MODULE_4__.AuthPermission.OrgAdmin);
             } else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Instance) {
-              return _this2.isForOrgService ? _this2.authService.authState.hasPermissionInMSR(_auth_auth_permission__WEBPACK_IMPORTED_MODULE_4__.AuthPermissionForMSR.OrgServiceAdmin) : _this2.authService.authState.hasPermissionInMSR(_auth_auth_permission__WEBPACK_IMPORTED_MODULE_4__.AuthPermissionForMSR.MSRAdmin);
+              return _this2.isForNew ? // if it is for new one
+              _this2.authService.authState.hasPermissionInMSR(_auth_auth_permission__WEBPACK_IMPORTED_MODULE_4__.AuthPermissionForMSR.OrgServiceAdmin) || _this2.authService.authState.hasPermissionInMSR(_auth_auth_permission__WEBPACK_IMPORTED_MODULE_4__.AuthPermissionForMSR.MSRAdmin) : _this2.editableForm ? // when it is not initiated
+              // when it is for editing
+              _this2.authService.authState.hasPermissionInMSR(_auth_auth_permission__WEBPACK_IMPORTED_MODULE_4__.AuthPermissionForMSR.MSRAdmin) || _this2.editableForm && _this2.editableForm.isOurServiceInstance() && _this2.authService.authState.hasPermissionInMSR(_auth_auth_permission__WEBPACK_IMPORTED_MODULE_4__.AuthPermissionForMSR.OrgServiceAdmin) : _this2.authService.authState.hasPermissionInMSR(_auth_auth_permission__WEBPACK_IMPORTED_MODULE_4__.AuthPermissionForMSR.MSRAdmin);
             } else {
               return false;
             }
           };
 
           var arrays = this.router.url.split("/");
-          this.menuType = arrays[arrays.length - 2];
+          var menuType = arrays[arrays.length - 2];
 
-          if (this.menuType === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.InstanceOfOrg) {
+          if (menuType === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.InstanceOfOrg) {
             this.isForOrgService = true;
             this.menuType = _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Instance;
           } else {
-            this.menuType = this.menuType.replace('-', '').substr(0, this.menuType.length - 1);
+            this.menuType = menuType.replace('-', '').substr(0, menuType.length - 1);
           }
 
           this.entityMrn = decodeURIComponent(this.route.snapshot.paramMap.get("id"));
           this.orgMrn = this.authService.authState.orgMrn;
           this.isForNew = this.entityMrn === 'new';
-          this.numberId = this.menuType === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Instance || this.menuType === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.InstanceOfOrg ? parseInt(this.entityMrn) : -1; // preventing refresh
+          this.numberId = this.menuType === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Instance ? parseInt(this.entityMrn) : -1; // preventing refresh
 
           this.router.routeReuseStrategy.shouldReuseRoute = function () {
             return false;
@@ -2988,23 +2988,19 @@
               _this2.canApproveOrg = true;
             }
           });
+          this.iconName = _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuTypeIconNames[this.menuType];
+
+          if (this.isForNew) {
+            this.isEditing = true;
+            this.title = 'New ' + this.menuType;
+          } else {
+            this.fetchFieldValues();
+          }
         }
 
         _createClass(_DetailComponent, [{
           key: "ngOnInit",
-          value: function ngOnInit() {
-            if (this.isForNew) {
-              this.isEditing = true;
-            }
-
-            this.iconName = _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuTypeIconNames[this.menuType];
-
-            if (this.isForNew) {
-              this.title = 'New ' + this.menuType;
-            } else {
-              this.fetchFieldValues();
-            }
-          }
+          value: function ngOnInit() {}
         }, {
           key: "cancel",
           value: function cancel() {
@@ -3246,7 +3242,7 @@
         },
         decls: 6,
         vars: 15,
-        consts: [[1, "row"], [1, "col-lg-12"], [4, "ngIf"], [3, "menuType", "isForNew", "isAdmin", "title", "iconName", "canApproveOrg", "entityMrn", "orgMrn", "instanceVersion", "isLoading", "isLoaded", "hasHeader", "showButtons", "onApprove", "onCancel", "onSubmit", "onRefresh"], ["editableForm", ""], [3, "menuType", "isForNew", "orgShortId", "defaultPermissions", "isAdmin", "title", "iconName", "canApproveOrg", "entityMrn", "orgMrn", "instanceVersion", "isLoading", "isLoaded", "hasHeader", "showButtons", "onApprove", "onCancel", "onSubmit", "onDelete", "onRefresh", 4, "ngIf"], ["nbButton", "", "status", "info", "ghost", "", 3, "click"], ["icon", "arrow-ios-back", "pack", "eva"], [3, "menuType", "isForNew", "orgShortId", "defaultPermissions", "isAdmin", "title", "iconName", "canApproveOrg", "entityMrn", "orgMrn", "instanceVersion", "isLoading", "isLoaded", "hasHeader", "showButtons", "onApprove", "onCancel", "onSubmit", "onDelete", "onRefresh"], ["supplementForm", ""]],
+        consts: [[1, "row"], [1, "col-lg-12"], [4, "ngIf"], [3, "menuType", "isForNew", "isAdmin", "title", "iconName", "canApproveOrg", "entityMrn", "orgMrn", "instanceVersion", "isLoading", "isLoaded", "hasHeader", "showButtons", "onApprove", "onCancel", "onSubmit", "onDelete", "onRefresh"], ["editableForm", ""], [3, "menuType", "isForNew", "orgShortId", "defaultPermissions", "isAdmin", "title", "iconName", "canApproveOrg", "entityMrn", "orgMrn", "instanceVersion", "isLoading", "isLoaded", "hasHeader", "showButtons", "onApprove", "onCancel", "onSubmit", "onDelete", "onRefresh", 4, "ngIf"], ["nbButton", "", "status", "info", "ghost", "", 3, "click"], ["icon", "arrow-ios-back", "pack", "eva"], [3, "menuType", "isForNew", "orgShortId", "defaultPermissions", "isAdmin", "title", "iconName", "canApproveOrg", "entityMrn", "orgMrn", "instanceVersion", "isLoading", "isLoaded", "hasHeader", "showButtons", "onApprove", "onCancel", "onSubmit", "onDelete", "onRefresh"], ["supplementForm", ""]],
         template: function DetailComponent_Template(rf, ctx) {
           if (rf & 1) {
             _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementStart"](0, "div", 0);
@@ -3263,6 +3259,8 @@
               return ctx.cancel();
             })("onSubmit", function DetailComponent_Template_ngx_editable_form_onSubmit_3_listener($event) {
               return ctx.submit($event);
+            })("onDelete", function DetailComponent_Template_ngx_editable_form_onDelete_3_listener() {
+              return ctx["delete"]();
             })("onRefresh", function DetailComponent_Template_ngx_editable_form_onRefresh_3_listener() {
               return ctx.refreshData();
             });
@@ -3765,7 +3763,7 @@
           this.source = new ng2_smart_table__WEBPACK_IMPORTED_MODULE_15__.LocalDataSource();
           this.isForServiceForOrg = false;
 
-          this.deleteData = function (context, orgMrn, entityMrn, version, roleId) {
+          this.deleteData = function (context, orgMrn, entityMrn, version, numberId) {
             if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuTypeNames.user) {
               return _this8.userControllerService.deleteUser(orgMrn, entityMrn);
             } else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuTypeNames.device) {
@@ -3778,8 +3776,10 @@
               return _this8.serviceControllerService.deleteService(orgMrn, entityMrn, version);
             } else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuTypeNames.organization) {
               return _this8.organizationControllerService.deleteOrg(entityMrn);
-            } else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuTypeNames.role && roleId) {
-              return _this8.roleControllerService.deleteRole(orgMrn, roleId);
+            } else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuTypeNames.role && numberId) {
+              return _this8.roleControllerService.deleteRole(orgMrn, numberId);
+            } else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Instance || context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.InstanceOfOrg) {
+              return _this8.instanceControllerService.deleteInstance(numberId);
             }
 
             return new rxjs_Observable__WEBPACK_IMPORTED_MODULE_16__.Observable();
@@ -3977,14 +3977,14 @@
           }
         }, {
           key: "delete",
-          value: function _delete(menuType, orgMrn, entityMrn, instanceVersion, roleId) {
+          value: function _delete(menuType, orgMrn, entityMrn, instanceVersion, numberId) {
             var _this10 = this;
 
             var message = 'Are you sure you want to delete?';
             message = _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.EntityTypes.indexOf(this.menuType) >= 0 ? message + ' All certificates under this entity will be revoked.' : message;
 
             if (confirm(message)) {
-              this.deleteData(menuType, orgMrn, entityMrn, instanceVersion, roleId).subscribe(function (res) {
+              this.deleteData(menuType, orgMrn, entityMrn, instanceVersion, numberId).subscribe(function (res) {
                 _this10.notifierService.notify('success', _this10.menuTypeName + ' has been successfully deleted');
 
                 _this10.fetchValues();
