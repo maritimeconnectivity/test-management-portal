@@ -2932,27 +2932,31 @@
           };
 
           this.isAdmin = function () {
-            var context = _this2.menuType;
+            var context = _this2.menuType; // MIR
 
-            if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.User) {
-              return _this2.authService.authState.hasPermissionInMIR(_auth_auth_permission__WEBPACK_IMPORTED_MODULE_4__.AuthPermission.UserAdmin);
-            } else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Device) {
-              return _this2.authService.authState.hasPermissionInMIR(_auth_auth_permission__WEBPACK_IMPORTED_MODULE_4__.AuthPermission.DeviceAdmin);
-            } else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Vessel) {
-              return _this2.authService.authState.hasPermissionInMIR(_auth_auth_permission__WEBPACK_IMPORTED_MODULE_4__.AuthPermission.VesselAdmin);
-            } else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.MMS) {
-              return _this2.authService.authState.hasPermissionInMIR(_auth_auth_permission__WEBPACK_IMPORTED_MODULE_4__.AuthPermission.MMSAdmin);
-            } else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Service) {
-              return _this2.authService.authState.hasPermissionInMIR(_auth_auth_permission__WEBPACK_IMPORTED_MODULE_4__.AuthPermission.ServiceAdmin);
-            } else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Organization || context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuTypeNames.role) {
-              return _this2.authService.authState.hasPermissionInMIR(_auth_auth_permission__WEBPACK_IMPORTED_MODULE_4__.AuthPermission.OrgAdmin);
-            } else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Instance) {
+            if (context !== _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Instance) {
+              if (_this2.authService.authState.hasPermissionInMIR(_auth_auth_permission__WEBPACK_IMPORTED_MODULE_4__.AuthPermission.SiteAdmin)) {
+                // super admin
+                return true;
+              } else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.User) {
+                return _this2.authService.authState.hasPermissionInMIR(_auth_auth_permission__WEBPACK_IMPORTED_MODULE_4__.AuthPermission.UserAdmin);
+              } else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Device) {
+                return _this2.authService.authState.hasPermissionInMIR(_auth_auth_permission__WEBPACK_IMPORTED_MODULE_4__.AuthPermission.DeviceAdmin);
+              } else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Vessel) {
+                return _this2.authService.authState.hasPermissionInMIR(_auth_auth_permission__WEBPACK_IMPORTED_MODULE_4__.AuthPermission.VesselAdmin);
+              } else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.MMS) {
+                return _this2.authService.authState.hasPermissionInMIR(_auth_auth_permission__WEBPACK_IMPORTED_MODULE_4__.AuthPermission.MMSAdmin);
+              } else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Service) {
+                return _this2.authService.authState.hasPermissionInMIR(_auth_auth_permission__WEBPACK_IMPORTED_MODULE_4__.AuthPermission.ServiceAdmin);
+              } else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Organization || context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuTypeNames.role) {
+                return _this2.authService.authState.hasPermissionInMIR(_auth_auth_permission__WEBPACK_IMPORTED_MODULE_4__.AuthPermission.OrgAdmin);
+              }
+            } else {
+              // MSR
               return _this2.isForNew ? // if it is for new one
               _this2.authService.authState.hasPermissionInMSR(_auth_auth_permission__WEBPACK_IMPORTED_MODULE_4__.AuthPermissionForMSR.OrgServiceAdmin) || _this2.authService.authState.hasPermissionInMSR(_auth_auth_permission__WEBPACK_IMPORTED_MODULE_4__.AuthPermissionForMSR.MSRAdmin) : _this2.editableForm ? // when it is not initiated
               // when it is for editing
               _this2.authService.authState.hasPermissionInMSR(_auth_auth_permission__WEBPACK_IMPORTED_MODULE_4__.AuthPermissionForMSR.MSRAdmin) || _this2.editableForm && _this2.editableForm.isOurServiceInstance() && _this2.authService.authState.hasPermissionInMSR(_auth_auth_permission__WEBPACK_IMPORTED_MODULE_4__.AuthPermissionForMSR.OrgServiceAdmin) : _this2.authService.authState.hasPermissionInMSR(_auth_auth_permission__WEBPACK_IMPORTED_MODULE_4__.AuthPermissionForMSR.MSRAdmin);
-            } else {
-              return false;
             }
           };
 

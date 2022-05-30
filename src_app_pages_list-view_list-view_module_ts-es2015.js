@@ -1839,25 +1839,32 @@ class DetailComponent {
         };
         this.isAdmin = () => {
             const context = this.menuType;
-            if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.User) {
-                return this.authService.authState.hasPermissionInMIR(_auth_auth_permission__WEBPACK_IMPORTED_MODULE_4__.AuthPermission.UserAdmin);
+            // MIR
+            if (context !== _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Instance) {
+                if (this.authService.authState.hasPermissionInMIR(_auth_auth_permission__WEBPACK_IMPORTED_MODULE_4__.AuthPermission.SiteAdmin)) { // super admin
+                    return true;
+                }
+                else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.User) {
+                    return this.authService.authState.hasPermissionInMIR(_auth_auth_permission__WEBPACK_IMPORTED_MODULE_4__.AuthPermission.UserAdmin);
+                }
+                else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Device) {
+                    return this.authService.authState.hasPermissionInMIR(_auth_auth_permission__WEBPACK_IMPORTED_MODULE_4__.AuthPermission.DeviceAdmin);
+                }
+                else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Vessel) {
+                    return this.authService.authState.hasPermissionInMIR(_auth_auth_permission__WEBPACK_IMPORTED_MODULE_4__.AuthPermission.VesselAdmin);
+                }
+                else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.MMS) {
+                    return this.authService.authState.hasPermissionInMIR(_auth_auth_permission__WEBPACK_IMPORTED_MODULE_4__.AuthPermission.MMSAdmin);
+                }
+                else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Service) {
+                    return this.authService.authState.hasPermissionInMIR(_auth_auth_permission__WEBPACK_IMPORTED_MODULE_4__.AuthPermission.ServiceAdmin);
+                }
+                else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Organization || context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuTypeNames.role) {
+                    return this.authService.authState.hasPermissionInMIR(_auth_auth_permission__WEBPACK_IMPORTED_MODULE_4__.AuthPermission.OrgAdmin);
+                }
             }
-            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Device) {
-                return this.authService.authState.hasPermissionInMIR(_auth_auth_permission__WEBPACK_IMPORTED_MODULE_4__.AuthPermission.DeviceAdmin);
-            }
-            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Vessel) {
-                return this.authService.authState.hasPermissionInMIR(_auth_auth_permission__WEBPACK_IMPORTED_MODULE_4__.AuthPermission.VesselAdmin);
-            }
-            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.MMS) {
-                return this.authService.authState.hasPermissionInMIR(_auth_auth_permission__WEBPACK_IMPORTED_MODULE_4__.AuthPermission.MMSAdmin);
-            }
-            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Service) {
-                return this.authService.authState.hasPermissionInMIR(_auth_auth_permission__WEBPACK_IMPORTED_MODULE_4__.AuthPermission.ServiceAdmin);
-            }
-            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Organization || context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuTypeNames.role) {
-                return this.authService.authState.hasPermissionInMIR(_auth_auth_permission__WEBPACK_IMPORTED_MODULE_4__.AuthPermission.OrgAdmin);
-            }
-            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Instance) {
+            else {
+                // MSR
                 return this.isForNew ? // if it is for new one
                     this.authService.authState.hasPermissionInMSR(_auth_auth_permission__WEBPACK_IMPORTED_MODULE_4__.AuthPermissionForMSR.OrgServiceAdmin) ||
                         this.authService.authState.hasPermissionInMSR(_auth_auth_permission__WEBPACK_IMPORTED_MODULE_4__.AuthPermissionForMSR.MSRAdmin) :
@@ -1867,9 +1874,6 @@ class DetailComponent {
                             (this.editableForm && this.editableForm.isOurServiceInstance() &&
                                 this.authService.authState.hasPermissionInMSR(_auth_auth_permission__WEBPACK_IMPORTED_MODULE_4__.AuthPermissionForMSR.OrgServiceAdmin)) :
                         this.authService.authState.hasPermissionInMSR(_auth_auth_permission__WEBPACK_IMPORTED_MODULE_4__.AuthPermissionForMSR.MSRAdmin);
-            }
-            else {
-                return false;
             }
         };
         const arrays = this.router.url.split("/");
