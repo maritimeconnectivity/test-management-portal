@@ -2847,7 +2847,7 @@
           this.mrnMask = '';
           this.isForServiceForOrg = false;
           this.orgShortId = undefined;
-          this.defaultPermissions = undefined;
+          this.defaultPermissionForAdminUser = undefined;
 
           this.registerData = function (context, body, orgMrn) {
             if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.User) {
@@ -2882,7 +2882,7 @@
               return _this2.mmsControllerService.updateMMS(body, orgMrn, entityMrn);
             } else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Service && version) {
               return _this2.serviceControllerService.updateService(body, orgMrn, entityMrn, version);
-            } else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Organization) {
+            } else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Organization || context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.OrgCandidate) {
               return _this2.organizationControllerService.updateOrganization(body, entityMrn);
             } else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Role) {
               return _this2.roleControllerService.updateRole(body, orgMrn, _this2.numberId);
@@ -2906,7 +2906,7 @@
               return _this2.mmsControllerService.deleteMMS(orgMrn, entityMrn);
             } else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Service && version) {
               return _this2.serviceControllerService.deleteService(orgMrn, entityMrn, version);
-            } else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Organization) {
+            } else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Organization || context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.OrgCandidate) {
               return _this2.organizationControllerService.deleteOrg(entityMrn);
             } else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Role) {
               return _this2.roleControllerService.deleteRole(orgMrn, _this2.numberId);
@@ -3021,7 +3021,7 @@
                     }).pop());
 
                     _this3.orgShortId = _this3.entityMrn.split(':').pop();
-                    _this3.defaultPermissions = _shared_app_constants__WEBPACK_IMPORTED_MODULE_5__.ORG_ADMIN_AT_MIR;
+                    _this3.defaultPermissionForAdminUser = _shared_app_constants__WEBPACK_IMPORTED_MODULE_5__.ORG_ADMIN_AT_MIR;
                   }, function (error) {
                     _this3.notifierService.notify('error', error.message);
 
@@ -3760,7 +3760,7 @@
               return _this8.mmsControllerService.deleteMMS(orgMrn, entityMrn);
             } else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.MenuType.Service && version) {
               return _this8.serviceControllerService.deleteService(orgMrn, entityMrn, version);
-            } else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.MenuType.Organization) {
+            } else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.MenuType.Organization || context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.MenuType.OrgCandidate) {
               return _this8.organizationControllerService.deleteOrg(entityMrn);
             } else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.MenuType.Role && numberId) {
               return _this8.roleControllerService.deleteRole(orgMrn, numberId);
