@@ -1732,7 +1732,6 @@ class DetailComponent {
         this.isForServiceForOrg = false;
         this.orgShortId = undefined;
         this.defaultPermissionForAdminUser = undefined;
-        this.isAdmin = false;
         this.registerData = (context, body, orgMrn) => {
             if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.User) {
                 return this.userControllerService.createUser(body, orgMrn);
@@ -2196,7 +2195,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _shared_models_columnForMenu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../shared/models/columnForMenu */ 33539);
 /* harmony import */ var ng2_smart_table__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ng2-smart-table */ 3315);
 /* harmony import */ var _util_dataFormatter__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../util/dataFormatter */ 62564);
-/* harmony import */ var _util_permissionResolver__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../util/permissionResolver */ 52539);
+/* harmony import */ var _util_adminPermissionResolver__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../util/adminPermissionResolver */ 21212);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/core */ 37716);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @angular/router */ 39895);
 /* harmony import */ var _nebular_theme__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @nebular/theme */ 42522);
@@ -2358,6 +2357,9 @@ class ListComponent {
         this.loadRoles = (orgMrn) => {
             return this.roleControllerService.getRoles(orgMrn);
         };
+        iconsLibrary.registerFontPack('fas', { packClass: 'fas', iconClassPrefix: 'fa' });
+    }
+    ngOnInit() {
         const menuTypeString = this.router.url.split('/').pop();
         if (menuTypeString === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.MenuType.InstanceOfOrg) {
             this.isForServiceForOrg = true;
@@ -2370,14 +2372,18 @@ class ListComponent {
             this.menuTypeName = _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.MenuTypeNames[this.menuType.toString()];
             this.iconName = _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.MenuTypeIconNames[this.menuType.toString()];
             this.orgMrn = this.authService.authState.orgMrn;
-            iconsLibrary.registerFontPack('fas', { packClass: 'fas', iconClassPrefix: 'fa' });
         }
         else {
             this.router.navigate(['**']);
         }
-        this.isAdmin = (0,_util_permissionResolver__WEBPACK_IMPORTED_MODULE_3__.hasPermission)(this.menuType, this.authService, false);
-    }
-    ngOnInit() {
+        if (this.authService.authState.rolesLoaded) {
+            this.isAdmin = (0,_util_adminPermissionResolver__WEBPACK_IMPORTED_MODULE_3__.hasAdminPermission)(this.menuType, this.authService, false);
+        }
+        else {
+            this.authService.rolesLoaded.subscribe((mode) => {
+                this.isAdmin = (0,_util_adminPermissionResolver__WEBPACK_IMPORTED_MODULE_3__.hasAdminPermission)(this.menuType, this.authService, false);
+            });
+        }
         this.fetchValues();
     }
     fetchValues() {
