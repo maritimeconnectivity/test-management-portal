@@ -1691,7 +1691,7 @@ function DetailComponent_ngx_editable_form_5_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementEnd"]();
 } if (rf & 2) {
     const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵproperty"]("menuType", "user")("isForNew", true)("orgShortId", ctx_r2.orgShortId)("defaultPermissions", ctx_r2.defaultPermissions)("title", "Administrator account")("iconName", "user")("canApproveOrg", ctx_r2.canApproveOrg)("orgMrn", ctx_r2.entityMrn)("instanceVersion", ctx_r2.instanceVersion)("isLoading", ctx_r2.isLoading)("isLoaded", ctx_r2.isLoaded)("hasHeader", true)("showButtons", false);
+    _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵproperty"]("menuType", "user")("isForNew", true)("orgShortId", ctx_r2.orgShortId)("defaultPermissions", ctx_r2.defaultPermissions)("title", "Administrator account of " + ctx_r2.title)("iconName", "user")("canApproveOrg", ctx_r2.canApproveOrg)("orgMrn", ctx_r2.entityMrn)("instanceVersion", ctx_r2.instanceVersion)("isLoading", ctx_r2.isLoading)("isLoaded", ctx_r2.isLoaded)("hasHeader", true)("showButtons", false);
 } }
 class DetailComponent {
     constructor(route, router, userControllerService, deviceControllerService, roleControllerService, vesselControllerService, serviceControllerService, mmsControllerService, organizationControllerService, instanceControllerService, notifierService, authService, location) {
@@ -1862,13 +1862,11 @@ class DetailComponent {
             this.title = e.name;
             this.instanceVersion = e.version;
         });
-        this.roleControllerService.getMyRole(this.authService.authState.orgMrn).subscribe(roles => {
-            this.authService.authState.permission = (0,_auth_auth_permission__WEBPACK_IMPORTED_MODULE_4__.rolesToPermission)(roles);
-            if (this.menuType === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.OrgCandidate &&
-                _auth_auth_permission__WEBPACK_IMPORTED_MODULE_4__.PermissionResolver.canApproveOrg(this.authService.authState.permission)) {
-                this.canApproveOrg = true;
-            }
-        });
+        if (this.menuType === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.OrgCandidate &&
+            this.authService.authState.permission &&
+            _auth_auth_permission__WEBPACK_IMPORTED_MODULE_4__.PermissionResolver.canApproveOrg(this.authService.authState.permission)) {
+            this.canApproveOrg = true;
+        }
         this.iconName = _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuTypeIconNames[this.menuType.toString()];
         if (this.isForNew) {
             this.isEditing = true;
