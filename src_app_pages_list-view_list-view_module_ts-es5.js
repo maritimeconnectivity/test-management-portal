@@ -1625,7 +1625,7 @@
     },
 
     /***/
-    72227:
+    61289:
     /*!**************************************************************!*\
       !*** ./src/app/backend-api/identity-registry/model/agent.ts ***!
       \**************************************************************/
@@ -1894,7 +1894,7 @@
 
       var _agent__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
       /*! ./agent */
-      72227);
+      61289);
       /* harmony import */
 
 
@@ -2795,7 +2795,7 @@
         if (rf & 2) {
           var ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵnextContext"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵproperty"]("menuType", "user")("isForNew", true)("orgShortId", ctx_r2.orgShortId)("defaultPermissions", ctx_r2.defaultPermissions)("title", "Administrator account of " + ctx_r2.title)("iconName", "user")("canApproveOrg", ctx_r2.canApproveOrg)("orgMrn", ctx_r2.entityMrn)("instanceVersion", ctx_r2.instanceVersion)("isLoading", ctx_r2.isLoading)("isLoaded", ctx_r2.isLoaded)("hasHeader", true)("showButtons", false);
+          _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵproperty"]("menuType", "user")("isForNew", true)("orgShortId", ctx_r2.orgShortId)("defaultPermissions", ctx_r2.defaultPermissions)("title", "Administrator account of " + ctx_r2.title)("iconName", "user")("numberId", ctx_r2.numberId)("canApproveOrg", ctx_r2.canApproveOrg)("orgMrn", ctx_r2.entityMrn)("instanceVersion", ctx_r2.instanceVersion)("isLoading", ctx_r2.isLoading)("isLoaded", ctx_r2.isLoaded)("hasHeader", true)("showButtons", false);
         }
       }
 
@@ -3217,8 +3217,8 @@
           }
         },
         decls: 6,
-        vars: 14,
-        consts: [[1, "row"], [1, "col-lg-12"], [4, "ngIf"], [3, "menuType", "isForNew", "title", "iconName", "canApproveOrg", "entityMrn", "orgMrn", "instanceVersion", "isLoading", "isLoaded", "hasHeader", "showButtons", "onApprove", "onCancel", "onSubmit", "onDelete", "onRefresh"], ["editableForm", ""], [3, "menuType", "isForNew", "orgShortId", "defaultPermissions", "title", "iconName", "canApproveOrg", "entityMrn", "orgMrn", "instanceVersion", "isLoading", "isLoaded", "hasHeader", "showButtons", "onApprove", "onCancel", "onSubmit", "onDelete", "onRefresh", 4, "ngIf"], ["nbButton", "", "status", "info", "ghost", "", 3, "click"], ["icon", "arrow-ios-back", "pack", "eva"], [3, "menuType", "isForNew", "orgShortId", "defaultPermissions", "title", "iconName", "canApproveOrg", "entityMrn", "orgMrn", "instanceVersion", "isLoading", "isLoaded", "hasHeader", "showButtons", "onApprove", "onCancel", "onSubmit", "onDelete", "onRefresh"], ["supplementForm", ""]],
+        vars: 15,
+        consts: [[1, "row"], [1, "col-lg-12"], [4, "ngIf"], [3, "menuType", "isForNew", "title", "iconName", "canApproveOrg", "entityMrn", "orgMrn", "numberId", "instanceVersion", "isLoading", "isLoaded", "hasHeader", "showButtons", "onApprove", "onCancel", "onSubmit", "onDelete", "onRefresh"], ["editableForm", ""], [3, "menuType", "isForNew", "orgShortId", "defaultPermissions", "title", "iconName", "numberId", "canApproveOrg", "entityMrn", "orgMrn", "instanceVersion", "isLoading", "isLoaded", "hasHeader", "showButtons", "onApprove", "onCancel", "onSubmit", "onDelete", "onRefresh", 4, "ngIf"], ["nbButton", "", "status", "info", "ghost", "", 3, "click"], ["icon", "arrow-ios-back", "pack", "eva"], [3, "menuType", "isForNew", "orgShortId", "defaultPermissions", "title", "iconName", "numberId", "canApproveOrg", "entityMrn", "orgMrn", "instanceVersion", "isLoading", "isLoaded", "hasHeader", "showButtons", "onApprove", "onCancel", "onSubmit", "onDelete", "onRefresh"], ["supplementForm", ""]],
         template: function DetailComponent_Template(rf, ctx) {
           if (rf & 1) {
             _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementStart"](0, "div", 0);
@@ -3243,7 +3243,7 @@
 
             _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementEnd"]();
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵtemplate"](5, DetailComponent_ngx_editable_form_5_Template, 2, 13, "ngx-editable-form", 5);
+            _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵtemplate"](5, DetailComponent_ngx_editable_form_5_Template, 2, 14, "ngx-editable-form", 5);
 
             _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementEnd"]();
 
@@ -3257,7 +3257,7 @@
 
             _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵadvance"](1);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵproperty"]("menuType", ctx.menuType)("isForNew", ctx.isForNew)("title", ctx.title)("iconName", ctx.iconName)("canApproveOrg", ctx.canApproveOrg)("entityMrn", ctx.entityMrn)("orgMrn", ctx.orgMrn)("instanceVersion", ctx.instanceVersion)("isLoading", ctx.isLoading)("isLoaded", ctx.isLoaded)("hasHeader", true)("showButtons", true);
+            _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵproperty"]("menuType", ctx.menuType)("isForNew", ctx.isForNew)("title", ctx.title)("iconName", ctx.iconName)("canApproveOrg", ctx.canApproveOrg)("entityMrn", ctx.entityMrn)("orgMrn", ctx.orgMrn)("numberId", ctx.numberId)("instanceVersion", ctx.instanceVersion)("isLoading", ctx.isLoading)("isLoaded", ctx.isLoaded)("hasHeader", true)("showButtons", true);
 
             _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵadvance"](2);
 
