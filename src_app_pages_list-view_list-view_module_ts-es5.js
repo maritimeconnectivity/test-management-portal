@@ -3331,6 +3331,22 @@
       var _angular_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
       /*! @angular/core */
       37716);
+      /*
+       * Copyright (c) 2022 Maritime Connectivity Platform Consortium
+       *
+       * Licensed under the Apache License, Version 2.0 (the "License");
+       * you may not use this file except in compliance with the License.
+       * You may obtain a copy of the License at
+       *
+       * http://www.apache.org/licenses/LICENSE-2.0
+       *
+       * Unless required by applicable law or agreed to in writing, software
+       * distributed under the License is distributed on an "AS IS" BASIS,
+       * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+       * See the License for the specific language governing permissions and
+       * limitations under the License.
+       */
+
 
       var routes = [{
         path: '',
@@ -3457,6 +3473,22 @@
       var _angular_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
       /*! @angular/core */
       37716);
+      /*
+       * Copyright (c) 2022 Maritime Connectivity Platform Consortium
+       *
+       * Licensed under the Apache License, Version 2.0 (the "License");
+       * you may not use this file except in compliance with the License.
+       * You may obtain a copy of the License at
+       *
+       * http://www.apache.org/licenses/LICENSE-2.0
+       *
+       * Unless required by applicable law or agreed to in writing, software
+       * distributed under the License is distributed on an "AS IS" BASIS,
+       * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+       * See the License for the specific language governing permissions and
+       * limitations under the License.
+       */
+
 
       var _ListViewModule = function _ListViewModule() {
         _classCallCheck(this, _ListViewModule);
@@ -3639,6 +3671,22 @@
       var _angular_common__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(
       /*! @angular/common */
       38583);
+      /*
+       * Copyright (c) 2022 Maritime Connectivity Platform Consortium
+       *
+       * Licensed under the Apache License, Version 2.0 (the "License");
+       * you may not use this file except in compliance with the License.
+       * You may obtain a copy of the License at
+       *
+       * http://www.apache.org/licenses/LICENSE-2.0
+       *
+       * Unless required by applicable law or agreed to in writing, software
+       * distributed under the License is distributed on an "AS IS" BASIS,
+       * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+       * See the License for the specific language governing permissions and
+       * limitations under the License.
+       */
+
 
       function ListComponent_button_10_Template(rf, ctx) {
         if (rf & 1) {
@@ -3702,6 +3750,7 @@
           _classCallCheck(this, _ListComponent);
 
           this.router = router;
+          this.iconsLibrary = iconsLibrary;
           this.userControllerService = userControllerService;
           this.deviceControllerService = deviceControllerService;
           this.roleControllerService = roleControllerService;
@@ -3916,7 +3965,7 @@
               this.source.load(data);
               this.data = data;
             } else {
-              this.source.load(this.data);
+              this.source.load([]);
             }
           }
         }, {
