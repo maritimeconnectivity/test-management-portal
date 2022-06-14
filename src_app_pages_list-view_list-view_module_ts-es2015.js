@@ -860,770 +860,6 @@ exports.toSubscriber = toSubscriber;
 
 /***/ }),
 
-/***/ 4725:
-/*!**********************************************************!*\
-  !*** ./src/app/backend-api/identity-registry/api/api.ts ***!
-  \**********************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "AgentControllerService": function() { return /* reexport safe */ _agentController_service__WEBPACK_IMPORTED_MODULE_0__.AgentControllerService; },
-/* harmony export */   "CertificateControllerService": function() { return /* reexport safe */ _certificateController_service__WEBPACK_IMPORTED_MODULE_1__.CertificateControllerService; },
-/* harmony export */   "DeviceControllerService": function() { return /* reexport safe */ _deviceController_service__WEBPACK_IMPORTED_MODULE_2__.DeviceControllerService; },
-/* harmony export */   "LogoControllerService": function() { return /* reexport safe */ _logoController_service__WEBPACK_IMPORTED_MODULE_3__.LogoControllerService; },
-/* harmony export */   "MmsControllerService": function() { return /* reexport safe */ _mmsController_service__WEBPACK_IMPORTED_MODULE_4__.MmsControllerService; },
-/* harmony export */   "OrganizationControllerService": function() { return /* reexport safe */ _organizationController_service__WEBPACK_IMPORTED_MODULE_5__.OrganizationControllerService; },
-/* harmony export */   "RoleControllerService": function() { return /* reexport safe */ _roleController_service__WEBPACK_IMPORTED_MODULE_6__.RoleControllerService; },
-/* harmony export */   "ServiceControllerService": function() { return /* reexport safe */ _serviceController_service__WEBPACK_IMPORTED_MODULE_7__.ServiceControllerService; },
-/* harmony export */   "UserControllerService": function() { return /* reexport safe */ _userController_service__WEBPACK_IMPORTED_MODULE_8__.UserControllerService; },
-/* harmony export */   "VesselControllerService": function() { return /* reexport safe */ _vesselController_service__WEBPACK_IMPORTED_MODULE_9__.VesselControllerService; },
-/* harmony export */   "VesselImageControllerService": function() { return /* reexport safe */ _vesselImageController_service__WEBPACK_IMPORTED_MODULE_10__.VesselImageControllerService; },
-/* harmony export */   "APIS": function() { return /* binding */ APIS; }
-/* harmony export */ });
-/* harmony import */ var _agentController_service__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./agentController.service */ 79774);
-/* harmony import */ var _certificateController_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./certificateController.service */ 34869);
-/* harmony import */ var _deviceController_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./deviceController.service */ 76009);
-/* harmony import */ var _logoController_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./logoController.service */ 1502);
-/* harmony import */ var _mmsController_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./mmsController.service */ 21831);
-/* harmony import */ var _organizationController_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./organizationController.service */ 67126);
-/* harmony import */ var _roleController_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./roleController.service */ 53542);
-/* harmony import */ var _serviceController_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./serviceController.service */ 32826);
-/* harmony import */ var _userController_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./userController.service */ 8996);
-/* harmony import */ var _vesselController_service__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./vesselController.service */ 36276);
-/* harmony import */ var _vesselImageController_service__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./vesselImageController.service */ 19454);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-const APIS = [_agentController_service__WEBPACK_IMPORTED_MODULE_0__.AgentControllerService, _certificateController_service__WEBPACK_IMPORTED_MODULE_1__.CertificateControllerService, _deviceController_service__WEBPACK_IMPORTED_MODULE_2__.DeviceControllerService, _logoController_service__WEBPACK_IMPORTED_MODULE_3__.LogoControllerService, _mmsController_service__WEBPACK_IMPORTED_MODULE_4__.MmsControllerService, _organizationController_service__WEBPACK_IMPORTED_MODULE_5__.OrganizationControllerService, _roleController_service__WEBPACK_IMPORTED_MODULE_6__.RoleControllerService, _serviceController_service__WEBPACK_IMPORTED_MODULE_7__.ServiceControllerService, _userController_service__WEBPACK_IMPORTED_MODULE_8__.UserControllerService, _vesselController_service__WEBPACK_IMPORTED_MODULE_9__.VesselControllerService, _vesselImageController_service__WEBPACK_IMPORTED_MODULE_10__.VesselImageControllerService];
-
-
-/***/ }),
-
-/***/ 99457:
-/*!********************************************************!*\
-  !*** ./src/app/backend-api/identity-registry/index.ts ***!
-  \********************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "APIS": function() { return /* reexport safe */ _api_api__WEBPACK_IMPORTED_MODULE_0__.APIS; },
-/* harmony export */   "AgentControllerService": function() { return /* reexport safe */ _api_api__WEBPACK_IMPORTED_MODULE_0__.AgentControllerService; },
-/* harmony export */   "CertificateControllerService": function() { return /* reexport safe */ _api_api__WEBPACK_IMPORTED_MODULE_0__.CertificateControllerService; },
-/* harmony export */   "DeviceControllerService": function() { return /* reexport safe */ _api_api__WEBPACK_IMPORTED_MODULE_0__.DeviceControllerService; },
-/* harmony export */   "LogoControllerService": function() { return /* reexport safe */ _api_api__WEBPACK_IMPORTED_MODULE_0__.LogoControllerService; },
-/* harmony export */   "MmsControllerService": function() { return /* reexport safe */ _api_api__WEBPACK_IMPORTED_MODULE_0__.MmsControllerService; },
-/* harmony export */   "OrganizationControllerService": function() { return /* reexport safe */ _api_api__WEBPACK_IMPORTED_MODULE_0__.OrganizationControllerService; },
-/* harmony export */   "RoleControllerService": function() { return /* reexport safe */ _api_api__WEBPACK_IMPORTED_MODULE_0__.RoleControllerService; },
-/* harmony export */   "ServiceControllerService": function() { return /* reexport safe */ _api_api__WEBPACK_IMPORTED_MODULE_0__.ServiceControllerService; },
-/* harmony export */   "UserControllerService": function() { return /* reexport safe */ _api_api__WEBPACK_IMPORTED_MODULE_0__.UserControllerService; },
-/* harmony export */   "VesselControllerService": function() { return /* reexport safe */ _api_api__WEBPACK_IMPORTED_MODULE_0__.VesselControllerService; },
-/* harmony export */   "VesselImageControllerService": function() { return /* reexport safe */ _api_api__WEBPACK_IMPORTED_MODULE_0__.VesselImageControllerService; },
-/* harmony export */   "AllowedAgentRole": function() { return /* reexport safe */ _model_models__WEBPACK_IMPORTED_MODULE_1__.AllowedAgentRole; },
-/* harmony export */   "IdentityProviderAttribute": function() { return /* reexport safe */ _model_models__WEBPACK_IMPORTED_MODULE_1__.IdentityProviderAttribute; },
-/* harmony export */   "Organization": function() { return /* reexport safe */ _model_models__WEBPACK_IMPORTED_MODULE_1__.Organization; },
-/* harmony export */   "RevokationReasonEnum": function() { return /* reexport safe */ _model_models__WEBPACK_IMPORTED_MODULE_1__.RevokationReasonEnum; },
-/* harmony export */   "Role": function() { return /* reexport safe */ _model_models__WEBPACK_IMPORTED_MODULE_1__.Role; },
-/* harmony export */   "Service": function() { return /* reexport safe */ _model_models__WEBPACK_IMPORTED_MODULE_1__.Service; },
-/* harmony export */   "VesselAttribute": function() { return /* reexport safe */ _model_models__WEBPACK_IMPORTED_MODULE_1__.VesselAttribute; },
-/* harmony export */   "BASE_PATH": function() { return /* reexport safe */ _variables__WEBPACK_IMPORTED_MODULE_2__.BASE_PATH; },
-/* harmony export */   "COLLECTION_FORMATS": function() { return /* reexport safe */ _variables__WEBPACK_IMPORTED_MODULE_2__.COLLECTION_FORMATS; },
-/* harmony export */   "Configuration": function() { return /* reexport safe */ _configuration__WEBPACK_IMPORTED_MODULE_3__.Configuration; },
-/* harmony export */   "ApiModule": function() { return /* reexport safe */ _api_module__WEBPACK_IMPORTED_MODULE_4__.ApiModule; }
-/* harmony export */ });
-/* harmony import */ var _api_api__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./api/api */ 4725);
-/* harmony import */ var _model_models__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./model/models */ 73159);
-/* harmony import */ var _variables__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./variables */ 45556);
-/* harmony import */ var _configuration__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./configuration */ 31395);
-/* harmony import */ var _api_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./api.module */ 18649);
-
-
-
-
-
-
-
-/***/ }),
-
-/***/ 61289:
-/*!**************************************************************!*\
-  !*** ./src/app/backend-api/identity-registry/model/agent.ts ***!
-  \**************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-
-
-/***/ }),
-
-/***/ 78062:
-/*!*************************************************************************!*\
-  !*** ./src/app/backend-api/identity-registry/model/allowedAgentRole.ts ***!
-  \*************************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "AllowedAgentRole": function() { return /* binding */ AllowedAgentRole; }
-/* harmony export */ });
-/**
- * Maritime Connectivity Platform Identity Registry API
- * The MCP Identity Registry API can be used for managing entities in the Maritime Connectivity Platform.<br>Two versions of the API are available - one that requires authentication using OpenID Connect and one that requires authentication using a X.509 client certificate.<br>The OpenAPI descriptions for the two versions are available <a href=\"https://test-api.maritimeconnectivity.net/v3/api-docs/mcp-idreg-oidc\">here</a> and <a href=\"https://test-api-x509.maritimeconnectivity.net/v3/api-docs/mcp-idreg-x509\">here</a>.
- *
- * OpenAPI spec version: 1.0.0
- * Contact: info@maritimeconnectivity.net
- *
- * NOTE: This class is auto generated by the swagger code generator program.
- * https://github.com/swagger-api/swagger-codegen.git
- * Do not edit the class manually.
- */
-var AllowedAgentRole;
-(function (AllowedAgentRole) {
-    AllowedAgentRole.RoleNameEnum = {
-        ORGADMIN: 'ROLE_ORG_ADMIN',
-        ENTITYADMIN: 'ROLE_ENTITY_ADMIN',
-        USERADMIN: 'ROLE_USER_ADMIN',
-        VESSELADMIN: 'ROLE_VESSEL_ADMIN',
-        SERVICEADMIN: 'ROLE_SERVICE_ADMIN',
-        DEVICEADMIN: 'ROLE_DEVICE_ADMIN',
-        MMSADMIN: 'ROLE_MMS_ADMIN',
-        USER: 'ROLE_USER'
-    };
-})(AllowedAgentRole || (AllowedAgentRole = {}));
-
-
-/***/ }),
-
-/***/ 71626:
-/*!********************************************************************!*\
-  !*** ./src/app/backend-api/identity-registry/model/certificate.ts ***!
-  \********************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/**
- * Maritime Connectivity Platform Identity Registry API
- * The MCP Identity Registry API can be used for managing entities in the Maritime Connectivity Platform.<br>Two versions of the API are available - one that requires authentication using OpenID Connect and one that requires authentication using a X.509 client certificate.<br>The OpenAPI descriptions for the two versions are available <a href=\"https://test-api.maritimeconnectivity.net/v3/api-docs/mcp-idreg-oidc\">here</a> and <a href=\"https://test-api-x509.maritimeconnectivity.net/v3/api-docs/mcp-idreg-x509\">here</a>.
- *
- * OpenAPI spec version: 1.0.0
- * Contact: info@maritimeconnectivity.net
- *
- * NOTE: This class is auto generated by the swagger code generator program.
- * https://github.com/swagger-api/swagger-codegen.git
- * Do not edit the class manually.
- */
-
-
-
-/***/ }),
-
-/***/ 73137:
-/*!**************************************************************************!*\
-  !*** ./src/app/backend-api/identity-registry/model/certificateBundle.ts ***!
-  \**************************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-
-
-/***/ }),
-
-/***/ 64986:
-/*!***************************************************************!*\
-  !*** ./src/app/backend-api/identity-registry/model/device.ts ***!
-  \***************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-
-
-/***/ }),
-
-/***/ 62612:
-/*!**********************************************************************************!*\
-  !*** ./src/app/backend-api/identity-registry/model/identityProviderAttribute.ts ***!
-  \**********************************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "IdentityProviderAttribute": function() { return /* binding */ IdentityProviderAttribute; }
-/* harmony export */ });
-/**
- * Maritime Connectivity Platform Identity Registry API
- * The MCP Identity Registry API can be used for managing entities in the Maritime Connectivity Platform.<br>Two versions of the API are available - one that requires authentication using OpenID Connect and one that requires authentication using a X.509 client certificate.<br>The OpenAPI descriptions for the two versions are available <a href=\"https://test-api.maritimeconnectivity.net/v3/api-docs/mcp-idreg-oidc\">here</a> and <a href=\"https://test-api-x509.maritimeconnectivity.net/v3/api-docs/mcp-idreg-x509\">here</a>.
- *
- * OpenAPI spec version: 1.0.0
- * Contact: info@maritimeconnectivity.net
- *
- * NOTE: This class is auto generated by the swagger code generator program.
- * https://github.com/swagger-api/swagger-codegen.git
- * Do not edit the class manually.
- */
-var IdentityProviderAttribute;
-(function (IdentityProviderAttribute) {
-    IdentityProviderAttribute.AttributeNameEnum = {
-        ImportUrlValidateSignatureSigningCertificateSingleLogoutServiceUrlPostBindingResponsePostBindingAuthnRequestSingleSignOnServiceUrlWantAuthnRequestsSignedUserInfoUrlTokenUrlAuthorizationUrlLogoutUrlIssuerPublicKeySignatureVerifierClientIdClientSecretproviderTypeFirstNameAttrLastNameAttrEmailAttrUsernameAttrPermissionsAttr: 'importUrl, validateSignature, signingCertificate, singleLogoutServiceUrl, postBindingResponse, postBindingAuthnRequest, singleSignOnServiceUrl, wantAuthnRequestsSigned, userInfoUrl, tokenUrl, authorizationUrl, logoutUrl, issuer, publicKeySignatureVerifier, clientId, clientSecret,providerType, firstNameAttr, lastNameAttr, emailAttr, usernameAttr, permissionsAttr'
-    };
-})(IdentityProviderAttribute || (IdentityProviderAttribute = {}));
-
-
-/***/ }),
-
-/***/ 97649:
-/*!************************************************************!*\
-  !*** ./src/app/backend-api/identity-registry/model/mMS.ts ***!
-  \************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-
-
-/***/ }),
-
-/***/ 73159:
-/*!***************************************************************!*\
-  !*** ./src/app/backend-api/identity-registry/model/models.ts ***!
-  \***************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "AllowedAgentRole": function() { return /* reexport safe */ _allowedAgentRole__WEBPACK_IMPORTED_MODULE_1__.AllowedAgentRole; },
-/* harmony export */   "RevokationReasonEnum": function() { return /* reexport safe */ _certificateRevocation__WEBPACK_IMPORTED_MODULE_4__.RevokationReasonEnum; },
-/* harmony export */   "IdentityProviderAttribute": function() { return /* reexport safe */ _identityProviderAttribute__WEBPACK_IMPORTED_MODULE_6__.IdentityProviderAttribute; },
-/* harmony export */   "Organization": function() { return /* reexport safe */ _organization__WEBPACK_IMPORTED_MODULE_12__.Organization; },
-/* harmony export */   "Role": function() { return /* reexport safe */ _role__WEBPACK_IMPORTED_MODULE_22__.Role; },
-/* harmony export */   "Service": function() { return /* reexport safe */ _service__WEBPACK_IMPORTED_MODULE_23__.Service; },
-/* harmony export */   "VesselAttribute": function() { return /* reexport safe */ _vesselAttribute__WEBPACK_IMPORTED_MODULE_27__.VesselAttribute; }
-/* harmony export */ });
-/* harmony import */ var _agent__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./agent */ 61289);
-/* harmony import */ var _allowedAgentRole__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./allowedAgentRole */ 78062);
-/* harmony import */ var _certificate__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./certificate */ 71626);
-/* harmony import */ var _certificateBundle__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./certificateBundle */ 73137);
-/* harmony import */ var _certificateRevocation__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./certificateRevocation */ 81247);
-/* harmony import */ var _device__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./device */ 64986);
-/* harmony import */ var _identityProviderAttribute__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./identityProviderAttribute */ 62612);
-/* harmony import */ var _mMS__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./mMS */ 97649);
-/* harmony import */ var _orgMrnLogoBody__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./orgMrnLogoBody */ 92826);
-/* harmony import */ var _orgMrnLogoBody1__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./orgMrnLogoBody1 */ 36886);
-/* harmony import */ var _orgMrnLogoBody2__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./orgMrnLogoBody2 */ 13251);
-/* harmony import */ var _orgMrnLogoBody3__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./orgMrnLogoBody3 */ 92204);
-/* harmony import */ var _organization__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./organization */ 37785);
-/* harmony import */ var _pageAgent__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./pageAgent */ 85850);
-/* harmony import */ var _pageDevice__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./pageDevice */ 79543);
-/* harmony import */ var _pageMMS__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./pageMMS */ 13098);
-/* harmony import */ var _pageOrganization__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./pageOrganization */ 55077);
-/* harmony import */ var _pageService__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./pageService */ 85565);
-/* harmony import */ var _pageUser__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./pageUser */ 41010);
-/* harmony import */ var _pageVessel__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./pageVessel */ 94214);
-/* harmony import */ var _pageable__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./pageable */ 67224);
-/* harmony import */ var _pemCertificate__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./pemCertificate */ 50281);
-/* harmony import */ var _role__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./role */ 43355);
-/* harmony import */ var _service__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./service */ 98820);
-/* harmony import */ var _sort__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./sort */ 97261);
-/* harmony import */ var _user__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./user */ 48844);
-/* harmony import */ var _vessel__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./vessel */ 99960);
-/* harmony import */ var _vesselAttribute__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./vesselAttribute */ 92057);
-/* harmony import */ var _vesselMrnVesselImageBody__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./vesselMrnVesselImageBody */ 13962);
-/* harmony import */ var _vesselMrnVesselImageBody1__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./vesselMrnVesselImageBody1 */ 21116);
-/* harmony import */ var _vesselMrnVesselImageBody2__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./vesselMrnVesselImageBody2 */ 8234);
-/* harmony import */ var _vesselMrnVesselImageBody3__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./vesselMrnVesselImageBody3 */ 21230);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/***/ }),
-
-/***/ 92826:
-/*!***********************************************************************!*\
-  !*** ./src/app/backend-api/identity-registry/model/orgMrnLogoBody.ts ***!
-  \***********************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/**
- * Maritime Connectivity Platform Identity Registry API
- * The MCP Identity Registry API can be used for managing entities in the Maritime Connectivity Platform.<br>Two versions of the API are available - one that requires authentication using OpenID Connect and one that requires authentication using a X.509 client certificate.<br>The OpenAPI descriptions for the two versions are available <a href=\"https://test-api.maritimeconnectivity.net/v3/api-docs/mcp-idreg-oidc\">here</a> and <a href=\"https://test-api-x509.maritimeconnectivity.net/v3/api-docs/mcp-idreg-x509\">here</a>.
- *
- * OpenAPI spec version: 1.0.0
- * Contact: info@maritimeconnectivity.net
- *
- * NOTE: This class is auto generated by the swagger code generator program.
- * https://github.com/swagger-api/swagger-codegen.git
- * Do not edit the class manually.
- */
-
-
-
-/***/ }),
-
-/***/ 36886:
-/*!************************************************************************!*\
-  !*** ./src/app/backend-api/identity-registry/model/orgMrnLogoBody1.ts ***!
-  \************************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/**
- * Maritime Connectivity Platform Identity Registry API
- * The MCP Identity Registry API can be used for managing entities in the Maritime Connectivity Platform.<br>Two versions of the API are available - one that requires authentication using OpenID Connect and one that requires authentication using a X.509 client certificate.<br>The OpenAPI descriptions for the two versions are available <a href=\"https://test-api.maritimeconnectivity.net/v3/api-docs/mcp-idreg-oidc\">here</a> and <a href=\"https://test-api-x509.maritimeconnectivity.net/v3/api-docs/mcp-idreg-x509\">here</a>.
- *
- * OpenAPI spec version: 1.0.0
- * Contact: info@maritimeconnectivity.net
- *
- * NOTE: This class is auto generated by the swagger code generator program.
- * https://github.com/swagger-api/swagger-codegen.git
- * Do not edit the class manually.
- */
-
-
-
-/***/ }),
-
-/***/ 13251:
-/*!************************************************************************!*\
-  !*** ./src/app/backend-api/identity-registry/model/orgMrnLogoBody2.ts ***!
-  \************************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/**
- * Maritime Connectivity Platform Identity Registry API
- * The MCP Identity Registry API can be used for managing entities in the Maritime Connectivity Platform.<br>Two versions of the API are available - one that requires authentication using OpenID Connect and one that requires authentication using a X.509 client certificate.<br>The OpenAPI descriptions for the two versions are available <a href=\"https://test-api.maritimeconnectivity.net/v3/api-docs/mcp-idreg-oidc\">here</a> and <a href=\"https://test-api-x509.maritimeconnectivity.net/v3/api-docs/mcp-idreg-x509\">here</a>.
- *
- * OpenAPI spec version: 1.0.0
- * Contact: info@maritimeconnectivity.net
- *
- * NOTE: This class is auto generated by the swagger code generator program.
- * https://github.com/swagger-api/swagger-codegen.git
- * Do not edit the class manually.
- */
-
-
-
-/***/ }),
-
-/***/ 92204:
-/*!************************************************************************!*\
-  !*** ./src/app/backend-api/identity-registry/model/orgMrnLogoBody3.ts ***!
-  \************************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/**
- * Maritime Connectivity Platform Identity Registry API
- * The MCP Identity Registry API can be used for managing entities in the Maritime Connectivity Platform.<br>Two versions of the API are available - one that requires authentication using OpenID Connect and one that requires authentication using a X.509 client certificate.<br>The OpenAPI descriptions for the two versions are available <a href=\"https://test-api.maritimeconnectivity.net/v3/api-docs/mcp-idreg-oidc\">here</a> and <a href=\"https://test-api-x509.maritimeconnectivity.net/v3/api-docs/mcp-idreg-x509\">here</a>.
- *
- * OpenAPI spec version: 1.0.0
- * Contact: info@maritimeconnectivity.net
- *
- * NOTE: This class is auto generated by the swagger code generator program.
- * https://github.com/swagger-api/swagger-codegen.git
- * Do not edit the class manually.
- */
-
-
-
-/***/ }),
-
-/***/ 37785:
-/*!*********************************************************************!*\
-  !*** ./src/app/backend-api/identity-registry/model/organization.ts ***!
-  \*********************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Organization": function() { return /* binding */ Organization; }
-/* harmony export */ });
-var Organization;
-(function (Organization) {
-    Organization.FederationTypeEnum = {
-        TestIdp: 'test-idp',
-        OwnIdp: 'own-idp',
-        ExternalIdp: 'external-idp'
-    };
-})(Organization || (Organization = {}));
-
-
-/***/ }),
-
-/***/ 85850:
-/*!******************************************************************!*\
-  !*** ./src/app/backend-api/identity-registry/model/pageAgent.ts ***!
-  \******************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-
-
-/***/ }),
-
-/***/ 79543:
-/*!*******************************************************************!*\
-  !*** ./src/app/backend-api/identity-registry/model/pageDevice.ts ***!
-  \*******************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-
-
-/***/ }),
-
-/***/ 13098:
-/*!****************************************************************!*\
-  !*** ./src/app/backend-api/identity-registry/model/pageMMS.ts ***!
-  \****************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-
-
-/***/ }),
-
-/***/ 55077:
-/*!*************************************************************************!*\
-  !*** ./src/app/backend-api/identity-registry/model/pageOrganization.ts ***!
-  \*************************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-
-
-/***/ }),
-
-/***/ 85565:
-/*!********************************************************************!*\
-  !*** ./src/app/backend-api/identity-registry/model/pageService.ts ***!
-  \********************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-
-
-/***/ }),
-
-/***/ 41010:
-/*!*****************************************************************!*\
-  !*** ./src/app/backend-api/identity-registry/model/pageUser.ts ***!
-  \*****************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-
-
-/***/ }),
-
-/***/ 94214:
-/*!*******************************************************************!*\
-  !*** ./src/app/backend-api/identity-registry/model/pageVessel.ts ***!
-  \*******************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-
-
-/***/ }),
-
-/***/ 67224:
-/*!*****************************************************************!*\
-  !*** ./src/app/backend-api/identity-registry/model/pageable.ts ***!
-  \*****************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/**
- * Maritime Connectivity Platform Identity Registry API
- * The MCP Identity Registry API can be used for managing entities in the Maritime Connectivity Platform.<br>Two versions of the API are available - one that requires authentication using OpenID Connect and one that requires authentication using a X.509 client certificate.<br>The OpenAPI descriptions for the two versions are available <a href=\"https://test-api.maritimeconnectivity.net/v3/api-docs/mcp-idreg-oidc\">here</a> and <a href=\"https://test-api-x509.maritimeconnectivity.net/v3/api-docs/mcp-idreg-x509\">here</a>.
- *
- * OpenAPI spec version: 1.0.0
- * Contact: info@maritimeconnectivity.net
- *
- * NOTE: This class is auto generated by the swagger code generator program.
- * https://github.com/swagger-api/swagger-codegen.git
- * Do not edit the class manually.
- */
-
-
-
-/***/ }),
-
-/***/ 50281:
-/*!***********************************************************************!*\
-  !*** ./src/app/backend-api/identity-registry/model/pemCertificate.ts ***!
-  \***********************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/**
- * Maritime Connectivity Platform Identity Registry API
- * The MCP Identity Registry API can be used for managing entities in the Maritime Connectivity Platform.<br>Two versions of the API are available - one that requires authentication using OpenID Connect and one that requires authentication using a X.509 client certificate.<br>The OpenAPI descriptions for the two versions are available <a href=\"https://test-api.maritimeconnectivity.net/v3/api-docs/mcp-idreg-oidc\">here</a> and <a href=\"https://test-api-x509.maritimeconnectivity.net/v3/api-docs/mcp-idreg-x509\">here</a>.
- *
- * OpenAPI spec version: 1.0.0
- * Contact: info@maritimeconnectivity.net
- *
- * NOTE: This class is auto generated by the swagger code generator program.
- * https://github.com/swagger-api/swagger-codegen.git
- * Do not edit the class manually.
- */
-
-
-
-/***/ }),
-
-/***/ 98820:
-/*!****************************************************************!*\
-  !*** ./src/app/backend-api/identity-registry/model/service.ts ***!
-  \****************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Service": function() { return /* binding */ Service; }
-/* harmony export */ });
-var Service;
-(function (Service) {
-    Service.OidcAccessTypeEnum = {
-        PublicBearerOnlyConfidential: 'public, bearer-only, confidential'
-    };
-})(Service || (Service = {}));
-
-
-/***/ }),
-
-/***/ 97261:
-/*!*************************************************************!*\
-  !*** ./src/app/backend-api/identity-registry/model/sort.ts ***!
-  \*************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/**
- * Maritime Connectivity Platform Identity Registry API
- * The MCP Identity Registry API can be used for managing entities in the Maritime Connectivity Platform.<br>Two versions of the API are available - one that requires authentication using OpenID Connect and one that requires authentication using a X.509 client certificate.<br>The OpenAPI descriptions for the two versions are available <a href=\"https://test-api.maritimeconnectivity.net/v3/api-docs/mcp-idreg-oidc\">here</a> and <a href=\"https://test-api-x509.maritimeconnectivity.net/v3/api-docs/mcp-idreg-x509\">here</a>.
- *
- * OpenAPI spec version: 1.0.0
- * Contact: info@maritimeconnectivity.net
- *
- * NOTE: This class is auto generated by the swagger code generator program.
- * https://github.com/swagger-api/swagger-codegen.git
- * Do not edit the class manually.
- */
-
-
-
-/***/ }),
-
-/***/ 48844:
-/*!*************************************************************!*\
-  !*** ./src/app/backend-api/identity-registry/model/user.ts ***!
-  \*************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-
-
-/***/ }),
-
-/***/ 99960:
-/*!***************************************************************!*\
-  !*** ./src/app/backend-api/identity-registry/model/vessel.ts ***!
-  \***************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-
-
-/***/ }),
-
-/***/ 13962:
-/*!*********************************************************************************!*\
-  !*** ./src/app/backend-api/identity-registry/model/vesselMrnVesselImageBody.ts ***!
-  \*********************************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/**
- * Maritime Connectivity Platform Identity Registry API
- * The MCP Identity Registry API can be used for managing entities in the Maritime Connectivity Platform.<br>Two versions of the API are available - one that requires authentication using OpenID Connect and one that requires authentication using a X.509 client certificate.<br>The OpenAPI descriptions for the two versions are available <a href=\"https://test-api.maritimeconnectivity.net/v3/api-docs/mcp-idreg-oidc\">here</a> and <a href=\"https://test-api-x509.maritimeconnectivity.net/v3/api-docs/mcp-idreg-x509\">here</a>.
- *
- * OpenAPI spec version: 1.0.0
- * Contact: info@maritimeconnectivity.net
- *
- * NOTE: This class is auto generated by the swagger code generator program.
- * https://github.com/swagger-api/swagger-codegen.git
- * Do not edit the class manually.
- */
-
-
-
-/***/ }),
-
-/***/ 21116:
-/*!**********************************************************************************!*\
-  !*** ./src/app/backend-api/identity-registry/model/vesselMrnVesselImageBody1.ts ***!
-  \**********************************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/**
- * Maritime Connectivity Platform Identity Registry API
- * The MCP Identity Registry API can be used for managing entities in the Maritime Connectivity Platform.<br>Two versions of the API are available - one that requires authentication using OpenID Connect and one that requires authentication using a X.509 client certificate.<br>The OpenAPI descriptions for the two versions are available <a href=\"https://test-api.maritimeconnectivity.net/v3/api-docs/mcp-idreg-oidc\">here</a> and <a href=\"https://test-api-x509.maritimeconnectivity.net/v3/api-docs/mcp-idreg-x509\">here</a>.
- *
- * OpenAPI spec version: 1.0.0
- * Contact: info@maritimeconnectivity.net
- *
- * NOTE: This class is auto generated by the swagger code generator program.
- * https://github.com/swagger-api/swagger-codegen.git
- * Do not edit the class manually.
- */
-
-
-
-/***/ }),
-
-/***/ 8234:
-/*!**********************************************************************************!*\
-  !*** ./src/app/backend-api/identity-registry/model/vesselMrnVesselImageBody2.ts ***!
-  \**********************************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/**
- * Maritime Connectivity Platform Identity Registry API
- * The MCP Identity Registry API can be used for managing entities in the Maritime Connectivity Platform.<br>Two versions of the API are available - one that requires authentication using OpenID Connect and one that requires authentication using a X.509 client certificate.<br>The OpenAPI descriptions for the two versions are available <a href=\"https://test-api.maritimeconnectivity.net/v3/api-docs/mcp-idreg-oidc\">here</a> and <a href=\"https://test-api-x509.maritimeconnectivity.net/v3/api-docs/mcp-idreg-x509\">here</a>.
- *
- * OpenAPI spec version: 1.0.0
- * Contact: info@maritimeconnectivity.net
- *
- * NOTE: This class is auto generated by the swagger code generator program.
- * https://github.com/swagger-api/swagger-codegen.git
- * Do not edit the class manually.
- */
-
-
-
-/***/ }),
-
-/***/ 21230:
-/*!**********************************************************************************!*\
-  !*** ./src/app/backend-api/identity-registry/model/vesselMrnVesselImageBody3.ts ***!
-  \**********************************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/**
- * Maritime Connectivity Platform Identity Registry API
- * The MCP Identity Registry API can be used for managing entities in the Maritime Connectivity Platform.<br>Two versions of the API are available - one that requires authentication using OpenID Connect and one that requires authentication using a X.509 client certificate.<br>The OpenAPI descriptions for the two versions are available <a href=\"https://test-api.maritimeconnectivity.net/v3/api-docs/mcp-idreg-oidc\">here</a> and <a href=\"https://test-api-x509.maritimeconnectivity.net/v3/api-docs/mcp-idreg-x509\">here</a>.
- *
- * OpenAPI spec version: 1.0.0
- * Contact: info@maritimeconnectivity.net
- *
- * NOTE: This class is auto generated by the swagger code generator program.
- * https://github.com/swagger-api/swagger-codegen.git
- * Do not edit the class manually.
- */
-
-
-
-/***/ }),
-
 /***/ 63115:
 /*!************************************************************!*\
   !*** ./src/app/pages/list-view/detail/detail.component.ts ***!
@@ -1687,7 +923,7 @@ function DetailComponent_div_2_Template(rf, ctx) { if (rf & 1) {
 function DetailComponent_ngx_editable_form_5_Template(rf, ctx) { if (rf & 1) {
     const _r7 = _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementStart"](0, "ngx-editable-form", 8, 9);
-    _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵlistener"]("onApprove", function DetailComponent_ngx_editable_form_5_Template_ngx_editable_form_onApprove_0_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵrestoreView"](_r7); const ctx_r6 = _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵnextContext"](); return ctx_r6.approve(); })("onCancel", function DetailComponent_ngx_editable_form_5_Template_ngx_editable_form_onCancel_0_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵrestoreView"](_r7); const ctx_r8 = _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵnextContext"](); return ctx_r8.cancel(); })("onSubmit", function DetailComponent_ngx_editable_form_5_Template_ngx_editable_form_onSubmit_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵrestoreView"](_r7); const ctx_r9 = _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵnextContext"](); return ctx_r9.submit($event); })("onDelete", function DetailComponent_ngx_editable_form_5_Template_ngx_editable_form_onDelete_0_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵrestoreView"](_r7); const ctx_r10 = _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵnextContext"](); return ctx_r10.delete(); })("onRefresh", function DetailComponent_ngx_editable_form_5_Template_ngx_editable_form_onRefresh_0_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵrestoreView"](_r7); const ctx_r11 = _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵnextContext"](); return ctx_r11.refreshData(); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵlistener"]("onApprove", function DetailComponent_ngx_editable_form_5_Template_ngx_editable_form_onApprove_0_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵrestoreView"](_r7); const ctx_r6 = _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵnextContext"](); return ctx_r6.approve(); })("onReject", function DetailComponent_ngx_editable_form_5_Template_ngx_editable_form_onReject_0_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵrestoreView"](_r7); const ctx_r8 = _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵnextContext"](); return ctx_r8.delete(); })("onCancel", function DetailComponent_ngx_editable_form_5_Template_ngx_editable_form_onCancel_0_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵrestoreView"](_r7); const ctx_r9 = _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵnextContext"](); return ctx_r9.cancel(); })("onSubmit", function DetailComponent_ngx_editable_form_5_Template_ngx_editable_form_onSubmit_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵrestoreView"](_r7); const ctx_r10 = _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵnextContext"](); return ctx_r10.submit($event); })("onDelete", function DetailComponent_ngx_editable_form_5_Template_ngx_editable_form_onDelete_0_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵrestoreView"](_r7); const ctx_r11 = _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵnextContext"](); return ctx_r11.delete(); })("onRefresh", function DetailComponent_ngx_editable_form_5_Template_ngx_editable_form_onRefresh_0_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵrestoreView"](_r7); const ctx_r12 = _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵnextContext"](); return ctx_r12.refreshData(); });
     _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementEnd"]();
 } if (rf & 2) {
     const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵnextContext"]();
@@ -1710,7 +946,7 @@ class DetailComponent {
         this.location = location;
         this.title = '';
         this.isLoading = false;
-        this.menuType = _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Device;
+        this.menuType = _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.ResourceType.Device;
         this.iconName = 'circle';
         this.instanceVersion = '';
         this.noBacklink = false;
@@ -1733,106 +969,106 @@ class DetailComponent {
         this.orgShortId = undefined;
         this.defaultPermissionForAdminUser = undefined;
         this.registerData = (context, body, orgMrn) => {
-            if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.User) {
+            if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.ResourceType.User) {
                 return this.userControllerService.createUser(body, orgMrn);
             }
-            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Device) {
+            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.ResourceType.Device) {
                 return this.deviceControllerService.createDevice(body, orgMrn);
             }
-            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Vessel) {
+            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.ResourceType.Vessel) {
                 return this.vesselControllerService.createVessel(body, orgMrn);
             }
-            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.MMS) {
+            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.ResourceType.MMS) {
                 return this.mmsControllerService.createMMS(body, orgMrn);
             }
-            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Service) {
+            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.ResourceType.Service) {
                 return this.serviceControllerService.createService(body, orgMrn);
             }
-            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Organization) {
+            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.ResourceType.Organization) {
                 return this.organizationControllerService.applyOrganization(body);
             }
-            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Role) {
+            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.ResourceType.Role) {
                 return this.roleControllerService.createRole(body, orgMrn);
             }
-            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Instance) {
+            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.ResourceType.Instance) {
                 return this.instanceControllerService.createInstance(body);
             }
             return new rxjs_Observable__WEBPACK_IMPORTED_MODULE_10__.Observable();
         };
         this.updateData = (context, body, orgMrn, entityMrn, version, instanceId) => {
-            if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.User) {
+            if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.ResourceType.User) {
                 return this.userControllerService.updateUser(body, orgMrn, entityMrn);
             }
-            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Device) {
+            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.ResourceType.Device) {
                 return this.deviceControllerService.updateDevice(body, orgMrn, entityMrn);
             }
-            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Vessel) {
+            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.ResourceType.Vessel) {
                 return this.vesselControllerService.updateVessel((0,_util_dataFormatter__WEBPACK_IMPORTED_MODULE_0__.formatVesselToUpload)(body), orgMrn, entityMrn);
             }
-            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.MMS) {
+            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.ResourceType.MMS) {
                 return this.mmsControllerService.updateMMS(body, orgMrn, entityMrn);
             }
-            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Service && version) {
+            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.ResourceType.Service && version) {
                 return this.serviceControllerService.updateService(body, orgMrn, entityMrn, version);
             }
-            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Organization || context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.OrgCandidate) {
+            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.ResourceType.Organization || context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.ResourceType.OrgCandidate) {
                 return this.organizationControllerService.updateOrganization(body, entityMrn);
             }
-            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Role) {
+            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.ResourceType.Role) {
                 return this.roleControllerService.updateRole(body, orgMrn, this.numberId);
             }
-            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Instance) {
+            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.ResourceType.Instance) {
                 return this.instanceControllerService.updateInstance(Object.assign({}, body, { id: instanceId }), instanceId);
             }
             return new rxjs_Observable__WEBPACK_IMPORTED_MODULE_10__.Observable();
         };
         this.deleteData = (context, orgMrn, entityMrn, version, instanceId) => {
-            if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.User) {
+            if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.ResourceType.User) {
                 return this.userControllerService.deleteUser(orgMrn, entityMrn);
             }
-            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Device) {
+            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.ResourceType.Device) {
                 return this.deviceControllerService.deleteDevice(orgMrn, entityMrn);
             }
-            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Vessel) {
+            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.ResourceType.Vessel) {
                 return this.vesselControllerService.deleteVessel(orgMrn, entityMrn);
             }
-            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.MMS) {
+            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.ResourceType.MMS) {
                 return this.mmsControllerService.deleteMMS(orgMrn, entityMrn);
             }
-            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Service && version) {
+            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.ResourceType.Service && version) {
                 return this.serviceControllerService.deleteService(orgMrn, entityMrn, version);
             }
-            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Organization || context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.OrgCandidate) {
+            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.ResourceType.Organization || context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.ResourceType.OrgCandidate) {
                 return this.organizationControllerService.deleteOrg(entityMrn);
             }
-            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Role) {
+            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.ResourceType.Role) {
                 return this.roleControllerService.deleteRole(orgMrn, this.numberId);
             }
-            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Instance) {
+            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.ResourceType.Instance) {
                 return this.instanceControllerService.deleteInstance(this.numberId);
             }
             return new rxjs_Observable__WEBPACK_IMPORTED_MODULE_10__.Observable();
         };
         this.loadDataContent = (context, orgMrn, entityMrn, version, instanceId) => {
-            if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.User) {
+            if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.ResourceType.User) {
                 return this.userControllerService.getUser(orgMrn, entityMrn);
             }
-            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Device) {
+            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.ResourceType.Device) {
                 return this.deviceControllerService.getDevice(orgMrn, entityMrn);
             }
-            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Vessel) {
+            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.ResourceType.Vessel) {
                 return this.vesselControllerService.getVessel(orgMrn, entityMrn);
             }
-            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.MMS) {
+            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.ResourceType.MMS) {
                 return this.mmsControllerService.getMMS(orgMrn, entityMrn);
             }
-            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Service && version) {
+            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.ResourceType.Service && version) {
                 return this.serviceControllerService.getServiceVersion(orgMrn, entityMrn, version);
             }
-            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Organization) {
+            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.ResourceType.Organization) {
                 return this.organizationControllerService.getOrganizationByMrn(entityMrn);
             }
-            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Instance) {
+            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.ResourceType.Instance) {
                 return this.instanceControllerService.getInstance(instanceId);
             }
             return new rxjs_Observable__WEBPACK_IMPORTED_MODULE_10__.Observable();
@@ -1842,9 +1078,9 @@ class DetailComponent {
         const array = this.router.url.split('/');
         const entityId = array.pop();
         const menuTypeString = array.pop();
-        if (menuTypeString === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.InstanceOfOrg) {
+        if (menuTypeString === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.ResourceType.InstanceOfOrg) {
             this.isForServiceForOrg = true;
-            this.menuType = _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Instance;
+            this.menuType = _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.ResourceType.Instance;
         }
         else {
             this.menuType = menuTypeString.replace('-', '').substr(0, menuTypeString.length - 1);
@@ -1852,7 +1088,7 @@ class DetailComponent {
         this.entityMrn = decodeURIComponent(this.route.snapshot.paramMap.get("id"));
         this.orgMrn = this.authService.authState.orgMrn;
         this.isForNew = this.entityMrn === 'new';
-        this.numberId = this.menuType === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Instance || this.menuType === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Role ?
+        this.numberId = this.menuType === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.ResourceType.Instance || this.menuType === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.ResourceType.Role ?
             parseInt(this.entityMrn) : -1;
         // preventing refresh
         this.router.routeReuseStrategy.shouldReuseRoute = () => false;
@@ -1862,7 +1098,7 @@ class DetailComponent {
             this.title = e.name;
             this.instanceVersion = e.version;
         });
-        if (this.menuType === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.OrgCandidate &&
+        if (this.menuType === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.ResourceType.OrgCandidate &&
             this.authService.authState.permission &&
             _auth_auth_permission__WEBPACK_IMPORTED_MODULE_4__.PermissionResolver.canApproveOrg(this.authService.authState.permission)) {
             this.canApproveOrg = true;
@@ -1888,8 +1124,8 @@ class DetailComponent {
     fetchFieldValues() {
         if (_shared_models_columnForMenu__WEBPACK_IMPORTED_MODULE_2__.ColumnForMenu.hasOwnProperty(this.menuType)) {
             this.isLoading = true;
-            if (Object.values(_shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType).includes(this.menuType)) {
-                if (this.menuType === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.OrgCandidate) {
+            if (Object.values(_shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.ResourceType).includes(this.menuType)) {
+                if (this.menuType === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.ResourceType.OrgCandidate) {
                     this.organizationControllerService.getUnapprovedOrganizations().subscribe(data => {
                         this.settle(true);
                         this.editableForm.adjustTitle(this.menuType, this.title);
@@ -1901,7 +1137,7 @@ class DetailComponent {
                         this.router.navigateByUrl('/pages/404');
                     });
                 }
-                else if (this.menuType === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Role) {
+                else if (this.menuType === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.ResourceType.Role) {
                     const id = parseInt(this.entityMrn);
                     this.roleControllerService.getRole(this.orgMrn, id).subscribe(data => {
                         this.settle(true);
@@ -1916,10 +1152,10 @@ class DetailComponent {
                 else {
                     this.route.queryParams.subscribe(e => this.loadDataContent(this.menuType, this.authService.authState.user.organization, this.entityMrn, e.version, this.numberId).subscribe(data => {
                         this.settle(true);
-                        if (this.menuType === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.User) {
+                        if (this.menuType === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.ResourceType.User) {
                             this.title = data.firstName + " " + data.lastName;
                         }
-                        else if (this.menuType === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Organization) {
+                        else if (this.menuType === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.ResourceType.Organization) {
                             this.title = data.name;
                         }
                         this.editableForm.adjustTitle(this.menuType, this.title);
@@ -1958,7 +1194,7 @@ class DetailComponent {
         }
     }
     approve() {
-        if (this.menuType === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.OrgCandidate) {
+        if (this.menuType === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.ResourceType.OrgCandidate) {
             if (!this.supplementForm.formGroup.valid) {
                 this.notifierService.notify('error', 'There is missing information of administrator');
             }
@@ -1988,7 +1224,7 @@ class DetailComponent {
         return this.userControllerService.createUser(user, this.entityMrn);
     }
     submit(body) {
-        if (this.menuType === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.MenuType.Role) {
+        if (this.menuType === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_1__.ResourceType.Role) {
             this.organizationControllerService.getOrganizationByMrn(this.orgMrn).subscribe(res => this.submitDataToBackend(Object.assign(Object.assign({}, body), { idOrganization: res.id })), err => this.notifierService.notify('error', 'Error in fetching organization information'));
         }
         else {
@@ -2030,12 +1266,12 @@ DetailComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_9__
         let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵloadQuery"]()) && (ctx.editableForm = _t.first);
         _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵloadQuery"]()) && (ctx.supplementForm = _t.first);
-    } }, decls: 6, vars: 15, consts: [[1, "row"], [1, "col-lg-12"], [4, "ngIf"], [3, "menuType", "isForNew", "title", "iconName", "canApproveOrg", "entityMrn", "orgMrn", "numberId", "instanceVersion", "isLoading", "isLoaded", "hasHeader", "showButtons", "onApprove", "onCancel", "onSubmit", "onDelete", "onRefresh"], ["editableForm", ""], [3, "menuType", "isForNew", "orgShortId", "defaultPermissions", "title", "iconName", "numberId", "canApproveOrg", "entityMrn", "orgMrn", "instanceVersion", "isLoading", "isLoaded", "hasHeader", "showButtons", "onApprove", "onCancel", "onSubmit", "onDelete", "onRefresh", 4, "ngIf"], ["nbButton", "", "status", "info", "ghost", "", 3, "click"], ["icon", "arrow-ios-back", "pack", "eva"], [3, "menuType", "isForNew", "orgShortId", "defaultPermissions", "title", "iconName", "numberId", "canApproveOrg", "entityMrn", "orgMrn", "instanceVersion", "isLoading", "isLoaded", "hasHeader", "showButtons", "onApprove", "onCancel", "onSubmit", "onDelete", "onRefresh"], ["supplementForm", ""]], template: function DetailComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, decls: 6, vars: 15, consts: [[1, "row"], [1, "col-lg-12"], [4, "ngIf"], [3, "menuType", "isForNew", "title", "iconName", "canApproveOrg", "entityMrn", "orgMrn", "numberId", "instanceVersion", "isLoading", "isLoaded", "hasHeader", "showButtons", "onApprove", "onReject", "onCancel", "onSubmit", "onDelete", "onRefresh"], ["editableForm", ""], [3, "menuType", "isForNew", "orgShortId", "defaultPermissions", "title", "iconName", "numberId", "canApproveOrg", "entityMrn", "orgMrn", "instanceVersion", "isLoading", "isLoaded", "hasHeader", "showButtons", "onApprove", "onReject", "onCancel", "onSubmit", "onDelete", "onRefresh", 4, "ngIf"], ["nbButton", "", "status", "info", "ghost", "", 3, "click"], ["icon", "arrow-ios-back", "pack", "eva"], [3, "menuType", "isForNew", "orgShortId", "defaultPermissions", "title", "iconName", "numberId", "canApproveOrg", "entityMrn", "orgMrn", "instanceVersion", "isLoading", "isLoaded", "hasHeader", "showButtons", "onApprove", "onReject", "onCancel", "onSubmit", "onDelete", "onRefresh"], ["supplementForm", ""]], template: function DetailComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵtemplate"](2, DetailComponent_div_2_Template, 4, 1, "div", 2);
         _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementStart"](3, "ngx-editable-form", 3, 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵlistener"]("onApprove", function DetailComponent_Template_ngx_editable_form_onApprove_3_listener() { return ctx.approve(); })("onCancel", function DetailComponent_Template_ngx_editable_form_onCancel_3_listener() { return ctx.cancel(); })("onSubmit", function DetailComponent_Template_ngx_editable_form_onSubmit_3_listener($event) { return ctx.submit($event); })("onDelete", function DetailComponent_Template_ngx_editable_form_onDelete_3_listener() { return ctx.delete(); })("onRefresh", function DetailComponent_Template_ngx_editable_form_onRefresh_3_listener() { return ctx.refreshData(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵlistener"]("onApprove", function DetailComponent_Template_ngx_editable_form_onApprove_3_listener() { return ctx.approve(); })("onReject", function DetailComponent_Template_ngx_editable_form_onReject_3_listener() { return ctx.delete(); })("onCancel", function DetailComponent_Template_ngx_editable_form_onCancel_3_listener() { return ctx.cancel(); })("onSubmit", function DetailComponent_Template_ngx_editable_form_onSubmit_3_listener($event) { return ctx.submit($event); })("onDelete", function DetailComponent_Template_ngx_editable_form_onDelete_3_listener() { return ctx.delete(); })("onRefresh", function DetailComponent_Template_ngx_editable_form_onRefresh_3_listener() { return ctx.refreshData(); });
         _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵtemplate"](5, DetailComponent_ngx_editable_form_5_Template, 2, 14, "ngx-editable-form", 5);
         _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementEnd"]();
@@ -2313,7 +1549,7 @@ class ListComponent {
         this.organizationControllerService = organizationControllerService;
         this.notifierService = notifierService;
         this.authService = authService;
-        this.menuType = _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.MenuType.Device;
+        this.menuType = _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.Device;
         this.title = ' for ';
         this.contextForAttributes = 'list';
         this.orgName = 'MCC';
@@ -2340,28 +1576,28 @@ class ListComponent {
         this.isForServiceForOrg = false;
         this.isAdmin = false;
         this.deleteData = (context, orgMrn, entityMrn, version, numberId) => {
-            if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.MenuType.User) {
+            if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.User) {
                 return this.userControllerService.deleteUser(orgMrn, entityMrn);
             }
-            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.MenuType.Device) {
+            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.Device) {
                 return this.deviceControllerService.deleteDevice(orgMrn, entityMrn);
             }
-            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.MenuType.Vessel) {
+            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.Vessel) {
                 return this.vesselControllerService.deleteVessel(orgMrn, entityMrn);
             }
-            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.MenuType.MMS) {
+            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.MMS) {
                 return this.mmsControllerService.deleteMMS(orgMrn, entityMrn);
             }
-            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.MenuType.Service && version) {
+            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.Service && version) {
                 return this.serviceControllerService.deleteService(orgMrn, entityMrn, version);
             }
-            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.MenuType.Organization || context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.MenuType.OrgCandidate) {
+            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.Organization || context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.OrgCandidate) {
                 return this.organizationControllerService.deleteOrg(entityMrn);
             }
-            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.MenuType.Role && numberId) {
+            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.Role && numberId) {
                 return this.roleControllerService.deleteRole(orgMrn, numberId);
             }
-            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.MenuType.Instance || context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.MenuType.InstanceOfOrg) {
+            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.Instance || context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.InstanceOfOrg) {
                 return this.instanceControllerService.deleteInstance(numberId);
             }
             return new rxjs_Observable__WEBPACK_IMPORTED_MODULE_16__.Observable();
@@ -2375,25 +1611,25 @@ class ListComponent {
                 this.instanceControllerService.getInstances({});
         };
         this.loadDataContent = (context, orgMrn) => {
-            if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.MenuType.User) {
+            if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.User) {
                 return this.userControllerService.getOrganizationUsers(orgMrn);
             }
-            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.MenuType.Device) {
+            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.Device) {
                 return this.deviceControllerService.getOrganizationDevices(orgMrn);
             }
-            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.MenuType.Vessel) {
+            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.Vessel) {
                 return this.vesselControllerService.getOrganizationVessels(orgMrn);
             }
-            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.MenuType.MMS) {
+            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.MMS) {
                 return this.mmsControllerService.getOrganizationMMSes(orgMrn);
             }
-            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.MenuType.Service) {
+            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.Service) {
                 return this.serviceControllerService.getOrganizationServices(orgMrn);
             }
-            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.MenuType.Organization) {
+            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.Organization) {
                 return this.organizationControllerService.getOrganization();
             }
-            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.MenuType.OrgCandidate) {
+            else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.OrgCandidate) {
                 return this.organizationControllerService.getUnapprovedOrganizations();
             }
             return new rxjs_Observable__WEBPACK_IMPORTED_MODULE_16__.Observable();
@@ -2405,14 +1641,14 @@ class ListComponent {
     }
     ngOnInit() {
         const menuTypeString = this.router.url.split('/').pop();
-        if (menuTypeString === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.MenuType.InstanceOfOrg) {
+        if (menuTypeString === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.InstanceOfOrg) {
             this.isForServiceForOrg = true;
-            this.menuType = _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.MenuType.Instance;
+            this.menuType = _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.Instance;
         }
         else {
             this.menuType = menuTypeString.replace('-', '').substr(0, menuTypeString.length - 1);
         }
-        if (Object.values(_shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.MenuType).includes(this.menuType)) {
+        if (Object.values(_shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType).includes(this.menuType)) {
             this.menuTypeName = _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.MenuTypeNames[this.menuType.toString()];
             this.iconName = _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.MenuTypeIconNames[this.menuType.toString()];
             this.orgMrn = this.authService.authState.orgMrn;
@@ -2438,14 +1674,14 @@ class ListComponent {
             // Not-approved organization list
             this.title = `${capitalize(this.menuTypeName)} list`;
             this.isLoading = true;
-            if (Object.values(_shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.MenuType).includes(this.menuType)) {
-                if (this.menuType === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.MenuType.Organization || this.menuType === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.MenuType.OrgCandidate) {
+            if (Object.values(_shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType).includes(this.menuType)) {
+                if (this.menuType === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.Organization || this.menuType === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.OrgCandidate) {
                     this.loadDataContent(this.menuType).subscribe(res => { this.refreshData(this.formatResponse(res.content)); this.isLoading = false; }, error => this.notifierService.notify('error', error.message));
                 }
-                else if (this.menuType === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.MenuType.Role) {
+                else if (this.menuType === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.Role) {
                     this.loadMyOrganization().subscribe(resOrg => this.loadRoles(resOrg.mrn).subscribe(resData => { this.refreshData(resData); this.isLoading = false; }, error => this.notifierService.notify('error', error.message)), error => this.notifierService.notify('error', error.message));
                 }
-                else if (this.menuType === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.MenuType.Instance || this.menuType === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.MenuType.InstanceOfOrg) {
+                else if (this.menuType === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.Instance || this.menuType === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.InstanceOfOrg) {
                     this.loadServiceInstances(this.isForServiceForOrg ? this.orgMrn : undefined).subscribe(resData => { this.refreshData(this.formatResponseForService(resData)); this.isLoading = false; }, error => this.notifierService.notify('error', error.message));
                 }
                 else {
@@ -2497,7 +1733,7 @@ class ListComponent {
         }
     }
     onEdit(event) {
-        const mrn = this.menuType === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.MenuType.Instance ? event.data.id : event.data.mrn;
+        const mrn = this.menuType === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.Instance ? event.data.id : event.data.mrn;
         this.router.navigate([this.router.url,
             mrn ? encodeURIComponent(mrn) : event.data.id], { queryParams: { name: event.data.roleName ? event.data.roleName :
                     event.data.name ? event.data.name :
