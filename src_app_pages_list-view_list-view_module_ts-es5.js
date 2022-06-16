@@ -1795,9 +1795,9 @@
                 _this8.notifierService.notify('success', _this8.menuType + ' has been updated');
 
                 if (_this8.editableForm) {
-                  _this8.editableForm.adjustData(body);
-
                   _this8.editableForm.invertIsEditing();
+
+                  _this8.refreshData();
                 }
 
                 _this8.settle(true);
