@@ -2518,83 +2518,91 @@
       /* harmony import */
 
 
-      var ng2_smart_table__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+      var ng2_smart_table__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
       /*! ng2-smart-table */
       3315);
       /* harmony import */
 
 
-      var _angular_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+      var _angular_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
       /*! @angular/core */
       37716);
       /* harmony import */
 
 
-      var _angular_router__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+      var _angular_router__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
       /*! @angular/router */
       39895);
       /* harmony import */
 
 
-      var _backend_api_service_registry_api_searchController_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
-      /*! ./../../../backend-api/service-registry/api/searchController.service */
-      40488);
+      var _backend_api_secom_api_sECOM_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+      /*! ./../../../backend-api/secom/api/sECOM.service */
+      68808);
       /* harmony import */
 
 
-      var _nebular_theme__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+      var _backend_api_service_registry_api_instanceController_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+      /*! ./../../../backend-api/service-registry/api/instanceController.service */
+      33037);
+      /* harmony import */
+
+
+      var _nebular_theme__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
       /*! @nebular/theme */
       42522);
       /* harmony import */
 
 
-      var _shared_input_geometry_input_geometry_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+      var _shared_input_geometry_input_geometry_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
       /*! ../../../shared/input-geometry/input-geometry.component */
       8818);
       /* harmony import */
 
 
-      var _angular_common__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
+      var _angular_common__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
       /*! @angular/common */
       38583);
 
       var _c0 = ["map"];
 
-      function SrSearchComponent_ng2_smart_table_23_Template(rf, ctx) {
+      function SrSearchComponent_ng2_smart_table_26_Template(rf, ctx) {
         if (rf & 1) {
-          var _r4 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵgetCurrentView"]();
+          var _r5 = _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵgetCurrentView"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](0, "ng2-smart-table", 10);
+          _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](0, "ng2-smart-table", 11);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵlistener"]("userRowSelect", function SrSearchComponent_ng2_smart_table_23_Template_ng2_smart_table_userRowSelect_0_listener($event) {
-            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵrestoreView"](_r4);
+          _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵlistener"]("userRowSelect", function SrSearchComponent_ng2_smart_table_26_Template_ng2_smart_table_userRowSelect_0_listener($event) {
+            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵrestoreView"](_r5);
 
-            var ctx_r3 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵnextContext"]();
+            var ctx_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵnextContext"]();
 
-            return ctx_r3.onEdit($event);
+            return ctx_r4.onEdit($event);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementEnd"]();
         }
 
         if (rf & 2) {
-          var ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵnextContext"]();
+          var ctx_r3 = _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵnextContext"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("settings", ctx_r2.settings)("source", ctx_r2.source)("nbSpinner", ctx_r2.isLoading);
+          _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵproperty"]("settings", ctx_r3.settings)("source", ctx_r3.source)("nbSpinner", ctx_r3.isLoading);
         }
       }
 
       var _SrSearchComponent = /*#__PURE__*/function () {
-        function _SrSearchComponent(router, searchControllerService) {
+        function _SrSearchComponent(router, secomSearchController, instanceControllerService) {
           var _this4 = this;
 
           _classCallCheck(this, _SrSearchComponent);
 
           this.router = router;
-          this.searchControllerService = searchControllerService;
-          this.testOrgMrn = 'urn:mrn:mcp:org:mcc-test:core';
+          this.secomSearchController = secomSearchController;
+          this.instanceControllerService = instanceControllerService;
           this.geometry = undefined;
+          this.searchParams = {};
           this.queryString = '';
+          this.freetext = '';
           this.instances = [];
           this.showTables = true;
           this.contextForAttributes = 'list';
@@ -2607,7 +2615,7 @@
             columns: _shared_models_columnForMenu__WEBPACK_IMPORTED_MODULE_2__.ColumnForMenu[this.menuType],
             hideSubHeader: true
           };
-          this.source = new ng2_smart_table__WEBPACK_IMPORTED_MODULE_6__.LocalDataSource();
+          this.source = new ng2_smart_table__WEBPACK_IMPORTED_MODULE_7__.LocalDataSource();
 
           this.onUpdateGeometry = function (event) {
             if (_this4.instances.length > 0) {
@@ -2618,13 +2626,17 @@
 
             _this4.geometryMap.loadGeometry(_this4.geometry);
 
-            _this4.search(_this4.queryString, (0, _terraformer_wkt__WEBPACK_IMPORTED_MODULE_1__.geojsonToWKT)(event['data']));
+            _this4.search(_this4.searchParams, (0, _terraformer_wkt__WEBPACK_IMPORTED_MODULE_1__.geojsonToWKT)(event['data']), _this4.freetext);
           };
 
-          this.search = function (queryString, wktString) {
+          this.search = function (searchParams, wktString, freetext) {
             _this4.isLoading = true; // send a query with given geometry, converted to WKT
 
-            _this4.searchControllerService.searchInstances(queryString, {}, undefined, wktString).subscribe(function (res) {
+            _this4.secomSearchController.search({
+              query: searchParams,
+              geometry: wktString,
+              freetext: freetext
+            }).subscribe(function (res) {
               var _a;
 
               _this4.instances = res;
@@ -2644,7 +2656,11 @@
           };
 
           this.onSearch = function () {
-            _this4.search(_this4.queryString, _this4.geometry);
+            _this4.search(_this4.searchParams, _this4.geometry, _this4.freetext);
+          };
+
+          this.onFreeTextChanged = function (event) {
+            _this4.freetext = event.target.value;
           };
 
           this.onQueryStringChanged = function (event) {
@@ -2688,6 +2704,9 @@
                 return _defineProperty({}, k, v);
               }))));
               this.settings = Object.assign({}, this.mySettings);
+              this.instanceControllerService.getInstances({}).subscribe(function (instances) {
+                return _this5.allInstances = instances;
+              });
             }
           }
         }, {
@@ -2702,13 +2721,22 @@
         }, {
           key: "onEdit",
           value: function onEdit(event) {
-            var mrn = this.menuType === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.Instance ? event.data.id : event.data.mrn;
-            this.router.navigate(['/pages/sr/instances', mrn ? encodeURIComponent(mrn) : event.data.id], {
-              queryParams: {
-                name: event.data.roleName ? event.data.roleName : event.data.name ? event.data.name : event.data.lastName + ' ' + event.data.firstName,
-                version: event.data.instanceVersion
+            var mrn = event.data.instanceId;
+
+            if (event && event.data && event.data.instanceId) {
+              var instance = this.allInstances.filter(function (i) {
+                return i.instanceId === event.data.instanceId && i.version === event.data.version;
+              });
+
+              if (instance.length) {
+                this.router.navigate(['/pages/sr/instances', instance.pop().id], {
+                  queryParams: {
+                    name: event.data.name,
+                    version: event.data.instanceVersion
+                  }
+                });
               }
-            });
+            }
           }
         }]);
 
@@ -2716,130 +2744,142 @@
       }();
 
       _SrSearchComponent.ɵfac = function SrSearchComponent_Factory(t) {
-        return new (t || _SrSearchComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_7__.Router), _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdirectiveInject"](_backend_api_service_registry_api_searchController_service__WEBPACK_IMPORTED_MODULE_3__.SearchControllerService));
+        return new (t || _SrSearchComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_8__.Router), _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdirectiveInject"](_backend_api_secom_api_sECOM_service__WEBPACK_IMPORTED_MODULE_3__.SECOMService), _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdirectiveInject"](_backend_api_service_registry_api_instanceController_service__WEBPACK_IMPORTED_MODULE_4__.InstanceControllerService));
       };
 
-      _SrSearchComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdefineComponent"]({
+      _SrSearchComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdefineComponent"]({
         type: _SrSearchComponent,
         selectors: [["ngx-sr-search"]],
         viewQuery: function SrSearchComponent_Query(rf, ctx) {
           if (rf & 1) {
-            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵviewQuery"](_c0, 5);
+            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵviewQuery"](_c0, 5);
           }
 
           if (rf & 2) {
             var _t;
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵloadQuery"]()) && (ctx.geometryMap = _t.first);
+            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵloadQuery"]()) && (ctx.geometryMap = _t.first);
           }
         },
-        decls: 24,
+        decls: 27,
         vars: 3,
-        consts: [[1, "container"], [1, "row"], ["href", "https://lucene.apache.org/core/2_9_4/queryparsersyntax.html", "target", "_blank"], ["nbInput", "", "fullWidth", "", "placeholder", "field1:value1 AND/OR field2:value2", "autocorrect", "off", "autocapitalize", "off", "spellcheck", "off", "type", "text", 1, "form-control", "search-location", 3, "change"], ["search", ""], ["fullWidth", "", "status", "primary", "nbButton", "", 3, "click"], ["fullWidth", "", "nbButton", "", 3, "click"], ["isForSearch", "true", 3, "isEditing", "geometry", "onUpdate", "onClear"], ["map", ""], ["nbSpinnerSize", "large", "nbSpinnerStatus", "primary", 3, "settings", "source", "nbSpinner", "userRowSelect", 4, "ngIf"], ["nbSpinnerSize", "large", "nbSpinnerStatus", "primary", 3, "settings", "source", "nbSpinner", "userRowSelect"]],
+        consts: [[1, "container"], [1, "row"], ["href", "https://lucene.apache.org/core/2_9_4/queryparsersyntax.html", "target", "_blank"], ["nbInput", "", "fullWidth", "", "placeholder", "field1:value1 AND/OR field2:value2", "autocorrect", "off", "autocapitalize", "off", "spellcheck", "off", "type", "text", 1, "form-control", "search-location", 3, "change"], ["search", ""], ["nbInput", "", "fullWidth", "", "placeholder", "free text to search", "autocorrect", "off", "autocapitalize", "off", "spellcheck", "off", "type", "text", 1, "form-control", "search-location", 3, "change"], ["fullWidth", "", "status", "primary", "nbButton", "", 3, "click"], ["fullWidth", "", "nbButton", "", 3, "click"], ["isForSearch", "true", 3, "isEditing", "geometry", "onUpdate", "onClear"], ["map", ""], ["nbSpinnerSize", "large", "nbSpinnerStatus", "primary", 3, "settings", "source", "nbSpinner", "userRowSelect", 4, "ngIf"], ["nbSpinnerSize", "large", "nbSpinnerStatus", "primary", 3, "settings", "source", "nbSpinner", "userRowSelect"]],
         template: function SrSearchComponent_Template(rf, ctx) {
           if (rf & 1) {
-            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](0, "nb-card");
+            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](0, "nb-card");
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](1, "nb-card-header");
+            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](1, "nb-card-header");
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](2, "Service search");
+            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵtext"](2, "Service search");
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementEnd"]();
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](3, "nb-card-body");
+            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](3, "nb-card-body");
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](4, "div", 0);
+            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](4, "div", 0);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](5, "div", 1);
+            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](5, "div", 1);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](6, "span");
+            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](6, "span");
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](7, " You can use this facility to search for instances in the Service Registry. Please note that the query format should follow the ");
+            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵtext"](7, " You can use this facility to search for instances in the Service Registry. Please note that the query format should follow the ");
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](8, "a", 2);
+            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](8, "a", 2);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](9, "Lucene query format");
+            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵtext"](9, "Lucene query format");
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementEnd"]();
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](10, ". ");
+            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵtext"](10, ". ");
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementEnd"]();
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementEnd"]();
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](11, "div", 1);
+            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](11, "div", 1);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](12, "input", 3, 4);
+            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](12, "input", 3, 4);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵlistener"]("change", function SrSearchComponent_Template_input_change_12_listener($event) {
+            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵlistener"]("change", function SrSearchComponent_Template_input_change_12_listener($event) {
               return ctx.onQueryStringChanged($event);
             });
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementEnd"]();
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementEnd"]();
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](14, "div", 1);
+            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](14, "div", 1);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](15, "button", 5);
+            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](15, "input", 5, 4);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵlistener"]("click", function SrSearchComponent_Template_button_click_15_listener() {
+            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵlistener"]("change", function SrSearchComponent_Template_input_change_15_listener($event) {
+              return ctx.onFreeTextChanged($event);
+            });
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementEnd"]();
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementEnd"]();
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](17, "div", 1);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](18, "button", 6);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵlistener"]("click", function SrSearchComponent_Template_button_click_18_listener() {
               return ctx.onSearch();
             });
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](16, "Search");
+            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵtext"](19, "Search");
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementEnd"]();
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementEnd"]();
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](17, "div", 1);
+            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](20, "div", 1);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](18, "button", 6);
+            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](21, "button", 7);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵlistener"]("click", function SrSearchComponent_Template_button_click_18_listener() {
+            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵlistener"]("click", function SrSearchComponent_Template_button_click_21_listener() {
               return ctx.onClear();
             });
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](19, "Clear search result");
+            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵtext"](22, "Clear search result");
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementEnd"]();
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementEnd"]();
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementEnd"]();
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](20, "hr");
+            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelement"](23, "hr");
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](21, "ngx-input-geometry", 7, 8);
+            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](24, "ngx-input-geometry", 8, 9);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵlistener"]("onUpdate", function SrSearchComponent_Template_ngx_input_geometry_onUpdate_21_listener($event) {
+            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵlistener"]("onUpdate", function SrSearchComponent_Template_ngx_input_geometry_onUpdate_24_listener($event) {
               return ctx.onUpdateGeometry($event);
-            })("onClear", function SrSearchComponent_Template_ngx_input_geometry_onClear_21_listener() {
+            })("onClear", function SrSearchComponent_Template_ngx_input_geometry_onClear_24_listener() {
               return ctx.onClear();
             });
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementEnd"]();
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtemplate"](23, SrSearchComponent_ng2_smart_table_23_Template, 1, 3, "ng2-smart-table", 9);
+            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵtemplate"](26, SrSearchComponent_ng2_smart_table_26_Template, 1, 3, "ng2-smart-table", 10);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementEnd"]();
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementEnd"]();
           }
 
           if (rf & 2) {
-            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](21);
+            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵadvance"](24);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("isEditing", false)("geometry", ctx.geometry);
+            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵproperty"]("isEditing", false)("geometry", ctx.geometry);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](2);
+            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵadvance"](2);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("ngIf", ctx.showTables);
+            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵproperty"]("ngIf", ctx.showTables);
           }
         },
-        directives: [_nebular_theme__WEBPACK_IMPORTED_MODULE_8__.NbCardComponent, _nebular_theme__WEBPACK_IMPORTED_MODULE_8__.NbCardHeaderComponent, _nebular_theme__WEBPACK_IMPORTED_MODULE_8__.NbCardBodyComponent, _nebular_theme__WEBPACK_IMPORTED_MODULE_8__.NbInputDirective, _nebular_theme__WEBPACK_IMPORTED_MODULE_8__.NbButtonComponent, _shared_input_geometry_input_geometry_component__WEBPACK_IMPORTED_MODULE_4__.InputGeometryComponent, _angular_common__WEBPACK_IMPORTED_MODULE_9__.NgIf, ng2_smart_table__WEBPACK_IMPORTED_MODULE_6__.Ng2SmartTableComponent, _nebular_theme__WEBPACK_IMPORTED_MODULE_8__.NbSpinnerDirective],
+        directives: [_nebular_theme__WEBPACK_IMPORTED_MODULE_9__.NbCardComponent, _nebular_theme__WEBPACK_IMPORTED_MODULE_9__.NbCardHeaderComponent, _nebular_theme__WEBPACK_IMPORTED_MODULE_9__.NbCardBodyComponent, _nebular_theme__WEBPACK_IMPORTED_MODULE_9__.NbInputDirective, _nebular_theme__WEBPACK_IMPORTED_MODULE_9__.NbButtonComponent, _shared_input_geometry_input_geometry_component__WEBPACK_IMPORTED_MODULE_5__.InputGeometryComponent, _angular_common__WEBPACK_IMPORTED_MODULE_10__.NgIf, ng2_smart_table__WEBPACK_IMPORTED_MODULE_7__.Ng2SmartTableComponent, _nebular_theme__WEBPACK_IMPORTED_MODULE_9__.NbSpinnerDirective],
         styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzci1zZWFyY2guY29tcG9uZW50LnNjc3MifQ== */"]
       });
       /***/
