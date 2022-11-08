@@ -1825,7 +1825,7 @@
       /* harmony import */
 
 
-      var _nebular_theme__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
+      var _nebular_theme__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
       /*! @nebular/theme */
       42522);
       /* harmony import */
@@ -1855,7 +1855,7 @@
       /* harmony import */
 
 
-      var ng2_smart_table__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
+      var ng2_smart_table__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
       /*! ng2-smart-table */
       3315);
       /* harmony import */
@@ -1885,25 +1885,19 @@
       /* harmony import */
 
 
-      var _service_registry_sr_search_search_search_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
-      /*! ./service-registry/sr-search/search/search.component */
-      77819);
-      /* harmony import */
-
-
-      var _about_info_info_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
+      var _about_info_info_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
       /*! ./about/info/info.component */
       92867);
       /* harmony import */
 
 
-      var _angular_core__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
+      var _angular_core__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
       /*! @angular/core */
       37716);
       /* harmony import */
 
 
-      var _about_about_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
+      var _about_about_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
       /*! ./about/about.component */
       73794);
       /*
@@ -1931,17 +1925,17 @@
         return new (t || _PagesModule)();
       };
 
-      _PagesModule.ɵmod = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵdefineNgModule"]({
+      _PagesModule.ɵmod = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵdefineNgModule"]({
         type: _PagesModule
       });
-      _PagesModule.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵdefineInjector"]({
-        imports: [[_pages_routing_module__WEBPACK_IMPORTED_MODULE_3__.PagesRoutingModule, _theme_theme_module__WEBPACK_IMPORTED_MODULE_1__.ThemeModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_13__.NbMenuModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_13__.NbCardModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_13__.NbButtonModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_13__.NbSelectModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_13__.NbTabsetModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_13__.NbStepperModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_13__.NbInputModule, _miscellaneous_miscellaneous_module__WEBPACK_IMPORTED_MODULE_4__.MiscellaneousModule, ng2_smart_table__WEBPACK_IMPORTED_MODULE_14__.Ng2SmartTableModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_13__.NbSpinnerModule, _shared_shared_module__WEBPACK_IMPORTED_MODULE_0__.SharedModule]]
+      _PagesModule.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵdefineInjector"]({
+        imports: [[_pages_routing_module__WEBPACK_IMPORTED_MODULE_3__.PagesRoutingModule, _theme_theme_module__WEBPACK_IMPORTED_MODULE_1__.ThemeModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_12__.NbMenuModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_12__.NbCardModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_12__.NbButtonModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_12__.NbSelectModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_12__.NbTabsetModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_12__.NbStepperModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_12__.NbInputModule, _miscellaneous_miscellaneous_module__WEBPACK_IMPORTED_MODULE_4__.MiscellaneousModule, ng2_smart_table__WEBPACK_IMPORTED_MODULE_13__.Ng2SmartTableModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_12__.NbSpinnerModule, _shared_shared_module__WEBPACK_IMPORTED_MODULE_0__.SharedModule]]
       });
 
       (function () {
-        (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵsetNgModuleScope"](_PagesModule, {
-          declarations: [_pages_component__WEBPACK_IMPORTED_MODULE_2__.PagesComponent, _about_about_component__WEBPACK_IMPORTED_MODULE_11__.AboutComponent, _list_view_list_view_component__WEBPACK_IMPORTED_MODULE_5__.ListViewComponent, _service_registry_sr_search_search_search_component__WEBPACK_IMPORTED_MODULE_9__.SearchComponent, _identity_registry_ir_guide_ir_guide_component__WEBPACK_IMPORTED_MODULE_6__.IrGuideComponent, _service_registry_sr_guide_sr_guide_component__WEBPACK_IMPORTED_MODULE_7__.SrGuideComponent, _service_registry_sr_search_sr_search_component__WEBPACK_IMPORTED_MODULE_8__.SrSearchComponent, _about_info_info_component__WEBPACK_IMPORTED_MODULE_10__.InfoComponent],
-          imports: [_pages_routing_module__WEBPACK_IMPORTED_MODULE_3__.PagesRoutingModule, _theme_theme_module__WEBPACK_IMPORTED_MODULE_1__.ThemeModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_13__.NbMenuModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_13__.NbCardModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_13__.NbButtonModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_13__.NbSelectModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_13__.NbTabsetModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_13__.NbStepperModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_13__.NbInputModule, _miscellaneous_miscellaneous_module__WEBPACK_IMPORTED_MODULE_4__.MiscellaneousModule, ng2_smart_table__WEBPACK_IMPORTED_MODULE_14__.Ng2SmartTableModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_13__.NbSpinnerModule, _shared_shared_module__WEBPACK_IMPORTED_MODULE_0__.SharedModule]
+        (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵsetNgModuleScope"](_PagesModule, {
+          declarations: [_pages_component__WEBPACK_IMPORTED_MODULE_2__.PagesComponent, _about_about_component__WEBPACK_IMPORTED_MODULE_10__.AboutComponent, _list_view_list_view_component__WEBPACK_IMPORTED_MODULE_5__.ListViewComponent, _identity_registry_ir_guide_ir_guide_component__WEBPACK_IMPORTED_MODULE_6__.IrGuideComponent, _service_registry_sr_guide_sr_guide_component__WEBPACK_IMPORTED_MODULE_7__.SrGuideComponent, _service_registry_sr_search_sr_search_component__WEBPACK_IMPORTED_MODULE_8__.SrSearchComponent, _about_info_info_component__WEBPACK_IMPORTED_MODULE_9__.InfoComponent],
+          imports: [_pages_routing_module__WEBPACK_IMPORTED_MODULE_3__.PagesRoutingModule, _theme_theme_module__WEBPACK_IMPORTED_MODULE_1__.ThemeModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_12__.NbMenuModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_12__.NbCardModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_12__.NbButtonModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_12__.NbSelectModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_12__.NbTabsetModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_12__.NbStepperModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_12__.NbInputModule, _miscellaneous_miscellaneous_module__WEBPACK_IMPORTED_MODULE_4__.MiscellaneousModule, ng2_smart_table__WEBPACK_IMPORTED_MODULE_13__.Ng2SmartTableModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_12__.NbSpinnerModule, _shared_shared_module__WEBPACK_IMPORTED_MODULE_0__.SharedModule]
         });
       })();
       /***/
@@ -2393,86 +2387,6 @@
     },
 
     /***/
-    77819:
-    /*!*****************************************************************************!*\
-      !*** ./src/app/pages/service-registry/sr-search/search/search.component.ts ***!
-      \*****************************************************************************/
-
-    /***/
-    function _(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-      "use strict";
-
-      __webpack_require__.r(__webpack_exports__);
-      /* harmony export */
-
-
-      __webpack_require__.d(__webpack_exports__, {
-        /* harmony export */
-        "SearchComponent": function SearchComponent() {
-          return (
-            /* binding */
-            _SearchComponent
-          );
-        }
-        /* harmony export */
-
-      });
-      /* harmony import */
-
-
-      var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
-      /*! @angular/core */
-      37716);
-
-      var _c0 = ["search"];
-
-      var _SearchComponent = /*#__PURE__*/function () {
-        function _SearchComponent(ngZone) {
-          _classCallCheck(this, _SearchComponent);
-
-          this.ngZone = ngZone;
-        }
-
-        _createClass(_SearchComponent, [{
-          key: "ngOnInit",
-          value: function ngOnInit() {}
-        }]);
-
-        return _SearchComponent;
-      }();
-
-      _SearchComponent.ɵfac = function SearchComponent_Factory(t) {
-        return new (t || _SearchComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.NgZone));
-      };
-
-      _SearchComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
-        type: _SearchComponent,
-        selectors: [["ngx-search"]],
-        viewQuery: function SearchComponent_Query(rf, ctx) {
-          if (rf & 1) {
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_c0, 7);
-          }
-
-          if (rf & 2) {
-            var _t;
-
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.searchElementRef = _t.first);
-          }
-        },
-        decls: 2,
-        vars: 0,
-        consts: [["placeholder", "field1:value1 AND/OR field2:value2", "autocorrect", "off", "autocapitalize", "off", "spellcheck", "off", "type", "text", 1, "form-control", "search-location"], ["search", ""]],
-        template: function SearchComponent_Template(rf, ctx) {
-          if (rf & 1) {
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "input", 0, 1);
-          }
-        },
-        encapsulation: 2
-      });
-      /***/
-    },
-
-    /***/
     13875:
     /*!*************************************************************************!*\
       !*** ./src/app/pages/service-registry/sr-search/sr-search.component.ts ***!
@@ -2518,19 +2432,19 @@
       /* harmony import */
 
 
-      var ng2_smart_table__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+      var ng2_smart_table__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
       /*! ng2-smart-table */
       3315);
       /* harmony import */
 
 
-      var _angular_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+      var _angular_core__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
       /*! @angular/core */
       37716);
       /* harmony import */
 
 
-      var _angular_router__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+      var _angular_router__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
       /*! @angular/router */
       39895);
       /* harmony import */
@@ -2548,45 +2462,53 @@
       /* harmony import */
 
 
-      var _nebular_theme__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
+      var _nebular_theme__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
       /*! @nebular/theme */
       42522);
       /* harmony import */
 
 
-      var _shared_input_geometry_input_geometry_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+      var _shared_lucene_query_input_lucene_query_input_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+      /*! ../../../shared/lucene-query-input/lucene-query-input.component */
+      83004);
+      /* harmony import */
+
+
+      var _shared_input_geometry_input_geometry_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
       /*! ../../../shared/input-geometry/input-geometry.component */
       8818);
       /* harmony import */
 
 
-      var _angular_common__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
+      var _angular_common__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
       /*! @angular/common */
       38583);
 
       var _c0 = ["map"];
+      var _c1 = ["luceneQueryStringInput"];
+      var _c2 = ["luceneQueryInputComponent"];
 
-      function SrSearchComponent_ng2_smart_table_26_Template(rf, ctx) {
+      function SrSearchComponent_ng2_smart_table_29_Template(rf, ctx) {
         if (rf & 1) {
-          var _r5 = _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵgetCurrentView"]();
+          var _r6 = _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵgetCurrentView"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](0, "ng2-smart-table", 11);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](0, "ng2-smart-table", 14);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵlistener"]("userRowSelect", function SrSearchComponent_ng2_smart_table_26_Template_ng2_smart_table_userRowSelect_0_listener($event) {
-            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵrestoreView"](_r5);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵlistener"]("userRowSelect", function SrSearchComponent_ng2_smart_table_29_Template_ng2_smart_table_userRowSelect_0_listener($event) {
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵrestoreView"](_r6);
 
-            var ctx_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵnextContext"]();
+            var ctx_r5 = _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵnextContext"]();
 
-            return ctx_r4.onEdit($event);
+            return ctx_r5.onEdit($event);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
         }
 
         if (rf & 2) {
-          var ctx_r3 = _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵnextContext"]();
+          var ctx_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵnextContext"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵproperty"]("settings", ctx_r3.settings)("source", ctx_r3.source)("nbSpinner", ctx_r3.isLoading);
+          _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵproperty"]("settings", ctx_r4.settings)("source", ctx_r4.source)("nbSpinner", ctx_r4.isLoading);
         }
       }
 
@@ -2615,7 +2537,17 @@
             columns: _shared_models_columnForMenu__WEBPACK_IMPORTED_MODULE_2__.ColumnForMenu[this.menuType],
             hideSubHeader: true
           };
-          this.source = new ng2_smart_table__WEBPACK_IMPORTED_MODULE_7__.LocalDataSource();
+          this.source = new ng2_smart_table__WEBPACK_IMPORTED_MODULE_8__.LocalDataSource();
+
+          this.onUpdateLuceneQuery = function (query) {
+            _this4.queryString = query.queryString ? query.queryString : '';
+            _this4.luceneQueryStringInput.nativeElement.value = _this4.queryString;
+            _this4.searchParams = query.data;
+
+            if (!query.queryString || query.queryString.length === 0) {
+              _this4.clearMap();
+            }
+          };
 
           this.onUpdateGeometry = function (event) {
             if (_this4.instances.length > 0) {
@@ -2665,6 +2597,10 @@
 
           this.onQueryStringChanged = function (event) {
             _this4.queryString = event.target.value;
+
+            if (_this4.queryString.length === 0) {
+              _this4.clearMap();
+            }
           };
 
           this.onClear = function () {
@@ -2672,9 +2608,10 @@
           };
 
           this.clearMap = function () {
-            var _a;
+            var _a, _b;
 
             (_a = _this4.geometryMap) === null || _a === void 0 ? void 0 : _a.clearMap();
+            (_b = _this4.luceneQueryInputComponent) === null || _b === void 0 ? void 0 : _b.clearInput();
 
             _this4.source.reset();
 
@@ -2744,142 +2681,160 @@
       }();
 
       _SrSearchComponent.ɵfac = function SrSearchComponent_Factory(t) {
-        return new (t || _SrSearchComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_8__.Router), _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdirectiveInject"](_backend_api_secom_api_sECOM_service__WEBPACK_IMPORTED_MODULE_3__.SECOMService), _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdirectiveInject"](_backend_api_service_registry_api_instanceController_service__WEBPACK_IMPORTED_MODULE_4__.InstanceControllerService));
+        return new (t || _SrSearchComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_9__.Router), _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdirectiveInject"](_backend_api_secom_api_sECOM_service__WEBPACK_IMPORTED_MODULE_3__.SECOMService), _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdirectiveInject"](_backend_api_service_registry_api_instanceController_service__WEBPACK_IMPORTED_MODULE_4__.InstanceControllerService));
       };
 
-      _SrSearchComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdefineComponent"]({
+      _SrSearchComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdefineComponent"]({
         type: _SrSearchComponent,
         selectors: [["ngx-sr-search"]],
         viewQuery: function SrSearchComponent_Query(rf, ctx) {
           if (rf & 1) {
-            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵviewQuery"](_c0, 5);
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵviewQuery"](_c0, 5);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵviewQuery"](_c1, 5);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵviewQuery"](_c2, 5);
           }
 
           if (rf & 2) {
             var _t;
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵloadQuery"]()) && (ctx.geometryMap = _t.first);
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵloadQuery"]()) && (ctx.geometryMap = _t.first);
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵloadQuery"]()) && (ctx.luceneQueryStringInput = _t.first);
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵloadQuery"]()) && (ctx.luceneQueryInputComponent = _t.first);
           }
         },
-        decls: 27,
+        decls: 30,
         vars: 3,
-        consts: [[1, "container"], [1, "row"], ["href", "https://lucene.apache.org/core/2_9_4/queryparsersyntax.html", "target", "_blank"], ["nbInput", "", "fullWidth", "", "placeholder", "field1:value1 AND/OR field2:value2", "autocorrect", "off", "autocapitalize", "off", "spellcheck", "off", "type", "text", 1, "form-control", "search-location", 3, "change"], ["search", ""], ["nbInput", "", "fullWidth", "", "placeholder", "free text to search", "autocorrect", "off", "autocapitalize", "off", "spellcheck", "off", "type", "text", 1, "form-control", "search-location", 3, "change"], ["fullWidth", "", "status", "primary", "nbButton", "", 3, "click"], ["fullWidth", "", "nbButton", "", 3, "click"], ["isForSearch", "true", 3, "isEditing", "geometry", "onUpdate", "onClear"], ["map", ""], ["nbSpinnerSize", "large", "nbSpinnerStatus", "primary", 3, "settings", "source", "nbSpinner", "userRowSelect", 4, "ngIf"], ["nbSpinnerSize", "large", "nbSpinnerStatus", "primary", 3, "settings", "source", "nbSpinner", "userRowSelect"]],
+        consts: [[1, "container"], [1, "row"], ["href", "https://lucene.apache.org/core/2_9_4/queryparsersyntax.html", "target", "_blank"], [1, "w-100", 3, "onUpdateQuery"], ["luceneQueryInputComponent", ""], ["nbInput", "", "hidden", "", "fullWidth", "", "placeholder", "field1:value1 AND/OR field2:value2", "autocorrect", "off", "autocapitalize", "off", "spellcheck", "off", "type", "text", 1, "form-control", "search-location", 3, "change"], ["luceneQueryStringInput", ""], ["nbInput", "", "fullWidth", "", "placeholder", "free text to search", "autocorrect", "off", "autocapitalize", "off", "spellcheck", "off", "type", "text", 1, "form-control", "search-location", 3, "change"], ["freetextInput", ""], ["fullWidth", "", "status", "primary", "nbButton", "", 3, "click"], ["fullWidth", "", "nbButton", "", 3, "click"], ["isForSearch", "true", 3, "isEditing", "geometry", "onUpdate", "onClear"], ["map", ""], ["nbSpinnerSize", "large", "nbSpinnerStatus", "primary", 3, "settings", "source", "nbSpinner", "userRowSelect", 4, "ngIf"], ["nbSpinnerSize", "large", "nbSpinnerStatus", "primary", 3, "settings", "source", "nbSpinner", "userRowSelect"]],
         template: function SrSearchComponent_Template(rf, ctx) {
           if (rf & 1) {
-            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](0, "nb-card");
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](0, "nb-card");
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](1, "nb-card-header");
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](1, "nb-card-header");
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵtext"](2, "Service search");
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](2, "Service search");
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](3, "nb-card-body");
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](3, "nb-card-body");
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](4, "div", 0);
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](4, "div", 0);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](5, "div", 1);
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](5, "div", 1);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](6, "span");
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](6, "span");
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵtext"](7, " You can use this facility to search for instances in the Service Registry. Please note that the query format should follow the ");
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](7, " You can use this facility to search for instances in the Service Registry. Please note that the query format should follow the ");
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](8, "a", 2);
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](8, "a", 2);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵtext"](9, "Lucene query format");
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](9, "Lucene query format");
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵtext"](10, ". ");
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](10, ". ");
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](11, "div", 1);
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](11, "div", 1);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](12, "input", 3, 4);
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](12, "ngx-lucene-query-input", 3, 4);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵlistener"]("change", function SrSearchComponent_Template_input_change_12_listener($event) {
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵlistener"]("onUpdateQuery", function SrSearchComponent_Template_ngx_lucene_query_input_onUpdateQuery_12_listener($event) {
+              return ctx.onUpdateLuceneQuery($event);
+            });
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](14, "div", 1);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](15, "input", 5, 6);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵlistener"]("change", function SrSearchComponent_Template_input_change_15_listener($event) {
               return ctx.onQueryStringChanged($event);
             });
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](14, "div", 1);
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](17, "div", 1);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](15, "input", 5, 4);
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](18, "input", 7, 8);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵlistener"]("change", function SrSearchComponent_Template_input_change_15_listener($event) {
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵlistener"]("change", function SrSearchComponent_Template_input_change_18_listener($event) {
               return ctx.onFreeTextChanged($event);
             });
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](17, "div", 1);
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](20, "div", 1);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](18, "button", 6);
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](21, "button", 9);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵlistener"]("click", function SrSearchComponent_Template_button_click_18_listener() {
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵlistener"]("click", function SrSearchComponent_Template_button_click_21_listener() {
               return ctx.onSearch();
             });
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵtext"](19, "Search");
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](22, "Search");
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](20, "div", 1);
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](23, "div", 1);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](21, "button", 7);
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](24, "button", 10);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵlistener"]("click", function SrSearchComponent_Template_button_click_21_listener() {
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵlistener"]("click", function SrSearchComponent_Template_button_click_24_listener() {
               return ctx.onClear();
             });
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵtext"](22, "Clear search result");
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](25, "Clear search result");
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelement"](23, "hr");
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelement"](26, "hr");
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](24, "ngx-input-geometry", 8, 9);
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](27, "ngx-input-geometry", 11, 12);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵlistener"]("onUpdate", function SrSearchComponent_Template_ngx_input_geometry_onUpdate_24_listener($event) {
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵlistener"]("onUpdate", function SrSearchComponent_Template_ngx_input_geometry_onUpdate_27_listener($event) {
               return ctx.onUpdateGeometry($event);
-            })("onClear", function SrSearchComponent_Template_ngx_input_geometry_onClear_24_listener() {
+            })("onClear", function SrSearchComponent_Template_ngx_input_geometry_onClear_27_listener() {
               return ctx.onClear();
             });
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵtemplate"](26, SrSearchComponent_ng2_smart_table_26_Template, 1, 3, "ng2-smart-table", 10);
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtemplate"](29, SrSearchComponent_ng2_smart_table_29_Template, 1, 3, "ng2-smart-table", 13);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
           }
 
           if (rf & 2) {
-            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵadvance"](24);
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵadvance"](27);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵproperty"]("isEditing", false)("geometry", ctx.geometry);
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵproperty"]("isEditing", false)("geometry", ctx.geometry);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵadvance"](2);
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵadvance"](2);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵproperty"]("ngIf", ctx.showTables);
+            _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵproperty"]("ngIf", ctx.showTables);
           }
         },
-        directives: [_nebular_theme__WEBPACK_IMPORTED_MODULE_9__.NbCardComponent, _nebular_theme__WEBPACK_IMPORTED_MODULE_9__.NbCardHeaderComponent, _nebular_theme__WEBPACK_IMPORTED_MODULE_9__.NbCardBodyComponent, _nebular_theme__WEBPACK_IMPORTED_MODULE_9__.NbInputDirective, _nebular_theme__WEBPACK_IMPORTED_MODULE_9__.NbButtonComponent, _shared_input_geometry_input_geometry_component__WEBPACK_IMPORTED_MODULE_5__.InputGeometryComponent, _angular_common__WEBPACK_IMPORTED_MODULE_10__.NgIf, ng2_smart_table__WEBPACK_IMPORTED_MODULE_7__.Ng2SmartTableComponent, _nebular_theme__WEBPACK_IMPORTED_MODULE_9__.NbSpinnerDirective],
+        directives: [_nebular_theme__WEBPACK_IMPORTED_MODULE_10__.NbCardComponent, _nebular_theme__WEBPACK_IMPORTED_MODULE_10__.NbCardHeaderComponent, _nebular_theme__WEBPACK_IMPORTED_MODULE_10__.NbCardBodyComponent, _shared_lucene_query_input_lucene_query_input_component__WEBPACK_IMPORTED_MODULE_5__.LuceneQueryInputComponent, _nebular_theme__WEBPACK_IMPORTED_MODULE_10__.NbInputDirective, _nebular_theme__WEBPACK_IMPORTED_MODULE_10__.NbButtonComponent, _shared_input_geometry_input_geometry_component__WEBPACK_IMPORTED_MODULE_6__.InputGeometryComponent, _angular_common__WEBPACK_IMPORTED_MODULE_11__.NgIf, ng2_smart_table__WEBPACK_IMPORTED_MODULE_8__.Ng2SmartTableComponent, _nebular_theme__WEBPACK_IMPORTED_MODULE_10__.NbSpinnerDirective],
         styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzci1zZWFyY2guY29tcG9uZW50LnNjc3MifQ== */"]
       });
       /***/
