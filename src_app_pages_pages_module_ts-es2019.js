@@ -562,6 +562,10 @@ const MENU_ITEMS = [
                 link: '/pages/sr/search',
             },
             {
+                title: 'MSR Ledger Search',
+                link: '/pages/sr/ledger',
+            },
+            {
                 title: 'User Guide',
                 link: '/pages/sr/guide',
             },
@@ -907,19 +911,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "PagesModule": function() { return /* binding */ PagesModule; }
 /* harmony export */ });
 /* harmony import */ var _shared_shared_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../shared/shared.module */ 44466);
-/* harmony import */ var _nebular_theme__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @nebular/theme */ 42522);
+/* harmony import */ var _nebular_theme__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @nebular/theme */ 42522);
 /* harmony import */ var _theme_theme_module__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../@theme/theme.module */ 19466);
 /* harmony import */ var _pages_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pages.component */ 37664);
 /* harmony import */ var _pages_routing_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pages-routing.module */ 39730);
 /* harmony import */ var _miscellaneous_miscellaneous_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./miscellaneous/miscellaneous.module */ 13452);
-/* harmony import */ var ng2_smart_table__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ng2-smart-table */ 3315);
+/* harmony import */ var ng2_smart_table__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ng2-smart-table */ 3315);
 /* harmony import */ var _list_view_list_view_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./list-view/list-view.component */ 61694);
 /* harmony import */ var _identity_registry_ir_guide_ir_guide_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./identity-registry/ir-guide/ir-guide.component */ 27273);
 /* harmony import */ var _service_registry_sr_guide_sr_guide_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./service-registry/sr-guide/sr-guide.component */ 35558);
 /* harmony import */ var _service_registry_sr_search_sr_search_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./service-registry/sr-search/sr-search.component */ 13875);
 /* harmony import */ var _about_info_info_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./about/info/info.component */ 92867);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/core */ 37716);
-/* harmony import */ var _about_about_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./about/about.component */ 73794);
+/* harmony import */ var _service_registry_sr_ledger_search_sr_ledger_search_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./service-registry/sr-ledger-search/sr-ledger-search.component */ 29347);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/core */ 37716);
+/* harmony import */ var _about_about_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./about/about.component */ 73794);
 /*
  * Copyright (c) 2022 Maritime Connectivity Platform Consortium
  *
@@ -949,41 +954,43 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 class PagesModule {
 }
 PagesModule.ɵfac = function PagesModule_Factory(t) { return new (t || PagesModule)(); };
-PagesModule.ɵmod = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵdefineNgModule"]({ type: PagesModule });
-PagesModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵdefineInjector"]({ imports: [[
+PagesModule.ɵmod = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵdefineNgModule"]({ type: PagesModule });
+PagesModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵdefineInjector"]({ imports: [[
             _pages_routing_module__WEBPACK_IMPORTED_MODULE_3__.PagesRoutingModule,
             _theme_theme_module__WEBPACK_IMPORTED_MODULE_1__.ThemeModule,
-            _nebular_theme__WEBPACK_IMPORTED_MODULE_12__.NbMenuModule,
-            _nebular_theme__WEBPACK_IMPORTED_MODULE_12__.NbCardModule,
-            _nebular_theme__WEBPACK_IMPORTED_MODULE_12__.NbButtonModule,
-            _nebular_theme__WEBPACK_IMPORTED_MODULE_12__.NbSelectModule,
-            _nebular_theme__WEBPACK_IMPORTED_MODULE_12__.NbTabsetModule,
-            _nebular_theme__WEBPACK_IMPORTED_MODULE_12__.NbStepperModule,
-            _nebular_theme__WEBPACK_IMPORTED_MODULE_12__.NbInputModule,
+            _nebular_theme__WEBPACK_IMPORTED_MODULE_13__.NbMenuModule,
+            _nebular_theme__WEBPACK_IMPORTED_MODULE_13__.NbCardModule,
+            _nebular_theme__WEBPACK_IMPORTED_MODULE_13__.NbButtonModule,
+            _nebular_theme__WEBPACK_IMPORTED_MODULE_13__.NbSelectModule,
+            _nebular_theme__WEBPACK_IMPORTED_MODULE_13__.NbTabsetModule,
+            _nebular_theme__WEBPACK_IMPORTED_MODULE_13__.NbStepperModule,
+            _nebular_theme__WEBPACK_IMPORTED_MODULE_13__.NbInputModule,
             _miscellaneous_miscellaneous_module__WEBPACK_IMPORTED_MODULE_4__.MiscellaneousModule,
-            ng2_smart_table__WEBPACK_IMPORTED_MODULE_13__.Ng2SmartTableModule,
-            _nebular_theme__WEBPACK_IMPORTED_MODULE_12__.NbSpinnerModule,
+            ng2_smart_table__WEBPACK_IMPORTED_MODULE_14__.Ng2SmartTableModule,
+            _nebular_theme__WEBPACK_IMPORTED_MODULE_13__.NbSpinnerModule,
             _shared_shared_module__WEBPACK_IMPORTED_MODULE_0__.SharedModule,
         ]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵsetNgModuleScope"](PagesModule, { declarations: [_pages_component__WEBPACK_IMPORTED_MODULE_2__.PagesComponent, _about_about_component__WEBPACK_IMPORTED_MODULE_10__.AboutComponent, _list_view_list_view_component__WEBPACK_IMPORTED_MODULE_5__.ListViewComponent,
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵsetNgModuleScope"](PagesModule, { declarations: [_pages_component__WEBPACK_IMPORTED_MODULE_2__.PagesComponent, _about_about_component__WEBPACK_IMPORTED_MODULE_11__.AboutComponent, _list_view_list_view_component__WEBPACK_IMPORTED_MODULE_5__.ListViewComponent,
         _identity_registry_ir_guide_ir_guide_component__WEBPACK_IMPORTED_MODULE_6__.IrGuideComponent,
         _service_registry_sr_guide_sr_guide_component__WEBPACK_IMPORTED_MODULE_7__.SrGuideComponent,
         _service_registry_sr_search_sr_search_component__WEBPACK_IMPORTED_MODULE_8__.SrSearchComponent,
-        _about_info_info_component__WEBPACK_IMPORTED_MODULE_9__.InfoComponent], imports: [_pages_routing_module__WEBPACK_IMPORTED_MODULE_3__.PagesRoutingModule,
+        _about_info_info_component__WEBPACK_IMPORTED_MODULE_9__.InfoComponent,
+        _service_registry_sr_ledger_search_sr_ledger_search_component__WEBPACK_IMPORTED_MODULE_10__.SrLedgerSearchComponent], imports: [_pages_routing_module__WEBPACK_IMPORTED_MODULE_3__.PagesRoutingModule,
         _theme_theme_module__WEBPACK_IMPORTED_MODULE_1__.ThemeModule,
-        _nebular_theme__WEBPACK_IMPORTED_MODULE_12__.NbMenuModule,
-        _nebular_theme__WEBPACK_IMPORTED_MODULE_12__.NbCardModule,
-        _nebular_theme__WEBPACK_IMPORTED_MODULE_12__.NbButtonModule,
-        _nebular_theme__WEBPACK_IMPORTED_MODULE_12__.NbSelectModule,
-        _nebular_theme__WEBPACK_IMPORTED_MODULE_12__.NbTabsetModule,
-        _nebular_theme__WEBPACK_IMPORTED_MODULE_12__.NbStepperModule,
-        _nebular_theme__WEBPACK_IMPORTED_MODULE_12__.NbInputModule,
+        _nebular_theme__WEBPACK_IMPORTED_MODULE_13__.NbMenuModule,
+        _nebular_theme__WEBPACK_IMPORTED_MODULE_13__.NbCardModule,
+        _nebular_theme__WEBPACK_IMPORTED_MODULE_13__.NbButtonModule,
+        _nebular_theme__WEBPACK_IMPORTED_MODULE_13__.NbSelectModule,
+        _nebular_theme__WEBPACK_IMPORTED_MODULE_13__.NbTabsetModule,
+        _nebular_theme__WEBPACK_IMPORTED_MODULE_13__.NbStepperModule,
+        _nebular_theme__WEBPACK_IMPORTED_MODULE_13__.NbInputModule,
         _miscellaneous_miscellaneous_module__WEBPACK_IMPORTED_MODULE_4__.MiscellaneousModule,
-        ng2_smart_table__WEBPACK_IMPORTED_MODULE_13__.Ng2SmartTableModule,
-        _nebular_theme__WEBPACK_IMPORTED_MODULE_12__.NbSpinnerModule,
+        ng2_smart_table__WEBPACK_IMPORTED_MODULE_14__.Ng2SmartTableModule,
+        _nebular_theme__WEBPACK_IMPORTED_MODULE_13__.NbSpinnerModule,
         _shared_shared_module__WEBPACK_IMPORTED_MODULE_0__.SharedModule] }); })();
 
 
@@ -1199,6 +1206,34 @@ SrGuideComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0_
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } }, directives: [_nebular_theme__WEBPACK_IMPORTED_MODULE_1__.NbCardComponent, _nebular_theme__WEBPACK_IMPORTED_MODULE_1__.NbCardHeaderComponent, _nebular_theme__WEBPACK_IMPORTED_MODULE_1__.NbCardBodyComponent, _nebular_theme__WEBPACK_IMPORTED_MODULE_1__.NbTabsetComponent, _nebular_theme__WEBPACK_IMPORTED_MODULE_1__.NbTabComponent, _nebular_theme__WEBPACK_IMPORTED_MODULE_1__.NbStepperComponent, _nebular_theme__WEBPACK_IMPORTED_MODULE_1__.NbStepComponent, _nebular_theme__WEBPACK_IMPORTED_MODULE_1__.NbButtonComponent, _nebular_theme__WEBPACK_IMPORTED_MODULE_1__.NbStepperNextDirective, _nebular_theme__WEBPACK_IMPORTED_MODULE_1__.NbStepperPreviousDirective], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzci1ndWlkZS5jb21wb25lbnQuc2NzcyJ9 */"] });
+
+
+/***/ }),
+
+/***/ 29347:
+/*!***************************************************************************************!*\
+  !*** ./src/app/pages/service-registry/sr-ledger-search/sr-ledger-search.component.ts ***!
+  \***************************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "SrLedgerSearchComponent": function() { return /* binding */ SrLedgerSearchComponent; }
+/* harmony export */ });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 37716);
+
+class SrLedgerSearchComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+}
+SrLedgerSearchComponent.ɵfac = function SrLedgerSearchComponent_Factory(t) { return new (t || SrLedgerSearchComponent)(); };
+SrLedgerSearchComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: SrLedgerSearchComponent, selectors: [["ngx-sr-ledger-search"]], decls: 2, vars: 0, template: function SrLedgerSearchComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "sr-ledger-search works!");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } }, styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzci1sZWRnZXItc2VhcmNoLmNvbXBvbmVudC5zY3NzIn0= */"] });
 
 
 /***/ }),
