@@ -1210,6 +1210,148 @@
     },
 
     /***/
+    42606:
+    /*!*************************************************************************!*\
+      !*** ./src/app/shared/list-view/detail-modal/detail-modal.component.ts ***!
+      \*************************************************************************/
+
+    /***/
+    function _(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+      "use strict";
+
+      __webpack_require__.r(__webpack_exports__);
+      /* harmony export */
+
+
+      __webpack_require__.d(__webpack_exports__, {
+        /* harmony export */
+        "DetailModalComponent": function DetailModalComponent() {
+          return (
+            /* binding */
+            _DetailModalComponent
+          );
+        }
+        /* harmony export */
+
+      });
+      /* harmony import */
+
+
+      var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+      /*! @angular/core */
+      37716);
+      /* harmony import */
+
+
+      var _nebular_theme__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+      /*! @nebular/theme */
+      42522);
+      /* harmony import */
+
+
+      var _backend_api_service_registry_api_instanceController_service__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+      /*! ./../../../backend-api/service-registry/api/instanceController.service */
+      33037);
+
+      var _DetailModalComponent = /*#__PURE__*/function () {
+        function _DetailModalComponent(ref, instanceControllerService) {
+          _classCallCheck(this, _DetailModalComponent);
+
+          this.ref = ref;
+          this.instanceControllerService = instanceControllerService;
+          this.entityMrn = '';
+          this.orgMrn = '';
+          this.title = '';
+          this.iconName = '';
+          this.menyType = '';
+          this.numberId = '';
+          this.isLoading = false;
+        }
+
+        _createClass(_DetailModalComponent, [{
+          key: "ngOnInit",
+          value: function ngOnInit() {
+            this.instanceControllerService.getInstanceByMRNAndVersion(this.instanceMrn, this.instanceVersion, this.msrUrl).subscribe(function (res) {
+              console.log(res);
+            });
+          }
+        }, {
+          key: "dismiss",
+          value: function dismiss() {
+            this.ref.close();
+          }
+        }]);
+
+        return _DetailModalComponent;
+      }();
+
+      _DetailModalComponent.ɵfac = function DetailModalComponent_Factory(t) {
+        return new (t || _DetailModalComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_nebular_theme__WEBPACK_IMPORTED_MODULE_2__.NbDialogRef), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_backend_api_service_registry_api_instanceController_service__WEBPACK_IMPORTED_MODULE_0__.InstanceControllerService));
+      };
+
+      _DetailModalComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({
+        type: _DetailModalComponent,
+        selectors: [["ngx-detail-modal"]],
+        inputs: {
+          instanceName: "instanceName",
+          instanceMrn: "instanceMrn",
+          instanceVersion: "instanceVersion",
+          msrUrl: "msrUrl",
+          msrName: "msrName"
+        },
+        decls: 8,
+        vars: 2,
+        consts: [[1, "modal-window"], ["nbSpinnerSize", "large", "nbSpinnerStatus", "primary", 3, "nbSpinner"], [1, "buttons-row"], ["type", "button", "nbButton", "", "status", "danger", 3, "click"]],
+        template: function DetailModalComponent_Template(rf, ctx) {
+          if (rf & 1) {
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "nb-card", 0);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "nb-card-header");
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](2);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](3, "nb-card-body", 1);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](4, "nb-card-footer");
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](5, "div", 2);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](6, "button", 3);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function DetailModalComponent_Template_button_click_6_listener() {
+              return ctx.dismiss();
+            });
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](7, "Close");
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+          }
+
+          if (rf & 2) {
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"](" ", ctx.instanceName, " ");
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("nbSpinner", ctx.isLoading);
+          }
+        },
+        directives: [_nebular_theme__WEBPACK_IMPORTED_MODULE_2__.NbCardComponent, _nebular_theme__WEBPACK_IMPORTED_MODULE_2__.NbCardHeaderComponent, _nebular_theme__WEBPACK_IMPORTED_MODULE_2__.NbCardBodyComponent, _nebular_theme__WEBPACK_IMPORTED_MODULE_2__.NbSpinnerDirective, _nebular_theme__WEBPACK_IMPORTED_MODULE_2__.NbCardFooterComponent, _nebular_theme__WEBPACK_IMPORTED_MODULE_2__.NbButtonComponent],
+        styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJkZXRhaWwtbW9kYWwuY29tcG9uZW50LnNjc3MifQ== */"]
+      });
+      /***/
+    },
+
+    /***/
     25837:
     /*!*************************************************************!*\
       !*** ./src/app/shared/list-view/detail/detail.component.ts ***!
@@ -2048,7 +2190,7 @@
       /* harmony import */
 
 
-      var _angular_common__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+      var _angular_common__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
       /*! @angular/common */
       38583);
       /* harmony import */
@@ -2072,19 +2214,19 @@
       /* harmony import */
 
 
-      var _nebular_theme__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+      var _nebular_theme__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
       /*! @nebular/theme */
       42522);
       /* harmony import */
 
 
-      var ng2_smart_table__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
+      var ng2_smart_table__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
       /*! ng2-smart-table */
       3315);
       /* harmony import */
 
 
-      var angular_notifier__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+      var angular_notifier__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
       /*! angular-notifier */
       98609);
       /* harmony import */
@@ -2096,7 +2238,13 @@
       /* harmony import */
 
 
-      var _angular_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+      var _detail_modal_detail_modal_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+      /*! ./detail-modal/detail-modal.component */
+      42606);
+      /* harmony import */
+
+
+      var _angular_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
       /*! @angular/core */
       37716);
       /*
@@ -2124,18 +2272,18 @@
         return new (t || _ListViewModule)();
       };
 
-      _ListViewModule.ɵmod = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdefineNgModule"]({
+      _ListViewModule.ɵmod = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdefineNgModule"]({
         type: _ListViewModule
       });
-      _ListViewModule.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdefineInjector"]({
-        providers: [angular_notifier__WEBPACK_IMPORTED_MODULE_6__.NotifierService],
-        imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_7__.CommonModule, _shared_shared_module__WEBPACK_IMPORTED_MODULE_0__.SharedModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_8__.NbInputModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_8__.NbCardModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_8__.NbIconModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_8__.NbSpinnerModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_8__.NbTabsetModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_8__.NbButtonModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_8__.NbPopoverModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_8__.NbSelectModule, _theme_theme_module__WEBPACK_IMPORTED_MODULE_4__.ThemeModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_8__.NbDatepickerModule, ng2_smart_table__WEBPACK_IMPORTED_MODULE_9__.Ng2SmartTableModule, _list_view_routing_module__WEBPACK_IMPORTED_MODULE_1__.ListViewRoutingModule]]
+      _ListViewModule.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdefineInjector"]({
+        providers: [angular_notifier__WEBPACK_IMPORTED_MODULE_7__.NotifierService],
+        imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_8__.CommonModule, _shared_shared_module__WEBPACK_IMPORTED_MODULE_0__.SharedModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_9__.NbInputModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_9__.NbCardModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_9__.NbIconModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_9__.NbSpinnerModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_9__.NbTabsetModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_9__.NbButtonModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_9__.NbPopoverModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_9__.NbSelectModule, _theme_theme_module__WEBPACK_IMPORTED_MODULE_4__.ThemeModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_9__.NbDatepickerModule, ng2_smart_table__WEBPACK_IMPORTED_MODULE_10__.Ng2SmartTableModule, _list_view_routing_module__WEBPACK_IMPORTED_MODULE_1__.ListViewRoutingModule]]
       });
 
       (function () {
-        (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵsetNgModuleScope"](_ListViewModule, {
-          declarations: [_list_list_component__WEBPACK_IMPORTED_MODULE_2__.ListComponent, _detail_detail_component__WEBPACK_IMPORTED_MODULE_3__.DetailComponent],
-          imports: [_angular_common__WEBPACK_IMPORTED_MODULE_7__.CommonModule, _shared_shared_module__WEBPACK_IMPORTED_MODULE_0__.SharedModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_8__.NbInputModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_8__.NbCardModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_8__.NbIconModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_8__.NbSpinnerModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_8__.NbTabsetModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_8__.NbButtonModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_8__.NbPopoverModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_8__.NbSelectModule, _theme_theme_module__WEBPACK_IMPORTED_MODULE_4__.ThemeModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_8__.NbDatepickerModule, ng2_smart_table__WEBPACK_IMPORTED_MODULE_9__.Ng2SmartTableModule, _list_view_routing_module__WEBPACK_IMPORTED_MODULE_1__.ListViewRoutingModule]
+        (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵsetNgModuleScope"](_ListViewModule, {
+          declarations: [_list_list_component__WEBPACK_IMPORTED_MODULE_2__.ListComponent, _detail_detail_component__WEBPACK_IMPORTED_MODULE_3__.DetailComponent, _detail_modal_detail_modal_component__WEBPACK_IMPORTED_MODULE_5__.DetailModalComponent],
+          imports: [_angular_common__WEBPACK_IMPORTED_MODULE_8__.CommonModule, _shared_shared_module__WEBPACK_IMPORTED_MODULE_0__.SharedModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_9__.NbInputModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_9__.NbCardModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_9__.NbIconModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_9__.NbSpinnerModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_9__.NbTabsetModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_9__.NbButtonModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_9__.NbPopoverModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_9__.NbSelectModule, _theme_theme_module__WEBPACK_IMPORTED_MODULE_4__.ThemeModule, _nebular_theme__WEBPACK_IMPORTED_MODULE_9__.NbDatepickerModule, ng2_smart_table__WEBPACK_IMPORTED_MODULE_10__.Ng2SmartTableModule, _list_view_routing_module__WEBPACK_IMPORTED_MODULE_1__.ListViewRoutingModule]
         });
       })();
       /***/
@@ -2170,8 +2318,8 @@
       /* harmony import */
 
 
-      var _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
-      /*! ../../../shared/models/menuType */
+      var _models_menuType__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+      /*! ../../models/menuType */
       58304);
       /* harmony import */
 
@@ -2186,8 +2334,8 @@
       /* harmony import */
 
 
-      var _shared_models_columnForMenu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
-      /*! ../../../shared/models/columnForMenu */
+      var _models_columnForMenu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+      /*! ../../models/columnForMenu */
       33539);
       /* harmony import */
 
@@ -2229,19 +2377,19 @@
 
 
       var _backend_api_identity_registry_api_userController_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
-      /*! ./../../../backend-api/identity-registry/api/userController.service */
+      /*! ../../../backend-api/identity-registry/api/userController.service */
       8996);
       /* harmony import */
 
 
       var _backend_api_identity_registry_api_deviceController_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
-      /*! ./../../../backend-api/identity-registry/api/deviceController.service */
+      /*! ../../../backend-api/identity-registry/api/deviceController.service */
       76009);
       /* harmony import */
 
 
       var _backend_api_identity_registry_api_roleController_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
-      /*! ./../../../backend-api/identity-registry/api/roleController.service */
+      /*! ../../../backend-api/identity-registry/api/roleController.service */
       53542);
       /* harmony import */
 
@@ -2253,19 +2401,19 @@
 
 
       var _backend_api_identity_registry_api_serviceController_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
-      /*! ./../../../backend-api/identity-registry/api/serviceController.service */
+      /*! ../../../backend-api/identity-registry/api/serviceController.service */
       32826);
       /* harmony import */
 
 
       var _backend_api_service_registry_api_instanceController_service__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
-      /*! ./../../../backend-api/service-registry/api/instanceController.service */
+      /*! ../../../backend-api/service-registry/api/instanceController.service */
       33037);
       /* harmony import */
 
 
       var _backend_api_identity_registry_api_organizationController_service__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
-      /*! ./../../../backend-api/identity-registry/api/organizationController.service */
+      /*! ../../../backend-api/identity-registry/api/organizationController.service */
       67126);
       /* harmony import */
 
@@ -2277,7 +2425,7 @@
 
 
       var _auth_auth_service__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
-      /*! ./../../../auth/auth.service */
+      /*! ../../../auth/auth.service */
       50384);
       /* harmony import */
 
@@ -2381,7 +2529,7 @@
           this.organizationControllerService = organizationControllerService;
           this.notifierService = notifierService;
           this.authService = authService;
-          this.menuType = _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.Device;
+          this.menuType = _models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.Device;
           this.title = ' for ';
           this.contextForAttributes = 'list';
           this.orgName = 'MCC';
@@ -2400,7 +2548,7 @@
               deleteButtonContent: '<i class="nb-trash"></i>',
               confirmDelete: true
             },
-            columns: _shared_models_columnForMenu__WEBPACK_IMPORTED_MODULE_1__.ColumnForMenu[this.menuType],
+            columns: _models_columnForMenu__WEBPACK_IMPORTED_MODULE_1__.ColumnForMenu[this.menuType],
             hideSubHeader: true
           };
           this.showTables = true;
@@ -2409,21 +2557,21 @@
           this.isAdmin = false;
 
           this.deleteData = function (context, orgMrn, entityMrn, version, numberId) {
-            if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.User) {
+            if (context === _models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.User) {
               return _this9.userControllerService.deleteUser(orgMrn, entityMrn);
-            } else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.Device) {
+            } else if (context === _models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.Device) {
               return _this9.deviceControllerService.deleteDevice(orgMrn, entityMrn);
-            } else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.Vessel) {
+            } else if (context === _models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.Vessel) {
               return _this9.vesselControllerService.deleteVessel(orgMrn, entityMrn);
-            } else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.MMS) {
+            } else if (context === _models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.MMS) {
               return _this9.mmsControllerService.deleteMMS(orgMrn, entityMrn);
-            } else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.Service && version) {
+            } else if (context === _models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.Service && version) {
               return _this9.serviceControllerService.deleteService(orgMrn, entityMrn, version);
-            } else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.Organization || context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.OrgCandidate) {
+            } else if (context === _models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.Organization || context === _models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.OrgCandidate) {
               return _this9.organizationControllerService.deleteOrg(entityMrn);
-            } else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.Role && numberId) {
+            } else if (context === _models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.Role && numberId) {
               return _this9.roleControllerService.deleteRole(orgMrn, numberId);
-            } else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.Instance || context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.InstanceOfOrg) {
+            } else if (context === _models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.Instance || context === _models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.InstanceOfOrg) {
               return _this9.instanceControllerService.deleteInstance(numberId);
             }
 
@@ -2436,23 +2584,23 @@
           };
 
           this.loadServiceInstances = function () {
-            return _this9.instanceControllerService.getInstances({});
+            return _this9.instanceControllerService.getInstances();
           };
 
           this.loadDataContent = function (context, orgMrn) {
-            if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.User) {
+            if (context === _models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.User) {
               return _this9.userControllerService.getOrganizationUsers(orgMrn);
-            } else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.Device) {
+            } else if (context === _models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.Device) {
               return _this9.deviceControllerService.getOrganizationDevices(orgMrn);
-            } else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.Vessel) {
+            } else if (context === _models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.Vessel) {
               return _this9.vesselControllerService.getOrganizationVessels(orgMrn);
-            } else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.MMS) {
+            } else if (context === _models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.MMS) {
               return _this9.mmsControllerService.getOrganizationMMSes(orgMrn);
-            } else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.Service) {
+            } else if (context === _models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.Service) {
               return _this9.serviceControllerService.getOrganizationServices(orgMrn);
-            } else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.Organization) {
+            } else if (context === _models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.Organization) {
               return _this9.organizationControllerService.getOrganization();
-            } else if (context === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.OrgCandidate) {
+            } else if (context === _models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.OrgCandidate) {
               return _this9.organizationControllerService.getUnapprovedOrganizations();
             }
 
@@ -2476,16 +2624,16 @@
 
             var menuTypeString = this.router.url.split('/').pop();
 
-            if (menuTypeString === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.InstanceOfOrg) {
+            if (menuTypeString === _models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.InstanceOfOrg) {
               this.isForServiceForOrg = true;
-              this.menuType = _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.Instance;
+              this.menuType = _models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.Instance;
             } else {
               this.menuType = menuTypeString.replace('-', '').substr(0, menuTypeString.length - 1);
             }
 
-            if (Object.values(_shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType).includes(this.menuType)) {
-              this.menuTypeName = _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.MenuTypeNames[this.menuType.toString()];
-              this.iconName = _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.MenuTypeIconNames[this.menuType.toString()];
+            if (Object.values(_models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType).includes(this.menuType)) {
+              this.menuTypeName = _models_menuType__WEBPACK_IMPORTED_MODULE_0__.MenuTypeNames[this.menuType.toString()];
+              this.iconName = _models_menuType__WEBPACK_IMPORTED_MODULE_0__.MenuTypeIconNames[this.menuType.toString()];
               this.orgMrn = this.authService.authState.orgMrn;
             } else {
               this.router.navigate(['**']);
@@ -2507,8 +2655,8 @@
             var _this11 = this;
 
             // filtered with context
-            if (_shared_models_columnForMenu__WEBPACK_IMPORTED_MODULE_1__.ColumnForMenu.hasOwnProperty(this.menuType.toString())) {
-              this.mySettings.columns = Object.assign.apply(Object, [{}].concat(_toConsumableArray(Object.entries(_shared_models_columnForMenu__WEBPACK_IMPORTED_MODULE_1__.ColumnForMenu[this.menuType.toString()]).filter(function (_ref) {
+            if (_models_columnForMenu__WEBPACK_IMPORTED_MODULE_1__.ColumnForMenu.hasOwnProperty(this.menuType.toString())) {
+              this.mySettings.columns = Object.assign.apply(Object, [{}].concat(_toConsumableArray(Object.entries(_models_columnForMenu__WEBPACK_IMPORTED_MODULE_1__.ColumnForMenu[this.menuType.toString()]).filter(function (_ref) {
                 var _ref2 = _slicedToArray(_ref, 2),
                     k = _ref2[0],
                     v = _ref2[1];
@@ -2526,8 +2674,8 @@
               this.title = "".concat(capitalize(this.menuTypeName), " list");
               this.isLoading = true;
 
-              if (Object.values(_shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType).includes(this.menuType)) {
-                if (this.menuType === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.Organization || this.menuType === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.OrgCandidate) {
+              if (Object.values(_models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType).includes(this.menuType)) {
+                if (this.menuType === _models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.Organization || this.menuType === _models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.OrgCandidate) {
                   this.loadDataContent(this.menuType).subscribe(function (res) {
                     _this11.refreshData(_this11.formatResponse(res.content));
 
@@ -2535,7 +2683,7 @@
                   }, function (error) {
                     return _this11.notifierService.notify('error', error.message);
                   });
-                } else if (this.menuType === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.Role) {
+                } else if (this.menuType === _models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.Role) {
                   this.loadMyOrganization().subscribe(function (resOrg) {
                     return _this11.loadRoles(resOrg.mrn).subscribe(function (resData) {
                       _this11.refreshData(resData);
@@ -2547,7 +2695,7 @@
                   }, function (error) {
                     return _this11.notifierService.notify('error', error.message);
                   });
-                } else if (this.menuType === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.Instance || this.menuType === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.InstanceOfOrg) {
+                } else if (this.menuType === _models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.Instance || this.menuType === _models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.InstanceOfOrg) {
                   this.loadServiceInstances().subscribe(function (resData) {
                     _this11.refreshData(_this11.formatResponseForService(_this11.isForServiceForOrg ? resData.filter(function (i) {
                       return i.organizationId === _this11.orgMrn;
@@ -2618,7 +2766,7 @@
             var _this12 = this;
 
             var message = 'Are you sure you want to delete?';
-            message = _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.EntityTypes.indexOf(this.menuType) >= 0 ? message + ' All certificates under this entity will be revoked.' : message;
+            message = _models_menuType__WEBPACK_IMPORTED_MODULE_0__.EntityTypes.indexOf(this.menuType) >= 0 ? message + ' All certificates under this entity will be revoked.' : message;
 
             if (confirm(message)) {
               this.deleteData(menuType, orgMrn, entityMrn, instanceVersion, numberId).subscribe(function (res) {
@@ -2633,7 +2781,7 @@
         }, {
           key: "onEdit",
           value: function onEdit(event) {
-            var mrn = this.menuType === _shared_models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.Instance ? event.data.id : event.data.mrn;
+            var mrn = this.menuType === _models_menuType__WEBPACK_IMPORTED_MODULE_0__.ResourceType.Instance ? event.data.id : event.data.mrn;
             this.router.navigate([this.router.url, mrn ? encodeURIComponent(mrn) : event.data.id], {
               queryParams: {
                 name: event.data.roleName ? event.data.roleName : event.data.name ? event.data.name : event.data.lastName + ' ' + event.data.firstName,
