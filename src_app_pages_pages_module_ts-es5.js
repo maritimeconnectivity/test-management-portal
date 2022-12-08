@@ -51746,6 +51746,8 @@
               _this5.menu.find(function (e) {
                 return e.title === _this5.translate.instant('menu.ir');
               }).children.unshift(_pages_menu__WEBPACK_IMPORTED_MODULE_1__.MIR_MENU_FOR_ADMIN);
+
+              _pages_menu__WEBPACK_IMPORTED_MODULE_1__.MIR_MENU_FOR_ADMIN.title = _this5.translate.instant('menu.ir.admin');
             }
           };
 

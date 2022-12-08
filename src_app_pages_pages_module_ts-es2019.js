@@ -48844,6 +48844,7 @@ class PagesComponent {
             }
             if (this.MIRPermission && _auth_auth_permission__WEBPACK_IMPORTED_MODULE_2__.PermissionResolver.canApproveOrg(this.MIRPermission)) {
                 this.menu.find(e => e.title === this.translate.instant('menu.ir')).children.unshift(_pages_menu__WEBPACK_IMPORTED_MODULE_1__.MIR_MENU_FOR_ADMIN);
+                _pages_menu__WEBPACK_IMPORTED_MODULE_1__.MIR_MENU_FOR_ADMIN.title = this.translate.instant('menu.ir.admin');
             }
         };
         (0,_util_translateHelper__WEBPACK_IMPORTED_MODULE_0__.addLangs)(translate);
