@@ -49225,14 +49225,14 @@ __webpack_require__.r(__webpack_exports__);
 const _c0 = ["map"];
 const _c1 = ["luceneQueryStringInput"];
 const _c2 = ["luceneQueryInputComponent"];
-function SrSearchComponent_ng2_smart_table_26_Template(rf, ctx) { if (rf & 1) {
-    const _r6 = _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵelementStart"](0, "ng2-smart-table", 13);
-    _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵlistener"]("userRowSelect", function SrSearchComponent_ng2_smart_table_26_Template_ng2_smart_table_userRowSelect_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵrestoreView"](_r6); const ctx_r5 = _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵnextContext"](); return ctx_r5.onEdit($event); });
+function SrSearchComponent_ng2_smart_table_23_Template(rf, ctx) { if (rf & 1) {
+    const _r5 = _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵelementStart"](0, "ng2-smart-table", 11);
+    _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵlistener"]("userRowSelect", function SrSearchComponent_ng2_smart_table_23_Template_ng2_smart_table_userRowSelect_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵrestoreView"](_r5); const ctx_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵnextContext"](); return ctx_r4.onEdit($event); });
     _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵelementEnd"]();
 } if (rf & 2) {
-    const ctx_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵproperty"]("settings", ctx_r4.settings)("source", ctx_r4.source)("nbSpinner", ctx_r4.isLoading);
+    const ctx_r3 = _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵproperty"]("settings", ctx_r3.settings)("source", ctx_r3.source)("nbSpinner", ctx_r3.isLoading);
 } }
 class SrSearchComponent {
     constructor(router, secomSearchController, instanceControllerService) {
@@ -49262,9 +49262,10 @@ class SrSearchComponent {
         this.onUpdateLuceneQuery = (query) => {
             this.queryString = query.queryString ? query.queryString : '';
             this.luceneQueryStringInput.nativeElement.value = this.queryString;
-            this.searchParams = query.data;
-            if (!query.queryString || query.queryString.length === 0) {
-                this.clearMap();
+            // get rid of " to convert it to the freetext
+            this.freetext = this.queryString.split('"').join('');
+            if (this.queryString.length === 0) {
+                this.clearAll();
             }
         };
         this.onUpdateGeometry = (event) => {
@@ -49292,28 +49293,30 @@ class SrSearchComponent {
         this.onSearch = () => {
             this.search(this.searchParams, Object.keys(this.queryGeometry).length > 0 ? (0,_terraformer_wkt__WEBPACK_IMPORTED_MODULE_1__.geojsonToWKT)(this.queryGeometry) : '', this.freetext);
         };
-        this.onFreeTextChanged = (event) => {
-            this.freetext = event.target.value;
-        };
         this.onQueryStringChanged = (event) => {
             this.queryString = event.target.value;
             if (this.queryString.length === 0) {
-                this.clearMap();
+                this.clearAll();
             }
         };
         this.onClear = () => {
             this.geometries = [];
             this.queryGeometry = {};
             this.searchParams = {};
+            this.clearAll();
+        };
+        this.clearAll = () => {
+            var _a;
             this.clearMap();
+            (_a = this.luceneQueryInputComponent) === null || _a === void 0 ? void 0 : _a.clearInput();
+            this.source.reset();
         };
         this.clearMap = () => {
-            var _a, _b;
+            var _a;
+            this.geometries = [];
+            this.geometryNames = [];
+            this.source.load([]);
             (_a = this.geometryMap) === null || _a === void 0 ? void 0 : _a.clearMap();
-            (_b = this.luceneQueryInputComponent) === null || _b === void 0 ? void 0 : _b.clearInput();
-            this.source.reset();
-            this.instances = [];
-            this.refreshData(this.instances);
         };
     }
     ngOnInit() {
@@ -49326,6 +49329,9 @@ class SrSearchComponent {
     refreshData(data) {
         if (data) {
             this.source.load(data);
+            if (data.length === 0) {
+                this.clearMap();
+            }
         }
         else {
             this.source.load([]);
@@ -49354,7 +49360,7 @@ SrSearchComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_8
         _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵloadQuery"]()) && (ctx.geometryMap = _t.first);
         _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵloadQuery"]()) && (ctx.luceneQueryStringInput = _t.first);
         _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵloadQuery"]()) && (ctx.luceneQueryInputComponent = _t.first);
-    } }, decls: 27, vars: 5, consts: [[1, "container"], [1, "row"], [1, "w-100", 3, "fieldInfo", "onUpdateQuery"], ["luceneQueryInputComponent", ""], ["nbInput", "", "hidden", "", "fullWidth", "", "placeholder", "field1:value1 AND/OR field2:value2", "autocorrect", "off", "autocapitalize", "off", "spellcheck", "off", "type", "text", 1, "form-control", "search-location", 3, "change"], ["luceneQueryStringInput", ""], ["nbInput", "", "fullWidth", "", "placeholder", "free text to search", "autocorrect", "off", "autocapitalize", "off", "spellcheck", "off", "type", "text", 1, "form-control", "search-location", 3, "change"], ["freetextInput", ""], ["fullWidth", "", "status", "primary", "nbButton", "", 3, "click"], ["fullWidth", "", "nbButton", "", 3, "click"], ["isForSearch", "true", 3, "isEditing", "geometries", "geometryNames", "onUpdate", "onClear"], ["map", ""], ["nbSpinnerSize", "large", "nbSpinnerStatus", "primary", 3, "settings", "source", "nbSpinner", "userRowSelect", 4, "ngIf"], ["nbSpinnerSize", "large", "nbSpinnerStatus", "primary", 3, "settings", "source", "nbSpinner", "userRowSelect"]], template: function SrSearchComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, decls: 24, vars: 5, consts: [[1, "container"], [1, "row"], [1, "w-100", 3, "fieldInfo", "onUpdateQuery"], ["luceneQueryInputComponent", ""], ["nbInput", "", "hidden", "", "fullWidth", "", "placeholder", "field1:value1 AND/OR field2:value2", "autocorrect", "off", "autocapitalize", "off", "spellcheck", "off", "type", "text", 1, "form-control", "search-location", 3, "change"], ["luceneQueryStringInput", ""], ["fullWidth", "", "status", "primary", "nbButton", "", 3, "click"], ["fullWidth", "", "nbButton", "", 3, "click"], ["isForSearch", "true", 3, "isEditing", "geometries", "geometryNames", "onUpdate", "onClear"], ["map", ""], ["nbSpinnerSize", "large", "nbSpinnerStatus", "primary", 3, "settings", "source", "nbSpinner", "userRowSelect", 4, "ngIf"], ["nbSpinnerSize", "large", "nbSpinnerStatus", "primary", 3, "settings", "source", "nbSpinner", "userRowSelect"]], template: function SrSearchComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵelementStart"](0, "nb-card");
         _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵelementStart"](1, "nb-card-header");
         _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵtext"](2, "Service search");
@@ -49377,34 +49383,29 @@ SrSearchComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_8
         _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵelementStart"](14, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵelementStart"](15, "input", 6, 7);
-        _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵlistener"]("change", function SrSearchComponent_Template_input_change_15_listener($event) { return ctx.onFreeTextChanged($event); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵelementStart"](15, "button", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵlistener"]("click", function SrSearchComponent_Template_button_click_15_listener() { return ctx.onSearch(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵtext"](16, "Search");
         _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵelementStart"](17, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵelementStart"](18, "button", 8);
-        _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵlistener"]("click", function SrSearchComponent_Template_button_click_18_listener() { return ctx.onSearch(); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵtext"](19, "Search");
-        _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵelementStart"](20, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵelementStart"](21, "button", 9);
-        _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵlistener"]("click", function SrSearchComponent_Template_button_click_21_listener() { return ctx.onClear(); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵtext"](22, "Clear search result");
+        _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵelementStart"](18, "button", 7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵlistener"]("click", function SrSearchComponent_Template_button_click_18_listener() { return ctx.onClear(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵtext"](19, "Clear search result");
         _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵelement"](23, "hr");
-        _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵelementStart"](24, "ngx-input-geometry", 10, 11);
-        _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵlistener"]("onUpdate", function SrSearchComponent_Template_ngx_input_geometry_onUpdate_24_listener($event) { return ctx.onUpdateGeometry($event); })("onClear", function SrSearchComponent_Template_ngx_input_geometry_onClear_24_listener() { return ctx.onClear(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵelement"](20, "hr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵelementStart"](21, "ngx-input-geometry", 8, 9);
+        _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵlistener"]("onUpdate", function SrSearchComponent_Template_ngx_input_geometry_onUpdate_21_listener($event) { return ctx.onUpdateGeometry($event); })("onClear", function SrSearchComponent_Template_ngx_input_geometry_onClear_21_listener() { return ctx.onClear(); });
         _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵtemplate"](26, SrSearchComponent_ng2_smart_table_26_Template, 1, 3, "ng2-smart-table", 12);
+        _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵtemplate"](23, SrSearchComponent_ng2_smart_table_23_Template, 1, 3, "ng2-smart-table", 10);
         _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵelementEnd"]();
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵadvance"](9);
         _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵproperty"]("fieldInfo", ctx.fieldInfo);
-        _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵadvance"](15);
+        _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵadvance"](12);
         _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵproperty"]("isEditing", false)("geometries", ctx.geometries)("geometryNames", ctx.geometryNames);
         _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵadvance"](2);
         _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵproperty"]("ngIf", ctx.showTables);
