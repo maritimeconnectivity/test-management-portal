@@ -52516,7 +52516,7 @@
             }).subscribe(function (res) {
               var _a;
 
-              _this7.instances = res;
+              _this7.instances = res.searchServiceResult;
 
               _this7.refreshData(_this7.instances);
 

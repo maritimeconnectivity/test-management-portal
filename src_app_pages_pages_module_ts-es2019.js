@@ -49278,7 +49278,7 @@ class SrSearchComponent {
             this.secomSearchController.search({ query: searchParams, geometry: wktString, freetext: freetext })
                 .subscribe(res => {
                 var _a;
-                this.instances = res;
+                this.instances = res.searchServiceResult;
                 this.refreshData(this.instances);
                 this.isLoading = false;
                 this.geometries = [];
