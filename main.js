@@ -6255,7 +6255,7 @@ class LogoControllerService {
         // to determine the Accept header
         let httpHeaderAccepts = [
             'image/png',
-            'application/json'
+            'image/jpeg'
         ];
         const httpHeaderAcceptSelected = this.configuration.selectHeaderAccept(httpHeaderAccepts);
         if (httpHeaderAcceptSelected != undefined) {
@@ -6267,7 +6267,8 @@ class LogoControllerService {
             withCredentials: this.configuration.withCredentials,
             headers: headers,
             observe: observe,
-            reportProgress: reportProgress
+            reportProgress: reportProgress,
+            responseType: 'blob',
         });
     }
     updateLogoPut(body, orgMrn, observe = 'body', reportProgress = false) {
@@ -8536,7 +8537,7 @@ class VesselImageControllerService {
         // to determine the Accept header
         let httpHeaderAccepts = [
             'image/png',
-            'application/json'
+            'image/jpeg'
         ];
         const httpHeaderAcceptSelected = this.configuration.selectHeaderAccept(httpHeaderAccepts);
         if (httpHeaderAcceptSelected != undefined) {
@@ -8548,7 +8549,8 @@ class VesselImageControllerService {
             withCredentials: this.configuration.withCredentials,
             headers: headers,
             observe: observe,
-            reportProgress: reportProgress
+            reportProgress: reportProgress,
+            responseType: 'blob',
         });
     }
     updateVesselImagePut(body, orgMrn, vesselMrn, observe = 'body', reportProgress = false) {
