@@ -272,6 +272,7 @@ class DetailComponent {
             return new rxjs_Observable__WEBPACK_IMPORTED_MODULE_10__.Observable();
         };
         (0,_util_translateHelper__WEBPACK_IMPORTED_MODULE_0__.addLangs)(translate);
+        (0,_util_translateHelper__WEBPACK_IMPORTED_MODULE_0__.loadLang)(translate);
     }
     ngOnInit() {
         const array = this.router.url.split('/');
@@ -844,6 +845,7 @@ class ListComponent {
             return this.roleControllerService.getRoles(orgMrn);
         };
         (0,_util_translateHelper__WEBPACK_IMPORTED_MODULE_0__.addLangs)(translate);
+        (0,_util_translateHelper__WEBPACK_IMPORTED_MODULE_0__.loadLang)(translate);
         // TODO: apply translate to table
         //console.log(ColumnForResource[this.menuType]);
         //console.log({...ColumnForResource[this.menuType], name:{title:"Nameeeee"}})
