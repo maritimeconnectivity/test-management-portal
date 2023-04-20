@@ -377,12 +377,12 @@ class DetailComponent {
         this.router.navigate(['../../' + this.menuType + 's'], { relativeTo: this.route });
     }
     delete() {
-        let message = this.translate.instant('warning.list.beforeDeletion');
+        let message = this.translate.instant('warning.resource.beforeDeletion');
         message = _models_menuType__WEBPACK_IMPORTED_MODULE_2__.EntityTypes.indexOf(this.menuType) >= 0 ?
-            message + this.translate.instant('warning.list.beforeRevoke') : message;
+            message + this.translate.instant('warning.resource.beforeRevoke') : message;
         if (confirm(message)) {
             this.deleteData(this.menuType, this.orgMrn, this.entityMrn, this.instanceVersion).subscribe(res => {
-                this.notifierService.notify('success', this.menuTypeName + this.translate.instant('success.list.delete'));
+                this.notifierService.notify('success', this.menuTypeName + this.translate.instant('success.resource.delete'));
                 this.moveToListPage();
             }, err => this.notifierService.notify('error', this.translate.instant('error.resource.errorInDeletion') + err.error.message));
         }
@@ -944,12 +944,12 @@ class ListComponent {
         }
     }
     delete(menuType, orgMrn, entityMrn, instanceVersion, numberId) {
-        let message = this.translate.instant('warning.list.beforeDeletion');
+        let message = this.translate.instant('warning.resource.beforeDeletion');
         message = _models_menuType__WEBPACK_IMPORTED_MODULE_1__.EntityTypes.indexOf(this.menuType) >= 0 ?
-            message + this.translate.instant('warning.list.beforeRevoke') : message;
+            message + this.translate.instant('warning.resource.beforeRevoke') : message;
         if (confirm(message)) {
             this.deleteData(menuType, orgMrn, entityMrn, instanceVersion, numberId).subscribe(res => {
-                this.notifierService.notify('success', this.menuTypeName + this.translate.instant('success.list.delete'));
+                this.notifierService.notify('success', this.menuTypeName + this.translate.instant('success.resource.delete'));
                 this.fetchValues();
             }, err => this.notifierService.notify('error', this.translate.instant('error.resource.errorInDeletion') + err.error.message));
         }
