@@ -796,15 +796,17 @@ function ListComponent_button_14_Template(rf, ctx) {
       const restoredCtx = _angular_core__WEBPACK_IMPORTED_MODULE_14__["ɵɵrestoreView"](_r10);
       const i_r8 = restoredCtx.$implicit;
       const ctx_r9 = _angular_core__WEBPACK_IMPORTED_MODULE_14__["ɵɵnextContext"]();
-      return _angular_core__WEBPACK_IMPORTED_MODULE_14__["ɵɵresetView"](ctx_r9.fetchValues(i_r8 - 1));
+      return _angular_core__WEBPACK_IMPORTED_MODULE_14__["ɵɵresetView"](ctx_r9.fetchValues(i_r8));
     });
     _angular_core__WEBPACK_IMPORTED_MODULE_14__["ɵɵtext"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_14__["ɵɵelementEnd"]();
   }
   if (rf & 2) {
     const i_r8 = ctx.$implicit;
+    const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_14__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_14__["ɵɵproperty"]("disabled", i_r8 == ctx_r2.currentPageNumber);
     _angular_core__WEBPACK_IMPORTED_MODULE_14__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_14__["ɵɵtextInterpolate"](i_r8);
+    _angular_core__WEBPACK_IMPORTED_MODULE_14__["ɵɵtextInterpolate"](i_r8 + 1);
   }
 }
 const capitalize = s => {
@@ -866,7 +868,7 @@ class ListComponent {
     this.updatePageContentInfo = res => {
       this.totalPages = res.totalPages;
       this.totalElements = res.totalElements;
-      this.pageNumbers = Array(this.totalPages).fill(0).map((x, i) => i + 1);
+      this.pageNumbers = Array(this.totalPages).fill(0).map((x, i) => i);
     };
     this.deleteData = (context, orgMrn, entityMrn, version, numberId) => {
       if (context === _models_menuType__WEBPACK_IMPORTED_MODULE_1__.ResourceType.User) {
@@ -957,6 +959,7 @@ class ListComponent {
     this.fetchValues(this.currentPageNumber);
   }
   fetchValues(pageNumber) {
+    this.currentPageNumber = pageNumber;
     // filtered with context
     if (_models_columnForMenu__WEBPACK_IMPORTED_MODULE_2__.ColumnForResource.hasOwnProperty(this.menuType.toString())) {
       this.mySettings.columns = Object.assign({}, ...Object.entries(_models_columnForMenu__WEBPACK_IMPORTED_MODULE_2__.ColumnForResource[this.menuType.toString()]).filter(([k, v]) => Array.isArray(v['visibleFrom']) && v['visibleFrom'].includes(this.contextForAttributes)).map(([k, v]) => ({
@@ -1069,7 +1072,7 @@ class ListComponent {
     selectors: [["ngx-list"]],
     decls: 15,
     vars: 6,
-    consts: [[1, "row"], [1, "col", "my-auto"], [1, "icon_header"], ["pack", "fas", 3, "icon"], [1, "col-md-auto"], [3, "search"], ["type", "button", "nbButton", "", "status", "primary", 3, "click", 4, "ngIf"], ["nbSpinnerSize", "large", "nbSpinnerStatus", "primary", 3, "nbSpinner"], [3, "settings", "source", "userRowSelect", "delete", 4, "ngIf"], [1, "text-center", "pb-5"], ["nbButton", "", "size", "tiny", 3, "click", 4, "ngFor", "ngForOf"], ["type", "button", "nbButton", "", "status", "primary", 3, "click"], [3, "settings", "source", "userRowSelect", "delete"], ["nbButton", "", "size", "tiny", 3, "click"]],
+    consts: [[1, "row"], [1, "col", "my-auto"], [1, "icon_header"], ["pack", "fas", 3, "icon"], [1, "col-md-auto"], [3, "search"], ["type", "button", "nbButton", "", "status", "primary", 3, "click", 4, "ngIf"], ["nbSpinnerSize", "large", "nbSpinnerStatus", "primary", 3, "nbSpinner"], [3, "settings", "source", "userRowSelect", "delete", 4, "ngIf"], [1, "text-center", "pb-5"], ["class", "m-1", "nbButton", "", "size", "tiny", 3, "disabled", "click", 4, "ngFor", "ngForOf"], ["type", "button", "nbButton", "", "status", "primary", 3, "click"], [3, "settings", "source", "userRowSelect", "delete"], ["nbButton", "", "size", "tiny", 1, "m-1", 3, "disabled", "click"]],
     template: function ListComponent_Template(rf, ctx) {
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_14__["ɵɵelementStart"](0, "nb-card")(1, "nb-card-header")(2, "div", 0)(3, "div", 1)(4, "span", 2);
@@ -1089,7 +1092,7 @@ class ListComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_14__["ɵɵtemplate"](12, ListComponent_ng2_smart_table_12_Template, 1, 2, "ng2-smart-table", 8);
         _angular_core__WEBPACK_IMPORTED_MODULE_14__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_14__["ɵɵelementStart"](13, "div", 9);
-        _angular_core__WEBPACK_IMPORTED_MODULE_14__["ɵɵtemplate"](14, ListComponent_button_14_Template, 2, 1, "button", 10);
+        _angular_core__WEBPACK_IMPORTED_MODULE_14__["ɵɵtemplate"](14, ListComponent_button_14_Template, 2, 2, "button", 10);
         _angular_core__WEBPACK_IMPORTED_MODULE_14__["ɵɵelementEnd"]()();
       }
       if (rf & 2) {
