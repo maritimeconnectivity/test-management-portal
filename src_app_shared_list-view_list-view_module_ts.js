@@ -227,7 +227,7 @@ class DetailComponent {
       } else if (context === _models_menuType__WEBPACK_IMPORTED_MODULE_2__.ResourceType.Device) {
         return this.deviceControllerService.createDevice(body, orgMrn);
       } else if (context === _models_menuType__WEBPACK_IMPORTED_MODULE_2__.ResourceType.Vessel) {
-        return this.vesselControllerService.createVessel(body, orgMrn);
+        return this.vesselControllerService.createVessel((0,_util_dataFormatter__WEBPACK_IMPORTED_MODULE_1__.formatVesselToUpload)(body), orgMrn);
       } else if (context === _models_menuType__WEBPACK_IMPORTED_MODULE_2__.ResourceType.MMS) {
         return this.mmsControllerService.createMMS(body, orgMrn);
       } else if (context === _models_menuType__WEBPACK_IMPORTED_MODULE_2__.ResourceType.Service) {
