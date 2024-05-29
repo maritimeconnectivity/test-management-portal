@@ -971,26 +971,32 @@ class ListComponent {
       this.isLoading = true;
       if (Object.values(_models_menuType__WEBPACK_IMPORTED_MODULE_1__.ResourceType).includes(this.menuType)) {
         if (this.menuType === _models_menuType__WEBPACK_IMPORTED_MODULE_1__.ResourceType.Organization || this.menuType === _models_menuType__WEBPACK_IMPORTED_MODULE_1__.ResourceType.OrgCandidate) {
-          this.loadDataContent(this.menuType, pageNumber).subscribe(res => {
-            this.updatePageContentInfo(res);
-            this.refreshData(this.formatResponse(res.content));
+          this.loadDataContent(this.menuType, pageNumber).subscribe(resOrigin => {
+            this.updatePageContentInfo(resOrigin);
+            this.refreshData(this.formatResponse(resOrigin.content));
             this.isLoading = false;
           }, error => this.notifierService.notify('error', error.message));
         } else if (this.menuType === _models_menuType__WEBPACK_IMPORTED_MODULE_1__.ResourceType.Role) {
-          this.loadMyOrganization().subscribe(resOrg => this.loadRoles(resOrg.mrn).subscribe(resData => {
-            this.refreshData(resData);
+          this.loadMyOrganization().subscribe(resMyOrg => this.loadRoles(resMyOrg.mrn).subscribe(res => {
+            this.updatePageContentInfo(res);
+            this.refreshData(res);
             this.isLoading = false;
           }, error => this.notifierService.notify('error', error.message)), error => this.notifierService.notify('error', error.message));
         } else if (this.menuType === _models_menuType__WEBPACK_IMPORTED_MODULE_1__.ResourceType.Instance || this.menuType === _models_menuType__WEBPACK_IMPORTED_MODULE_1__.ResourceType.InstanceOfOrg) {
           this.loadServiceInstances().subscribe(resData => {
+            // TODO: need to update page content info from MSR
+            //this.updatePageContentInfo(resData);
             this.refreshData(this.formatResponseForService(this.isForServiceForOrg ? resData.filter(i => i.organizationId === this.orgMrn) : resData));
             this.isLoading = false;
           }, error => this.notifierService.notify('error', error.message));
         } else {
-          this.loadMyOrganization().subscribe(resOrg => this.loadDataContent(this.menuType, pageNumber, resOrg.mrn).subscribe(res => {
-            this.refreshData(this.formatResponse(res.content));
-            this.isLoading = false;
-          }, error => this.notifierService.notify('error', error.message)), error => this.notifierService.notify('error', error.message));
+          this.loadMyOrganization().subscribe(resMyOrg => {
+            this.loadDataContent(this.menuType, pageNumber, resMyOrg.mrn).subscribe(res => {
+              this.updatePageContentInfo(res);
+              this.refreshData(this.formatResponse(res.content));
+              this.isLoading = false;
+            }, error => this.notifierService.notify('error', error.message));
+          }, error => this.notifierService.notify('error', error.message));
         }
       } else {
         this.isLoading = false;
