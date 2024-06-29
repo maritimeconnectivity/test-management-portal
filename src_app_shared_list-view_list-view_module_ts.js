@@ -864,11 +864,17 @@ class ListComponent {
     this.currentPageNumber = 0;
     this.totalPages = 0;
     this.totalElements = 0;
+    this.elementsPerPage = 10;
     this.pageNumbers = [];
-    this.updatePageContentInfo = res => {
-      this.totalPages = res.totalPages;
-      this.totalElements = res.totalElements;
+    this.updatePageContentInfo = (totalPages, totalElements) => {
+      this.totalPages = totalPages;
+      this.totalElements = totalElements;
       this.pageNumbers = Array(this.totalPages).fill(0).map((x, i) => i);
+    };
+    this.updateContent = (totalPages, totalElements, content) => {
+      this.updatePageContentInfo(totalPages, totalElements);
+      this.refreshData(this.formatResponse(content));
+      this.isLoading = false;
     };
     this.deleteData = (context, orgMrn, entityMrn, version, numberId) => {
       if (context === _models_menuType__WEBPACK_IMPORTED_MODULE_1__.ResourceType.User) {
@@ -894,11 +900,11 @@ class ListComponent {
       // fetch organization information from it
       return this.organizationControllerService.getOrganization1(this.authService.authState.orgMrn);
     };
-    this.loadServiceInstances = () => {
-      return this.instanceControllerService.getInstances();
+    this.loadServiceInstances = page => {
+      return this.instanceControllerService.getInstances(page, this.elementsPerPage);
     };
     this.loadDataContent = (context, page, orgMrn) => {
-      const size = 10;
+      const size = this.elementsPerPage;
       if (context === _models_menuType__WEBPACK_IMPORTED_MODULE_1__.ResourceType.User) {
         return this.userControllerService.getOrganizationUsers(orgMrn, page, size);
       } else if (context === _models_menuType__WEBPACK_IMPORTED_MODULE_1__.ResourceType.Device) {
@@ -971,31 +977,25 @@ class ListComponent {
       this.isLoading = true;
       if (Object.values(_models_menuType__WEBPACK_IMPORTED_MODULE_1__.ResourceType).includes(this.menuType)) {
         if (this.menuType === _models_menuType__WEBPACK_IMPORTED_MODULE_1__.ResourceType.Organization || this.menuType === _models_menuType__WEBPACK_IMPORTED_MODULE_1__.ResourceType.OrgCandidate) {
-          this.loadDataContent(this.menuType, pageNumber).subscribe(resOrigin => {
-            this.updatePageContentInfo(resOrigin);
-            this.refreshData(this.formatResponse(resOrigin.content));
-            this.isLoading = false;
-          }, error => this.notifierService.notify('error', error.message));
+          this.loadDataContent(this.menuType, pageNumber).subscribe(resOrigin => this.updateContent(resOrigin.totalPages, resOrigin.totalElements, resOrigin.content), error => this.notifierService.notify('error', error.message));
         } else if (this.menuType === _models_menuType__WEBPACK_IMPORTED_MODULE_1__.ResourceType.Role) {
           this.loadMyOrganization().subscribe(resMyOrg => this.loadRoles(resMyOrg.mrn).subscribe(res => {
-            this.updatePageContentInfo(res);
+            // TODO: paging in role
+            //this.updatePageContentInfo(res.totalPages, res.totalElements);
             this.refreshData(res);
             this.isLoading = false;
           }, error => this.notifierService.notify('error', error.message)), error => this.notifierService.notify('error', error.message));
         } else if (this.menuType === _models_menuType__WEBPACK_IMPORTED_MODULE_1__.ResourceType.Instance || this.menuType === _models_menuType__WEBPACK_IMPORTED_MODULE_1__.ResourceType.InstanceOfOrg) {
-          this.loadServiceInstances().subscribe(resData => {
-            // TODO: need to update page content info from MSR
-            //this.updatePageContentInfo(resData);
-            this.refreshData(this.formatResponseForService(this.isForServiceForOrg ? resData.filter(i => i.organizationId === this.orgMrn) : resData));
-            this.isLoading = false;
+          this.loadServiceInstances(pageNumber).subscribe(resData => {
+            this.instanceControllerService.getInstancesDt().subscribe(response => {
+              this.totalElements = response.recordsTotal;
+              this.totalPages = Math.ceil(this.totalElements / this.elementsPerPage);
+              this.updateContent(this.totalPages, this.totalElements, this.formatResponseForInstance(this.isForServiceForOrg ? resData.filter(i => i.organizationId === this.orgMrn) : resData));
+            });
           }, error => this.notifierService.notify('error', error.message));
         } else {
           this.loadMyOrganization().subscribe(resMyOrg => {
-            this.loadDataContent(this.menuType, pageNumber, resMyOrg.mrn).subscribe(res => {
-              this.updatePageContentInfo(res);
-              this.refreshData(this.formatResponse(res.content));
-              this.isLoading = false;
-            }, error => this.notifierService.notify('error', error.message));
+            this.loadDataContent(this.menuType, pageNumber, resMyOrg.mrn).subscribe(res => this.updateContent(res.totalPages, res.totalElements, res.content), error => this.notifierService.notify('error', error.message));
           }, error => this.notifierService.notify('error', error.message));
         }
       } else {
@@ -1018,8 +1018,8 @@ class ListComponent {
   formatResponse(data) {
     return data.map(d => (0,_util_dataFormatter__WEBPACK_IMPORTED_MODULE_3__.formatData)(d));
   }
-  formatResponseForService(data) {
-    return data.map(d => (0,_util_dataFormatter__WEBPACK_IMPORTED_MODULE_3__.formatServiceData)(d));
+  formatResponseForInstance(data) {
+    return data.map(d => (0,_util_dataFormatter__WEBPACK_IMPORTED_MODULE_3__.formatInstanceData)(d));
   }
   onDelete(event) {
     if (!this.isAdmin) {
