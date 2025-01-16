@@ -6888,7 +6888,7 @@ const environment = {
   irProvider: 'MCP Consortium',
   irContact: 'info@maritimeconnectivity.net',
   oidcBasePath: 'https://test-maritimeid.maritimeconnectivity.net',
-  hasServiceRegistry: false,
+  hasServiceRegistry: true,
   srBasePath: 'https://msr-test.maritimeconnectivity.net',
   srProvider: 'MCP Consortium',
   srContact: 'info@maritimeconnectivity.net',
