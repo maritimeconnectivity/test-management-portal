@@ -6755,6 +6755,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   MenuTypeIconNames: () => (/* binding */ MenuTypeIconNames),
 /* harmony export */   MenuTypeNames: () => (/* binding */ MenuTypeNames),
 /* harmony export */   MrnAttributeInMSR: () => (/* binding */ MrnAttributeInMSR),
+/* harmony export */   itemTypeToString: () => (/* binding */ itemTypeToString),
 /* harmony export */   timestampKeys: () => (/* binding */ timestampKeys)
 /* harmony export */ });
 /*
@@ -6852,6 +6853,15 @@ const MenuTypeIconNames = {
   instance: 'compass',
   instanceorg: 'compass',
   orgcandidate: 'clipboard'
+};
+const capitalize = s => s[0].toUpperCase() + s.slice(1);
+const itemTypeToString = itemType => {
+  if (itemType === ItemType.Instance || itemType === ItemType.SearchObjectResult) {
+    return 'Service instance';
+  } else if (itemType === ItemType.OrgCandidate) {
+    return 'Organization candidate';
+  }
+  return capitalize(itemType.toString());
 };
 
 /***/ }),

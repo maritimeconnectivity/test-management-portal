@@ -1202,7 +1202,8 @@ class LuceneSingleQueryInputComponent {
       });
     }
   }
-  onSelectionChange(value) {
+  onSelectionChange(event) {
+    const value = event.target.value;
     this.field = value;
     this.valueEditable = true;
     this.data = {
@@ -1243,7 +1244,7 @@ class LuceneSingleQueryInputComponent {
     features: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵStandaloneFeature"]],
     decls: 14,
     vars: 10,
-    consts: [[1, "custom-alert-spacing", 3, "clrAlertType", "clrAlertClosable"], ["styles", "padding-top: 0px; padding-bottom: 0px;", 1, "alert-items"], ["styles", "padding-top: 0px; padding-bottom: 0px;", 1, "alert-item", "clr-justify-content-center"], [2, "margin-top", "0px"], ["clrSelect", "", "name", "options", "required", "", 3, "ngModelChange", "clrSelectedChange", "ngModel"], [3, "value", 4, "ngFor", "ngForOf"], ["clrInput", "", "name", "input", 3, "input", "disabled", "value"], ["type", "button", 1, "custom-close-btn", 2, "margin-left", "auto", "background", "none", "border", "none", "cursor", "pointer"], [3, "value"], ["type", "button", 1, "custom-close-btn", 2, "margin-left", "auto", "background", "none", "border", "none", "cursor", "pointer", 3, "click"], ["shape", "code"], ["shape", "times"]],
+    consts: [[1, "custom-alert-spacing", 3, "clrAlertType", "clrAlertClosable"], ["styles", "padding-top: 0px; padding-bottom: 0px;", 1, "alert-items"], ["styles", "padding-top: 0px; padding-bottom: 0px;", 1, "alert-item", "clr-justify-content-center"], [2, "margin-top", "0px"], ["clrSelect", "", "name", "options", "required", "", 3, "ngModelChange", "change", "ngModel"], [3, "value", 4, "ngFor", "ngForOf"], ["clrInput", "", "name", "input", 3, "input", "disabled", "value"], ["type", "button", 1, "custom-close-btn", 2, "margin-left", "auto", "background", "none", "border", "none", "cursor", "pointer"], [3, "value"], ["type", "button", 1, "custom-close-btn", 2, "margin-left", "auto", "background", "none", "border", "none", "cursor", "pointer", 3, "click"], ["shape", "code"], ["shape", "times"]],
     template: function LuceneSingleQueryInputComponent_Template(rf, ctx) {
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "clr-alert", 0)(1, "div", 1)(2, "div", 2)(3, "clr-select-container", 3);
@@ -1253,8 +1254,8 @@ class LuceneSingleQueryInputComponent {
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayBindingSet"](ctx.selectedItem, $event) || (ctx.selectedItem = $event);
           return $event;
         });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("clrSelectedChange", function LuceneSingleQueryInputComponent_Template_select_clrSelectedChange_5_listener() {
-          return ctx.onSelectionChange("$event");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("change", function LuceneSingleQueryInputComponent_Template_select_change_5_listener($event) {
+          return ctx.onSelectionChange($event);
         });
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](6, LuceneSingleQueryInputComponent_option_6_Template, 2, 2, "option", 5);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
