@@ -6003,7 +6003,7 @@ class ItemViewComponent {
     };
     this.openCertModal = () => {
       if (this.itemType === src_app_common_menuType__WEBPACK_IMPORTED_MODULE_0__.ItemType.Service && this.instanceVersion) {
-        this.notifier.notify('error', this.translate.instant('error.form.requiremigrate'));
+        this.notifier.notify('error', this.translate.instant('error.selection.wrongtype'));
         return;
       }
       this.certModal?.open();
@@ -6021,7 +6021,7 @@ class ItemViewComponent {
     this.issue = () => {
       (0,src_app_common_certificateUtil__WEBPACK_IMPORTED_MODULE_3__.issueNewWithLocalKeys)(this.certificateService, this.itemType, this.itemId, this.orgMrn, this.fromBrowser, this.instanceVersion).then(cert => {
         this.certificateBundle = cert;
-        this.notifier.notify('success', this.translate.instant('success.resource.create'));
+        this.notifier.notify('success', this.translate.instant('success.certificate.issue'));
       });
     };
     this.revokeCerts = selected => {
@@ -6054,7 +6054,7 @@ class ItemViewComponent {
     };
     this.clickRevokeBtn = selected => {
       if (this.itemType === src_app_common_menuType__WEBPACK_IMPORTED_MODULE_0__.ItemType.Service && this.instanceVersion) {
-        this.notifier.notify('error', this.translate.instant('error.form.requiremigrate'));
+        this.notifier.notify('error', this.translate.instant('error.selection.wrongtype'));
         return;
       }
       if (selected.length === 0) {
