@@ -5137,7 +5137,7 @@ class ItemFormComponent {
       if (Object.keys(this.item).length !== 0) {
         if (this.itemType === src_app_common_menuType__WEBPACK_IMPORTED_MODULE_3__.ItemType.Instance) {
           this.item = (0,src_app_common_itemPreprocessor__WEBPACK_IMPORTED_MODULE_6__.preprocessToShow)(this.item, this.itemType);
-          if (this.item.geometry) {
+          if (this.item.geometry && this.geometryMap) {
             this.geometryMap.clearMap();
             this.geometry = [this.item.geometry];
           }
