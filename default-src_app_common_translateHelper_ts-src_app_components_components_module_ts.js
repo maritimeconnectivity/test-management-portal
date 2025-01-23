@@ -3203,6 +3203,7 @@ const preprocessToUpload = (item, itemType) => {
       keywords: typeof item.keywords === 'string' ? item.keywords.length > 0 ? item.keywords.split(",") : [] : item.keywords
     };
   }
+  return item;
 };
 const preprocessToShow = (item, itemType) => {
   if (itemType === _menuType__WEBPACK_IMPORTED_MODULE_2__.ItemType.Instance) {
