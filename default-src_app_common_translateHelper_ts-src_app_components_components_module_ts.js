@@ -5515,7 +5515,7 @@ class ItemFormComponent {
     }
   }
   onMrnKeyDown(event) {
-    const newValue = event.target.value + event.key;
+    const newValue = event.target.value;
     if (newValue.includes(this.mrnPrefix)) {
       this.item['mrn'] = newValue;
     } else {
