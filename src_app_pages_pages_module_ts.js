@@ -290,7 +290,7 @@ class ItemManagerService {
       } else if (itemType === _menuType__WEBPACK_IMPORTED_MODULE_1__.ItemType.Device) {
         return this.deviceService.createDevice(body, orgMrn);
       } else if (itemType === _menuType__WEBPACK_IMPORTED_MODULE_1__.ItemType.Vessel) {
-        return this.vesselService.createVessel((0,_itemPreprocessor__WEBPACK_IMPORTED_MODULE_2__.preprocessToUpload)(body, itemType), orgMrn);
+        return this.vesselService.createVessel(body, orgMrn);
       } else if (itemType === _menuType__WEBPACK_IMPORTED_MODULE_1__.ItemType.Service) {
         return this.serviceService.createService(body, orgMrn);
       } else if (itemType === _menuType__WEBPACK_IMPORTED_MODULE_1__.ItemType.Organization) {
@@ -298,7 +298,7 @@ class ItemManagerService {
       } else if (itemType === _menuType__WEBPACK_IMPORTED_MODULE_1__.ItemType.Role) {
         return this.roleService.createRole(body, orgMrn);
       } else if (itemType === _menuType__WEBPACK_IMPORTED_MODULE_1__.ItemType.Instance) {
-        return this.instanceService.createInstance((0,_itemPreprocessor__WEBPACK_IMPORTED_MODULE_2__.preprocessToUpload)(body, itemType));
+        return this.instanceService.createInstance(body);
       }
       return new rxjs__WEBPACK_IMPORTED_MODULE_7__.Observable();
     };
@@ -308,7 +308,7 @@ class ItemManagerService {
       } else if (itemType === _menuType__WEBPACK_IMPORTED_MODULE_1__.ItemType.Device) {
         return this.deviceService.updateDevice(body, orgMrn, entityMrn);
       } else if (itemType === _menuType__WEBPACK_IMPORTED_MODULE_1__.ItemType.Vessel) {
-        return this.vesselService.updateVessel((0,_itemPreprocessor__WEBPACK_IMPORTED_MODULE_2__.preprocessToUpload)(body, itemType), orgMrn, entityMrn);
+        return this.vesselService.updateVessel(body, orgMrn, entityMrn);
       } else if (itemType === _menuType__WEBPACK_IMPORTED_MODULE_1__.ItemType.Service) {
         if (version) {
           return this.serviceService.updateService(body, orgMrn, entityMrn, version);
@@ -320,7 +320,7 @@ class ItemManagerService {
       } else if (itemType === _menuType__WEBPACK_IMPORTED_MODULE_1__.ItemType.Role && numberId) {
         return this.roleService.updateRole(body, orgMrn, numberId);
       } else if (itemType === _menuType__WEBPACK_IMPORTED_MODULE_1__.ItemType.Instance && numberId) {
-        return this.instanceService.updateInstance(Object.assign({}, (0,_itemPreprocessor__WEBPACK_IMPORTED_MODULE_2__.preprocessToUpload)(body, itemType), {
+        return this.instanceService.updateInstance(Object.assign({}, body, {
           id: numberId
         }), numberId);
       }
