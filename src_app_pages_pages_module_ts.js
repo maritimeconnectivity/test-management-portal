@@ -168,7 +168,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   ItemManagerService: () => (/* binding */ ItemManagerService)
 /* harmony export */ });
-/* harmony import */ var _Users_dmc_Documents_GitHub_management_portal_clr_node_modules_pnpm_babel_runtime_7_25_0_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/.pnpm/@babel+runtime@7.25.0/node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 18540);
+/* harmony import */ var _home_runner_work_management_portal_clr_management_portal_clr_node_modules_pnpm_babel_runtime_7_25_0_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/.pnpm/@babel+runtime@7.25.0/node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 18540);
 /* harmony import */ var _menuType__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../menuType */ 95166);
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! rxjs */ 80983);
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! rxjs */ 50317);
@@ -198,7 +198,7 @@ class ItemManagerService {
     this.secomService = secomService;
     this.xmlService = xmlService;
     this.fetchListOfData = /*#__PURE__*/function () {
-      var _ref = (0,_Users_dmc_Documents_GitHub_management_portal_clr_node_modules_pnpm_babel_runtime_7_25_0_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (itemType, orgMrn, pageNumber, elementsPerPage, secomSearchParam) {
+      var _ref = (0,_home_runner_work_management_portal_clr_management_portal_clr_node_modules_pnpm_babel_runtime_7_25_0_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (itemType, orgMrn, pageNumber, elementsPerPage, secomSearchParam) {
         let page;
         if (itemType === _menuType__WEBPACK_IMPORTED_MODULE_1__.ItemType.Instance) {
           page = yield (0,rxjs__WEBPACK_IMPORTED_MODULE_6__.firstValueFrom)(_this.instanceService.getInstances(pageNumber, elementsPerPage, [], 'response'));
@@ -242,7 +242,7 @@ class ItemManagerService {
       };
     }();
     this.fetchRoles = /*#__PURE__*/function () {
-      var _ref2 = (0,_Users_dmc_Documents_GitHub_management_portal_clr_node_modules_pnpm_babel_runtime_7_25_0_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (orgMrn) {
+      var _ref2 = (0,_home_runner_work_management_portal_clr_management_portal_clr_node_modules_pnpm_babel_runtime_7_25_0_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (orgMrn) {
         return yield (0,rxjs__WEBPACK_IMPORTED_MODULE_6__.firstValueFrom)(_this.roleService.getRoles(orgMrn));
       });
       return function (_x6) {
@@ -250,7 +250,7 @@ class ItemManagerService {
       };
     }();
     this.fetchSingleData = /*#__PURE__*/function () {
-      var _ref3 = (0,_Users_dmc_Documents_GitHub_management_portal_clr_node_modules_pnpm_babel_runtime_7_25_0_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (itemType, orgMrn, id, instanceVersion) {
+      var _ref3 = (0,_home_runner_work_management_portal_clr_management_portal_clr_node_modules_pnpm_babel_runtime_7_25_0_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (itemType, orgMrn, id, instanceVersion) {
         try {
           let item;
           if (itemType === _menuType__WEBPACK_IMPORTED_MODULE_1__.ItemType.Device) {
@@ -1982,7 +1982,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   HeaderComponent: () => (/* binding */ HeaderComponent)
 /* harmony export */ });
-/* harmony import */ var _Users_dmc_Documents_GitHub_management_portal_clr_node_modules_pnpm_babel_runtime_7_25_0_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/.pnpm/@babel+runtime@7.25.0/node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 18540);
+/* harmony import */ var _home_runner_work_management_portal_clr_management_portal_clr_node_modules_pnpm_babel_runtime_7_25_0_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/.pnpm/@babel+runtime@7.25.0/node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 18540);
 /* harmony import */ var _cds_core_icon__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @cds/core/icon */ 52960);
 /* harmony import */ var _cds_core_icon__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @cds/core/icon */ 90814);
 /* harmony import */ var _cds_core_icon__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @cds/core/icon */ 58939);
@@ -2089,13 +2089,13 @@ class HeaderComponent {
   }
   logOut() {
     var _this = this;
-    return (0,_Users_dmc_Documents_GitHub_management_portal_clr_node_modules_pnpm_babel_runtime_7_25_0_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_management_portal_clr_management_portal_clr_node_modules_pnpm_babel_runtime_7_25_0_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       _this.authService.logout();
     })();
   }
   changeLang(lang) {
     var _this2 = this;
-    return (0,_Users_dmc_Documents_GitHub_management_portal_clr_node_modules_pnpm_babel_runtime_7_25_0_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_management_portal_clr_management_portal_clr_node_modules_pnpm_babel_runtime_7_25_0_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       (0,src_app_common_translateHelper__WEBPACK_IMPORTED_MODULE_3__.changeLang)(_this2.translate, lang);
       _this2.loadLang();
     })();
@@ -2532,7 +2532,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   AboutComponent: () => (/* binding */ AboutComponent)
 /* harmony export */ });
-/* harmony import */ var _Users_dmc_Documents_GitHub_management_portal_clr_node_modules_pnpm_babel_runtime_7_25_0_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/.pnpm/@babel+runtime@7.25.0/node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 18540);
+/* harmony import */ var _home_runner_work_management_portal_clr_management_portal_clr_node_modules_pnpm_babel_runtime_7_25_0_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/.pnpm/@babel+runtime@7.25.0/node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 18540);
 /* harmony import */ var _clr_angular__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @clr/angular */ 81577);
 /* harmony import */ var src_app_app_config__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/app.config */ 96370);
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common/http */ 92726);
@@ -2600,37 +2600,30 @@ class AboutComponent {
     }];
     this.fetchVersionFromSwaggerFile(src_app_app_config__WEBPACK_IMPORTED_MODULE_1__.AppConfig.IR_BASE_PATH + '/v3/api-docs').then(version => {
       this.irVersion = version;
+      this.updateVersion('Identity Registry', version);
     });
     if (!this.hasServiceRegistry) {
       this.components = this.components.filter(c => c.name !== 'Service Registry');
     } else {
       this.fetchVersionFromSwaggerFile(src_app_app_config__WEBPACK_IMPORTED_MODULE_1__.AppConfig.SR_BASE_PATH + '/v3/api-docs').then(version => {
         this.srVersion = version;
-        this.updateSrVersion();
+        this.updateVersion('Service Registry', version);
       });
     }
   }
-  updateSrVersion() {
-    this.components = this.components.map(c => {
-      if (c.name === 'Service Registry') {
-        c.version = this.srVersion;
-      }
-      return c;
-    });
+  updateVersion(attrName, version) {
+    this.components = this.components.map(c => c.name === attrName ? {
+      ...c,
+      version: version
+    } : c);
   }
   fetchVersionFromSwaggerFile(url) {
     var _this = this;
-    return (0,_Users_dmc_Documents_GitHub_management_portal_clr_node_modules_pnpm_babel_runtime_7_25_0_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
-      let headers = _this.defaultHeaders;
-      // to determine the Accept header
-      let httpHeaderAccepts = ['*/*'];
-      const httpHeaderAcceptSelected = _this.configuration.selectHeaderAccept(httpHeaderAccepts);
-      if (httpHeaderAcceptSelected != undefined) {
-        headers = headers.set('Accept', httpHeaderAcceptSelected);
-      }
+    return (0,_home_runner_work_management_portal_clr_management_portal_clr_node_modules_pnpm_babel_runtime_7_25_0_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+      const headers = _this.defaultHeaders.set('Accept', '*/*');
       return new Promise((resolve, reject) => {
         _this.http.request('get', url, {
-          withCredentials: _this.configuration.withCredentials,
+          withCredentials: false,
           headers: headers
         }).subscribe(res => {
           resolve(res.info.version ? res.info.version : 'Unknown');
@@ -2914,7 +2907,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   DetailViewComponent: () => (/* binding */ DetailViewComponent)
 /* harmony export */ });
-/* harmony import */ var _Users_dmc_Documents_GitHub_management_portal_clr_node_modules_pnpm_babel_runtime_7_25_0_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/.pnpm/@babel+runtime@7.25.0/node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 18540);
+/* harmony import */ var _home_runner_work_management_portal_clr_management_portal_clr_node_modules_pnpm_babel_runtime_7_25_0_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/.pnpm/@babel+runtime@7.25.0/node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 18540);
 /* harmony import */ var _clr_angular__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @clr/angular */ 81577);
 /* harmony import */ var _terraformer_wkt__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @terraformer/wkt */ 34311);
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! rxjs */ 80983);
@@ -3059,7 +3052,7 @@ class DetailViewComponent {
       });
     };
     this.loadItem = /*#__PURE__*/function () {
-      var _ref = (0,_Users_dmc_Documents_GitHub_management_portal_clr_node_modules_pnpm_babel_runtime_7_25_0_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (orgMrn) {
+      var _ref = (0,_home_runner_work_management_portal_clr_management_portal_clr_node_modules_pnpm_babel_runtime_7_25_0_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (orgMrn) {
         _this.item = yield _this.itemManagerService.fetchSingleData(_this.itemType, orgMrn, _this.id, _this.instanceVersion);
         if (_this.itemType === src_app_common_menuType__WEBPACK_IMPORTED_MODULE_2__.ItemType.Instance && _this.item) {
           _this.numberId = parseInt(_this.item.id);
@@ -3100,7 +3093,7 @@ class DetailViewComponent {
     };
     this.callUpdate = (body, id) => {
       this.itemManagerService.updateData(this.itemType, body, this.orgMrn, id, this.instanceVersion, this.numberId).subscribe(/*#__PURE__*/function () {
-        var _ref2 = (0,_Users_dmc_Documents_GitHub_management_portal_clr_node_modules_pnpm_babel_runtime_7_25_0_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (res) {
+        var _ref2 = (0,_home_runner_work_management_portal_clr_management_portal_clr_node_modules_pnpm_babel_runtime_7_25_0_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (res) {
           _this.notifier.notify('success', _this.translate.instant('success.resource.update'));
           _this.isLoading = false;
           // if version is different, redirect to the new version
@@ -3209,7 +3202,7 @@ class DetailViewComponent {
     if (queryParams['serial']) {
       this.serial = queryParams['serial'];
     }
-    this.parseMyUrl().then(/*#__PURE__*/(0,_Users_dmc_Documents_GitHub_management_portal_clr_node_modules_pnpm_babel_runtime_7_25_0_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    this.parseMyUrl().then(/*#__PURE__*/(0,_home_runner_work_management_portal_clr_management_portal_clr_node_modules_pnpm_babel_runtime_7_25_0_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       _this2.authService.getOrgMrn().then(orgMrn => {
         _this2.orgMrn = orgMrn;
         if (_this2.isForNew) {
@@ -3306,7 +3299,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   ListViewComponent: () => (/* binding */ ListViewComponent)
 /* harmony export */ });
-/* harmony import */ var _Users_dmc_Documents_GitHub_management_portal_clr_node_modules_pnpm_babel_runtime_7_25_0_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/.pnpm/@babel+runtime@7.25.0/node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 18540);
+/* harmony import */ var _home_runner_work_management_portal_clr_management_portal_clr_node_modules_pnpm_babel_runtime_7_25_0_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/.pnpm/@babel+runtime@7.25.0/node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 18540);
 /* harmony import */ var src_app_components_components_module__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/components/components.module */ 99850);
 /* harmony import */ var src_app_backend_api_identity_registry__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/backend-api/identity-registry */ 9136);
 /* harmony import */ var src_app_common_menuType__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/common/menuType */ 95166);
@@ -3407,7 +3400,7 @@ class ListViewComponent {
       }, {});
     };
     this.fetchData = /*#__PURE__*/function () {
-      var _ref = (0,_Users_dmc_Documents_GitHub_management_portal_clr_node_modules_pnpm_babel_runtime_7_25_0_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (itemType, pageNumber, elementsPerPage, secomSearchParam) {
+      var _ref = (0,_home_runner_work_management_portal_clr_management_portal_clr_node_modules_pnpm_babel_runtime_7_25_0_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (itemType, pageNumber, elementsPerPage, secomSearchParam) {
         try {
           if (itemType === src_app_common_menuType__WEBPACK_IMPORTED_MODULE_3__.ItemType.Role) {
             return yield _this.itemManagerService.fetchRoles(_this.orgMrn);
@@ -3429,7 +3422,7 @@ class ListViewComponent {
       };
     }();
     this.onDelete = /*#__PURE__*/function () {
-      var _ref2 = (0,_Users_dmc_Documents_GitHub_management_portal_clr_node_modules_pnpm_babel_runtime_7_25_0_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (selected) {
+      var _ref2 = (0,_home_runner_work_management_portal_clr_management_portal_clr_node_modules_pnpm_babel_runtime_7_25_0_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (selected) {
         const handleError = err => {
           if (err.status === 403) {
             _this.notifier.notify('error', _this.translate.instant('error.resource.permissionError'));
@@ -3444,7 +3437,7 @@ class ListViewComponent {
           _this.notifier.notify('error', _this.translate.instant('error.resource.permissionError'));
         } else {
           yield selected.forEach(/*#__PURE__*/function () {
-            var _ref3 = (0,_Users_dmc_Documents_GitHub_management_portal_clr_node_modules_pnpm_babel_runtime_7_25_0_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (item) {
+            var _ref3 = (0,_home_runner_work_management_portal_clr_management_portal_clr_node_modules_pnpm_babel_runtime_7_25_0_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (item) {
               yield _this.itemManagerService.deleteData(_this.itemType, _this.orgMrn, item.mrn, item.instanceVersion, item.id && parseInt(item.id)).pipe((0,rxjs__WEBPACK_IMPORTED_MODULE_11__.catchError)(err => {
                 handleError(err);
                 return (0,rxjs__WEBPACK_IMPORTED_MODULE_12__.throwError)(err);
@@ -4177,7 +4170,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   SrMapSearchComponent: () => (/* binding */ SrMapSearchComponent)
 /* harmony export */ });
-/* harmony import */ var _Users_dmc_Documents_GitHub_management_portal_clr_node_modules_pnpm_babel_runtime_7_25_0_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/.pnpm/@babel+runtime@7.25.0/node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 18540);
+/* harmony import */ var _home_runner_work_management_portal_clr_management_portal_clr_node_modules_pnpm_babel_runtime_7_25_0_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/.pnpm/@babel+runtime@7.25.0/node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 18540);
 /* harmony import */ var _components_input_geometry_input_geometry_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/input-geometry/input-geometry.component */ 5454);
 /* harmony import */ var src_app_components_components_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/components/components.module */ 99850);
 /* harmony import */ var _components_svc_search_input_svc_search_input_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/svc-search-input/svc-search-input.component */ 39264);
@@ -4265,7 +4258,7 @@ class SrMapSearchComponent {
       this.search(freetext, this.searchParams);
     };
     this.search = /*#__PURE__*/function () {
-      var _ref = (0,_Users_dmc_Documents_GitHub_management_portal_clr_node_modules_pnpm_babel_runtime_7_25_0_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (freetext, searchParams) {
+      var _ref = (0,_home_runner_work_management_portal_clr_management_portal_clr_node_modules_pnpm_babel_runtime_7_25_0_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (freetext, searchParams) {
         const secomSearchParam = _this.buildSearchParam(_this.freetext, _this.searchParams, Object.keys(_this.queryGeometry).length > 0 ? JSON.stringify(_this.queryGeometry) : ''); //geojsonToWKT(this.queryGeometry) : '');
         if (_this.freetext === '' && Object.keys(_this.searchParams).length === 0 && Object.keys(_this.queryGeometry).length === 0) {
           return;
@@ -4472,7 +4465,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   SrSearchComponent: () => (/* binding */ SrSearchComponent)
 /* harmony export */ });
-/* harmony import */ var _Users_dmc_Documents_GitHub_management_portal_clr_node_modules_pnpm_babel_runtime_7_25_0_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/.pnpm/@babel+runtime@7.25.0/node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 18540);
+/* harmony import */ var _home_runner_work_management_portal_clr_management_portal_clr_node_modules_pnpm_babel_runtime_7_25_0_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/.pnpm/@babel+runtime@7.25.0/node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 18540);
 /* harmony import */ var _components_input_geometry_input_geometry_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/input-geometry/input-geometry.component */ 5454);
 /* harmony import */ var src_app_components_components_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/components/components.module */ 99850);
 /* harmony import */ var _components_svc_search_input_svc_search_input_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/svc-search-input/svc-search-input.component */ 39264);
@@ -4579,7 +4572,7 @@ class SrSearchComponent {
       }, {});
     };
     this.fetchData = /*#__PURE__*/function () {
-      var _ref = (0,_Users_dmc_Documents_GitHub_management_portal_clr_node_modules_pnpm_babel_runtime_7_25_0_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (itemType, pageNumber, elementsPerPage) {
+      var _ref = (0,_home_runner_work_management_portal_clr_management_portal_clr_node_modules_pnpm_babel_runtime_7_25_0_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (itemType, pageNumber, elementsPerPage) {
         try {
           const secomSearchParam = _this.buildSearchParam(_this.freetext, _this.searchParams, Object.keys(_this.queryGeometry).length > 0 ? JSON.stringify(_this.queryGeometry) : ''); //geojsonToWKT(this.queryGeometry) : '');
           if (_this.freetext === '' && Object.keys(_this.searchParams).length === 0 && Object.keys(_this.queryGeometry).length === 0) {
