@@ -11,6 +11,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   LogicalOperator: () => (/* binding */ LogicalOperator)
 /* harmony export */ });
+/*
+ * Copyright (c) 2025 Maritime Connectivity Platform Consortium
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 var LogicalOperator;
 (function (LogicalOperator) {
   LogicalOperator["And"] = "and";
@@ -30,6 +45,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   LuceneComponentItem: () => (/* binding */ LuceneComponentItem)
 /* harmony export */ });
+/*
+ * Copyright (c) 2025 Maritime Connectivity Platform Consortium
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 class LuceneComponentItem {
   constructor(component, id, data, fieldInfo) {
     this.component = component;
@@ -56,6 +86,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _localOperator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./localOperator */ 98902);
 /* harmony import */ var lucene_query_string_builder__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! lucene-query-string-builder */ 57216);
 /* harmony import */ var lucene_query_string_builder__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(lucene_query_string_builder__WEBPACK_IMPORTED_MODULE_1__);
+/*
+ * Copyright (c) 2025 Maritime Connectivity Platform Consortium
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 
 const buildTerm = data => {
@@ -97,7 +142,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   srFieldInfo: () => (/* binding */ srFieldInfo)
 /* harmony export */ });
 /*
- * Copyright (c) 2023 Maritime Connectivity Platform Consortium
+ * Copyright (c) 2025 Maritime Connectivity Platform Consortium
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -397,7 +442,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   storeTheme: () => (/* binding */ storeTheme)
 /* harmony export */ });
 /*
- * Copyright (c) 2023 Maritime Connectivity Platform Consortium
+ * Copyright (c) 2025 Maritime Connectivity Platform Consortium
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -809,6 +854,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _cds_core_icon__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @cds/core/icon */ 52960);
 /* harmony import */ var _cds_core_icon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @cds/core/icon */ 61497);
 /* harmony import */ var _clr_angular__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @clr/angular */ 81577);
+/*
+ * Copyright (c) 2025 Maritime Connectivity Platform Consortium
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 
 
@@ -823,9 +883,9 @@ class LuceneGeoQueryInputComponent {
     this.data = {
       id: ''
     };
-    this.onUpdate = new _angular_core__WEBPACK_IMPORTED_MODULE_2__.EventEmitter();
-    this.onDelete = new _angular_core__WEBPACK_IMPORTED_MODULE_2__.EventEmitter();
-    this.onExtend = new _angular_core__WEBPACK_IMPORTED_MODULE_2__.EventEmitter();
+    this.update = new _angular_core__WEBPACK_IMPORTED_MODULE_2__.EventEmitter();
+    this.delete = new _angular_core__WEBPACK_IMPORTED_MODULE_2__.EventEmitter();
+    this.extend = new _angular_core__WEBPACK_IMPORTED_MODULE_2__.EventEmitter();
     this.id = 'geo';
   }
   ngOnInit() {}
@@ -840,9 +900,9 @@ class LuceneGeoQueryInputComponent {
       data: "data"
     },
     outputs: {
-      onUpdate: "onUpdate",
-      onDelete: "onDelete",
-      onExtend: "onExtend"
+      update: "update",
+      delete: "delete",
+      extend: "extend"
     },
     standalone: true,
     features: [_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵStandaloneFeature"]],
@@ -883,6 +943,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ 84576);
 /* harmony import */ var _clr_angular__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @clr/angular */ 81577);
 /* harmony import */ var src_app_common_lucene_query_localOperator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! src/app/common/lucene-query/localOperator */ 98902);
+/*
+ * Copyright (c) 2025 Maritime Connectivity Platform Consortium
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 
 
@@ -898,8 +973,8 @@ class LuceneLogicInputComponent {
       id: '',
       operator: src_app_common_lucene_query_localOperator__WEBPACK_IMPORTED_MODULE_0__.LogicalOperator.And
     };
-    this.onUpdate = new _angular_core__WEBPACK_IMPORTED_MODULE_1__.EventEmitter();
-    this.onDelete = new _angular_core__WEBPACK_IMPORTED_MODULE_1__.EventEmitter();
+    this.update = new _angular_core__WEBPACK_IMPORTED_MODULE_1__.EventEmitter();
+    this.delete = new _angular_core__WEBPACK_IMPORTED_MODULE_1__.EventEmitter();
     this.id = shortid.generate();
     this.data = {
       id: this.id,
@@ -911,7 +986,7 @@ class LuceneLogicInputComponent {
       id: this.id,
       operator: event
     };
-    this.onUpdate.emit({
+    this.update.emit({
       id: this.id,
       data: this.data
     });
@@ -928,8 +1003,8 @@ class LuceneLogicInputComponent {
       data: "data"
     },
     outputs: {
-      onUpdate: "onUpdate",
-      onDelete: "onDelete"
+      update: "update",
+      delete: "delete"
     },
     standalone: true,
     features: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵStandaloneFeature"]],
@@ -986,6 +1061,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var src_app_common_columnForMenu__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! src/app/common/columnForMenu */ 14943);
 /* harmony import */ var src_app_common_lucene_query_service_registry_field_info__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/common/lucene-query/service-registry-field-info */ 11166);
 /* harmony import */ var src_app_common_menuType__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/common/menuType */ 95166);
+/*
+ * Copyright (c) 2025 Maritime Connectivity Platform Consortium
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 
 
@@ -1116,7 +1206,7 @@ function LuceneSingleQueryInputComponent_Conditional_12_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function LuceneSingleQueryInputComponent_Conditional_12_Template_button_click_0_listener() {
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrestoreView"](_r7);
       const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"]();
-      return _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵresetView"](ctx_r2.delete());
+      return _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵresetView"](ctx_r2.onDelete());
     });
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](1, "cds-icon", 12);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
@@ -1142,9 +1232,9 @@ class LuceneSingleQueryInputComponent {
       id: ''
     };
     this.fieldInfo = src_app_common_lucene_query_service_registry_field_info__WEBPACK_IMPORTED_MODULE_1__.srFieldInfo;
-    this.onUpdate = new _angular_core__WEBPACK_IMPORTED_MODULE_3__.EventEmitter();
-    this.onDelete = new _angular_core__WEBPACK_IMPORTED_MODULE_3__.EventEmitter();
-    this.onExtend = new _angular_core__WEBPACK_IMPORTED_MODULE_3__.EventEmitter();
+    this.update = new _angular_core__WEBPACK_IMPORTED_MODULE_3__.EventEmitter();
+    this.delete = new _angular_core__WEBPACK_IMPORTED_MODULE_3__.EventEmitter();
+    this.extend = new _angular_core__WEBPACK_IMPORTED_MODULE_3__.EventEmitter();
     this.options = this.fieldInfo?.map(e => e.name);
     this.id = shortid.generate();
     this.data = {
@@ -1188,7 +1278,7 @@ class LuceneSingleQueryInputComponent {
         [this.field]: value
       };
       this.fieldValue = value;
-      this.onUpdate.emit({
+      this.update.emit({
         id: this.id,
         data: this.data
       });
@@ -1202,16 +1292,16 @@ class LuceneSingleQueryInputComponent {
       id: this.id,
       [this.field]: this.fieldValue
     };
-    this.onUpdate.emit({
+    this.update.emit({
       id: this.id,
       data: this.data
     });
   }
-  delete() {
-    this.onDelete.emit(this.id);
+  onDelete() {
+    this.delete.emit(this.id);
   }
   createExpressionWithBrackets() {
-    this.onExtend.emit(this.id);
+    this.extend.emit(this.id);
   }
   static #_ = this.ɵfac = function LuceneSingleQueryInputComponent_Factory(__ngFactoryType__) {
     return new (__ngFactoryType__ || LuceneSingleQueryInputComponent)();
@@ -1228,9 +1318,9 @@ class LuceneSingleQueryInputComponent {
       fieldInfo: "fieldInfo"
     },
     outputs: {
-      onUpdate: "onUpdate",
-      onDelete: "onDelete",
-      onExtend: "onExtend"
+      update: "update",
+      delete: "delete",
+      extend: "extend"
     },
     standalone: true,
     features: [_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵStandaloneFeature"]],
@@ -1297,6 +1387,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _clr_angular__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @clr/angular */ 81577);
 /* harmony import */ var _lucene_single_query_input_lucene_single_query_input_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../lucene-single-query-input/lucene-single-query-input.component */ 1374);
 /* harmony import */ var _lucene_logic_input_lucene_logic_input_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../lucene-logic-input/lucene-logic-input.component */ 544);
+/*
+ * Copyright (c) 2025 Maritime Connectivity Platform Consortium
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 
 
@@ -1373,10 +1478,10 @@ class LuceneTermInputComponent {
       id: ''
     };
     this.fieldInfo = [];
-    this.onUpdate = new _angular_core__WEBPACK_IMPORTED_MODULE_2__.EventEmitter();
-    this.onDelete = new _angular_core__WEBPACK_IMPORTED_MODULE_2__.EventEmitter();
-    this.onAdd = new _angular_core__WEBPACK_IMPORTED_MODULE_2__.EventEmitter();
-    this.onExtend = new _angular_core__WEBPACK_IMPORTED_MODULE_2__.EventEmitter();
+    this.update = new _angular_core__WEBPACK_IMPORTED_MODULE_2__.EventEmitter();
+    this.delete = new _angular_core__WEBPACK_IMPORTED_MODULE_2__.EventEmitter();
+    this.add = new _angular_core__WEBPACK_IMPORTED_MODULE_2__.EventEmitter();
+    this.extend = new _angular_core__WEBPACK_IMPORTED_MODULE_2__.EventEmitter();
     this.id = shortid.generate();
     this.data = {
       id: this.id
@@ -1394,29 +1499,29 @@ class LuceneTermInputComponent {
       if (componentRef.instance instanceof _lucene_single_query_input_lucene_single_query_input_component__WEBPACK_IMPORTED_MODULE_0__.LuceneSingleQueryInputComponent) {
         componentRef.instance.requireExtendBtn = false;
       }
-      componentRef.instance.onUpdate.subscribe(value => this.onEditQuery(value.id, value.data));
-      componentRef.instance.onDelete.subscribe(id => this.onDeleteById(id));
-      componentRef.instance.onExtend?.subscribe(id => this.onExtendById(id));
+      componentRef.instance.update.subscribe(value => this.onEditQuery(value.id, value.data));
+      componentRef.instance.delete.subscribe(id => this.onDeleteById(id));
+      componentRef.instance.extend?.subscribe(id => this.onExtendById(id));
     });
   }
-  delete() {
+  onDelete() {
     this.onDeleteById(this.id);
   }
   onDeleteById(id) {
-    this.onDelete.emit(id);
+    this.delete.emit(id);
   }
   onEditQuery(id, data) {
-    this.onUpdate.emit({
+    this.update.emit({
       id: id,
       data: data
     });
   }
   onExtendById(id) {
-    this.onExtend.emit(id);
+    this.extend.emit(id);
   }
   addLuceneItem(event) {
     this.selectedItem = event.target.value;
-    this.onAdd.emit({
+    this.add.emit({
       groupId: this.id,
       key: this.selectedItem
     });
@@ -1443,10 +1548,10 @@ class LuceneTermInputComponent {
       fieldInfo: "fieldInfo"
     },
     outputs: {
-      onUpdate: "onUpdate",
-      onDelete: "onDelete",
-      onAdd: "onAdd",
-      onExtend: "onExtend"
+      update: "update",
+      delete: "delete",
+      add: "add",
+      extend: "extend"
     },
     standalone: true,
     features: [_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵStandaloneFeature"]],
@@ -1461,7 +1566,7 @@ class LuceneTermInputComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](7, "button", 6);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("click", function LuceneTermInputComponent_Template_button_click_7_listener() {
           _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r1);
-          return _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵresetView"](ctx.delete());
+          return _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵresetView"](ctx.onDelete());
         });
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](8, "cds-icon", 7);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()()()();
@@ -1505,6 +1610,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/common */ 87477);
 /* harmony import */ var _lucene_term_input_lucene_term_input_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../lucene-term-input/lucene-term-input.component */ 22590);
 /* harmony import */ var _lucene_geo_query_input_lucene_geo_query_input_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../lucene-geo-query-input/lucene-geo-query-input.component */ 83096);
+/*
+ * Copyright (c) 2025 Maritime Connectivity Platform Consortium
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 
 
@@ -1646,10 +1766,10 @@ class SvcSearchInputComponent {
           id: term.id
         };
         componentRef.instance.fieldInfo = this.fieldInfo;
-        componentRef.instance.onUpdate.subscribe(value => this.updateLuceneItem(value.id, value.data));
-        componentRef.instance.onDelete.subscribe(id => this.deleteLuceneItem(id));
-        componentRef.instance.onExtend?.subscribe(id => this.extendToGroup(id));
-        componentRef.instance.onAdd?.subscribe(item => this.addLuceneItemForGroup(item));
+        componentRef.instance.update.subscribe(value => this.updateLuceneItem(value.id, value.data));
+        componentRef.instance.delete.subscribe(id => this.deleteLuceneItem(id));
+        componentRef.instance.extend?.subscribe(id => this.extendToGroup(id));
+        componentRef.instance.add?.subscribe(item => this.addLuceneItemForGroup(item));
         if (componentRef.instance.generateItems) {
           componentRef.instance.generateItems(term, this.fieldInfo);
         }
@@ -1663,9 +1783,9 @@ class SvcSearchInputComponent {
         componentRef.instance.id = term.id;
         componentRef.instance.data = term;
         componentRef.instance.fieldInfo = this.fieldInfo;
-        componentRef.instance.onUpdate.subscribe(value => this.updateLuceneItem(value.id, value.data));
-        componentRef.instance.onDelete.subscribe(id => this.deleteLuceneItem(id));
-        componentRef.instance.onExtend?.subscribe(id => this.extendToGroup(id));
+        componentRef.instance.update.subscribe(value => this.updateLuceneItem(value.id, value.data));
+        componentRef.instance.delete.subscribe(id => this.deleteLuceneItem(id));
+        componentRef.instance.extend?.subscribe(id => this.extendToGroup(id));
         if (!this.group.find(e => e.id === term.id)) {
           this.group.push(new src_app_common_lucene_query_lucene_component_item__WEBPACK_IMPORTED_MODULE_0__.LuceneComponentItem(factory.componentType, componentRef.instance.id, componentRef.instance.data, this.fieldInfo));
         }
@@ -1677,9 +1797,9 @@ class SvcSearchInputComponent {
         const componentRef = viewContainerRef.createComponent(factory);
         componentRef.instance.id = shortid.generate();
         componentRef.instance.fieldInfo = this.fieldInfo;
-        componentRef.instance.onUpdate.subscribe(value => this.updateLuceneItem(value.id, value.data));
-        componentRef.instance.onDelete.subscribe(id => this.deleteLuceneItem(id));
-        componentRef.instance.onExtend?.subscribe(id => this.extendToGroup(id));
+        componentRef.instance.update.subscribe(value => this.updateLuceneItem(value.id, value.data));
+        componentRef.instance.delete.subscribe(id => this.deleteLuceneItem(id));
+        componentRef.instance.extend?.subscribe(id => this.extendToGroup(id));
         if (!this.group.find(e => e.id === componentRef.instance.id)) {
           this.group.push(new src_app_common_lucene_query_lucene_component_item__WEBPACK_IMPORTED_MODULE_0__.LuceneComponentItem(factory.componentType, componentRef.instance.id, componentRef.instance.data, this.fieldInfo));
         }
@@ -3686,7 +3806,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   MSR_MENU_FOR_ORG: () => (/* binding */ MSR_MENU_FOR_ORG)
 /* harmony export */ });
 /*
- * Copyright (c) 2024 Maritime Connectivity Platform Consortium
+ * Copyright (c) 2025 Maritime Connectivity Platform Consortium
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -3819,18 +3939,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _not_found_not_found_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./not-found/not-found.component */ 97802);
 /* harmony import */ var _sr_map_search_sr_map_search_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./sr-map-search/sr-map-search.component */ 41342);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/core */ 1888);
-
 /*
-import { PagesComponent } from './pages.component';
-import { NotFoundComponent } from './miscellaneous/not-found/not-found.component';
-import { AuthGuard } from '../auth/app.guard';
-import { IrGuideComponent } from './identity-registry/ir-guide/ir-guide.component';
-import { SrSearchComponent } from './service-registry/sr-search/sr-search.component';
-import { SrGuideComponent } from './service-registry/sr-guide/sr-guide.component';
-import { MsrLedgerSearchComponent } from './msr-ledger/msr-ledger-search/msr-ledger-search.component';
-import { LedgerGuideComponent } from './msr-ledger/ledger-guide/ledger-guide.component';
-import { AboutComponent } from './about/about.component';
-*/
+ * Copyright (c) 2025 Maritime Connectivity Platform Consortium
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 
 
 
@@ -3921,97 +4045,7 @@ const routes = [{
   }, {
     path: '**',
     component: _not_found_not_found_component__WEBPACK_IMPORTED_MODULE_7__.NotFoundComponent
-  }
-  /*
-  
-  // identity registry
-  {
-    path: 'ir/devices',
-    loadChildren: () => import('../shared/list-view/list-view.module')
-      .then(m => m.ListViewModule),
-  },
-  {
-    path: 'ir/services',
-    loadChildren: () => import('../shared/list-view/list-view.module')
-      .then(m => m.ListViewModule),
-  },
-  {
-    path: 'ir/users',
-    loadChildren: () => import('../shared/list-view/list-view.module')
-      .then(m => m.ListViewModule),
-  },
-  {
-    path: 'ir/vessels',
-    loadChildren: () => import('../shared/list-view/list-view.module')
-      .then(m => m.ListViewModule),
-  },
-  {
-    path: 'ir/organizations',
-    loadChildren: () => import('../shared/list-view/list-view.module')
-      .then(m => m.ListViewModule),
-  },
-  {
-    path: 'ir/apply-org',
-    loadChildren: () => import('../shared/list-view/list-view.module')
-      .then(m => m.ListViewModule),
-  },
-  {
-    path: 'ir/orgcandidates',
-    loadChildren: () => import('../shared/list-view/list-view.module')
-      .then(m => m.ListViewModule),
-  },
-  {
-    path: 'ir/acting',
-    loadChildren: () => import('../shared/list-view/list-view.module')
-      .then(m => m.ListViewModule),
-  },
-  {
-    path: 'ir/roles',
-    loadChildren: () => import('../shared/list-view/list-view.module')
-      .then(m => m.ListViewModule),
-  },
-  {
-    path: 'ir/agents',
-    loadChildren: () => import('../shared/list-view/list-view.module')
-      .then(m => m.ListViewModule),
-  },
-  
-  // service registry
-  {
-    path: 'sr/instances',
-    loadChildren: () => import('../shared/list-view/list-view.module')
-      .then(m => m.ListViewModule),
-  },
-  {
-    path: 'sr/instanceorg',
-    loadChildren: () => import('../shared/list-view/list-view.module')
-      .then(m => m.ListViewModule),
-  },
-  {
-    path: 'sr/approve-svc',
-    loadChildren: () => import('../shared/list-view/list-view.module')
-      .then(m => m.ListViewModule),
-  },
-  
-  {
-    path: 'ledger/search',
-    component: MsrLedgerSearchComponent,
-  },
-  {
-    path: 'ledger/guide',
-    component: LedgerGuideComponent,
-  },
-  
-  {
-    path: '',
-    redirectTo: 'ir/guide',
-    pathMatch: 'full',
-  },
-  {
-    path: '**',
-    component: NotFoundComponent,
-  },
-  */]
+  }]
 }];
 class PagesRoutingModule {
   static #_ = this.ɵfac = function PagesRoutingModule_Factory(__ngFactoryType__) {
@@ -4176,19 +4210,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_svc_search_input_svc_search_input_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/svc-search-input/svc-search-input.component */ 39264);
 /* harmony import */ var src_app_common_menuType__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/app/common/menuType */ 95166);
 /* harmony import */ var src_app_common_lucene_query_service_registry_field_info__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/app/common/lucene-query/service-registry-field-info */ 11166);
-/* harmony import */ var _clr_angular__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @clr/angular */ 81577);
+/* harmony import */ var _clr_angular__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @clr/angular */ 81577);
 /* harmony import */ var src_app_common_translateHelper__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! src/app/common/translateHelper */ 23987);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/core */ 1888);
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/router */ 44424);
-/* harmony import */ var src_app_backend_api_secom__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! src/app/backend-api/secom */ 67063);
-/* harmony import */ var src_app_backend_api_service_registry__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! src/app/backend-api/service-registry */ 90719);
-/* harmony import */ var src_app_common_shared_item_manager_service__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! src/app/common/shared/item-manager.service */ 43983);
-/* harmony import */ var gramli_angular_notifier__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! gramli-angular-notifier */ 1059);
-/* harmony import */ var _ngx_translate_core__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @ngx-translate/core */ 48070);
-/* harmony import */ var src_app_auth_auth_service__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! src/app/auth/auth.service */ 84595);
-/* harmony import */ var _components_item_view_item_view_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../components/item-view/item-view.component */ 25642);
-
-
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/core */ 1888);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/router */ 44424);
+/* harmony import */ var src_app_common_shared_item_manager_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! src/app/common/shared/item-manager.service */ 43983);
+/* harmony import */ var gramli_angular_notifier__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! gramli-angular-notifier */ 1059);
+/* harmony import */ var _ngx_translate_core__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @ngx-translate/core */ 48070);
+/* harmony import */ var src_app_auth_auth_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! src/app/auth/auth.service */ 84595);
+/* harmony import */ var _components_item_view_item_view_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../components/item-view/item-view.component */ 25642);
 
 
 
@@ -4207,12 +4237,47 @@ __webpack_require__.r(__webpack_exports__);
 
 const _c0 = ["map"];
 const _c1 = ["queryInput"];
+const _forTrack0 = ($index, $item) => $item.id;
+function SrMapSearchComponent_For_11_clr_accordion_content_3_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r2 = _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵelementStart"](0, "clr-accordion-content");
+    _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵelement"](1, "app-item-view", 12);
+    _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵelementStart"](2, "button", 13);
+    _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵlistener"]("click", function SrMapSearchComponent_For_11_clr_accordion_content_3_Template_button_click_2_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵrestoreView"](_r2);
+      const selectedInstance_r3 = _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵnextContext"]().$implicit;
+      const ctx_r3 = _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵresetView"](ctx_r3.moveToEditPage(selectedInstance_r3, false));
+    });
+    _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵtext"](3, "Move to Detail");
+    _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵelementEnd"]()();
+  }
+  if (rf & 2) {
+    const selectedInstance_r3 = _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵnextContext"]().$implicit;
+    const ctx_r3 = _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵadvance"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵproperty"]("isLoading", ctx_r3.isLoading)("itemType", ctx_r3.instanceType)("item", selectedInstance_r3)("orgMrn", "")("viewOnly", true)("noMap", true);
+  }
+}
+function SrMapSearchComponent_For_11_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵelementStart"](0, "clr-accordion-panel")(1, "clr-accordion-title");
+    _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵtext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵtemplate"](3, SrMapSearchComponent_For_11_clr_accordion_content_3_Template, 4, 6, "clr-accordion-content", 11);
+    _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵelementEnd"]();
+  }
+  if (rf & 2) {
+    const selectedInstance_r3 = ctx.$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵtextInterpolate"](selectedInstance_r3.name);
+  }
+}
 class SrMapSearchComponent {
-  constructor(router, secomSearchController, instanceControllerService, itemManagerService, notifier, translate, authService) {
+  constructor(router, itemManagerService, notifier, translate, authService) {
     var _this = this;
     this.router = router;
-    this.secomSearchController = secomSearchController;
-    this.instanceControllerService = instanceControllerService;
     this.itemManagerService = itemManagerService;
     this.notifier = notifier;
     this.translate = translate;
@@ -4232,7 +4297,7 @@ class SrMapSearchComponent {
     this.isLoading = false;
     this.allInstances = [];
     this.fieldInfo = src_app_common_lucene_query_service_registry_field_info__WEBPACK_IMPORTED_MODULE_5__.srFieldInfo;
-    this.selectedInstance = {};
+    this.selectedInstances = [];
     this.instanceType = src_app_common_menuType__WEBPACK_IMPORTED_MODULE_4__.ItemType.Instance;
     this.apiBase = 'sr';
     this.onUpdateGeometry = event => {
@@ -4301,6 +4366,7 @@ class SrMapSearchComponent {
       this.clearMap();
       this.onClearQueryGeometry();
       this.queryInput?.clearInputOnly();
+      this.selectedInstances = [];
     };
     this.onClearQueryGeometry = () => {
       this.queryGeometry = {};
@@ -4312,9 +4378,12 @@ class SrMapSearchComponent {
       this.geometryMap?.clearMap();
     };
     this.showInstanceInfo = event => {
-      this.itemManagerService.fetchSingleData(this.instanceType, "", event.instanceId, event.version).then(instance => {
-        this.selectedInstance = instance;
-        this.showPanel = true;
+      this.showPanel = true;
+      this.selectedInstances = [];
+      event.forEach(i => {
+        this.itemManagerService.fetchSingleData(this.instanceType, "", i.instanceId, i.version).then(instance => {
+          this.selectedInstances.push(instance);
+        });
       });
     };
     this.moveToEditPage = (selectedItem, forEdit = true) => {
@@ -4361,93 +4430,86 @@ class SrMapSearchComponent {
     }
   }
   static #_ = this.ɵfac = function SrMapSearchComponent_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || SrMapSearchComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_13__.Router), _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵdirectiveInject"](src_app_backend_api_secom__WEBPACK_IMPORTED_MODULE_7__.SECOMService), _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵdirectiveInject"](src_app_backend_api_service_registry__WEBPACK_IMPORTED_MODULE_8__.InstanceControllerService), _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵdirectiveInject"](src_app_common_shared_item_manager_service__WEBPACK_IMPORTED_MODULE_9__.ItemManagerService), _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵdirectiveInject"](gramli_angular_notifier__WEBPACK_IMPORTED_MODULE_14__.NotifierService), _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵdirectiveInject"](_ngx_translate_core__WEBPACK_IMPORTED_MODULE_15__.TranslateService), _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵdirectiveInject"](src_app_auth_auth_service__WEBPACK_IMPORTED_MODULE_10__.AuthService));
+    return new (__ngFactoryType__ || SrMapSearchComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_11__.Router), _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵdirectiveInject"](src_app_common_shared_item_manager_service__WEBPACK_IMPORTED_MODULE_7__.ItemManagerService), _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵdirectiveInject"](gramli_angular_notifier__WEBPACK_IMPORTED_MODULE_12__.NotifierService), _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵdirectiveInject"](_ngx_translate_core__WEBPACK_IMPORTED_MODULE_13__.TranslateService), _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵdirectiveInject"](src_app_auth_auth_service__WEBPACK_IMPORTED_MODULE_8__.AuthService));
   };
-  static #_2 = this.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵdefineComponent"]({
+  static #_2 = this.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵdefineComponent"]({
     type: SrMapSearchComponent,
     selectors: [["app-sr-search"]],
     viewQuery: function SrMapSearchComponent_Query(rf, ctx) {
       if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵviewQuery"](_c0, 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵviewQuery"](_c1, 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵviewQuery"](_c0, 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵviewQuery"](_c1, 5);
       }
       if (rf & 2) {
         let _t;
-        _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵloadQuery"]()) && (ctx.geometryMap = _t.first);
-        _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵloadQuery"]()) && (ctx.queryInput = _t.first);
+        _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵloadQuery"]()) && (ctx.geometryMap = _t.first);
+        _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵloadQuery"]()) && (ctx.queryInput = _t.first);
       }
     },
     standalone: true,
-    features: [_angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵStandaloneFeature"]],
+    features: [_angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵStandaloneFeature"]],
     decls: 15,
-    vars: 14,
-    consts: [["map", ""], ["queryInput", ""], ["panel", ""], [1, "overlay-container"], [3, "onGeometryChange", "onShowBacklink", "onClear", "fullscreen", "isEditing", "isForSearch", "geometry", "geometryBacklink"], [1, "overlay"], [3, "onSearch", "onClearAll", "orgMrn"], [3, "clrSidePanelOpenChange", "clrSidePanelAlternateClose", "clrSidePanelOpen", "clrSidePanelPreventClose"], [1, "side-panel-body"], [3, "isLoading", "itemType", "item", "orgMrn", "viewOnly", "noMap"], [1, "side-panel-footer"], ["type", "button", 1, "btn", "btn-outline-primary", 3, "click"], ["type", "button", 1, "btn", "btn-primary", 3, "click"]],
+    vars: 8,
+    consts: [["map", ""], ["queryInput", ""], ["panel", ""], [1, "overlay-container"], [3, "onGeometryChange", "select", "onClear", "fullscreen", "isEditing", "isForSearch", "geometry", "geometryBacklink"], [1, "overlay"], [3, "onSearch", "onClearAll", "orgMrn"], [3, "clrSidePanelOpenChange", "clrSidePanelAlternateClose", "clrSidePanelOpen", "clrSidePanelPreventClose"], [1, "side-panel-body"], [1, "side-panel-footer"], ["type", "button", 1, "btn", "btn-primary", 3, "click"], [4, "clrIfExpanded"], [3, "isLoading", "itemType", "item", "orgMrn", "viewOnly", "noMap"], ["type", "button", 1, "btn", "btn-outline-primary", "btn-block", 3, "click"]],
     template: function SrMapSearchComponent_Template(rf, ctx) {
       if (rf & 1) {
-        const _r1 = _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵgetCurrentView"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵelementStart"](0, "div", 3)(1, "app-input-geometry", 4, 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵlistener"]("onGeometryChange", function SrMapSearchComponent_Template_app_input_geometry_onGeometryChange_1_listener($event) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵrestoreView"](_r1);
-          return _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵresetView"](ctx.onUpdateGeometry($event));
-        })("onShowBacklink", function SrMapSearchComponent_Template_app_input_geometry_onShowBacklink_1_listener($event) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵrestoreView"](_r1);
-          return _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵresetView"](ctx.showInstanceInfo($event));
+        const _r1 = _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵgetCurrentView"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵelementStart"](0, "div", 3)(1, "app-input-geometry", 4, 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵlistener"]("onGeometryChange", function SrMapSearchComponent_Template_app_input_geometry_onGeometryChange_1_listener($event) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵrestoreView"](_r1);
+          return _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵresetView"](ctx.onUpdateGeometry($event));
+        })("select", function SrMapSearchComponent_Template_app_input_geometry_select_1_listener($event) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵrestoreView"](_r1);
+          return _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵresetView"](ctx.showInstanceInfo($event));
         })("onClear", function SrMapSearchComponent_Template_app_input_geometry_onClear_1_listener() {
-          _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵrestoreView"](_r1);
-          return _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵresetView"](ctx.onClearQueryGeometry());
+          _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵrestoreView"](_r1);
+          return _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵresetView"](ctx.onClearQueryGeometry());
         });
-        _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵelementStart"](3, "div", 5)(4, "app-svc-search-input", 6, 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵlistener"]("onSearch", function SrMapSearchComponent_Template_app_svc_search_input_onSearch_4_listener($event) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵrestoreView"](_r1);
-          return _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵresetView"](ctx.onSearch($event));
+        _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵelementStart"](3, "div", 5)(4, "app-svc-search-input", 6, 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵlistener"]("onSearch", function SrMapSearchComponent_Template_app_svc_search_input_onSearch_4_listener($event) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵrestoreView"](_r1);
+          return _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵresetView"](ctx.onSearch($event));
         })("onClearAll", function SrMapSearchComponent_Template_app_svc_search_input_onClearAll_4_listener() {
-          _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵrestoreView"](_r1);
-          return _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵresetView"](ctx.onClearAll());
+          _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵrestoreView"](_r1);
+          return _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵresetView"](ctx.onClearAll());
         });
-        _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵelementEnd"]()()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵelementStart"](6, "clr-side-panel", 7, 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵtwoWayListener"]("clrSidePanelOpenChange", function SrMapSearchComponent_Template_clr_side_panel_clrSidePanelOpenChange_6_listener($event) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵrestoreView"](_r1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵtwoWayBindingSet"](ctx.showPanel, $event) || (ctx.showPanel = $event);
-          return _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵresetView"]($event);
+        _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵelementEnd"]()()();
+        _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵelementStart"](6, "clr-side-panel", 7, 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵtwoWayListener"]("clrSidePanelOpenChange", function SrMapSearchComponent_Template_clr_side_panel_clrSidePanelOpenChange_6_listener($event) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵrestoreView"](_r1);
+          _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵtwoWayBindingSet"](ctx.showPanel, $event) || (ctx.showPanel = $event);
+          return _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵresetView"]($event);
         });
-        _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵlistener"]("clrSidePanelAlternateClose", function SrMapSearchComponent_Template_clr_side_panel_clrSidePanelAlternateClose_6_listener() {
-          _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵrestoreView"](_r1);
-          return _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵresetView"](ctx.showPanel = false);
+        _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵlistener"]("clrSidePanelAlternateClose", function SrMapSearchComponent_Template_clr_side_panel_clrSidePanelAlternateClose_6_listener() {
+          _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵrestoreView"](_r1);
+          return _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵresetView"](ctx.showPanel = false);
         });
-        _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵelementStart"](8, "div", 8);
-        _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵelement"](9, "app-item-view", 9);
-        _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵelementStart"](10, "div", 10)(11, "button", 11);
-        _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵlistener"]("click", function SrMapSearchComponent_Template_button_click_11_listener() {
-          _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵrestoreView"](_r1);
-          return _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵresetView"](ctx.moveToEditPage(ctx.selectedInstance, false));
+        _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵelementStart"](8, "div", 8)(9, "clr-accordion");
+        _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵrepeaterCreate"](10, SrMapSearchComponent_For_11_Template, 4, 1, "clr-accordion-panel", null, _forTrack0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵelementEnd"]()();
+        _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵelementStart"](12, "div", 9)(13, "button", 10);
+        _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵlistener"]("click", function SrMapSearchComponent_Template_button_click_13_listener() {
+          _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵrestoreView"](_r1);
+          const panel_r5 = _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵreference"](7);
+          return _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵresetView"](panel_r5.close());
         });
-        _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵtext"](12, "Move to Detail");
-        _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵelementStart"](13, "button", 12);
-        _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵlistener"]("click", function SrMapSearchComponent_Template_button_click_13_listener() {
-          _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵrestoreView"](_r1);
-          const panel_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵreference"](7);
-          return _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵresetView"](panel_r2.close());
-        });
-        _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵtext"](14, "Close");
-        _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵelementEnd"]()()();
+        _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵtext"](14, "Close");
+        _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵelementEnd"]()()();
       }
       if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵadvance"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵproperty"]("fullscreen", true)("isEditing", true)("isForSearch", true)("geometry", ctx.geometries)("geometryBacklink", ctx.geometryBacklink);
-        _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵadvance"](3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵproperty"]("orgMrn", ctx.orgMrn);
-        _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵadvance"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵtwoWayProperty"]("clrSidePanelOpen", ctx.showPanel);
-        _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵproperty"]("clrSidePanelPreventClose", true);
-        _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵadvance"](3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵproperty"]("isLoading", ctx.isLoading)("itemType", ctx.instanceType)("item", ctx.selectedInstance)("orgMrn", "")("viewOnly", true)("noMap", true);
+        _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵadvance"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵproperty"]("fullscreen", true)("isEditing", true)("isForSearch", true)("geometry", ctx.geometries)("geometryBacklink", ctx.geometryBacklink);
+        _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵproperty"]("orgMrn", ctx.orgMrn);
+        _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵtwoWayProperty"]("clrSidePanelOpen", ctx.showPanel);
+        _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵproperty"]("clrSidePanelPreventClose", true);
+        _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵadvance"](4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵrepeater"](ctx.selectedInstances);
       }
     },
-    dependencies: [_components_input_geometry_input_geometry_component__WEBPACK_IMPORTED_MODULE_1__.InputGeometryComponent, src_app_components_components_module__WEBPACK_IMPORTED_MODULE_2__.ComponentsModule, _components_item_view_item_view_component__WEBPACK_IMPORTED_MODULE_11__.ItemViewComponent, _components_svc_search_input_svc_search_input_component__WEBPACK_IMPORTED_MODULE_3__.SvcSearchInputComponent, _clr_angular__WEBPACK_IMPORTED_MODULE_16__.ClarityModule, _clr_angular__WEBPACK_IMPORTED_MODULE_16__.ClrSidePanel],
+    dependencies: [_components_input_geometry_input_geometry_component__WEBPACK_IMPORTED_MODULE_1__.InputGeometryComponent, src_app_components_components_module__WEBPACK_IMPORTED_MODULE_2__.ComponentsModule, _components_item_view_item_view_component__WEBPACK_IMPORTED_MODULE_9__.ItemViewComponent, _components_svc_search_input_svc_search_input_component__WEBPACK_IMPORTED_MODULE_3__.SvcSearchInputComponent, _clr_angular__WEBPACK_IMPORTED_MODULE_14__.ClarityModule, _clr_angular__WEBPACK_IMPORTED_MODULE_14__["ÇlrDatagridDetailRegisterer"], _clr_angular__WEBPACK_IMPORTED_MODULE_14__.ClrIfExpanded, _clr_angular__WEBPACK_IMPORTED_MODULE_14__.ClrSidePanel, _clr_angular__WEBPACK_IMPORTED_MODULE_14__.ClrAccordion, _clr_angular__WEBPACK_IMPORTED_MODULE_14__.ClrAccordionPanel, _clr_angular__WEBPACK_IMPORTED_MODULE_14__.ClrAccordionTitle, _clr_angular__WEBPACK_IMPORTED_MODULE_14__.ClrAccordionContent, _clr_angular__WEBPACK_IMPORTED_MODULE_14__["ÇlrAccordionOompaLoompa"], _clr_angular__WEBPACK_IMPORTED_MODULE_14__["ÇlrAccordionWillyWonka"]],
     styles: [".overlay-container[_ngcontent-%COMP%] {\n    position: relative;\n}\n  \n.overlay[_ngcontent-%COMP%] {\n    position: absolute;\n    top: 30px;\n    left: 60px;\n    right: 30px;\n    \n\n    z-index: 1000; \n\n    background: rgba(255, 255, 255, 0.8); \n\n    padding: 10px; \n\n    border-radius: 8px; \n\n    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); \n\n}\n\n.leaflet-container[_ngcontent-%COMP%] {\n    z-index: 1;\n}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvcGFnZXMvc3ItbWFwLXNlYXJjaC9zci1tYXAtc2VhcmNoLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxrQkFBa0I7QUFDdEI7O0FBRUE7SUFDSSxrQkFBa0I7SUFDbEIsU0FBUztJQUNULFVBQVU7SUFDVixXQUFXO0lBQ1gsb0NBQW9DO0lBQ3BDLGFBQWEsRUFBRSxtREFBbUQ7SUFDbEUsb0NBQW9DLEVBQUUsOENBQThDO0lBQ3BGLGFBQWEsRUFBRSx5Q0FBeUM7SUFDeEQsa0JBQWtCLEVBQUUsK0NBQStDO0lBQ25FLHlDQUF5QyxFQUFFLDBDQUEwQztBQUN6Rjs7QUFFQTtJQUNJLFVBQVU7QUFDZCIsInNvdXJjZXNDb250ZW50IjpbIi5vdmVybGF5LWNvbnRhaW5lciB7XG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xufVxuICBcbi5vdmVybGF5IHtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgdG9wOiAzMHB4O1xuICAgIGxlZnQ6IDYwcHg7XG4gICAgcmlnaHQ6IDMwcHg7XG4gICAgLyp0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTsqL1xuICAgIHotaW5kZXg6IDEwMDA7IC8qIEVuc3VyZSB0aGUgb3ZlcmxheSBpcyBhYm92ZSB0aGUgaW5wdXQgZ2VvbWV0cnkgKi9cbiAgICBiYWNrZ3JvdW5kOiByZ2JhKDI1NSwgMjU1LCAyNTUsIDAuOCk7IC8qIE9wdGlvbmFsOiBBZGQgYSBiYWNrZ3JvdW5kIHRvIHRoZSBvdmVybGF5ICovXG4gICAgcGFkZGluZzogMTBweDsgLyogT3B0aW9uYWw6IEFkZCBwYWRkaW5nIHRvIHRoZSBvdmVybGF5ICovXG4gICAgYm9yZGVyLXJhZGl1czogOHB4OyAvKiBPcHRpb25hbDogQWRkIGJvcmRlciByYWRpdXMgdG8gdGhlIG92ZXJsYXkgKi9cbiAgICBib3gtc2hhZG93OiAwIDJweCAxMHB4IHJnYmEoMCwgMCwgMCwgMC4xKTsgLyogT3B0aW9uYWw6IEFkZCBhIHNoYWRvdyB0byB0aGUgb3ZlcmxheSAqL1xufVxuXG4ubGVhZmxldC1jb250YWluZXIge1xuICAgIHotaW5kZXg6IDE7XG59Il0sInNvdXJjZVJvb3QiOiIifQ== */"]
   });
 }

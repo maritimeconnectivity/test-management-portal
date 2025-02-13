@@ -13,7 +13,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _backend_api_identity_registry_model_certificateRevocation__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../backend-api/identity-registry/model/certificateRevocation */ 87277);
 /*
- * Copyright (c) 2024 Maritime Connectivity Platform Consortium
+ * Copyright (c) 2025 Maritime Connectivity Platform Consortium
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -152,6 +152,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var pvtsutils__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! pvtsutils */ 84727);
 /* harmony import */ var pvutils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! pvutils */ 58172);
 
+/*
+ * Copyright (c) 2025 Maritime Connectivity Platform Consortium
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 
 
@@ -431,7 +446,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _timeConverter__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./timeConverter */ 71066);
 /*
- * Copyright (c) 2024 Maritime Connectivity Platform Consortium
+ * Copyright (c) 2025 Maritime Connectivity Platform Consortium
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -506,7 +521,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _countryOptions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./countryOptions */ 80781);
 /* harmony import */ var _timeConverter__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./timeConverter */ 71066);
 /*
- * Copyright (c) 2024 Maritime Connectivity Platform Consortium
+ * Copyright (c) 2025 Maritime Connectivity Platform Consortium
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -1781,7 +1796,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   countryOptions: () => (/* binding */ countryOptions)
 /* harmony export */ });
 /*
- * Copyright (c) 2024 Maritime Connectivity Platform Consortium
+ * Copyright (c) 2025 Maritime Connectivity Platform Consortium
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -3062,7 +3077,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _backend_api_identity_registry_model_vesselAttribute__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../backend-api/identity-registry/model/vesselAttribute */ 24160);
 /*
- * Copyright (c) 2024 Maritime Connectivity Platform Consortium
+ * Copyright (c) 2025 Maritime Connectivity Platform Consortium
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -3134,6 +3149,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   encodeFileToBase64: () => (/* binding */ encodeFileToBase64)
 /* harmony export */ });
+/*
+ * Copyright (c) 2025 Maritime Connectivity Platform Consortium
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 const encodeFileToBase64 = file => {
   var fileReader = new FileReader();
   return new Promise((resolve, reject) => {
@@ -3169,6 +3199,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   filterUndefinedAttributes: () => (/* binding */ filterUndefinedAttributes),
 /* harmony export */   migrateVesselAttributes: () => (/* binding */ migrateVesselAttributes)
 /* harmony export */ });
+/*
+ * Copyright (c) 2025 Maritime Connectivity Platform Consortium
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 const filterUndefinedAttributes = entity => Object.fromEntries(Object.entries(entity).filter(([key, value]) => value !== undefined && typeof value === 'string' ? value.toString().length > 0 : true));
 const appendUpdatedAttributes = (original, updates, attributes) => {
   const updatedItem = {
@@ -3212,6 +3257,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _dataformatter__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./dataformatter */ 25247);
 /* harmony import */ var _filterObject__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./filterObject */ 61224);
 /* harmony import */ var _menuType__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./menuType */ 95166);
+/*
+ * Copyright (c) 2025 Maritime Connectivity Platform Consortium
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 
 
@@ -3312,7 +3372,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   languages: () => (/* binding */ languages)
 /* harmony export */ });
 /*
- * Copyright (c) 2024 Maritime Connectivity Platform Consortium
+ * Copyright (c) 2025 Maritime Connectivity Platform Consortium
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -3356,7 +3416,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var leaflet__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(leaflet__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _terraformer_wkt__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @terraformer/wkt */ 34311);
 /*
- * Copyright (c) 2023 Maritime Connectivity Platform Consortium
+ * Copyright (c) 2025 Maritime Connectivity Platform Consortium
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -3440,6 +3500,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   mrnRegex: () => (/* binding */ mrnRegex),
 /* harmony export */   mrnValidator: () => (/* binding */ mrnValidator)
 /* harmony export */ });
+/*
+ * Copyright (c) 2025 Maritime Connectivity Platform Consortium
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 const mrnRegex = () => "urn:mrn:mcp:(entity|mir|mms|msr|device|org|user|vessel|service|mms):([a-z0-9]([a-z0-9]|-){0,20}[a-z0-9]):((([-._a-z0-9]|~)|%[0-9a-f][0-9a-f]|([!$&'()*+,;=])|:|@)((([-._a-z0-9]|~)|%[0-9a-f][0-9a-f]|([!$&'()*+,;=])|:|@)|)*)$";
 function mrnValidator() {
   return control => {
@@ -3464,6 +3539,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   getMrnPrefixFromOrgMrn: () => (/* binding */ getMrnPrefixFromOrgMrn)
 /* harmony export */ });
+/*
+ * Copyright (c) 2025 Maritime Connectivity Platform Consortium
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 const getMrnPrefixFromOrgMrn = orgMrn => {
   const list = orgMrn.split(':');
   return list.slice(0, 3).join(':') + ':entity:' + list.slice(4, 6).join(':') + ":";
@@ -3482,6 +3572,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   mustIncludePatternValidator: () => (/* binding */ mustIncludePatternValidator)
 /* harmony export */ });
+/*
+ * Copyright (c) 2025 Maritime Connectivity Platform Consortium
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 // A string that includes the pattern is valid, while a string that is identical to the pattern or does not include the pattern is invalid.
 function mustIncludePatternValidator(pattern) {
   return control => {
@@ -3870,6 +3975,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   sortColumnForMenu: () => (/* binding */ sortColumnForMenu)
 /* harmony export */ });
+/*
+ * Copyright (c) 2025 Maritime Connectivity Platform Consortium
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 const sortColumnForMenu = (a, b) => {
   return a.order > b.order ? -1 : 1;
 };
@@ -3888,7 +4008,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   convertTime: () => (/* binding */ convertTime)
 /* harmony export */ });
 /*
- * Copyright (c) 2024 Maritime Connectivity Platform Consortium
+ * Copyright (c) 2025 Maritime Connectivity Platform Consortium
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -3924,7 +4044,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _languages__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./languages */ 72170);
 /*
- * Copyright (c) 2024 Maritime Connectivity Platform Consortium
+ * Copyright (c) 2025 Maritime Connectivity Platform Consortium
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -4013,6 +4133,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _smart_table_smart_table_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../smart-table/smart-table.component */ 18962);
 /* harmony import */ var src_app_common_columnForCertificate__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/common/columnForCertificate */ 21197);
 /* harmony import */ var src_app_common_menuType__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/common/menuType */ 95166);
+/*
+ * Copyright (c) 2025 Maritime Connectivity Platform Consortium
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 
 
@@ -4165,11 +4300,30 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   InputGeometryComponent: () => (/* binding */ InputGeometryComponent)
 /* harmony export */ });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 1888);
-/* harmony import */ var _bluehalo_ngx_leaflet__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @bluehalo/ngx-leaflet */ 14452);
-/* harmony import */ var _bluehalo_ngx_leaflet_draw__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @bluehalo/ngx-leaflet-draw */ 21463);
+/* harmony import */ var _bluehalo_ngx_leaflet__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @bluehalo/ngx-leaflet */ 14452);
+/* harmony import */ var _bluehalo_ngx_leaflet_draw__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @bluehalo/ngx-leaflet-draw */ 21463);
 /* harmony import */ var leaflet__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! leaflet */ 79188);
 /* harmony import */ var leaflet__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(leaflet__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var src_app_common_mapToGeometry__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/common/mapToGeometry */ 99282);
+/* harmony import */ var _turf_turf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @turf/turf */ 85672);
+/* harmony import */ var _turf_boolean_point_in_polygon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @turf/boolean-point-in-polygon */ 23892);
+/*
+ * Copyright (c) 2025 Maritime Connectivity Platform Consortium
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+
 
 
 
@@ -4229,10 +4383,11 @@ class InputGeometryComponent {
     this.isForSearch = false;
     this.mapContainerHeight = 200;
     this.onGeometryChange = new _angular_core__WEBPACK_IMPORTED_MODULE_2__.EventEmitter();
-    this.onShowBacklink = new _angular_core__WEBPACK_IMPORTED_MODULE_2__.EventEmitter();
+    this.select = new _angular_core__WEBPACK_IMPORTED_MODULE_2__.EventEmitter();
     this.onClear = new _angular_core__WEBPACK_IMPORTED_MODULE_2__.EventEmitter();
     this.mapFitToBounds = (0,leaflet__WEBPACK_IMPORTED_MODULE_0__.latLngBounds)([-50, -10], [50, 10]);
     this.mapContainerHeightOffset = 120;
+    this.polygons = [];
     this.options = {
       layers: [(0,leaflet__WEBPACK_IMPORTED_MODULE_0__.tileLayer)('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
         maxZoom: 18,
@@ -4282,6 +4437,9 @@ class InputGeometryComponent {
       } else {
         this.responseFeatureGroup = new leaflet__WEBPACK_IMPORTED_MODULE_0__.FeatureGroup();
       }
+      this.geometry.forEach(g => {
+        this.polygons.push(g);
+      });
       this.geometry.forEach((geometry, i) => {
         if (!geometry || !geometry.coordinates || geometry.coordinates.length === 0) {
           return;
@@ -4293,8 +4451,21 @@ class InputGeometryComponent {
           }
         }
         const geomLayer = leaflet__WEBPACK_IMPORTED_MODULE_0__.geoJSON(geometry);
+        // for handling click event on the polygon
         geomLayer.on('click', e => {
-          this.onShowBacklink.emit(this.geometryBacklink[i]);
+          const {
+            lat,
+            lng
+          } = e.latlng;
+          const point = _turf_turf__WEBPACK_IMPORTED_MODULE_3__.point([lng, lat]);
+          const intersected = [];
+          /* polygons is an array where all your polygon layers are stored */
+          this.polygons.forEach((p, i) => {
+            if ((0,_turf_boolean_point_in_polygon__WEBPACK_IMPORTED_MODULE_4__["default"])(point, p)) {
+              intersected.push(this.geometryBacklink[i]);
+            }
+          });
+          this.select.emit(intersected);
         });
         this.responseFeatureGroup.addLayer(geomLayer);
         //*
@@ -4373,7 +4544,7 @@ class InputGeometryComponent {
     },
     outputs: {
       onGeometryChange: "onGeometryChange",
-      onShowBacklink: "onShowBacklink",
+      select: "select",
       onClear: "onClear"
     },
     standalone: true,
@@ -4392,7 +4563,7 @@ class InputGeometryComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵconditional"](ctx.isEditing ? 2 : 3);
       }
     },
-    dependencies: [_bluehalo_ngx_leaflet__WEBPACK_IMPORTED_MODULE_3__.LeafletModule, _bluehalo_ngx_leaflet__WEBPACK_IMPORTED_MODULE_3__.LeafletDirective, _bluehalo_ngx_leaflet__WEBPACK_IMPORTED_MODULE_3__.LeafletLayerDirective, _bluehalo_ngx_leaflet_draw__WEBPACK_IMPORTED_MODULE_4__.LeafletDrawModule, _bluehalo_ngx_leaflet_draw__WEBPACK_IMPORTED_MODULE_4__.LeafletDrawDirective],
+    dependencies: [_bluehalo_ngx_leaflet__WEBPACK_IMPORTED_MODULE_5__.LeafletModule, _bluehalo_ngx_leaflet__WEBPACK_IMPORTED_MODULE_5__.LeafletDirective, _bluehalo_ngx_leaflet__WEBPACK_IMPORTED_MODULE_5__.LeafletLayerDirective, _bluehalo_ngx_leaflet_draw__WEBPACK_IMPORTED_MODULE_6__.LeafletDrawModule, _bluehalo_ngx_leaflet_draw__WEBPACK_IMPORTED_MODULE_6__.LeafletDrawDirective],
     styles: ["#map[_ngcontent-%COMP%] {\n    width:100%;\n    height: 100%;\n}\n\n#mapContainer[_ngcontent-%COMP%] {\n    height: 100vh;\n}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvY29tcG9uZW50cy9pbnB1dC1nZW9tZXRyeS9pbnB1dC1nZW9tZXRyeS5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksVUFBVTtJQUNWLFlBQVk7QUFDaEI7O0FBRUE7SUFDSSxhQUFhO0FBQ2pCIiwic291cmNlc0NvbnRlbnQiOlsiI21hcCB7XG4gICAgd2lkdGg6MTAwJTtcbiAgICBoZWlnaHQ6IDEwMCU7XG59XG5cbiNtYXBDb250YWluZXIge1xuICAgIGhlaWdodDogMTAwdmg7XG59Il0sInNvdXJjZVJvb3QiOiIifQ== */"]
   });
 }
@@ -5624,6 +5795,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/common */ 87477);
 /* harmony import */ var src_app_common_sortMenuOrder__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/common/sortMenuOrder */ 40868);
 /* harmony import */ var src_app_common_shared_shared_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/app/common/shared/shared.module */ 90058);
+/*
+ * Copyright (c) 2025 Maritime Connectivity Platform Consortium
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 
 
@@ -5975,6 +6161,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var gramli_angular_notifier__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! gramli-angular-notifier */ 1059);
 /* harmony import */ var src_app_common_shared_file_helper_service__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! src/app/common/shared/file-helper.service */ 43755);
 /* harmony import */ var src_app_auth_auth_service__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! src/app/auth/auth.service */ 84595);
+/*
+ * Copyright (c) 2025 Maritime Connectivity Platform Consortium
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 
 
@@ -6180,7 +6381,7 @@ function ItemViewComponent_Conditional_10_Conditional_3_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵlistener"]("click", function ItemViewComponent_Conditional_10_Conditional_3_Template_button_click_0_listener() {
       _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵrestoreView"](_r8);
       const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵnextContext"](2);
-      return _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵresetView"](ctx_r1.edit());
+      return _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵresetView"](ctx_r1.onEdit());
     });
     _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵtext"](1, "Edit");
     _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementEnd"]();
@@ -6297,7 +6498,7 @@ class ItemViewComponent {
     this.isLoading = true;
     this.viewOnly = false;
     this.noMap = false;
-    this.onEdit = new _angular_core__WEBPACK_IMPORTED_MODULE_16__.EventEmitter();
+    this.edit = new _angular_core__WEBPACK_IMPORTED_MODULE_16__.EventEmitter();
     this.onMigrate = new _angular_core__WEBPACK_IMPORTED_MODULE_16__.EventEmitter();
     this.onDelete = new _angular_core__WEBPACK_IMPORTED_MODULE_16__.EventEmitter();
     this.onRefresh = new _angular_core__WEBPACK_IMPORTED_MODULE_16__.EventEmitter();
@@ -6358,8 +6559,8 @@ class ItemViewComponent {
         revokeReason: this.revokeReasons.filter(reason => reason.value === cert.revokeReason)[0].title
       }));
     };
-    this.edit = () => {
-      this.onEdit.emit(this.item);
+    this.onEdit = () => {
+      this.edit.emit(this.item);
     };
     this.migrate = () => {
       this.onMigrate.emit(this.newServiceMrn);
@@ -6566,7 +6767,7 @@ class ItemViewComponent {
       noMap: "noMap"
     },
     outputs: {
-      onEdit: "onEdit",
+      edit: "edit",
       onMigrate: "onMigrate",
       onDelete: "onDelete",
       onRefresh: "onRefresh",
@@ -6575,8 +6776,8 @@ class ItemViewComponent {
     },
     standalone: true,
     features: [_angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵNgOnChangesFeature"], _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵStandaloneFeature"]],
-    decls: 110,
-    vars: 15,
+    decls: 112,
+    vars: 21,
     consts: [["certModal", ""], ["revokeModal", ""], ["migrateModal", ""], ["xmlModal", ""], ["newAdminUserForm", ""], [1, "clr-row"], [1, "clr-col-lg-12", "clr-col-md-8", "clr-col-12"], [1, "card"], [1, "card-header"], [1, "card-block"], [1, "card-text"], [1, "clr-col-md-12"], [1, "card-footer"], ["clrModalSize", "lg", 1, "modal", 3, "clrModalOpenChange", "clrModalOpen"], [1, "modal-title"], ["aria-label", "Close", "type", "button", 1, "close", 3, "click"], [1, "modal-body"], [1, "clr-col-sm-12", "clr-col-md-12"], [1, "modal-footer"], ["type", "button", 1, "btn", "btn-primary", 3, "click"], ["type", "button", 1, "btn", "btn-outline", 3, "click"], [1, "clr-col-4"], [1, "clr-col-8"], ["type", "date", "autocomplete", "off", "clrDate", "", "name", "demo", 3, "ngModelChange", "ngModel"], [1, "clr-form"], [1, "clr-form-control"], ["for", "basic", 1, "clr-control-label"], [1, "clr-control-container"], [1, "clr-input-wrapper"], ["type", "text", "id", "basic", "placeholder", "Enter value here", 1, "clr-input", 3, "value"], ["shape", "exclamation-circle", 1, "clr-validate-icon"], [1, "clr-subtext"], [1, "clr-textarea-wrapper"], ["clrTextarea", "", "cols", "100", "rows", "40"], ["href", "https://www.iala-aism.org/product/g1128-specification-of-e-nav-technical-service-fillable-annex-f-service-instance-description/", "target", "_blank"], [1, "spinner-view"], [3, "item", "itemType", "showCertTables", "columnForMenu"], [3, "geometry"], [4, "ngIf"], [3, "openXmlDialogCall", "downloadDocFileCall", "item", "itemType", "showCertTables", "columnForMenu"], [3, "clickDownloadBtnCall", "clickRevokeBtnCall", "openCertModalCall", "item", "itemType", "showCertTables", "activeCertificates", "revokedCertificates", "columnForMenu", "serial"], ["title", "New administrator user", 3, "isForNew", "itemType", "item", "mrnPrefix"], [1, "btn", "btn-success"], [1, "btn", "btn-primary"], [1, "btn", "btn-danger", 3, "click"], [1, "btn", "btn-primary", 3, "click"], ["clrPosition", "top-right", 4, "clrIfOpen"], ["clrPosition", "top-right"], [1, "btn", "btn-success", 3, "click"], ["type", "radio", "clrRadio", "", "name", "options", "required", "", 3, "click"], ["target", "_blank", 3, "href"]],
     template: function ItemViewComponent_Template(rf, ctx) {
       if (rf & 1) {
@@ -6689,55 +6890,57 @@ class ItemViewComponent {
           return _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵresetView"](ctx.cancel());
         });
         _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵtext"](72, " Migrate service ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵtext"](72);
+        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵpipe"](73, "translate");
         _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementStart"](73, "div", 16)(74, "div", 17)(75, "div", 5)(76, "span");
-        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵtext"](77, "This migration allows you to remove the version from an existing service's MRN by assigning a new MRN that includes the version. It simplifies version management and future updates, making it easier for users to maintain and update services. The MRN below is given as an example, but you can edit it as you want.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementStart"](74, "div", 16)(75, "div", 17)(76, "div", 5)(77, "span");
+        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵtext"](78);
+        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵpipe"](79, "translate");
         _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementEnd"]()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementStart"](78, "div", 5)(79, "form", 24)(80, "div", 25)(81, "label", 26);
-        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵtext"](82, "Recommended new MRN for your service");
+        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementStart"](80, "div", 5)(81, "form", 24)(82, "div", 25)(83, "label", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵtext"](84, "Recommended new MRN for your service");
         _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementStart"](83, "div", 27)(84, "div", 28);
-        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelement"](85, "input", 29)(86, "cds-icon", 30);
+        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementStart"](85, "div", 27)(86, "div", 28);
+        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelement"](87, "input", 29)(88, "cds-icon", 30);
         _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementStart"](87, "span", 31);
-        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵtext"](88, "New MRN can have the version of service inside.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementStart"](89, "span", 31);
+        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵtext"](90, "New MRN can have the version of service inside.");
         _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementEnd"]()()()()()()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementStart"](89, "div", 18)(90, "button", 19);
-        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵlistener"]("click", function ItemViewComponent_Template_button_click_90_listener() {
+        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementStart"](91, "div", 18)(92, "button", 19);
+        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵlistener"]("click", function ItemViewComponent_Template_button_click_92_listener() {
           _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵrestoreView"](_r1);
           return _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵresetView"](ctx.migrate());
         });
-        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵtext"](91, "Migrate");
+        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵtext"](93, "Migrate");
         _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementStart"](92, "button", 20);
-        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵlistener"]("click", function ItemViewComponent_Template_button_click_92_listener() {
+        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementStart"](94, "button", 20);
+        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵlistener"]("click", function ItemViewComponent_Template_button_click_94_listener() {
           _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵrestoreView"](_r1);
           return _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵresetView"](ctx.cancel());
         });
-        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵtext"](93, "Cancel");
+        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵtext"](95, "Cancel");
         _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementEnd"]()()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementStart"](94, "clr-modal", 13, 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵtwoWayListener"]("clrModalOpenChange", function ItemViewComponent_Template_clr_modal_clrModalOpenChange_94_listener($event) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementStart"](96, "clr-modal", 13, 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵtwoWayListener"]("clrModalOpenChange", function ItemViewComponent_Template_clr_modal_clrModalOpenChange_96_listener($event) {
           _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵrestoreView"](_r1);
           _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵtwoWayBindingSet"](ctx.xmlModalOpened, $event) || (ctx.xmlModalOpened = $event);
           return _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵresetView"]($event);
         });
-        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementStart"](96, "div", 14)(97, "button", 15);
-        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵlistener"]("click", function ItemViewComponent_Template_button_click_97_listener() {
+        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementStart"](98, "div", 14)(99, "button", 15);
+        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵlistener"]("click", function ItemViewComponent_Template_button_click_99_listener() {
           _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵrestoreView"](_r1);
           return _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵresetView"](ctx.cancel());
         });
         _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵtext"](98, " XML viewer ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵtext"](100, " XML viewer ");
         _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementStart"](99, "div", 16)(100, "div", 17)(101, "div", 5)(102, "div", 27)(103, "div", 32)(104, "textarea", 33);
-        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵtext"](105);
+        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementStart"](101, "div", 16)(102, "div", 17)(103, "div", 5)(104, "div", 27)(105, "div", 32)(106, "textarea", 33);
+        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵtext"](107);
         _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelement"](106, "cds-icon", 30);
+        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelement"](108, "cds-icon", 30);
         _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementStart"](107, "span", 31)(108, "a", 34);
-        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵtext"](109, "What is G1128?");
+        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementStart"](109, "span", 31)(110, "a", 34);
+        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵtext"](111, "What is G1128?");
         _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementEnd"]()()()()()()();
       }
       if (rf & 2) {
@@ -6763,7 +6966,11 @@ class ItemViewComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵtwoWayProperty"]("ngModel", ctx.revokeAt);
         _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵadvance"](10);
         _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵtwoWayProperty"]("clrModalOpen", ctx.migrateModalOpened);
-        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵadvance"](17);
+        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵadvance"](4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵtextInterpolate1"](" ", _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵpipeBind1"](73, 17, "ir.migrate.title"), " ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵadvance"](6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵpipeBind1"](79, 19, "ir.migrate.info"));
+        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵadvance"](9);
         _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵstyleProp"]("width", 400, "px");
         _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵproperty"]("value", ctx.newServiceMrn);
         _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵadvance"](9);
@@ -6772,7 +6979,7 @@ class ItemViewComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵtextInterpolate"](ctx.xmlContent);
       }
     },
-    dependencies: [src_app_common_shared_shared_module__WEBPACK_IMPORTED_MODULE_2__.SharedModule, _angular_common__WEBPACK_IMPORTED_MODULE_17__.NgIf, _clr_angular__WEBPACK_IMPORTED_MODULE_20__.ClarityModule, _clr_angular__WEBPACK_IMPORTED_MODULE_20__.CdsIconCustomTag, _clr_angular__WEBPACK_IMPORTED_MODULE_20__.ClrModal, _clr_angular__WEBPACK_IMPORTED_MODULE_20__.ClrModalBody, _clr_angular__WEBPACK_IMPORTED_MODULE_20__.ClrIfOpen, _clr_angular__WEBPACK_IMPORTED_MODULE_20__.ClrLabel, _clr_angular__WEBPACK_IMPORTED_MODULE_20__.ClrDateContainer, _clr_angular__WEBPACK_IMPORTED_MODULE_20__.ClrDateInput, _clr_angular__WEBPACK_IMPORTED_MODULE_20__.ClrDateInputValidator, _clr_angular__WEBPACK_IMPORTED_MODULE_20__.ClrRadio, _clr_angular__WEBPACK_IMPORTED_MODULE_20__.ClrRadioWrapper, _clr_angular__WEBPACK_IMPORTED_MODULE_20__.ClrTextarea, _clr_angular__WEBPACK_IMPORTED_MODULE_20__.ClrSignpost, _clr_angular__WEBPACK_IMPORTED_MODULE_20__.ClrSignpostContent, _clr_angular__WEBPACK_IMPORTED_MODULE_20__.ClrSpinner, _clr_angular__WEBPACK_IMPORTED_MODULE_20__.ClrModalModule, _clr_angular__WEBPACK_IMPORTED_MODULE_20__.ClrRadioModule, _clr_angular__WEBPACK_IMPORTED_MODULE_20__.ClrSpinnerModule, _clr_angular__WEBPACK_IMPORTED_MODULE_20__.ClrDatepickerModule, _item_form_item_form_component__WEBPACK_IMPORTED_MODULE_7__.ItemFormComponent, _input_geometry_input_geometry_component__WEBPACK_IMPORTED_MODULE_11__.InputGeometryComponent, _angular_forms__WEBPACK_IMPORTED_MODULE_21__.FormsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_21__["ɵNgNoValidate"], _angular_forms__WEBPACK_IMPORTED_MODULE_21__.DefaultValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_21__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_21__.NgControlStatusGroup, _angular_forms__WEBPACK_IMPORTED_MODULE_21__.NgModel, _angular_forms__WEBPACK_IMPORTED_MODULE_21__.NgForm, _clr_angular__WEBPACK_IMPORTED_MODULE_20__.ClrTextareaModule, _item_table_item_table_component__WEBPACK_IMPORTED_MODULE_10__.ItemTableComponent],
+    dependencies: [src_app_common_shared_shared_module__WEBPACK_IMPORTED_MODULE_2__.SharedModule, _angular_common__WEBPACK_IMPORTED_MODULE_17__.NgIf, _ngx_translate_core__WEBPACK_IMPORTED_MODULE_18__.TranslatePipe, _clr_angular__WEBPACK_IMPORTED_MODULE_20__.ClarityModule, _clr_angular__WEBPACK_IMPORTED_MODULE_20__.CdsIconCustomTag, _clr_angular__WEBPACK_IMPORTED_MODULE_20__.ClrModal, _clr_angular__WEBPACK_IMPORTED_MODULE_20__.ClrModalBody, _clr_angular__WEBPACK_IMPORTED_MODULE_20__.ClrIfOpen, _clr_angular__WEBPACK_IMPORTED_MODULE_20__.ClrLabel, _clr_angular__WEBPACK_IMPORTED_MODULE_20__.ClrDateContainer, _clr_angular__WEBPACK_IMPORTED_MODULE_20__.ClrDateInput, _clr_angular__WEBPACK_IMPORTED_MODULE_20__.ClrDateInputValidator, _clr_angular__WEBPACK_IMPORTED_MODULE_20__.ClrRadio, _clr_angular__WEBPACK_IMPORTED_MODULE_20__.ClrRadioWrapper, _clr_angular__WEBPACK_IMPORTED_MODULE_20__.ClrTextarea, _clr_angular__WEBPACK_IMPORTED_MODULE_20__.ClrSignpost, _clr_angular__WEBPACK_IMPORTED_MODULE_20__.ClrSignpostContent, _clr_angular__WEBPACK_IMPORTED_MODULE_20__.ClrSpinner, _clr_angular__WEBPACK_IMPORTED_MODULE_20__.ClrModalModule, _clr_angular__WEBPACK_IMPORTED_MODULE_20__.ClrRadioModule, _clr_angular__WEBPACK_IMPORTED_MODULE_20__.ClrSpinnerModule, _clr_angular__WEBPACK_IMPORTED_MODULE_20__.ClrDatepickerModule, _item_form_item_form_component__WEBPACK_IMPORTED_MODULE_7__.ItemFormComponent, _input_geometry_input_geometry_component__WEBPACK_IMPORTED_MODULE_11__.InputGeometryComponent, _angular_forms__WEBPACK_IMPORTED_MODULE_21__.FormsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_21__["ɵNgNoValidate"], _angular_forms__WEBPACK_IMPORTED_MODULE_21__.DefaultValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_21__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_21__.NgControlStatusGroup, _angular_forms__WEBPACK_IMPORTED_MODULE_21__.NgModel, _angular_forms__WEBPACK_IMPORTED_MODULE_21__.NgForm, _clr_angular__WEBPACK_IMPORTED_MODULE_20__.ClrTextareaModule, _item_table_item_table_component__WEBPACK_IMPORTED_MODULE_10__.ItemTableComponent],
     styles: ["/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsInNvdXJjZVJvb3QiOiIifQ== */"]
   });
 }
@@ -6800,6 +7007,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var src_app_auth_auth_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/app/auth/auth.service */ 84595);
 /* harmony import */ var src_app_backend_api_identity_registry__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/app/backend-api/identity-registry */ 9136);
 
+/*
+ * Copyright (c) 2025 Maritime Connectivity Platform Consortium
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 
 
@@ -7376,6 +7598,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _cds_core_icon__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @cds/core/icon */ 47849);
 /* harmony import */ var src_app_common_menuType__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! src/app/common/menuType */ 95166);
 /* harmony import */ var src_app_common_timeConverter__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/common/timeConverter */ 71066);
+/*
+ * Copyright (c) 2025 Maritime Connectivity Platform Consortium
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 
 
@@ -54104,6 +54341,2740 @@ function randomBytes(bytesLength = 32) {
   }
   throw new Error('crypto.getRandomValues must be defined');
 }
+
+/***/ }),
+
+/***/ 23892:
+/*!*******************************************************************************************************************************!*\
+  !*** ./node_modules/.pnpm/@turf+boolean-point-in-polygon@7.2.0/node_modules/@turf/boolean-point-in-polygon/dist/esm/index.js ***!
+  \*******************************************************************************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   booleanPointInPolygon: () => (/* binding */ booleanPointInPolygon),
+/* harmony export */   "default": () => (/* binding */ turf_boolean_point_in_polygon_default)
+/* harmony export */ });
+/* harmony import */ var point_in_polygon_hao__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! point-in-polygon-hao */ 48246);
+/* harmony import */ var _turf_invariant__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @turf/invariant */ 40782);
+// index.ts
+
+
+function booleanPointInPolygon(point, polygon, options = {}) {
+  if (!point) {
+    throw new Error("point is required");
+  }
+  if (!polygon) {
+    throw new Error("polygon is required");
+  }
+  const pt = (0,_turf_invariant__WEBPACK_IMPORTED_MODULE_1__.getCoord)(point);
+  const geom = (0,_turf_invariant__WEBPACK_IMPORTED_MODULE_1__.getGeom)(polygon);
+  const type = geom.type;
+  const bbox = polygon.bbox;
+  let polys = geom.coordinates;
+  if (bbox && inBBox(pt, bbox) === false) {
+    return false;
+  }
+  if (type === "Polygon") {
+    polys = [polys];
+  }
+  let result = false;
+  for (var i = 0; i < polys.length; ++i) {
+    const polyResult = (0,point_in_polygon_hao__WEBPACK_IMPORTED_MODULE_0__["default"])(pt, polys[i]);
+    if (polyResult === 0) return options.ignoreBoundary ? false : true;else if (polyResult) result = true;
+  }
+  return result;
+}
+function inBBox(pt, bbox) {
+  return bbox[0] <= pt[0] && bbox[1] <= pt[1] && bbox[2] >= pt[0] && bbox[3] >= pt[1];
+}
+var turf_boolean_point_in_polygon_default = booleanPointInPolygon;
+
+
+/***/ }),
+
+/***/ 85672:
+/*!*********************************************************************************************!*\
+  !*** ./node_modules/.pnpm/@turf+helpers@7.2.0/node_modules/@turf/helpers/dist/esm/index.js ***!
+  \*********************************************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   areaFactors: () => (/* binding */ areaFactors),
+/* harmony export */   azimuthToBearing: () => (/* binding */ azimuthToBearing),
+/* harmony export */   bearingToAzimuth: () => (/* binding */ bearingToAzimuth),
+/* harmony export */   convertArea: () => (/* binding */ convertArea),
+/* harmony export */   convertLength: () => (/* binding */ convertLength),
+/* harmony export */   degreesToRadians: () => (/* binding */ degreesToRadians),
+/* harmony export */   earthRadius: () => (/* binding */ earthRadius),
+/* harmony export */   factors: () => (/* binding */ factors),
+/* harmony export */   feature: () => (/* binding */ feature),
+/* harmony export */   featureCollection: () => (/* binding */ featureCollection),
+/* harmony export */   geometry: () => (/* binding */ geometry),
+/* harmony export */   geometryCollection: () => (/* binding */ geometryCollection),
+/* harmony export */   isNumber: () => (/* binding */ isNumber),
+/* harmony export */   isObject: () => (/* binding */ isObject),
+/* harmony export */   lengthToDegrees: () => (/* binding */ lengthToDegrees),
+/* harmony export */   lengthToRadians: () => (/* binding */ lengthToRadians),
+/* harmony export */   lineString: () => (/* binding */ lineString),
+/* harmony export */   lineStrings: () => (/* binding */ lineStrings),
+/* harmony export */   multiLineString: () => (/* binding */ multiLineString),
+/* harmony export */   multiPoint: () => (/* binding */ multiPoint),
+/* harmony export */   multiPolygon: () => (/* binding */ multiPolygon),
+/* harmony export */   point: () => (/* binding */ point),
+/* harmony export */   points: () => (/* binding */ points),
+/* harmony export */   polygon: () => (/* binding */ polygon),
+/* harmony export */   polygons: () => (/* binding */ polygons),
+/* harmony export */   radiansToDegrees: () => (/* binding */ radiansToDegrees),
+/* harmony export */   radiansToLength: () => (/* binding */ radiansToLength),
+/* harmony export */   round: () => (/* binding */ round),
+/* harmony export */   validateBBox: () => (/* binding */ validateBBox),
+/* harmony export */   validateId: () => (/* binding */ validateId)
+/* harmony export */ });
+// index.ts
+var earthRadius = 63710088e-1;
+var factors = {
+  centimeters: earthRadius * 100,
+  centimetres: earthRadius * 100,
+  degrees: 360 / (2 * Math.PI),
+  feet: earthRadius * 3.28084,
+  inches: earthRadius * 39.37,
+  kilometers: earthRadius / 1e3,
+  kilometres: earthRadius / 1e3,
+  meters: earthRadius,
+  metres: earthRadius,
+  miles: earthRadius / 1609.344,
+  millimeters: earthRadius * 1e3,
+  millimetres: earthRadius * 1e3,
+  nauticalmiles: earthRadius / 1852,
+  radians: 1,
+  yards: earthRadius * 1.0936
+};
+var areaFactors = {
+  acres: 247105e-9,
+  centimeters: 1e4,
+  centimetres: 1e4,
+  feet: 10.763910417,
+  hectares: 1e-4,
+  inches: 1550.003100006,
+  kilometers: 1e-6,
+  kilometres: 1e-6,
+  meters: 1,
+  metres: 1,
+  miles: 386e-9,
+  nauticalmiles: 29155334959812285e-23,
+  millimeters: 1e6,
+  millimetres: 1e6,
+  yards: 1.195990046
+};
+function feature(geom, properties, options = {}) {
+  const feat = {
+    type: "Feature"
+  };
+  if (options.id === 0 || options.id) {
+    feat.id = options.id;
+  }
+  if (options.bbox) {
+    feat.bbox = options.bbox;
+  }
+  feat.properties = properties || {};
+  feat.geometry = geom;
+  return feat;
+}
+function geometry(type, coordinates, _options = {}) {
+  switch (type) {
+    case "Point":
+      return point(coordinates).geometry;
+    case "LineString":
+      return lineString(coordinates).geometry;
+    case "Polygon":
+      return polygon(coordinates).geometry;
+    case "MultiPoint":
+      return multiPoint(coordinates).geometry;
+    case "MultiLineString":
+      return multiLineString(coordinates).geometry;
+    case "MultiPolygon":
+      return multiPolygon(coordinates).geometry;
+    default:
+      throw new Error(type + " is invalid");
+  }
+}
+function point(coordinates, properties, options = {}) {
+  if (!coordinates) {
+    throw new Error("coordinates is required");
+  }
+  if (!Array.isArray(coordinates)) {
+    throw new Error("coordinates must be an Array");
+  }
+  if (coordinates.length < 2) {
+    throw new Error("coordinates must be at least 2 numbers long");
+  }
+  if (!isNumber(coordinates[0]) || !isNumber(coordinates[1])) {
+    throw new Error("coordinates must contain numbers");
+  }
+  const geom = {
+    type: "Point",
+    coordinates
+  };
+  return feature(geom, properties, options);
+}
+function points(coordinates, properties, options = {}) {
+  return featureCollection(coordinates.map(coords => {
+    return point(coords, properties);
+  }), options);
+}
+function polygon(coordinates, properties, options = {}) {
+  for (const ring of coordinates) {
+    if (ring.length < 4) {
+      throw new Error("Each LinearRing of a Polygon must have 4 or more Positions.");
+    }
+    if (ring[ring.length - 1].length !== ring[0].length) {
+      throw new Error("First and last Position are not equivalent.");
+    }
+    for (let j = 0; j < ring[ring.length - 1].length; j++) {
+      if (ring[ring.length - 1][j] !== ring[0][j]) {
+        throw new Error("First and last Position are not equivalent.");
+      }
+    }
+  }
+  const geom = {
+    type: "Polygon",
+    coordinates
+  };
+  return feature(geom, properties, options);
+}
+function polygons(coordinates, properties, options = {}) {
+  return featureCollection(coordinates.map(coords => {
+    return polygon(coords, properties);
+  }), options);
+}
+function lineString(coordinates, properties, options = {}) {
+  if (coordinates.length < 2) {
+    throw new Error("coordinates must be an array of two or more positions");
+  }
+  const geom = {
+    type: "LineString",
+    coordinates
+  };
+  return feature(geom, properties, options);
+}
+function lineStrings(coordinates, properties, options = {}) {
+  return featureCollection(coordinates.map(coords => {
+    return lineString(coords, properties);
+  }), options);
+}
+function featureCollection(features, options = {}) {
+  const fc = {
+    type: "FeatureCollection"
+  };
+  if (options.id) {
+    fc.id = options.id;
+  }
+  if (options.bbox) {
+    fc.bbox = options.bbox;
+  }
+  fc.features = features;
+  return fc;
+}
+function multiLineString(coordinates, properties, options = {}) {
+  const geom = {
+    type: "MultiLineString",
+    coordinates
+  };
+  return feature(geom, properties, options);
+}
+function multiPoint(coordinates, properties, options = {}) {
+  const geom = {
+    type: "MultiPoint",
+    coordinates
+  };
+  return feature(geom, properties, options);
+}
+function multiPolygon(coordinates, properties, options = {}) {
+  const geom = {
+    type: "MultiPolygon",
+    coordinates
+  };
+  return feature(geom, properties, options);
+}
+function geometryCollection(geometries, properties, options = {}) {
+  const geom = {
+    type: "GeometryCollection",
+    geometries
+  };
+  return feature(geom, properties, options);
+}
+function round(num, precision = 0) {
+  if (precision && !(precision >= 0)) {
+    throw new Error("precision must be a positive number");
+  }
+  const multiplier = Math.pow(10, precision || 0);
+  return Math.round(num * multiplier) / multiplier;
+}
+function radiansToLength(radians, units = "kilometers") {
+  const factor = factors[units];
+  if (!factor) {
+    throw new Error(units + " units is invalid");
+  }
+  return radians * factor;
+}
+function lengthToRadians(distance, units = "kilometers") {
+  const factor = factors[units];
+  if (!factor) {
+    throw new Error(units + " units is invalid");
+  }
+  return distance / factor;
+}
+function lengthToDegrees(distance, units) {
+  return radiansToDegrees(lengthToRadians(distance, units));
+}
+function bearingToAzimuth(bearing) {
+  let angle = bearing % 360;
+  if (angle < 0) {
+    angle += 360;
+  }
+  return angle;
+}
+function azimuthToBearing(angle) {
+  angle = angle % 360;
+  if (angle > 180) {
+    return angle - 360;
+  } else if (angle < -180) {
+    return angle + 360;
+  }
+  return angle;
+}
+function radiansToDegrees(radians) {
+  const normalisedRadians = radians % (2 * Math.PI);
+  return normalisedRadians * 180 / Math.PI;
+}
+function degreesToRadians(degrees) {
+  const normalisedDegrees = degrees % 360;
+  return normalisedDegrees * Math.PI / 180;
+}
+function convertLength(length, originalUnit = "kilometers", finalUnit = "kilometers") {
+  if (!(length >= 0)) {
+    throw new Error("length must be a positive number");
+  }
+  return radiansToLength(lengthToRadians(length, originalUnit), finalUnit);
+}
+function convertArea(area, originalUnit = "meters", finalUnit = "kilometers") {
+  if (!(area >= 0)) {
+    throw new Error("area must be a positive number");
+  }
+  const startFactor = areaFactors[originalUnit];
+  if (!startFactor) {
+    throw new Error("invalid original units");
+  }
+  const finalFactor = areaFactors[finalUnit];
+  if (!finalFactor) {
+    throw new Error("invalid final units");
+  }
+  return area / startFactor * finalFactor;
+}
+function isNumber(num) {
+  return !isNaN(num) && num !== null && !Array.isArray(num);
+}
+function isObject(input) {
+  return input !== null && typeof input === "object" && !Array.isArray(input);
+}
+function validateBBox(bbox) {
+  if (!bbox) {
+    throw new Error("bbox is required");
+  }
+  if (!Array.isArray(bbox)) {
+    throw new Error("bbox must be an Array");
+  }
+  if (bbox.length !== 4 && bbox.length !== 6) {
+    throw new Error("bbox must be an Array of 4 or 6 numbers");
+  }
+  bbox.forEach(num => {
+    if (!isNumber(num)) {
+      throw new Error("bbox must only contain numbers");
+    }
+  });
+}
+function validateId(id) {
+  if (!id) {
+    throw new Error("id is required");
+  }
+  if (["string", "number"].indexOf(typeof id) === -1) {
+    throw new Error("id must be a number or a string");
+  }
+}
+
+
+/***/ }),
+
+/***/ 40782:
+/*!*************************************************************************************************!*\
+  !*** ./node_modules/.pnpm/@turf+invariant@7.2.0/node_modules/@turf/invariant/dist/esm/index.js ***!
+  \*************************************************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   collectionOf: () => (/* binding */ collectionOf),
+/* harmony export */   containsNumber: () => (/* binding */ containsNumber),
+/* harmony export */   featureOf: () => (/* binding */ featureOf),
+/* harmony export */   geojsonType: () => (/* binding */ geojsonType),
+/* harmony export */   getCoord: () => (/* binding */ getCoord),
+/* harmony export */   getCoords: () => (/* binding */ getCoords),
+/* harmony export */   getGeom: () => (/* binding */ getGeom),
+/* harmony export */   getType: () => (/* binding */ getType)
+/* harmony export */ });
+/* harmony import */ var _turf_helpers__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @turf/helpers */ 85672);
+// index.ts
+
+function getCoord(coord) {
+  if (!coord) {
+    throw new Error("coord is required");
+  }
+  if (!Array.isArray(coord)) {
+    if (coord.type === "Feature" && coord.geometry !== null && coord.geometry.type === "Point") {
+      return [...coord.geometry.coordinates];
+    }
+    if (coord.type === "Point") {
+      return [...coord.coordinates];
+    }
+  }
+  if (Array.isArray(coord) && coord.length >= 2 && !Array.isArray(coord[0]) && !Array.isArray(coord[1])) {
+    return [...coord];
+  }
+  throw new Error("coord must be GeoJSON Point or an Array of numbers");
+}
+function getCoords(coords) {
+  if (Array.isArray(coords)) {
+    return coords;
+  }
+  if (coords.type === "Feature") {
+    if (coords.geometry !== null) {
+      return coords.geometry.coordinates;
+    }
+  } else {
+    if (coords.coordinates) {
+      return coords.coordinates;
+    }
+  }
+  throw new Error("coords must be GeoJSON Feature, Geometry Object or an Array");
+}
+function containsNumber(coordinates) {
+  if (coordinates.length > 1 && (0,_turf_helpers__WEBPACK_IMPORTED_MODULE_0__.isNumber)(coordinates[0]) && (0,_turf_helpers__WEBPACK_IMPORTED_MODULE_0__.isNumber)(coordinates[1])) {
+    return true;
+  }
+  if (Array.isArray(coordinates[0]) && coordinates[0].length) {
+    return containsNumber(coordinates[0]);
+  }
+  throw new Error("coordinates must only contain numbers");
+}
+function geojsonType(value, type, name) {
+  if (!type || !name) {
+    throw new Error("type and name required");
+  }
+  if (!value || value.type !== type) {
+    throw new Error("Invalid input to " + name + ": must be a " + type + ", given " + value.type);
+  }
+}
+function featureOf(feature, type, name) {
+  if (!feature) {
+    throw new Error("No feature passed");
+  }
+  if (!name) {
+    throw new Error(".featureOf() requires a name");
+  }
+  if (!feature || feature.type !== "Feature" || !feature.geometry) {
+    throw new Error("Invalid input to " + name + ", Feature with geometry required");
+  }
+  if (!feature.geometry || feature.geometry.type !== type) {
+    throw new Error("Invalid input to " + name + ": must be a " + type + ", given " + feature.geometry.type);
+  }
+}
+function collectionOf(featureCollection, type, name) {
+  if (!featureCollection) {
+    throw new Error("No featureCollection passed");
+  }
+  if (!name) {
+    throw new Error(".collectionOf() requires a name");
+  }
+  if (!featureCollection || featureCollection.type !== "FeatureCollection") {
+    throw new Error("Invalid input to " + name + ", FeatureCollection required");
+  }
+  for (const feature of featureCollection.features) {
+    if (!feature || feature.type !== "Feature" || !feature.geometry) {
+      throw new Error("Invalid input to " + name + ", Feature with geometry required");
+    }
+    if (!feature.geometry || feature.geometry.type !== type) {
+      throw new Error("Invalid input to " + name + ": must be a " + type + ", given " + feature.geometry.type);
+    }
+  }
+}
+function getGeom(geojson) {
+  if (geojson.type === "Feature") {
+    return geojson.geometry;
+  }
+  return geojson;
+}
+function getType(geojson, _name) {
+  if (geojson.type === "FeatureCollection") {
+    return "FeatureCollection";
+  }
+  if (geojson.type === "GeometryCollection") {
+    return "GeometryCollection";
+  }
+  if (geojson.type === "Feature" && geojson.geometry !== null) {
+    return geojson.geometry.type;
+  }
+  return geojson.type;
+}
+
+
+/***/ }),
+
+/***/ 48246:
+/*!***********************************************************************************************************!*\
+  !*** ./node_modules/.pnpm/point-in-polygon-hao@1.2.4/node_modules/point-in-polygon-hao/dist/esm/index.js ***!
+  \***********************************************************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ pointInPolygon)
+/* harmony export */ });
+/* harmony import */ var robust_predicates__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! robust-predicates */ 90169);
+
+function pointInPolygon(p, polygon) {
+  var i;
+  var ii;
+  var k = 0;
+  var f;
+  var u1;
+  var v1;
+  var u2;
+  var v2;
+  var currentP;
+  var nextP;
+  var x = p[0];
+  var y = p[1];
+  var numContours = polygon.length;
+  for (i = 0; i < numContours; i++) {
+    ii = 0;
+    var contour = polygon[i];
+    var contourLen = contour.length - 1;
+    currentP = contour[0];
+    if (currentP[0] !== contour[contourLen][0] && currentP[1] !== contour[contourLen][1]) {
+      throw new Error('First and last coordinates in a ring must be the same');
+    }
+    u1 = currentP[0] - x;
+    v1 = currentP[1] - y;
+    for (ii; ii < contourLen; ii++) {
+      nextP = contour[ii + 1];
+      u2 = nextP[0] - x;
+      v2 = nextP[1] - y;
+      if (v1 === 0 && v2 === 0) {
+        if (u2 <= 0 && u1 >= 0 || u1 <= 0 && u2 >= 0) {
+          return 0;
+        }
+      } else if (v2 >= 0 && v1 <= 0 || v2 <= 0 && v1 >= 0) {
+        f = (0,robust_predicates__WEBPACK_IMPORTED_MODULE_0__.orient2d)(u1, u2, v1, v2, 0, 0);
+        if (f === 0) {
+          return 0;
+        }
+        if (f > 0 && v2 > 0 && v1 <= 0 || f < 0 && v2 <= 0 && v1 > 0) {
+          k++;
+        }
+      }
+      currentP = nextP;
+      v1 = v2;
+      u1 = u2;
+    }
+  }
+  if (k % 2 === 0) {
+    return false;
+  }
+  return true;
+}
+
+
+/***/ }),
+
+/***/ 61318:
+/*!***************************************************************************************************!*\
+  !*** ./node_modules/.pnpm/robust-predicates@3.0.2/node_modules/robust-predicates/esm/incircle.js ***!
+  \***************************************************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   incircle: () => (/* binding */ incircle),
+/* harmony export */   incirclefast: () => (/* binding */ incirclefast)
+/* harmony export */ });
+/* harmony import */ var _util_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./util.js */ 72461);
+
+const iccerrboundA = (10 + 96 * _util_js__WEBPACK_IMPORTED_MODULE_0__.epsilon) * _util_js__WEBPACK_IMPORTED_MODULE_0__.epsilon;
+const iccerrboundB = (4 + 48 * _util_js__WEBPACK_IMPORTED_MODULE_0__.epsilon) * _util_js__WEBPACK_IMPORTED_MODULE_0__.epsilon;
+const iccerrboundC = (44 + 576 * _util_js__WEBPACK_IMPORTED_MODULE_0__.epsilon) * _util_js__WEBPACK_IMPORTED_MODULE_0__.epsilon * _util_js__WEBPACK_IMPORTED_MODULE_0__.epsilon;
+const bc = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(4);
+const ca = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(4);
+const ab = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(4);
+const aa = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(4);
+const bb = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(4);
+const cc = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(4);
+const u = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(4);
+const v = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(4);
+const axtbc = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(8);
+const aytbc = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(8);
+const bxtca = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(8);
+const bytca = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(8);
+const cxtab = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(8);
+const cytab = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(8);
+const abt = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(8);
+const bct = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(8);
+const cat = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(8);
+const abtt = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(4);
+const bctt = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(4);
+const catt = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(4);
+const _8 = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(8);
+const _16 = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(16);
+const _16b = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(16);
+const _16c = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(16);
+const _32 = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(32);
+const _32b = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(32);
+const _48 = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(48);
+const _64 = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(64);
+let fin = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(1152);
+let fin2 = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(1152);
+function finadd(finlen, a, alen) {
+  finlen = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.sum)(finlen, fin, a, alen, fin2);
+  const tmp = fin;
+  fin = fin2;
+  fin2 = tmp;
+  return finlen;
+}
+function incircleadapt(ax, ay, bx, by, cx, cy, dx, dy, permanent) {
+  let finlen;
+  let adxtail, bdxtail, cdxtail, adytail, bdytail, cdytail;
+  let axtbclen, aytbclen, bxtcalen, bytcalen, cxtablen, cytablen;
+  let abtlen, bctlen, catlen;
+  let abttlen, bcttlen, cattlen;
+  let n1, n0;
+  let bvirt, c, ahi, alo, bhi, blo, _i, _j, _0, s1, s0, t1, t0, u3;
+  const adx = ax - dx;
+  const bdx = bx - dx;
+  const cdx = cx - dx;
+  const ady = ay - dy;
+  const bdy = by - dy;
+  const cdy = cy - dy;
+  s1 = bdx * cdy;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * bdx;
+  ahi = c - (c - bdx);
+  alo = bdx - ahi;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * cdy;
+  bhi = c - (c - cdy);
+  blo = cdy - bhi;
+  s0 = alo * blo - (s1 - ahi * bhi - alo * bhi - ahi * blo);
+  t1 = cdx * bdy;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * cdx;
+  ahi = c - (c - cdx);
+  alo = cdx - ahi;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * bdy;
+  bhi = c - (c - bdy);
+  blo = bdy - bhi;
+  t0 = alo * blo - (t1 - ahi * bhi - alo * bhi - ahi * blo);
+  _i = s0 - t0;
+  bvirt = s0 - _i;
+  bc[0] = s0 - (_i + bvirt) + (bvirt - t0);
+  _j = s1 + _i;
+  bvirt = _j - s1;
+  _0 = s1 - (_j - bvirt) + (_i - bvirt);
+  _i = _0 - t1;
+  bvirt = _0 - _i;
+  bc[1] = _0 - (_i + bvirt) + (bvirt - t1);
+  u3 = _j + _i;
+  bvirt = u3 - _j;
+  bc[2] = _j - (u3 - bvirt) + (_i - bvirt);
+  bc[3] = u3;
+  s1 = cdx * ady;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * cdx;
+  ahi = c - (c - cdx);
+  alo = cdx - ahi;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * ady;
+  bhi = c - (c - ady);
+  blo = ady - bhi;
+  s0 = alo * blo - (s1 - ahi * bhi - alo * bhi - ahi * blo);
+  t1 = adx * cdy;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * adx;
+  ahi = c - (c - adx);
+  alo = adx - ahi;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * cdy;
+  bhi = c - (c - cdy);
+  blo = cdy - bhi;
+  t0 = alo * blo - (t1 - ahi * bhi - alo * bhi - ahi * blo);
+  _i = s0 - t0;
+  bvirt = s0 - _i;
+  ca[0] = s0 - (_i + bvirt) + (bvirt - t0);
+  _j = s1 + _i;
+  bvirt = _j - s1;
+  _0 = s1 - (_j - bvirt) + (_i - bvirt);
+  _i = _0 - t1;
+  bvirt = _0 - _i;
+  ca[1] = _0 - (_i + bvirt) + (bvirt - t1);
+  u3 = _j + _i;
+  bvirt = u3 - _j;
+  ca[2] = _j - (u3 - bvirt) + (_i - bvirt);
+  ca[3] = u3;
+  s1 = adx * bdy;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * adx;
+  ahi = c - (c - adx);
+  alo = adx - ahi;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * bdy;
+  bhi = c - (c - bdy);
+  blo = bdy - bhi;
+  s0 = alo * blo - (s1 - ahi * bhi - alo * bhi - ahi * blo);
+  t1 = bdx * ady;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * bdx;
+  ahi = c - (c - bdx);
+  alo = bdx - ahi;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * ady;
+  bhi = c - (c - ady);
+  blo = ady - bhi;
+  t0 = alo * blo - (t1 - ahi * bhi - alo * bhi - ahi * blo);
+  _i = s0 - t0;
+  bvirt = s0 - _i;
+  ab[0] = s0 - (_i + bvirt) + (bvirt - t0);
+  _j = s1 + _i;
+  bvirt = _j - s1;
+  _0 = s1 - (_j - bvirt) + (_i - bvirt);
+  _i = _0 - t1;
+  bvirt = _0 - _i;
+  ab[1] = _0 - (_i + bvirt) + (bvirt - t1);
+  u3 = _j + _i;
+  bvirt = u3 - _j;
+  ab[2] = _j - (u3 - bvirt) + (_i - bvirt);
+  ab[3] = u3;
+  finlen = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.sum)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.sum)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.sum)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(4, bc, adx, _8), _8, adx, _16), _16, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(4, bc, ady, _8), _8, ady, _16b), _16b, _32), _32, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.sum)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(4, ca, bdx, _8), _8, bdx, _16), _16, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(4, ca, bdy, _8), _8, bdy, _16b), _16b, _32b), _32b, _64), _64, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.sum)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(4, ab, cdx, _8), _8, cdx, _16), _16, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(4, ab, cdy, _8), _8, cdy, _16b), _16b, _32), _32, fin);
+  let det = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.estimate)(finlen, fin);
+  let errbound = iccerrboundB * permanent;
+  if (det >= errbound || -det >= errbound) {
+    return det;
+  }
+  bvirt = ax - adx;
+  adxtail = ax - (adx + bvirt) + (bvirt - dx);
+  bvirt = ay - ady;
+  adytail = ay - (ady + bvirt) + (bvirt - dy);
+  bvirt = bx - bdx;
+  bdxtail = bx - (bdx + bvirt) + (bvirt - dx);
+  bvirt = by - bdy;
+  bdytail = by - (bdy + bvirt) + (bvirt - dy);
+  bvirt = cx - cdx;
+  cdxtail = cx - (cdx + bvirt) + (bvirt - dx);
+  bvirt = cy - cdy;
+  cdytail = cy - (cdy + bvirt) + (bvirt - dy);
+  if (adxtail === 0 && bdxtail === 0 && cdxtail === 0 && adytail === 0 && bdytail === 0 && cdytail === 0) {
+    return det;
+  }
+  errbound = iccerrboundC * permanent + _util_js__WEBPACK_IMPORTED_MODULE_0__.resulterrbound * Math.abs(det);
+  det += (adx * adx + ady * ady) * (bdx * cdytail + cdy * bdxtail - (bdy * cdxtail + cdx * bdytail)) + 2 * (adx * adxtail + ady * adytail) * (bdx * cdy - bdy * cdx) + ((bdx * bdx + bdy * bdy) * (cdx * adytail + ady * cdxtail - (cdy * adxtail + adx * cdytail)) + 2 * (bdx * bdxtail + bdy * bdytail) * (cdx * ady - cdy * adx)) + ((cdx * cdx + cdy * cdy) * (adx * bdytail + bdy * adxtail - (ady * bdxtail + bdx * adytail)) + 2 * (cdx * cdxtail + cdy * cdytail) * (adx * bdy - ady * bdx));
+  if (det >= errbound || -det >= errbound) {
+    return det;
+  }
+  if (bdxtail !== 0 || bdytail !== 0 || cdxtail !== 0 || cdytail !== 0) {
+    s1 = adx * adx;
+    c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * adx;
+    ahi = c - (c - adx);
+    alo = adx - ahi;
+    s0 = alo * alo - (s1 - ahi * ahi - (ahi + ahi) * alo);
+    t1 = ady * ady;
+    c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * ady;
+    ahi = c - (c - ady);
+    alo = ady - ahi;
+    t0 = alo * alo - (t1 - ahi * ahi - (ahi + ahi) * alo);
+    _i = s0 + t0;
+    bvirt = _i - s0;
+    aa[0] = s0 - (_i - bvirt) + (t0 - bvirt);
+    _j = s1 + _i;
+    bvirt = _j - s1;
+    _0 = s1 - (_j - bvirt) + (_i - bvirt);
+    _i = _0 + t1;
+    bvirt = _i - _0;
+    aa[1] = _0 - (_i - bvirt) + (t1 - bvirt);
+    u3 = _j + _i;
+    bvirt = u3 - _j;
+    aa[2] = _j - (u3 - bvirt) + (_i - bvirt);
+    aa[3] = u3;
+  }
+  if (cdxtail !== 0 || cdytail !== 0 || adxtail !== 0 || adytail !== 0) {
+    s1 = bdx * bdx;
+    c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * bdx;
+    ahi = c - (c - bdx);
+    alo = bdx - ahi;
+    s0 = alo * alo - (s1 - ahi * ahi - (ahi + ahi) * alo);
+    t1 = bdy * bdy;
+    c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * bdy;
+    ahi = c - (c - bdy);
+    alo = bdy - ahi;
+    t0 = alo * alo - (t1 - ahi * ahi - (ahi + ahi) * alo);
+    _i = s0 + t0;
+    bvirt = _i - s0;
+    bb[0] = s0 - (_i - bvirt) + (t0 - bvirt);
+    _j = s1 + _i;
+    bvirt = _j - s1;
+    _0 = s1 - (_j - bvirt) + (_i - bvirt);
+    _i = _0 + t1;
+    bvirt = _i - _0;
+    bb[1] = _0 - (_i - bvirt) + (t1 - bvirt);
+    u3 = _j + _i;
+    bvirt = u3 - _j;
+    bb[2] = _j - (u3 - bvirt) + (_i - bvirt);
+    bb[3] = u3;
+  }
+  if (adxtail !== 0 || adytail !== 0 || bdxtail !== 0 || bdytail !== 0) {
+    s1 = cdx * cdx;
+    c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * cdx;
+    ahi = c - (c - cdx);
+    alo = cdx - ahi;
+    s0 = alo * alo - (s1 - ahi * ahi - (ahi + ahi) * alo);
+    t1 = cdy * cdy;
+    c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * cdy;
+    ahi = c - (c - cdy);
+    alo = cdy - ahi;
+    t0 = alo * alo - (t1 - ahi * ahi - (ahi + ahi) * alo);
+    _i = s0 + t0;
+    bvirt = _i - s0;
+    cc[0] = s0 - (_i - bvirt) + (t0 - bvirt);
+    _j = s1 + _i;
+    bvirt = _j - s1;
+    _0 = s1 - (_j - bvirt) + (_i - bvirt);
+    _i = _0 + t1;
+    bvirt = _i - _0;
+    cc[1] = _0 - (_i - bvirt) + (t1 - bvirt);
+    u3 = _j + _i;
+    bvirt = u3 - _j;
+    cc[2] = _j - (u3 - bvirt) + (_i - bvirt);
+    cc[3] = u3;
+  }
+  if (adxtail !== 0) {
+    axtbclen = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(4, bc, adxtail, axtbc);
+    finlen = finadd(finlen, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.sum_three)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(axtbclen, axtbc, 2 * adx, _16), _16, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(4, cc, adxtail, _8), _8, bdy, _16b), _16b, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(4, bb, adxtail, _8), _8, -cdy, _16c), _16c, _32, _48), _48);
+  }
+  if (adytail !== 0) {
+    aytbclen = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(4, bc, adytail, aytbc);
+    finlen = finadd(finlen, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.sum_three)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(aytbclen, aytbc, 2 * ady, _16), _16, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(4, bb, adytail, _8), _8, cdx, _16b), _16b, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(4, cc, adytail, _8), _8, -bdx, _16c), _16c, _32, _48), _48);
+  }
+  if (bdxtail !== 0) {
+    bxtcalen = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(4, ca, bdxtail, bxtca);
+    finlen = finadd(finlen, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.sum_three)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(bxtcalen, bxtca, 2 * bdx, _16), _16, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(4, aa, bdxtail, _8), _8, cdy, _16b), _16b, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(4, cc, bdxtail, _8), _8, -ady, _16c), _16c, _32, _48), _48);
+  }
+  if (bdytail !== 0) {
+    bytcalen = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(4, ca, bdytail, bytca);
+    finlen = finadd(finlen, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.sum_three)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(bytcalen, bytca, 2 * bdy, _16), _16, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(4, cc, bdytail, _8), _8, adx, _16b), _16b, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(4, aa, bdytail, _8), _8, -cdx, _16c), _16c, _32, _48), _48);
+  }
+  if (cdxtail !== 0) {
+    cxtablen = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(4, ab, cdxtail, cxtab);
+    finlen = finadd(finlen, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.sum_three)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(cxtablen, cxtab, 2 * cdx, _16), _16, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(4, bb, cdxtail, _8), _8, ady, _16b), _16b, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(4, aa, cdxtail, _8), _8, -bdy, _16c), _16c, _32, _48), _48);
+  }
+  if (cdytail !== 0) {
+    cytablen = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(4, ab, cdytail, cytab);
+    finlen = finadd(finlen, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.sum_three)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(cytablen, cytab, 2 * cdy, _16), _16, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(4, aa, cdytail, _8), _8, bdx, _16b), _16b, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(4, bb, cdytail, _8), _8, -adx, _16c), _16c, _32, _48), _48);
+  }
+  if (adxtail !== 0 || adytail !== 0) {
+    if (bdxtail !== 0 || bdytail !== 0 || cdxtail !== 0 || cdytail !== 0) {
+      s1 = bdxtail * cdy;
+      c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * bdxtail;
+      ahi = c - (c - bdxtail);
+      alo = bdxtail - ahi;
+      c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * cdy;
+      bhi = c - (c - cdy);
+      blo = cdy - bhi;
+      s0 = alo * blo - (s1 - ahi * bhi - alo * bhi - ahi * blo);
+      t1 = bdx * cdytail;
+      c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * bdx;
+      ahi = c - (c - bdx);
+      alo = bdx - ahi;
+      c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * cdytail;
+      bhi = c - (c - cdytail);
+      blo = cdytail - bhi;
+      t0 = alo * blo - (t1 - ahi * bhi - alo * bhi - ahi * blo);
+      _i = s0 + t0;
+      bvirt = _i - s0;
+      u[0] = s0 - (_i - bvirt) + (t0 - bvirt);
+      _j = s1 + _i;
+      bvirt = _j - s1;
+      _0 = s1 - (_j - bvirt) + (_i - bvirt);
+      _i = _0 + t1;
+      bvirt = _i - _0;
+      u[1] = _0 - (_i - bvirt) + (t1 - bvirt);
+      u3 = _j + _i;
+      bvirt = u3 - _j;
+      u[2] = _j - (u3 - bvirt) + (_i - bvirt);
+      u[3] = u3;
+      s1 = cdxtail * -bdy;
+      c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * cdxtail;
+      ahi = c - (c - cdxtail);
+      alo = cdxtail - ahi;
+      c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * -bdy;
+      bhi = c - (c - -bdy);
+      blo = -bdy - bhi;
+      s0 = alo * blo - (s1 - ahi * bhi - alo * bhi - ahi * blo);
+      t1 = cdx * -bdytail;
+      c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * cdx;
+      ahi = c - (c - cdx);
+      alo = cdx - ahi;
+      c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * -bdytail;
+      bhi = c - (c - -bdytail);
+      blo = -bdytail - bhi;
+      t0 = alo * blo - (t1 - ahi * bhi - alo * bhi - ahi * blo);
+      _i = s0 + t0;
+      bvirt = _i - s0;
+      v[0] = s0 - (_i - bvirt) + (t0 - bvirt);
+      _j = s1 + _i;
+      bvirt = _j - s1;
+      _0 = s1 - (_j - bvirt) + (_i - bvirt);
+      _i = _0 + t1;
+      bvirt = _i - _0;
+      v[1] = _0 - (_i - bvirt) + (t1 - bvirt);
+      u3 = _j + _i;
+      bvirt = u3 - _j;
+      v[2] = _j - (u3 - bvirt) + (_i - bvirt);
+      v[3] = u3;
+      bctlen = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.sum)(4, u, 4, v, bct);
+      s1 = bdxtail * cdytail;
+      c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * bdxtail;
+      ahi = c - (c - bdxtail);
+      alo = bdxtail - ahi;
+      c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * cdytail;
+      bhi = c - (c - cdytail);
+      blo = cdytail - bhi;
+      s0 = alo * blo - (s1 - ahi * bhi - alo * bhi - ahi * blo);
+      t1 = cdxtail * bdytail;
+      c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * cdxtail;
+      ahi = c - (c - cdxtail);
+      alo = cdxtail - ahi;
+      c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * bdytail;
+      bhi = c - (c - bdytail);
+      blo = bdytail - bhi;
+      t0 = alo * blo - (t1 - ahi * bhi - alo * bhi - ahi * blo);
+      _i = s0 - t0;
+      bvirt = s0 - _i;
+      bctt[0] = s0 - (_i + bvirt) + (bvirt - t0);
+      _j = s1 + _i;
+      bvirt = _j - s1;
+      _0 = s1 - (_j - bvirt) + (_i - bvirt);
+      _i = _0 - t1;
+      bvirt = _0 - _i;
+      bctt[1] = _0 - (_i + bvirt) + (bvirt - t1);
+      u3 = _j + _i;
+      bvirt = u3 - _j;
+      bctt[2] = _j - (u3 - bvirt) + (_i - bvirt);
+      bctt[3] = u3;
+      bcttlen = 4;
+    } else {
+      bct[0] = 0;
+      bctlen = 1;
+      bctt[0] = 0;
+      bcttlen = 1;
+    }
+    if (adxtail !== 0) {
+      const len = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(bctlen, bct, adxtail, _16c);
+      finlen = finadd(finlen, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.sum)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(axtbclen, axtbc, adxtail, _16), _16, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(len, _16c, 2 * adx, _32), _32, _48), _48);
+      const len2 = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(bcttlen, bctt, adxtail, _8);
+      finlen = finadd(finlen, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.sum_three)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(len2, _8, 2 * adx, _16), _16, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(len2, _8, adxtail, _16b), _16b, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(len, _16c, adxtail, _32), _32, _32b, _64), _64);
+      if (bdytail !== 0) {
+        finlen = finadd(finlen, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(4, cc, adxtail, _8), _8, bdytail, _16), _16);
+      }
+      if (cdytail !== 0) {
+        finlen = finadd(finlen, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(4, bb, -adxtail, _8), _8, cdytail, _16), _16);
+      }
+    }
+    if (adytail !== 0) {
+      const len = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(bctlen, bct, adytail, _16c);
+      finlen = finadd(finlen, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.sum)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(aytbclen, aytbc, adytail, _16), _16, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(len, _16c, 2 * ady, _32), _32, _48), _48);
+      const len2 = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(bcttlen, bctt, adytail, _8);
+      finlen = finadd(finlen, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.sum_three)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(len2, _8, 2 * ady, _16), _16, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(len2, _8, adytail, _16b), _16b, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(len, _16c, adytail, _32), _32, _32b, _64), _64);
+    }
+  }
+  if (bdxtail !== 0 || bdytail !== 0) {
+    if (cdxtail !== 0 || cdytail !== 0 || adxtail !== 0 || adytail !== 0) {
+      s1 = cdxtail * ady;
+      c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * cdxtail;
+      ahi = c - (c - cdxtail);
+      alo = cdxtail - ahi;
+      c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * ady;
+      bhi = c - (c - ady);
+      blo = ady - bhi;
+      s0 = alo * blo - (s1 - ahi * bhi - alo * bhi - ahi * blo);
+      t1 = cdx * adytail;
+      c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * cdx;
+      ahi = c - (c - cdx);
+      alo = cdx - ahi;
+      c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * adytail;
+      bhi = c - (c - adytail);
+      blo = adytail - bhi;
+      t0 = alo * blo - (t1 - ahi * bhi - alo * bhi - ahi * blo);
+      _i = s0 + t0;
+      bvirt = _i - s0;
+      u[0] = s0 - (_i - bvirt) + (t0 - bvirt);
+      _j = s1 + _i;
+      bvirt = _j - s1;
+      _0 = s1 - (_j - bvirt) + (_i - bvirt);
+      _i = _0 + t1;
+      bvirt = _i - _0;
+      u[1] = _0 - (_i - bvirt) + (t1 - bvirt);
+      u3 = _j + _i;
+      bvirt = u3 - _j;
+      u[2] = _j - (u3 - bvirt) + (_i - bvirt);
+      u[3] = u3;
+      n1 = -cdy;
+      n0 = -cdytail;
+      s1 = adxtail * n1;
+      c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * adxtail;
+      ahi = c - (c - adxtail);
+      alo = adxtail - ahi;
+      c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * n1;
+      bhi = c - (c - n1);
+      blo = n1 - bhi;
+      s0 = alo * blo - (s1 - ahi * bhi - alo * bhi - ahi * blo);
+      t1 = adx * n0;
+      c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * adx;
+      ahi = c - (c - adx);
+      alo = adx - ahi;
+      c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * n0;
+      bhi = c - (c - n0);
+      blo = n0 - bhi;
+      t0 = alo * blo - (t1 - ahi * bhi - alo * bhi - ahi * blo);
+      _i = s0 + t0;
+      bvirt = _i - s0;
+      v[0] = s0 - (_i - bvirt) + (t0 - bvirt);
+      _j = s1 + _i;
+      bvirt = _j - s1;
+      _0 = s1 - (_j - bvirt) + (_i - bvirt);
+      _i = _0 + t1;
+      bvirt = _i - _0;
+      v[1] = _0 - (_i - bvirt) + (t1 - bvirt);
+      u3 = _j + _i;
+      bvirt = u3 - _j;
+      v[2] = _j - (u3 - bvirt) + (_i - bvirt);
+      v[3] = u3;
+      catlen = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.sum)(4, u, 4, v, cat);
+      s1 = cdxtail * adytail;
+      c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * cdxtail;
+      ahi = c - (c - cdxtail);
+      alo = cdxtail - ahi;
+      c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * adytail;
+      bhi = c - (c - adytail);
+      blo = adytail - bhi;
+      s0 = alo * blo - (s1 - ahi * bhi - alo * bhi - ahi * blo);
+      t1 = adxtail * cdytail;
+      c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * adxtail;
+      ahi = c - (c - adxtail);
+      alo = adxtail - ahi;
+      c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * cdytail;
+      bhi = c - (c - cdytail);
+      blo = cdytail - bhi;
+      t0 = alo * blo - (t1 - ahi * bhi - alo * bhi - ahi * blo);
+      _i = s0 - t0;
+      bvirt = s0 - _i;
+      catt[0] = s0 - (_i + bvirt) + (bvirt - t0);
+      _j = s1 + _i;
+      bvirt = _j - s1;
+      _0 = s1 - (_j - bvirt) + (_i - bvirt);
+      _i = _0 - t1;
+      bvirt = _0 - _i;
+      catt[1] = _0 - (_i + bvirt) + (bvirt - t1);
+      u3 = _j + _i;
+      bvirt = u3 - _j;
+      catt[2] = _j - (u3 - bvirt) + (_i - bvirt);
+      catt[3] = u3;
+      cattlen = 4;
+    } else {
+      cat[0] = 0;
+      catlen = 1;
+      catt[0] = 0;
+      cattlen = 1;
+    }
+    if (bdxtail !== 0) {
+      const len = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(catlen, cat, bdxtail, _16c);
+      finlen = finadd(finlen, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.sum)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(bxtcalen, bxtca, bdxtail, _16), _16, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(len, _16c, 2 * bdx, _32), _32, _48), _48);
+      const len2 = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(cattlen, catt, bdxtail, _8);
+      finlen = finadd(finlen, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.sum_three)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(len2, _8, 2 * bdx, _16), _16, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(len2, _8, bdxtail, _16b), _16b, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(len, _16c, bdxtail, _32), _32, _32b, _64), _64);
+      if (cdytail !== 0) {
+        finlen = finadd(finlen, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(4, aa, bdxtail, _8), _8, cdytail, _16), _16);
+      }
+      if (adytail !== 0) {
+        finlen = finadd(finlen, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(4, cc, -bdxtail, _8), _8, adytail, _16), _16);
+      }
+    }
+    if (bdytail !== 0) {
+      const len = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(catlen, cat, bdytail, _16c);
+      finlen = finadd(finlen, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.sum)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(bytcalen, bytca, bdytail, _16), _16, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(len, _16c, 2 * bdy, _32), _32, _48), _48);
+      const len2 = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(cattlen, catt, bdytail, _8);
+      finlen = finadd(finlen, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.sum_three)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(len2, _8, 2 * bdy, _16), _16, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(len2, _8, bdytail, _16b), _16b, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(len, _16c, bdytail, _32), _32, _32b, _64), _64);
+    }
+  }
+  if (cdxtail !== 0 || cdytail !== 0) {
+    if (adxtail !== 0 || adytail !== 0 || bdxtail !== 0 || bdytail !== 0) {
+      s1 = adxtail * bdy;
+      c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * adxtail;
+      ahi = c - (c - adxtail);
+      alo = adxtail - ahi;
+      c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * bdy;
+      bhi = c - (c - bdy);
+      blo = bdy - bhi;
+      s0 = alo * blo - (s1 - ahi * bhi - alo * bhi - ahi * blo);
+      t1 = adx * bdytail;
+      c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * adx;
+      ahi = c - (c - adx);
+      alo = adx - ahi;
+      c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * bdytail;
+      bhi = c - (c - bdytail);
+      blo = bdytail - bhi;
+      t0 = alo * blo - (t1 - ahi * bhi - alo * bhi - ahi * blo);
+      _i = s0 + t0;
+      bvirt = _i - s0;
+      u[0] = s0 - (_i - bvirt) + (t0 - bvirt);
+      _j = s1 + _i;
+      bvirt = _j - s1;
+      _0 = s1 - (_j - bvirt) + (_i - bvirt);
+      _i = _0 + t1;
+      bvirt = _i - _0;
+      u[1] = _0 - (_i - bvirt) + (t1 - bvirt);
+      u3 = _j + _i;
+      bvirt = u3 - _j;
+      u[2] = _j - (u3 - bvirt) + (_i - bvirt);
+      u[3] = u3;
+      n1 = -ady;
+      n0 = -adytail;
+      s1 = bdxtail * n1;
+      c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * bdxtail;
+      ahi = c - (c - bdxtail);
+      alo = bdxtail - ahi;
+      c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * n1;
+      bhi = c - (c - n1);
+      blo = n1 - bhi;
+      s0 = alo * blo - (s1 - ahi * bhi - alo * bhi - ahi * blo);
+      t1 = bdx * n0;
+      c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * bdx;
+      ahi = c - (c - bdx);
+      alo = bdx - ahi;
+      c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * n0;
+      bhi = c - (c - n0);
+      blo = n0 - bhi;
+      t0 = alo * blo - (t1 - ahi * bhi - alo * bhi - ahi * blo);
+      _i = s0 + t0;
+      bvirt = _i - s0;
+      v[0] = s0 - (_i - bvirt) + (t0 - bvirt);
+      _j = s1 + _i;
+      bvirt = _j - s1;
+      _0 = s1 - (_j - bvirt) + (_i - bvirt);
+      _i = _0 + t1;
+      bvirt = _i - _0;
+      v[1] = _0 - (_i - bvirt) + (t1 - bvirt);
+      u3 = _j + _i;
+      bvirt = u3 - _j;
+      v[2] = _j - (u3 - bvirt) + (_i - bvirt);
+      v[3] = u3;
+      abtlen = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.sum)(4, u, 4, v, abt);
+      s1 = adxtail * bdytail;
+      c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * adxtail;
+      ahi = c - (c - adxtail);
+      alo = adxtail - ahi;
+      c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * bdytail;
+      bhi = c - (c - bdytail);
+      blo = bdytail - bhi;
+      s0 = alo * blo - (s1 - ahi * bhi - alo * bhi - ahi * blo);
+      t1 = bdxtail * adytail;
+      c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * bdxtail;
+      ahi = c - (c - bdxtail);
+      alo = bdxtail - ahi;
+      c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * adytail;
+      bhi = c - (c - adytail);
+      blo = adytail - bhi;
+      t0 = alo * blo - (t1 - ahi * bhi - alo * bhi - ahi * blo);
+      _i = s0 - t0;
+      bvirt = s0 - _i;
+      abtt[0] = s0 - (_i + bvirt) + (bvirt - t0);
+      _j = s1 + _i;
+      bvirt = _j - s1;
+      _0 = s1 - (_j - bvirt) + (_i - bvirt);
+      _i = _0 - t1;
+      bvirt = _0 - _i;
+      abtt[1] = _0 - (_i + bvirt) + (bvirt - t1);
+      u3 = _j + _i;
+      bvirt = u3 - _j;
+      abtt[2] = _j - (u3 - bvirt) + (_i - bvirt);
+      abtt[3] = u3;
+      abttlen = 4;
+    } else {
+      abt[0] = 0;
+      abtlen = 1;
+      abtt[0] = 0;
+      abttlen = 1;
+    }
+    if (cdxtail !== 0) {
+      const len = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(abtlen, abt, cdxtail, _16c);
+      finlen = finadd(finlen, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.sum)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(cxtablen, cxtab, cdxtail, _16), _16, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(len, _16c, 2 * cdx, _32), _32, _48), _48);
+      const len2 = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(abttlen, abtt, cdxtail, _8);
+      finlen = finadd(finlen, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.sum_three)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(len2, _8, 2 * cdx, _16), _16, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(len2, _8, cdxtail, _16b), _16b, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(len, _16c, cdxtail, _32), _32, _32b, _64), _64);
+      if (adytail !== 0) {
+        finlen = finadd(finlen, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(4, bb, cdxtail, _8), _8, adytail, _16), _16);
+      }
+      if (bdytail !== 0) {
+        finlen = finadd(finlen, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(4, aa, -cdxtail, _8), _8, bdytail, _16), _16);
+      }
+    }
+    if (cdytail !== 0) {
+      const len = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(abtlen, abt, cdytail, _16c);
+      finlen = finadd(finlen, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.sum)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(cytablen, cytab, cdytail, _16), _16, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(len, _16c, 2 * cdy, _32), _32, _48), _48);
+      const len2 = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(abttlen, abtt, cdytail, _8);
+      finlen = finadd(finlen, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.sum_three)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(len2, _8, 2 * cdy, _16), _16, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(len2, _8, cdytail, _16b), _16b, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(len, _16c, cdytail, _32), _32, _32b, _64), _64);
+    }
+  }
+  return fin[finlen - 1];
+}
+function incircle(ax, ay, bx, by, cx, cy, dx, dy) {
+  const adx = ax - dx;
+  const bdx = bx - dx;
+  const cdx = cx - dx;
+  const ady = ay - dy;
+  const bdy = by - dy;
+  const cdy = cy - dy;
+  const bdxcdy = bdx * cdy;
+  const cdxbdy = cdx * bdy;
+  const alift = adx * adx + ady * ady;
+  const cdxady = cdx * ady;
+  const adxcdy = adx * cdy;
+  const blift = bdx * bdx + bdy * bdy;
+  const adxbdy = adx * bdy;
+  const bdxady = bdx * ady;
+  const clift = cdx * cdx + cdy * cdy;
+  const det = alift * (bdxcdy - cdxbdy) + blift * (cdxady - adxcdy) + clift * (adxbdy - bdxady);
+  const permanent = (Math.abs(bdxcdy) + Math.abs(cdxbdy)) * alift + (Math.abs(cdxady) + Math.abs(adxcdy)) * blift + (Math.abs(adxbdy) + Math.abs(bdxady)) * clift;
+  const errbound = iccerrboundA * permanent;
+  if (det > errbound || -det > errbound) {
+    return det;
+  }
+  return incircleadapt(ax, ay, bx, by, cx, cy, dx, dy, permanent);
+}
+function incirclefast(ax, ay, bx, by, cx, cy, dx, dy) {
+  const adx = ax - dx;
+  const ady = ay - dy;
+  const bdx = bx - dx;
+  const bdy = by - dy;
+  const cdx = cx - dx;
+  const cdy = cy - dy;
+  const abdet = adx * bdy - bdx * ady;
+  const bcdet = bdx * cdy - cdx * bdy;
+  const cadet = cdx * ady - adx * cdy;
+  const alift = adx * adx + ady * ady;
+  const blift = bdx * bdx + bdy * bdy;
+  const clift = cdx * cdx + cdy * cdy;
+  return alift * bcdet + blift * cadet + clift * abdet;
+}
+
+/***/ }),
+
+/***/ 5947:
+/*!***************************************************************************************************!*\
+  !*** ./node_modules/.pnpm/robust-predicates@3.0.2/node_modules/robust-predicates/esm/insphere.js ***!
+  \***************************************************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   insphere: () => (/* binding */ insphere),
+/* harmony export */   inspherefast: () => (/* binding */ inspherefast)
+/* harmony export */ });
+/* harmony import */ var _util_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./util.js */ 72461);
+
+const isperrboundA = (16 + 224 * _util_js__WEBPACK_IMPORTED_MODULE_0__.epsilon) * _util_js__WEBPACK_IMPORTED_MODULE_0__.epsilon;
+const isperrboundB = (5 + 72 * _util_js__WEBPACK_IMPORTED_MODULE_0__.epsilon) * _util_js__WEBPACK_IMPORTED_MODULE_0__.epsilon;
+const isperrboundC = (71 + 1408 * _util_js__WEBPACK_IMPORTED_MODULE_0__.epsilon) * _util_js__WEBPACK_IMPORTED_MODULE_0__.epsilon * _util_js__WEBPACK_IMPORTED_MODULE_0__.epsilon;
+const ab = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(4);
+const bc = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(4);
+const cd = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(4);
+const de = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(4);
+const ea = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(4);
+const ac = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(4);
+const bd = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(4);
+const ce = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(4);
+const da = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(4);
+const eb = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(4);
+const abc = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(24);
+const bcd = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(24);
+const cde = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(24);
+const dea = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(24);
+const eab = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(24);
+const abd = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(24);
+const bce = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(24);
+const cda = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(24);
+const deb = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(24);
+const eac = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(24);
+const adet = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(1152);
+const bdet = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(1152);
+const cdet = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(1152);
+const ddet = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(1152);
+const edet = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(1152);
+const abdet = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(2304);
+const cddet = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(2304);
+const cdedet = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(3456);
+const deter = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(5760);
+const _8 = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(8);
+const _8b = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(8);
+const _8c = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(8);
+const _16 = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(16);
+const _24 = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(24);
+const _48 = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(48);
+const _48b = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(48);
+const _96 = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(96);
+const _192 = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(192);
+const _384x = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(384);
+const _384y = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(384);
+const _384z = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(384);
+const _768 = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(768);
+function sum_three_scale(a, b, c, az, bz, cz, out) {
+  return (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.sum_three)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(4, a, az, _8), _8, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(4, b, bz, _8b), _8b, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(4, c, cz, _8c), _8c, _16, out);
+}
+function liftexact(alen, a, blen, b, clen, c, dlen, d, x, y, z, out) {
+  const len = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.sum)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.sum)(alen, a, blen, b, _48), _48, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.negate)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.sum)(clen, c, dlen, d, _48b), _48b), _48b, _96);
+  return (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.sum_three)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(len, _96, x, _192), _192, x, _384x), _384x, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(len, _96, y, _192), _192, y, _384y), _384y, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(len, _96, z, _192), _192, z, _384z), _384z, _768, out);
+}
+function insphereexact(ax, ay, az, bx, by, bz, cx, cy, cz, dx, dy, dz, ex, ey, ez) {
+  let bvirt, c, ahi, alo, bhi, blo, _i, _j, _0, s1, s0, t1, t0, u3;
+  s1 = ax * by;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * ax;
+  ahi = c - (c - ax);
+  alo = ax - ahi;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * by;
+  bhi = c - (c - by);
+  blo = by - bhi;
+  s0 = alo * blo - (s1 - ahi * bhi - alo * bhi - ahi * blo);
+  t1 = bx * ay;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * bx;
+  ahi = c - (c - bx);
+  alo = bx - ahi;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * ay;
+  bhi = c - (c - ay);
+  blo = ay - bhi;
+  t0 = alo * blo - (t1 - ahi * bhi - alo * bhi - ahi * blo);
+  _i = s0 - t0;
+  bvirt = s0 - _i;
+  ab[0] = s0 - (_i + bvirt) + (bvirt - t0);
+  _j = s1 + _i;
+  bvirt = _j - s1;
+  _0 = s1 - (_j - bvirt) + (_i - bvirt);
+  _i = _0 - t1;
+  bvirt = _0 - _i;
+  ab[1] = _0 - (_i + bvirt) + (bvirt - t1);
+  u3 = _j + _i;
+  bvirt = u3 - _j;
+  ab[2] = _j - (u3 - bvirt) + (_i - bvirt);
+  ab[3] = u3;
+  s1 = bx * cy;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * bx;
+  ahi = c - (c - bx);
+  alo = bx - ahi;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * cy;
+  bhi = c - (c - cy);
+  blo = cy - bhi;
+  s0 = alo * blo - (s1 - ahi * bhi - alo * bhi - ahi * blo);
+  t1 = cx * by;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * cx;
+  ahi = c - (c - cx);
+  alo = cx - ahi;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * by;
+  bhi = c - (c - by);
+  blo = by - bhi;
+  t0 = alo * blo - (t1 - ahi * bhi - alo * bhi - ahi * blo);
+  _i = s0 - t0;
+  bvirt = s0 - _i;
+  bc[0] = s0 - (_i + bvirt) + (bvirt - t0);
+  _j = s1 + _i;
+  bvirt = _j - s1;
+  _0 = s1 - (_j - bvirt) + (_i - bvirt);
+  _i = _0 - t1;
+  bvirt = _0 - _i;
+  bc[1] = _0 - (_i + bvirt) + (bvirt - t1);
+  u3 = _j + _i;
+  bvirt = u3 - _j;
+  bc[2] = _j - (u3 - bvirt) + (_i - bvirt);
+  bc[3] = u3;
+  s1 = cx * dy;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * cx;
+  ahi = c - (c - cx);
+  alo = cx - ahi;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * dy;
+  bhi = c - (c - dy);
+  blo = dy - bhi;
+  s0 = alo * blo - (s1 - ahi * bhi - alo * bhi - ahi * blo);
+  t1 = dx * cy;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * dx;
+  ahi = c - (c - dx);
+  alo = dx - ahi;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * cy;
+  bhi = c - (c - cy);
+  blo = cy - bhi;
+  t0 = alo * blo - (t1 - ahi * bhi - alo * bhi - ahi * blo);
+  _i = s0 - t0;
+  bvirt = s0 - _i;
+  cd[0] = s0 - (_i + bvirt) + (bvirt - t0);
+  _j = s1 + _i;
+  bvirt = _j - s1;
+  _0 = s1 - (_j - bvirt) + (_i - bvirt);
+  _i = _0 - t1;
+  bvirt = _0 - _i;
+  cd[1] = _0 - (_i + bvirt) + (bvirt - t1);
+  u3 = _j + _i;
+  bvirt = u3 - _j;
+  cd[2] = _j - (u3 - bvirt) + (_i - bvirt);
+  cd[3] = u3;
+  s1 = dx * ey;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * dx;
+  ahi = c - (c - dx);
+  alo = dx - ahi;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * ey;
+  bhi = c - (c - ey);
+  blo = ey - bhi;
+  s0 = alo * blo - (s1 - ahi * bhi - alo * bhi - ahi * blo);
+  t1 = ex * dy;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * ex;
+  ahi = c - (c - ex);
+  alo = ex - ahi;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * dy;
+  bhi = c - (c - dy);
+  blo = dy - bhi;
+  t0 = alo * blo - (t1 - ahi * bhi - alo * bhi - ahi * blo);
+  _i = s0 - t0;
+  bvirt = s0 - _i;
+  de[0] = s0 - (_i + bvirt) + (bvirt - t0);
+  _j = s1 + _i;
+  bvirt = _j - s1;
+  _0 = s1 - (_j - bvirt) + (_i - bvirt);
+  _i = _0 - t1;
+  bvirt = _0 - _i;
+  de[1] = _0 - (_i + bvirt) + (bvirt - t1);
+  u3 = _j + _i;
+  bvirt = u3 - _j;
+  de[2] = _j - (u3 - bvirt) + (_i - bvirt);
+  de[3] = u3;
+  s1 = ex * ay;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * ex;
+  ahi = c - (c - ex);
+  alo = ex - ahi;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * ay;
+  bhi = c - (c - ay);
+  blo = ay - bhi;
+  s0 = alo * blo - (s1 - ahi * bhi - alo * bhi - ahi * blo);
+  t1 = ax * ey;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * ax;
+  ahi = c - (c - ax);
+  alo = ax - ahi;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * ey;
+  bhi = c - (c - ey);
+  blo = ey - bhi;
+  t0 = alo * blo - (t1 - ahi * bhi - alo * bhi - ahi * blo);
+  _i = s0 - t0;
+  bvirt = s0 - _i;
+  ea[0] = s0 - (_i + bvirt) + (bvirt - t0);
+  _j = s1 + _i;
+  bvirt = _j - s1;
+  _0 = s1 - (_j - bvirt) + (_i - bvirt);
+  _i = _0 - t1;
+  bvirt = _0 - _i;
+  ea[1] = _0 - (_i + bvirt) + (bvirt - t1);
+  u3 = _j + _i;
+  bvirt = u3 - _j;
+  ea[2] = _j - (u3 - bvirt) + (_i - bvirt);
+  ea[3] = u3;
+  s1 = ax * cy;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * ax;
+  ahi = c - (c - ax);
+  alo = ax - ahi;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * cy;
+  bhi = c - (c - cy);
+  blo = cy - bhi;
+  s0 = alo * blo - (s1 - ahi * bhi - alo * bhi - ahi * blo);
+  t1 = cx * ay;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * cx;
+  ahi = c - (c - cx);
+  alo = cx - ahi;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * ay;
+  bhi = c - (c - ay);
+  blo = ay - bhi;
+  t0 = alo * blo - (t1 - ahi * bhi - alo * bhi - ahi * blo);
+  _i = s0 - t0;
+  bvirt = s0 - _i;
+  ac[0] = s0 - (_i + bvirt) + (bvirt - t0);
+  _j = s1 + _i;
+  bvirt = _j - s1;
+  _0 = s1 - (_j - bvirt) + (_i - bvirt);
+  _i = _0 - t1;
+  bvirt = _0 - _i;
+  ac[1] = _0 - (_i + bvirt) + (bvirt - t1);
+  u3 = _j + _i;
+  bvirt = u3 - _j;
+  ac[2] = _j - (u3 - bvirt) + (_i - bvirt);
+  ac[3] = u3;
+  s1 = bx * dy;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * bx;
+  ahi = c - (c - bx);
+  alo = bx - ahi;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * dy;
+  bhi = c - (c - dy);
+  blo = dy - bhi;
+  s0 = alo * blo - (s1 - ahi * bhi - alo * bhi - ahi * blo);
+  t1 = dx * by;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * dx;
+  ahi = c - (c - dx);
+  alo = dx - ahi;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * by;
+  bhi = c - (c - by);
+  blo = by - bhi;
+  t0 = alo * blo - (t1 - ahi * bhi - alo * bhi - ahi * blo);
+  _i = s0 - t0;
+  bvirt = s0 - _i;
+  bd[0] = s0 - (_i + bvirt) + (bvirt - t0);
+  _j = s1 + _i;
+  bvirt = _j - s1;
+  _0 = s1 - (_j - bvirt) + (_i - bvirt);
+  _i = _0 - t1;
+  bvirt = _0 - _i;
+  bd[1] = _0 - (_i + bvirt) + (bvirt - t1);
+  u3 = _j + _i;
+  bvirt = u3 - _j;
+  bd[2] = _j - (u3 - bvirt) + (_i - bvirt);
+  bd[3] = u3;
+  s1 = cx * ey;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * cx;
+  ahi = c - (c - cx);
+  alo = cx - ahi;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * ey;
+  bhi = c - (c - ey);
+  blo = ey - bhi;
+  s0 = alo * blo - (s1 - ahi * bhi - alo * bhi - ahi * blo);
+  t1 = ex * cy;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * ex;
+  ahi = c - (c - ex);
+  alo = ex - ahi;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * cy;
+  bhi = c - (c - cy);
+  blo = cy - bhi;
+  t0 = alo * blo - (t1 - ahi * bhi - alo * bhi - ahi * blo);
+  _i = s0 - t0;
+  bvirt = s0 - _i;
+  ce[0] = s0 - (_i + bvirt) + (bvirt - t0);
+  _j = s1 + _i;
+  bvirt = _j - s1;
+  _0 = s1 - (_j - bvirt) + (_i - bvirt);
+  _i = _0 - t1;
+  bvirt = _0 - _i;
+  ce[1] = _0 - (_i + bvirt) + (bvirt - t1);
+  u3 = _j + _i;
+  bvirt = u3 - _j;
+  ce[2] = _j - (u3 - bvirt) + (_i - bvirt);
+  ce[3] = u3;
+  s1 = dx * ay;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * dx;
+  ahi = c - (c - dx);
+  alo = dx - ahi;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * ay;
+  bhi = c - (c - ay);
+  blo = ay - bhi;
+  s0 = alo * blo - (s1 - ahi * bhi - alo * bhi - ahi * blo);
+  t1 = ax * dy;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * ax;
+  ahi = c - (c - ax);
+  alo = ax - ahi;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * dy;
+  bhi = c - (c - dy);
+  blo = dy - bhi;
+  t0 = alo * blo - (t1 - ahi * bhi - alo * bhi - ahi * blo);
+  _i = s0 - t0;
+  bvirt = s0 - _i;
+  da[0] = s0 - (_i + bvirt) + (bvirt - t0);
+  _j = s1 + _i;
+  bvirt = _j - s1;
+  _0 = s1 - (_j - bvirt) + (_i - bvirt);
+  _i = _0 - t1;
+  bvirt = _0 - _i;
+  da[1] = _0 - (_i + bvirt) + (bvirt - t1);
+  u3 = _j + _i;
+  bvirt = u3 - _j;
+  da[2] = _j - (u3 - bvirt) + (_i - bvirt);
+  da[3] = u3;
+  s1 = ex * by;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * ex;
+  ahi = c - (c - ex);
+  alo = ex - ahi;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * by;
+  bhi = c - (c - by);
+  blo = by - bhi;
+  s0 = alo * blo - (s1 - ahi * bhi - alo * bhi - ahi * blo);
+  t1 = bx * ey;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * bx;
+  ahi = c - (c - bx);
+  alo = bx - ahi;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * ey;
+  bhi = c - (c - ey);
+  blo = ey - bhi;
+  t0 = alo * blo - (t1 - ahi * bhi - alo * bhi - ahi * blo);
+  _i = s0 - t0;
+  bvirt = s0 - _i;
+  eb[0] = s0 - (_i + bvirt) + (bvirt - t0);
+  _j = s1 + _i;
+  bvirt = _j - s1;
+  _0 = s1 - (_j - bvirt) + (_i - bvirt);
+  _i = _0 - t1;
+  bvirt = _0 - _i;
+  eb[1] = _0 - (_i + bvirt) + (bvirt - t1);
+  u3 = _j + _i;
+  bvirt = u3 - _j;
+  eb[2] = _j - (u3 - bvirt) + (_i - bvirt);
+  eb[3] = u3;
+  const abclen = sum_three_scale(ab, bc, ac, cz, az, -bz, abc);
+  const bcdlen = sum_three_scale(bc, cd, bd, dz, bz, -cz, bcd);
+  const cdelen = sum_three_scale(cd, de, ce, ez, cz, -dz, cde);
+  const dealen = sum_three_scale(de, ea, da, az, dz, -ez, dea);
+  const eablen = sum_three_scale(ea, ab, eb, bz, ez, -az, eab);
+  const abdlen = sum_three_scale(ab, bd, da, dz, az, bz, abd);
+  const bcelen = sum_three_scale(bc, ce, eb, ez, bz, cz, bce);
+  const cdalen = sum_three_scale(cd, da, ac, az, cz, dz, cda);
+  const deblen = sum_three_scale(de, eb, bd, bz, dz, ez, deb);
+  const eaclen = sum_three_scale(ea, ac, ce, cz, ez, az, eac);
+  const deterlen = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.sum_three)(liftexact(cdelen, cde, bcelen, bce, deblen, deb, bcdlen, bcd, ax, ay, az, adet), adet, liftexact(dealen, dea, cdalen, cda, eaclen, eac, cdelen, cde, bx, by, bz, bdet), bdet, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.sum_three)(liftexact(eablen, eab, deblen, deb, abdlen, abd, dealen, dea, cx, cy, cz, cdet), cdet, liftexact(abclen, abc, eaclen, eac, bcelen, bce, eablen, eab, dx, dy, dz, ddet), ddet, liftexact(bcdlen, bcd, abdlen, abd, cdalen, cda, abclen, abc, ex, ey, ez, edet), edet, cddet, cdedet), cdedet, abdet, deter);
+  return deter[deterlen - 1];
+}
+const xdet = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(96);
+const ydet = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(96);
+const zdet = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(96);
+const fin = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(1152);
+function liftadapt(a, b, c, az, bz, cz, x, y, z, out) {
+  const len = sum_three_scale(a, b, c, az, bz, cz, _24);
+  return (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.sum_three)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(len, _24, x, _48), _48, x, xdet), xdet, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(len, _24, y, _48), _48, y, ydet), ydet, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(len, _24, z, _48), _48, z, zdet), zdet, _192, out);
+}
+function insphereadapt(ax, ay, az, bx, by, bz, cx, cy, cz, dx, dy, dz, ex, ey, ez, permanent) {
+  let ab3, bc3, cd3, da3, ac3, bd3;
+  let aextail, bextail, cextail, dextail;
+  let aeytail, beytail, ceytail, deytail;
+  let aeztail, beztail, ceztail, deztail;
+  let bvirt, c, ahi, alo, bhi, blo, _i, _j, _0, s1, s0, t1, t0;
+  const aex = ax - ex;
+  const bex = bx - ex;
+  const cex = cx - ex;
+  const dex = dx - ex;
+  const aey = ay - ey;
+  const bey = by - ey;
+  const cey = cy - ey;
+  const dey = dy - ey;
+  const aez = az - ez;
+  const bez = bz - ez;
+  const cez = cz - ez;
+  const dez = dz - ez;
+  s1 = aex * bey;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * aex;
+  ahi = c - (c - aex);
+  alo = aex - ahi;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * bey;
+  bhi = c - (c - bey);
+  blo = bey - bhi;
+  s0 = alo * blo - (s1 - ahi * bhi - alo * bhi - ahi * blo);
+  t1 = bex * aey;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * bex;
+  ahi = c - (c - bex);
+  alo = bex - ahi;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * aey;
+  bhi = c - (c - aey);
+  blo = aey - bhi;
+  t0 = alo * blo - (t1 - ahi * bhi - alo * bhi - ahi * blo);
+  _i = s0 - t0;
+  bvirt = s0 - _i;
+  ab[0] = s0 - (_i + bvirt) + (bvirt - t0);
+  _j = s1 + _i;
+  bvirt = _j - s1;
+  _0 = s1 - (_j - bvirt) + (_i - bvirt);
+  _i = _0 - t1;
+  bvirt = _0 - _i;
+  ab[1] = _0 - (_i + bvirt) + (bvirt - t1);
+  ab3 = _j + _i;
+  bvirt = ab3 - _j;
+  ab[2] = _j - (ab3 - bvirt) + (_i - bvirt);
+  ab[3] = ab3;
+  s1 = bex * cey;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * bex;
+  ahi = c - (c - bex);
+  alo = bex - ahi;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * cey;
+  bhi = c - (c - cey);
+  blo = cey - bhi;
+  s0 = alo * blo - (s1 - ahi * bhi - alo * bhi - ahi * blo);
+  t1 = cex * bey;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * cex;
+  ahi = c - (c - cex);
+  alo = cex - ahi;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * bey;
+  bhi = c - (c - bey);
+  blo = bey - bhi;
+  t0 = alo * blo - (t1 - ahi * bhi - alo * bhi - ahi * blo);
+  _i = s0 - t0;
+  bvirt = s0 - _i;
+  bc[0] = s0 - (_i + bvirt) + (bvirt - t0);
+  _j = s1 + _i;
+  bvirt = _j - s1;
+  _0 = s1 - (_j - bvirt) + (_i - bvirt);
+  _i = _0 - t1;
+  bvirt = _0 - _i;
+  bc[1] = _0 - (_i + bvirt) + (bvirt - t1);
+  bc3 = _j + _i;
+  bvirt = bc3 - _j;
+  bc[2] = _j - (bc3 - bvirt) + (_i - bvirt);
+  bc[3] = bc3;
+  s1 = cex * dey;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * cex;
+  ahi = c - (c - cex);
+  alo = cex - ahi;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * dey;
+  bhi = c - (c - dey);
+  blo = dey - bhi;
+  s0 = alo * blo - (s1 - ahi * bhi - alo * bhi - ahi * blo);
+  t1 = dex * cey;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * dex;
+  ahi = c - (c - dex);
+  alo = dex - ahi;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * cey;
+  bhi = c - (c - cey);
+  blo = cey - bhi;
+  t0 = alo * blo - (t1 - ahi * bhi - alo * bhi - ahi * blo);
+  _i = s0 - t0;
+  bvirt = s0 - _i;
+  cd[0] = s0 - (_i + bvirt) + (bvirt - t0);
+  _j = s1 + _i;
+  bvirt = _j - s1;
+  _0 = s1 - (_j - bvirt) + (_i - bvirt);
+  _i = _0 - t1;
+  bvirt = _0 - _i;
+  cd[1] = _0 - (_i + bvirt) + (bvirt - t1);
+  cd3 = _j + _i;
+  bvirt = cd3 - _j;
+  cd[2] = _j - (cd3 - bvirt) + (_i - bvirt);
+  cd[3] = cd3;
+  s1 = dex * aey;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * dex;
+  ahi = c - (c - dex);
+  alo = dex - ahi;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * aey;
+  bhi = c - (c - aey);
+  blo = aey - bhi;
+  s0 = alo * blo - (s1 - ahi * bhi - alo * bhi - ahi * blo);
+  t1 = aex * dey;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * aex;
+  ahi = c - (c - aex);
+  alo = aex - ahi;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * dey;
+  bhi = c - (c - dey);
+  blo = dey - bhi;
+  t0 = alo * blo - (t1 - ahi * bhi - alo * bhi - ahi * blo);
+  _i = s0 - t0;
+  bvirt = s0 - _i;
+  da[0] = s0 - (_i + bvirt) + (bvirt - t0);
+  _j = s1 + _i;
+  bvirt = _j - s1;
+  _0 = s1 - (_j - bvirt) + (_i - bvirt);
+  _i = _0 - t1;
+  bvirt = _0 - _i;
+  da[1] = _0 - (_i + bvirt) + (bvirt - t1);
+  da3 = _j + _i;
+  bvirt = da3 - _j;
+  da[2] = _j - (da3 - bvirt) + (_i - bvirt);
+  da[3] = da3;
+  s1 = aex * cey;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * aex;
+  ahi = c - (c - aex);
+  alo = aex - ahi;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * cey;
+  bhi = c - (c - cey);
+  blo = cey - bhi;
+  s0 = alo * blo - (s1 - ahi * bhi - alo * bhi - ahi * blo);
+  t1 = cex * aey;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * cex;
+  ahi = c - (c - cex);
+  alo = cex - ahi;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * aey;
+  bhi = c - (c - aey);
+  blo = aey - bhi;
+  t0 = alo * blo - (t1 - ahi * bhi - alo * bhi - ahi * blo);
+  _i = s0 - t0;
+  bvirt = s0 - _i;
+  ac[0] = s0 - (_i + bvirt) + (bvirt - t0);
+  _j = s1 + _i;
+  bvirt = _j - s1;
+  _0 = s1 - (_j - bvirt) + (_i - bvirt);
+  _i = _0 - t1;
+  bvirt = _0 - _i;
+  ac[1] = _0 - (_i + bvirt) + (bvirt - t1);
+  ac3 = _j + _i;
+  bvirt = ac3 - _j;
+  ac[2] = _j - (ac3 - bvirt) + (_i - bvirt);
+  ac[3] = ac3;
+  s1 = bex * dey;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * bex;
+  ahi = c - (c - bex);
+  alo = bex - ahi;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * dey;
+  bhi = c - (c - dey);
+  blo = dey - bhi;
+  s0 = alo * blo - (s1 - ahi * bhi - alo * bhi - ahi * blo);
+  t1 = dex * bey;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * dex;
+  ahi = c - (c - dex);
+  alo = dex - ahi;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * bey;
+  bhi = c - (c - bey);
+  blo = bey - bhi;
+  t0 = alo * blo - (t1 - ahi * bhi - alo * bhi - ahi * blo);
+  _i = s0 - t0;
+  bvirt = s0 - _i;
+  bd[0] = s0 - (_i + bvirt) + (bvirt - t0);
+  _j = s1 + _i;
+  bvirt = _j - s1;
+  _0 = s1 - (_j - bvirt) + (_i - bvirt);
+  _i = _0 - t1;
+  bvirt = _0 - _i;
+  bd[1] = _0 - (_i + bvirt) + (bvirt - t1);
+  bd3 = _j + _i;
+  bvirt = bd3 - _j;
+  bd[2] = _j - (bd3 - bvirt) + (_i - bvirt);
+  bd[3] = bd3;
+  const finlen = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.sum)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.sum)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.negate)(liftadapt(bc, cd, bd, dez, bez, -cez, aex, aey, aez, adet), adet), adet, liftadapt(cd, da, ac, aez, cez, dez, bex, bey, bez, bdet), bdet, abdet), abdet, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.sum)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.negate)(liftadapt(da, ab, bd, bez, dez, aez, cex, cey, cez, cdet), cdet), cdet, liftadapt(ab, bc, ac, cez, aez, -bez, dex, dey, dez, ddet), ddet, cddet), cddet, fin);
+  let det = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.estimate)(finlen, fin);
+  let errbound = isperrboundB * permanent;
+  if (det >= errbound || -det >= errbound) {
+    return det;
+  }
+  bvirt = ax - aex;
+  aextail = ax - (aex + bvirt) + (bvirt - ex);
+  bvirt = ay - aey;
+  aeytail = ay - (aey + bvirt) + (bvirt - ey);
+  bvirt = az - aez;
+  aeztail = az - (aez + bvirt) + (bvirt - ez);
+  bvirt = bx - bex;
+  bextail = bx - (bex + bvirt) + (bvirt - ex);
+  bvirt = by - bey;
+  beytail = by - (bey + bvirt) + (bvirt - ey);
+  bvirt = bz - bez;
+  beztail = bz - (bez + bvirt) + (bvirt - ez);
+  bvirt = cx - cex;
+  cextail = cx - (cex + bvirt) + (bvirt - ex);
+  bvirt = cy - cey;
+  ceytail = cy - (cey + bvirt) + (bvirt - ey);
+  bvirt = cz - cez;
+  ceztail = cz - (cez + bvirt) + (bvirt - ez);
+  bvirt = dx - dex;
+  dextail = dx - (dex + bvirt) + (bvirt - ex);
+  bvirt = dy - dey;
+  deytail = dy - (dey + bvirt) + (bvirt - ey);
+  bvirt = dz - dez;
+  deztail = dz - (dez + bvirt) + (bvirt - ez);
+  if (aextail === 0 && aeytail === 0 && aeztail === 0 && bextail === 0 && beytail === 0 && beztail === 0 && cextail === 0 && ceytail === 0 && ceztail === 0 && dextail === 0 && deytail === 0 && deztail === 0) {
+    return det;
+  }
+  errbound = isperrboundC * permanent + _util_js__WEBPACK_IMPORTED_MODULE_0__.resulterrbound * Math.abs(det);
+  const abeps = aex * beytail + bey * aextail - (aey * bextail + bex * aeytail);
+  const bceps = bex * ceytail + cey * bextail - (bey * cextail + cex * beytail);
+  const cdeps = cex * deytail + dey * cextail - (cey * dextail + dex * ceytail);
+  const daeps = dex * aeytail + aey * dextail - (dey * aextail + aex * deytail);
+  const aceps = aex * ceytail + cey * aextail - (aey * cextail + cex * aeytail);
+  const bdeps = bex * deytail + dey * bextail - (bey * dextail + dex * beytail);
+  det += (bex * bex + bey * bey + bez * bez) * (cez * daeps + dez * aceps + aez * cdeps + (ceztail * da3 + deztail * ac3 + aeztail * cd3)) + (dex * dex + dey * dey + dez * dez) * (aez * bceps - bez * aceps + cez * abeps + (aeztail * bc3 - beztail * ac3 + ceztail * ab3)) - ((aex * aex + aey * aey + aez * aez) * (bez * cdeps - cez * bdeps + dez * bceps + (beztail * cd3 - ceztail * bd3 + deztail * bc3)) + (cex * cex + cey * cey + cez * cez) * (dez * abeps + aez * bdeps + bez * daeps + (deztail * ab3 + aeztail * bd3 + beztail * da3))) + 2 * ((bex * bextail + bey * beytail + bez * beztail) * (cez * da3 + dez * ac3 + aez * cd3) + (dex * dextail + dey * deytail + dez * deztail) * (aez * bc3 - bez * ac3 + cez * ab3) - ((aex * aextail + aey * aeytail + aez * aeztail) * (bez * cd3 - cez * bd3 + dez * bc3) + (cex * cextail + cey * ceytail + cez * ceztail) * (dez * ab3 + aez * bd3 + bez * da3)));
+  if (det >= errbound || -det >= errbound) {
+    return det;
+  }
+  return insphereexact(ax, ay, az, bx, by, bz, cx, cy, cz, dx, dy, dz, ex, ey, ez);
+}
+function insphere(ax, ay, az, bx, by, bz, cx, cy, cz, dx, dy, dz, ex, ey, ez) {
+  const aex = ax - ex;
+  const bex = bx - ex;
+  const cex = cx - ex;
+  const dex = dx - ex;
+  const aey = ay - ey;
+  const bey = by - ey;
+  const cey = cy - ey;
+  const dey = dy - ey;
+  const aez = az - ez;
+  const bez = bz - ez;
+  const cez = cz - ez;
+  const dez = dz - ez;
+  const aexbey = aex * bey;
+  const bexaey = bex * aey;
+  const ab = aexbey - bexaey;
+  const bexcey = bex * cey;
+  const cexbey = cex * bey;
+  const bc = bexcey - cexbey;
+  const cexdey = cex * dey;
+  const dexcey = dex * cey;
+  const cd = cexdey - dexcey;
+  const dexaey = dex * aey;
+  const aexdey = aex * dey;
+  const da = dexaey - aexdey;
+  const aexcey = aex * cey;
+  const cexaey = cex * aey;
+  const ac = aexcey - cexaey;
+  const bexdey = bex * dey;
+  const dexbey = dex * bey;
+  const bd = bexdey - dexbey;
+  const alift = aex * aex + aey * aey + aez * aez;
+  const blift = bex * bex + bey * bey + bez * bez;
+  const clift = cex * cex + cey * cey + cez * cez;
+  const dlift = dex * dex + dey * dey + dez * dez;
+  const det = clift * (dez * ab + aez * bd + bez * da) - dlift * (aez * bc - bez * ac + cez * ab) + (alift * (bez * cd - cez * bd + dez * bc) - blift * (cez * da + dez * ac + aez * cd));
+  const aezplus = Math.abs(aez);
+  const bezplus = Math.abs(bez);
+  const cezplus = Math.abs(cez);
+  const dezplus = Math.abs(dez);
+  const aexbeyplus = Math.abs(aexbey) + Math.abs(bexaey);
+  const bexceyplus = Math.abs(bexcey) + Math.abs(cexbey);
+  const cexdeyplus = Math.abs(cexdey) + Math.abs(dexcey);
+  const dexaeyplus = Math.abs(dexaey) + Math.abs(aexdey);
+  const aexceyplus = Math.abs(aexcey) + Math.abs(cexaey);
+  const bexdeyplus = Math.abs(bexdey) + Math.abs(dexbey);
+  const permanent = (cexdeyplus * bezplus + bexdeyplus * cezplus + bexceyplus * dezplus) * alift + (dexaeyplus * cezplus + aexceyplus * dezplus + cexdeyplus * aezplus) * blift + (aexbeyplus * dezplus + bexdeyplus * aezplus + dexaeyplus * bezplus) * clift + (bexceyplus * aezplus + aexceyplus * bezplus + aexbeyplus * cezplus) * dlift;
+  const errbound = isperrboundA * permanent;
+  if (det > errbound || -det > errbound) {
+    return det;
+  }
+  return -insphereadapt(ax, ay, az, bx, by, bz, cx, cy, cz, dx, dy, dz, ex, ey, ez, permanent);
+}
+function inspherefast(pax, pay, paz, pbx, pby, pbz, pcx, pcy, pcz, pdx, pdy, pdz, pex, pey, pez) {
+  const aex = pax - pex;
+  const bex = pbx - pex;
+  const cex = pcx - pex;
+  const dex = pdx - pex;
+  const aey = pay - pey;
+  const bey = pby - pey;
+  const cey = pcy - pey;
+  const dey = pdy - pey;
+  const aez = paz - pez;
+  const bez = pbz - pez;
+  const cez = pcz - pez;
+  const dez = pdz - pez;
+  const ab = aex * bey - bex * aey;
+  const bc = bex * cey - cex * bey;
+  const cd = cex * dey - dex * cey;
+  const da = dex * aey - aex * dey;
+  const ac = aex * cey - cex * aey;
+  const bd = bex * dey - dex * bey;
+  const abc = aez * bc - bez * ac + cez * ab;
+  const bcd = bez * cd - cez * bd + dez * bc;
+  const cda = cez * da + dez * ac + aez * cd;
+  const dab = dez * ab + aez * bd + bez * da;
+  const alift = aex * aex + aey * aey + aez * aez;
+  const blift = bex * bex + bey * bey + bez * bez;
+  const clift = cex * cex + cey * cey + cez * cez;
+  const dlift = dex * dex + dey * dey + dez * dez;
+  return clift * dab - dlift * abc + (alift * bcd - blift * cda);
+}
+
+/***/ }),
+
+/***/ 97726:
+/*!***************************************************************************************************!*\
+  !*** ./node_modules/.pnpm/robust-predicates@3.0.2/node_modules/robust-predicates/esm/orient2d.js ***!
+  \***************************************************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   orient2d: () => (/* binding */ orient2d),
+/* harmony export */   orient2dfast: () => (/* binding */ orient2dfast)
+/* harmony export */ });
+/* harmony import */ var _util_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./util.js */ 72461);
+
+const ccwerrboundA = (3 + 16 * _util_js__WEBPACK_IMPORTED_MODULE_0__.epsilon) * _util_js__WEBPACK_IMPORTED_MODULE_0__.epsilon;
+const ccwerrboundB = (2 + 12 * _util_js__WEBPACK_IMPORTED_MODULE_0__.epsilon) * _util_js__WEBPACK_IMPORTED_MODULE_0__.epsilon;
+const ccwerrboundC = (9 + 64 * _util_js__WEBPACK_IMPORTED_MODULE_0__.epsilon) * _util_js__WEBPACK_IMPORTED_MODULE_0__.epsilon * _util_js__WEBPACK_IMPORTED_MODULE_0__.epsilon;
+const B = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(4);
+const C1 = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(8);
+const C2 = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(12);
+const D = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(16);
+const u = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(4);
+function orient2dadapt(ax, ay, bx, by, cx, cy, detsum) {
+  let acxtail, acytail, bcxtail, bcytail;
+  let bvirt, c, ahi, alo, bhi, blo, _i, _j, _0, s1, s0, t1, t0, u3;
+  const acx = ax - cx;
+  const bcx = bx - cx;
+  const acy = ay - cy;
+  const bcy = by - cy;
+  s1 = acx * bcy;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * acx;
+  ahi = c - (c - acx);
+  alo = acx - ahi;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * bcy;
+  bhi = c - (c - bcy);
+  blo = bcy - bhi;
+  s0 = alo * blo - (s1 - ahi * bhi - alo * bhi - ahi * blo);
+  t1 = acy * bcx;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * acy;
+  ahi = c - (c - acy);
+  alo = acy - ahi;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * bcx;
+  bhi = c - (c - bcx);
+  blo = bcx - bhi;
+  t0 = alo * blo - (t1 - ahi * bhi - alo * bhi - ahi * blo);
+  _i = s0 - t0;
+  bvirt = s0 - _i;
+  B[0] = s0 - (_i + bvirt) + (bvirt - t0);
+  _j = s1 + _i;
+  bvirt = _j - s1;
+  _0 = s1 - (_j - bvirt) + (_i - bvirt);
+  _i = _0 - t1;
+  bvirt = _0 - _i;
+  B[1] = _0 - (_i + bvirt) + (bvirt - t1);
+  u3 = _j + _i;
+  bvirt = u3 - _j;
+  B[2] = _j - (u3 - bvirt) + (_i - bvirt);
+  B[3] = u3;
+  let det = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.estimate)(4, B);
+  let errbound = ccwerrboundB * detsum;
+  if (det >= errbound || -det >= errbound) {
+    return det;
+  }
+  bvirt = ax - acx;
+  acxtail = ax - (acx + bvirt) + (bvirt - cx);
+  bvirt = bx - bcx;
+  bcxtail = bx - (bcx + bvirt) + (bvirt - cx);
+  bvirt = ay - acy;
+  acytail = ay - (acy + bvirt) + (bvirt - cy);
+  bvirt = by - bcy;
+  bcytail = by - (bcy + bvirt) + (bvirt - cy);
+  if (acxtail === 0 && acytail === 0 && bcxtail === 0 && bcytail === 0) {
+    return det;
+  }
+  errbound = ccwerrboundC * detsum + _util_js__WEBPACK_IMPORTED_MODULE_0__.resulterrbound * Math.abs(det);
+  det += acx * bcytail + bcy * acxtail - (acy * bcxtail + bcx * acytail);
+  if (det >= errbound || -det >= errbound) return det;
+  s1 = acxtail * bcy;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * acxtail;
+  ahi = c - (c - acxtail);
+  alo = acxtail - ahi;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * bcy;
+  bhi = c - (c - bcy);
+  blo = bcy - bhi;
+  s0 = alo * blo - (s1 - ahi * bhi - alo * bhi - ahi * blo);
+  t1 = acytail * bcx;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * acytail;
+  ahi = c - (c - acytail);
+  alo = acytail - ahi;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * bcx;
+  bhi = c - (c - bcx);
+  blo = bcx - bhi;
+  t0 = alo * blo - (t1 - ahi * bhi - alo * bhi - ahi * blo);
+  _i = s0 - t0;
+  bvirt = s0 - _i;
+  u[0] = s0 - (_i + bvirt) + (bvirt - t0);
+  _j = s1 + _i;
+  bvirt = _j - s1;
+  _0 = s1 - (_j - bvirt) + (_i - bvirt);
+  _i = _0 - t1;
+  bvirt = _0 - _i;
+  u[1] = _0 - (_i + bvirt) + (bvirt - t1);
+  u3 = _j + _i;
+  bvirt = u3 - _j;
+  u[2] = _j - (u3 - bvirt) + (_i - bvirt);
+  u[3] = u3;
+  const C1len = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.sum)(4, B, 4, u, C1);
+  s1 = acx * bcytail;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * acx;
+  ahi = c - (c - acx);
+  alo = acx - ahi;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * bcytail;
+  bhi = c - (c - bcytail);
+  blo = bcytail - bhi;
+  s0 = alo * blo - (s1 - ahi * bhi - alo * bhi - ahi * blo);
+  t1 = acy * bcxtail;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * acy;
+  ahi = c - (c - acy);
+  alo = acy - ahi;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * bcxtail;
+  bhi = c - (c - bcxtail);
+  blo = bcxtail - bhi;
+  t0 = alo * blo - (t1 - ahi * bhi - alo * bhi - ahi * blo);
+  _i = s0 - t0;
+  bvirt = s0 - _i;
+  u[0] = s0 - (_i + bvirt) + (bvirt - t0);
+  _j = s1 + _i;
+  bvirt = _j - s1;
+  _0 = s1 - (_j - bvirt) + (_i - bvirt);
+  _i = _0 - t1;
+  bvirt = _0 - _i;
+  u[1] = _0 - (_i + bvirt) + (bvirt - t1);
+  u3 = _j + _i;
+  bvirt = u3 - _j;
+  u[2] = _j - (u3 - bvirt) + (_i - bvirt);
+  u[3] = u3;
+  const C2len = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.sum)(C1len, C1, 4, u, C2);
+  s1 = acxtail * bcytail;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * acxtail;
+  ahi = c - (c - acxtail);
+  alo = acxtail - ahi;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * bcytail;
+  bhi = c - (c - bcytail);
+  blo = bcytail - bhi;
+  s0 = alo * blo - (s1 - ahi * bhi - alo * bhi - ahi * blo);
+  t1 = acytail * bcxtail;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * acytail;
+  ahi = c - (c - acytail);
+  alo = acytail - ahi;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * bcxtail;
+  bhi = c - (c - bcxtail);
+  blo = bcxtail - bhi;
+  t0 = alo * blo - (t1 - ahi * bhi - alo * bhi - ahi * blo);
+  _i = s0 - t0;
+  bvirt = s0 - _i;
+  u[0] = s0 - (_i + bvirt) + (bvirt - t0);
+  _j = s1 + _i;
+  bvirt = _j - s1;
+  _0 = s1 - (_j - bvirt) + (_i - bvirt);
+  _i = _0 - t1;
+  bvirt = _0 - _i;
+  u[1] = _0 - (_i + bvirt) + (bvirt - t1);
+  u3 = _j + _i;
+  bvirt = u3 - _j;
+  u[2] = _j - (u3 - bvirt) + (_i - bvirt);
+  u[3] = u3;
+  const Dlen = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.sum)(C2len, C2, 4, u, D);
+  return D[Dlen - 1];
+}
+function orient2d(ax, ay, bx, by, cx, cy) {
+  const detleft = (ay - cy) * (bx - cx);
+  const detright = (ax - cx) * (by - cy);
+  const det = detleft - detright;
+  const detsum = Math.abs(detleft + detright);
+  if (Math.abs(det) >= ccwerrboundA * detsum) return det;
+  return -orient2dadapt(ax, ay, bx, by, cx, cy, detsum);
+}
+function orient2dfast(ax, ay, bx, by, cx, cy) {
+  return (ay - cy) * (bx - cx) - (ax - cx) * (by - cy);
+}
+
+/***/ }),
+
+/***/ 10507:
+/*!***************************************************************************************************!*\
+  !*** ./node_modules/.pnpm/robust-predicates@3.0.2/node_modules/robust-predicates/esm/orient3d.js ***!
+  \***************************************************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   orient3d: () => (/* binding */ orient3d),
+/* harmony export */   orient3dfast: () => (/* binding */ orient3dfast)
+/* harmony export */ });
+/* harmony import */ var _util_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./util.js */ 72461);
+
+const o3derrboundA = (7 + 56 * _util_js__WEBPACK_IMPORTED_MODULE_0__.epsilon) * _util_js__WEBPACK_IMPORTED_MODULE_0__.epsilon;
+const o3derrboundB = (3 + 28 * _util_js__WEBPACK_IMPORTED_MODULE_0__.epsilon) * _util_js__WEBPACK_IMPORTED_MODULE_0__.epsilon;
+const o3derrboundC = (26 + 288 * _util_js__WEBPACK_IMPORTED_MODULE_0__.epsilon) * _util_js__WEBPACK_IMPORTED_MODULE_0__.epsilon * _util_js__WEBPACK_IMPORTED_MODULE_0__.epsilon;
+const bc = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(4);
+const ca = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(4);
+const ab = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(4);
+const at_b = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(4);
+const at_c = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(4);
+const bt_c = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(4);
+const bt_a = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(4);
+const ct_a = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(4);
+const ct_b = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(4);
+const bct = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(8);
+const cat = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(8);
+const abt = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(8);
+const u = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(4);
+const _8 = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(8);
+const _8b = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(8);
+const _16 = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(8);
+const _12 = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(12);
+let fin = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(192);
+let fin2 = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.vec)(192);
+function finadd(finlen, alen, a) {
+  finlen = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.sum)(finlen, fin, alen, a, fin2);
+  const tmp = fin;
+  fin = fin2;
+  fin2 = tmp;
+  return finlen;
+}
+function tailinit(xtail, ytail, ax, ay, bx, by, a, b) {
+  let bvirt, c, ahi, alo, bhi, blo, _i, _j, _k, _0, s1, s0, t1, t0, u3, negate;
+  if (xtail === 0) {
+    if (ytail === 0) {
+      a[0] = 0;
+      b[0] = 0;
+      return 1;
+    } else {
+      negate = -ytail;
+      s1 = negate * ax;
+      c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * negate;
+      ahi = c - (c - negate);
+      alo = negate - ahi;
+      c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * ax;
+      bhi = c - (c - ax);
+      blo = ax - bhi;
+      a[0] = alo * blo - (s1 - ahi * bhi - alo * bhi - ahi * blo);
+      a[1] = s1;
+      s1 = ytail * bx;
+      c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * ytail;
+      ahi = c - (c - ytail);
+      alo = ytail - ahi;
+      c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * bx;
+      bhi = c - (c - bx);
+      blo = bx - bhi;
+      b[0] = alo * blo - (s1 - ahi * bhi - alo * bhi - ahi * blo);
+      b[1] = s1;
+      return 2;
+    }
+  } else {
+    if (ytail === 0) {
+      s1 = xtail * ay;
+      c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * xtail;
+      ahi = c - (c - xtail);
+      alo = xtail - ahi;
+      c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * ay;
+      bhi = c - (c - ay);
+      blo = ay - bhi;
+      a[0] = alo * blo - (s1 - ahi * bhi - alo * bhi - ahi * blo);
+      a[1] = s1;
+      negate = -xtail;
+      s1 = negate * by;
+      c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * negate;
+      ahi = c - (c - negate);
+      alo = negate - ahi;
+      c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * by;
+      bhi = c - (c - by);
+      blo = by - bhi;
+      b[0] = alo * blo - (s1 - ahi * bhi - alo * bhi - ahi * blo);
+      b[1] = s1;
+      return 2;
+    } else {
+      s1 = xtail * ay;
+      c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * xtail;
+      ahi = c - (c - xtail);
+      alo = xtail - ahi;
+      c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * ay;
+      bhi = c - (c - ay);
+      blo = ay - bhi;
+      s0 = alo * blo - (s1 - ahi * bhi - alo * bhi - ahi * blo);
+      t1 = ytail * ax;
+      c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * ytail;
+      ahi = c - (c - ytail);
+      alo = ytail - ahi;
+      c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * ax;
+      bhi = c - (c - ax);
+      blo = ax - bhi;
+      t0 = alo * blo - (t1 - ahi * bhi - alo * bhi - ahi * blo);
+      _i = s0 - t0;
+      bvirt = s0 - _i;
+      a[0] = s0 - (_i + bvirt) + (bvirt - t0);
+      _j = s1 + _i;
+      bvirt = _j - s1;
+      _0 = s1 - (_j - bvirt) + (_i - bvirt);
+      _i = _0 - t1;
+      bvirt = _0 - _i;
+      a[1] = _0 - (_i + bvirt) + (bvirt - t1);
+      u3 = _j + _i;
+      bvirt = u3 - _j;
+      a[2] = _j - (u3 - bvirt) + (_i - bvirt);
+      a[3] = u3;
+      s1 = ytail * bx;
+      c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * ytail;
+      ahi = c - (c - ytail);
+      alo = ytail - ahi;
+      c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * bx;
+      bhi = c - (c - bx);
+      blo = bx - bhi;
+      s0 = alo * blo - (s1 - ahi * bhi - alo * bhi - ahi * blo);
+      t1 = xtail * by;
+      c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * xtail;
+      ahi = c - (c - xtail);
+      alo = xtail - ahi;
+      c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * by;
+      bhi = c - (c - by);
+      blo = by - bhi;
+      t0 = alo * blo - (t1 - ahi * bhi - alo * bhi - ahi * blo);
+      _i = s0 - t0;
+      bvirt = s0 - _i;
+      b[0] = s0 - (_i + bvirt) + (bvirt - t0);
+      _j = s1 + _i;
+      bvirt = _j - s1;
+      _0 = s1 - (_j - bvirt) + (_i - bvirt);
+      _i = _0 - t1;
+      bvirt = _0 - _i;
+      b[1] = _0 - (_i + bvirt) + (bvirt - t1);
+      u3 = _j + _i;
+      bvirt = u3 - _j;
+      b[2] = _j - (u3 - bvirt) + (_i - bvirt);
+      b[3] = u3;
+      return 4;
+    }
+  }
+}
+function tailadd(finlen, a, b, k, z) {
+  let bvirt, c, ahi, alo, bhi, blo, _i, _j, _k, _0, s1, s0, u3;
+  s1 = a * b;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * a;
+  ahi = c - (c - a);
+  alo = a - ahi;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * b;
+  bhi = c - (c - b);
+  blo = b - bhi;
+  s0 = alo * blo - (s1 - ahi * bhi - alo * bhi - ahi * blo);
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * k;
+  bhi = c - (c - k);
+  blo = k - bhi;
+  _i = s0 * k;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * s0;
+  ahi = c - (c - s0);
+  alo = s0 - ahi;
+  u[0] = alo * blo - (_i - ahi * bhi - alo * bhi - ahi * blo);
+  _j = s1 * k;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * s1;
+  ahi = c - (c - s1);
+  alo = s1 - ahi;
+  _0 = alo * blo - (_j - ahi * bhi - alo * bhi - ahi * blo);
+  _k = _i + _0;
+  bvirt = _k - _i;
+  u[1] = _i - (_k - bvirt) + (_0 - bvirt);
+  u3 = _j + _k;
+  u[2] = _k - (u3 - _j);
+  u[3] = u3;
+  finlen = finadd(finlen, 4, u);
+  if (z !== 0) {
+    c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * z;
+    bhi = c - (c - z);
+    blo = z - bhi;
+    _i = s0 * z;
+    c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * s0;
+    ahi = c - (c - s0);
+    alo = s0 - ahi;
+    u[0] = alo * blo - (_i - ahi * bhi - alo * bhi - ahi * blo);
+    _j = s1 * z;
+    c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * s1;
+    ahi = c - (c - s1);
+    alo = s1 - ahi;
+    _0 = alo * blo - (_j - ahi * bhi - alo * bhi - ahi * blo);
+    _k = _i + _0;
+    bvirt = _k - _i;
+    u[1] = _i - (_k - bvirt) + (_0 - bvirt);
+    u3 = _j + _k;
+    u[2] = _k - (u3 - _j);
+    u[3] = u3;
+    finlen = finadd(finlen, 4, u);
+  }
+  return finlen;
+}
+function orient3dadapt(ax, ay, az, bx, by, bz, cx, cy, cz, dx, dy, dz, permanent) {
+  let finlen;
+  let adxtail, bdxtail, cdxtail;
+  let adytail, bdytail, cdytail;
+  let adztail, bdztail, cdztail;
+  let bvirt, c, ahi, alo, bhi, blo, _i, _j, _k, _0, s1, s0, t1, t0, u3;
+  const adx = ax - dx;
+  const bdx = bx - dx;
+  const cdx = cx - dx;
+  const ady = ay - dy;
+  const bdy = by - dy;
+  const cdy = cy - dy;
+  const adz = az - dz;
+  const bdz = bz - dz;
+  const cdz = cz - dz;
+  s1 = bdx * cdy;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * bdx;
+  ahi = c - (c - bdx);
+  alo = bdx - ahi;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * cdy;
+  bhi = c - (c - cdy);
+  blo = cdy - bhi;
+  s0 = alo * blo - (s1 - ahi * bhi - alo * bhi - ahi * blo);
+  t1 = cdx * bdy;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * cdx;
+  ahi = c - (c - cdx);
+  alo = cdx - ahi;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * bdy;
+  bhi = c - (c - bdy);
+  blo = bdy - bhi;
+  t0 = alo * blo - (t1 - ahi * bhi - alo * bhi - ahi * blo);
+  _i = s0 - t0;
+  bvirt = s0 - _i;
+  bc[0] = s0 - (_i + bvirt) + (bvirt - t0);
+  _j = s1 + _i;
+  bvirt = _j - s1;
+  _0 = s1 - (_j - bvirt) + (_i - bvirt);
+  _i = _0 - t1;
+  bvirt = _0 - _i;
+  bc[1] = _0 - (_i + bvirt) + (bvirt - t1);
+  u3 = _j + _i;
+  bvirt = u3 - _j;
+  bc[2] = _j - (u3 - bvirt) + (_i - bvirt);
+  bc[3] = u3;
+  s1 = cdx * ady;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * cdx;
+  ahi = c - (c - cdx);
+  alo = cdx - ahi;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * ady;
+  bhi = c - (c - ady);
+  blo = ady - bhi;
+  s0 = alo * blo - (s1 - ahi * bhi - alo * bhi - ahi * blo);
+  t1 = adx * cdy;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * adx;
+  ahi = c - (c - adx);
+  alo = adx - ahi;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * cdy;
+  bhi = c - (c - cdy);
+  blo = cdy - bhi;
+  t0 = alo * blo - (t1 - ahi * bhi - alo * bhi - ahi * blo);
+  _i = s0 - t0;
+  bvirt = s0 - _i;
+  ca[0] = s0 - (_i + bvirt) + (bvirt - t0);
+  _j = s1 + _i;
+  bvirt = _j - s1;
+  _0 = s1 - (_j - bvirt) + (_i - bvirt);
+  _i = _0 - t1;
+  bvirt = _0 - _i;
+  ca[1] = _0 - (_i + bvirt) + (bvirt - t1);
+  u3 = _j + _i;
+  bvirt = u3 - _j;
+  ca[2] = _j - (u3 - bvirt) + (_i - bvirt);
+  ca[3] = u3;
+  s1 = adx * bdy;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * adx;
+  ahi = c - (c - adx);
+  alo = adx - ahi;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * bdy;
+  bhi = c - (c - bdy);
+  blo = bdy - bhi;
+  s0 = alo * blo - (s1 - ahi * bhi - alo * bhi - ahi * blo);
+  t1 = bdx * ady;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * bdx;
+  ahi = c - (c - bdx);
+  alo = bdx - ahi;
+  c = _util_js__WEBPACK_IMPORTED_MODULE_0__.splitter * ady;
+  bhi = c - (c - ady);
+  blo = ady - bhi;
+  t0 = alo * blo - (t1 - ahi * bhi - alo * bhi - ahi * blo);
+  _i = s0 - t0;
+  bvirt = s0 - _i;
+  ab[0] = s0 - (_i + bvirt) + (bvirt - t0);
+  _j = s1 + _i;
+  bvirt = _j - s1;
+  _0 = s1 - (_j - bvirt) + (_i - bvirt);
+  _i = _0 - t1;
+  bvirt = _0 - _i;
+  ab[1] = _0 - (_i + bvirt) + (bvirt - t1);
+  u3 = _j + _i;
+  bvirt = u3 - _j;
+  ab[2] = _j - (u3 - bvirt) + (_i - bvirt);
+  ab[3] = u3;
+  finlen = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.sum)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.sum)((0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(4, bc, adz, _8), _8, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(4, ca, bdz, _8b), _8b, _16), _16, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(4, ab, cdz, _8), _8, fin);
+  let det = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.estimate)(finlen, fin);
+  let errbound = o3derrboundB * permanent;
+  if (det >= errbound || -det >= errbound) {
+    return det;
+  }
+  bvirt = ax - adx;
+  adxtail = ax - (adx + bvirt) + (bvirt - dx);
+  bvirt = bx - bdx;
+  bdxtail = bx - (bdx + bvirt) + (bvirt - dx);
+  bvirt = cx - cdx;
+  cdxtail = cx - (cdx + bvirt) + (bvirt - dx);
+  bvirt = ay - ady;
+  adytail = ay - (ady + bvirt) + (bvirt - dy);
+  bvirt = by - bdy;
+  bdytail = by - (bdy + bvirt) + (bvirt - dy);
+  bvirt = cy - cdy;
+  cdytail = cy - (cdy + bvirt) + (bvirt - dy);
+  bvirt = az - adz;
+  adztail = az - (adz + bvirt) + (bvirt - dz);
+  bvirt = bz - bdz;
+  bdztail = bz - (bdz + bvirt) + (bvirt - dz);
+  bvirt = cz - cdz;
+  cdztail = cz - (cdz + bvirt) + (bvirt - dz);
+  if (adxtail === 0 && bdxtail === 0 && cdxtail === 0 && adytail === 0 && bdytail === 0 && cdytail === 0 && adztail === 0 && bdztail === 0 && cdztail === 0) {
+    return det;
+  }
+  errbound = o3derrboundC * permanent + _util_js__WEBPACK_IMPORTED_MODULE_0__.resulterrbound * Math.abs(det);
+  det += adz * (bdx * cdytail + cdy * bdxtail - (bdy * cdxtail + cdx * bdytail)) + adztail * (bdx * cdy - bdy * cdx) + bdz * (cdx * adytail + ady * cdxtail - (cdy * adxtail + adx * cdytail)) + bdztail * (cdx * ady - cdy * adx) + cdz * (adx * bdytail + bdy * adxtail - (ady * bdxtail + bdx * adytail)) + cdztail * (adx * bdy - ady * bdx);
+  if (det >= errbound || -det >= errbound) {
+    return det;
+  }
+  const at_len = tailinit(adxtail, adytail, bdx, bdy, cdx, cdy, at_b, at_c);
+  const bt_len = tailinit(bdxtail, bdytail, cdx, cdy, adx, ady, bt_c, bt_a);
+  const ct_len = tailinit(cdxtail, cdytail, adx, ady, bdx, bdy, ct_a, ct_b);
+  const bctlen = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.sum)(bt_len, bt_c, ct_len, ct_b, bct);
+  finlen = finadd(finlen, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(bctlen, bct, adz, _16), _16);
+  const catlen = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.sum)(ct_len, ct_a, at_len, at_c, cat);
+  finlen = finadd(finlen, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(catlen, cat, bdz, _16), _16);
+  const abtlen = (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.sum)(at_len, at_b, bt_len, bt_a, abt);
+  finlen = finadd(finlen, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(abtlen, abt, cdz, _16), _16);
+  if (adztail !== 0) {
+    finlen = finadd(finlen, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(4, bc, adztail, _12), _12);
+    finlen = finadd(finlen, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(bctlen, bct, adztail, _16), _16);
+  }
+  if (bdztail !== 0) {
+    finlen = finadd(finlen, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(4, ca, bdztail, _12), _12);
+    finlen = finadd(finlen, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(catlen, cat, bdztail, _16), _16);
+  }
+  if (cdztail !== 0) {
+    finlen = finadd(finlen, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(4, ab, cdztail, _12), _12);
+    finlen = finadd(finlen, (0,_util_js__WEBPACK_IMPORTED_MODULE_0__.scale)(abtlen, abt, cdztail, _16), _16);
+  }
+  if (adxtail !== 0) {
+    if (bdytail !== 0) {
+      finlen = tailadd(finlen, adxtail, bdytail, cdz, cdztail);
+    }
+    if (cdytail !== 0) {
+      finlen = tailadd(finlen, -adxtail, cdytail, bdz, bdztail);
+    }
+  }
+  if (bdxtail !== 0) {
+    if (cdytail !== 0) {
+      finlen = tailadd(finlen, bdxtail, cdytail, adz, adztail);
+    }
+    if (adytail !== 0) {
+      finlen = tailadd(finlen, -bdxtail, adytail, cdz, cdztail);
+    }
+  }
+  if (cdxtail !== 0) {
+    if (adytail !== 0) {
+      finlen = tailadd(finlen, cdxtail, adytail, bdz, bdztail);
+    }
+    if (bdytail !== 0) {
+      finlen = tailadd(finlen, -cdxtail, bdytail, adz, adztail);
+    }
+  }
+  return fin[finlen - 1];
+}
+function orient3d(ax, ay, az, bx, by, bz, cx, cy, cz, dx, dy, dz) {
+  const adx = ax - dx;
+  const bdx = bx - dx;
+  const cdx = cx - dx;
+  const ady = ay - dy;
+  const bdy = by - dy;
+  const cdy = cy - dy;
+  const adz = az - dz;
+  const bdz = bz - dz;
+  const cdz = cz - dz;
+  const bdxcdy = bdx * cdy;
+  const cdxbdy = cdx * bdy;
+  const cdxady = cdx * ady;
+  const adxcdy = adx * cdy;
+  const adxbdy = adx * bdy;
+  const bdxady = bdx * ady;
+  const det = adz * (bdxcdy - cdxbdy) + bdz * (cdxady - adxcdy) + cdz * (adxbdy - bdxady);
+  const permanent = (Math.abs(bdxcdy) + Math.abs(cdxbdy)) * Math.abs(adz) + (Math.abs(cdxady) + Math.abs(adxcdy)) * Math.abs(bdz) + (Math.abs(adxbdy) + Math.abs(bdxady)) * Math.abs(cdz);
+  const errbound = o3derrboundA * permanent;
+  if (det > errbound || -det > errbound) {
+    return det;
+  }
+  return orient3dadapt(ax, ay, az, bx, by, bz, cx, cy, cz, dx, dy, dz, permanent);
+}
+function orient3dfast(ax, ay, az, bx, by, bz, cx, cy, cz, dx, dy, dz) {
+  const adx = ax - dx;
+  const bdx = bx - dx;
+  const cdx = cx - dx;
+  const ady = ay - dy;
+  const bdy = by - dy;
+  const cdy = cy - dy;
+  const adz = az - dz;
+  const bdz = bz - dz;
+  const cdz = cz - dz;
+  return adx * (bdy * cdz - bdz * cdy) + bdx * (cdy * adz - cdz * ady) + cdx * (ady * bdz - adz * bdy);
+}
+
+/***/ }),
+
+/***/ 72461:
+/*!***********************************************************************************************!*\
+  !*** ./node_modules/.pnpm/robust-predicates@3.0.2/node_modules/robust-predicates/esm/util.js ***!
+  \***********************************************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   epsilon: () => (/* binding */ epsilon),
+/* harmony export */   estimate: () => (/* binding */ estimate),
+/* harmony export */   negate: () => (/* binding */ negate),
+/* harmony export */   resulterrbound: () => (/* binding */ resulterrbound),
+/* harmony export */   scale: () => (/* binding */ scale),
+/* harmony export */   splitter: () => (/* binding */ splitter),
+/* harmony export */   sum: () => (/* binding */ sum),
+/* harmony export */   sum_three: () => (/* binding */ sum_three),
+/* harmony export */   vec: () => (/* binding */ vec)
+/* harmony export */ });
+const epsilon = 1.1102230246251565e-16;
+const splitter = 134217729;
+const resulterrbound = (3 + 8 * epsilon) * epsilon;
+
+// fast_expansion_sum_zeroelim routine from oritinal code
+function sum(elen, e, flen, f, h) {
+  let Q, Qnew, hh, bvirt;
+  let enow = e[0];
+  let fnow = f[0];
+  let eindex = 0;
+  let findex = 0;
+  if (fnow > enow === fnow > -enow) {
+    Q = enow;
+    enow = e[++eindex];
+  } else {
+    Q = fnow;
+    fnow = f[++findex];
+  }
+  let hindex = 0;
+  if (eindex < elen && findex < flen) {
+    if (fnow > enow === fnow > -enow) {
+      Qnew = enow + Q;
+      hh = Q - (Qnew - enow);
+      enow = e[++eindex];
+    } else {
+      Qnew = fnow + Q;
+      hh = Q - (Qnew - fnow);
+      fnow = f[++findex];
+    }
+    Q = Qnew;
+    if (hh !== 0) {
+      h[hindex++] = hh;
+    }
+    while (eindex < elen && findex < flen) {
+      if (fnow > enow === fnow > -enow) {
+        Qnew = Q + enow;
+        bvirt = Qnew - Q;
+        hh = Q - (Qnew - bvirt) + (enow - bvirt);
+        enow = e[++eindex];
+      } else {
+        Qnew = Q + fnow;
+        bvirt = Qnew - Q;
+        hh = Q - (Qnew - bvirt) + (fnow - bvirt);
+        fnow = f[++findex];
+      }
+      Q = Qnew;
+      if (hh !== 0) {
+        h[hindex++] = hh;
+      }
+    }
+  }
+  while (eindex < elen) {
+    Qnew = Q + enow;
+    bvirt = Qnew - Q;
+    hh = Q - (Qnew - bvirt) + (enow - bvirt);
+    enow = e[++eindex];
+    Q = Qnew;
+    if (hh !== 0) {
+      h[hindex++] = hh;
+    }
+  }
+  while (findex < flen) {
+    Qnew = Q + fnow;
+    bvirt = Qnew - Q;
+    hh = Q - (Qnew - bvirt) + (fnow - bvirt);
+    fnow = f[++findex];
+    Q = Qnew;
+    if (hh !== 0) {
+      h[hindex++] = hh;
+    }
+  }
+  if (Q !== 0 || hindex === 0) {
+    h[hindex++] = Q;
+  }
+  return hindex;
+}
+function sum_three(alen, a, blen, b, clen, c, tmp, out) {
+  return sum(sum(alen, a, blen, b, tmp), tmp, clen, c, out);
+}
+
+// scale_expansion_zeroelim routine from oritinal code
+function scale(elen, e, b, h) {
+  let Q, sum, hh, product1, product0;
+  let bvirt, c, ahi, alo, bhi, blo;
+  c = splitter * b;
+  bhi = c - (c - b);
+  blo = b - bhi;
+  let enow = e[0];
+  Q = enow * b;
+  c = splitter * enow;
+  ahi = c - (c - enow);
+  alo = enow - ahi;
+  hh = alo * blo - (Q - ahi * bhi - alo * bhi - ahi * blo);
+  let hindex = 0;
+  if (hh !== 0) {
+    h[hindex++] = hh;
+  }
+  for (let i = 1; i < elen; i++) {
+    enow = e[i];
+    product1 = enow * b;
+    c = splitter * enow;
+    ahi = c - (c - enow);
+    alo = enow - ahi;
+    product0 = alo * blo - (product1 - ahi * bhi - alo * bhi - ahi * blo);
+    sum = Q + product0;
+    bvirt = sum - Q;
+    hh = Q - (sum - bvirt) + (product0 - bvirt);
+    if (hh !== 0) {
+      h[hindex++] = hh;
+    }
+    Q = product1 + sum;
+    hh = sum - (Q - product1);
+    if (hh !== 0) {
+      h[hindex++] = hh;
+    }
+  }
+  if (Q !== 0 || hindex === 0) {
+    h[hindex++] = Q;
+  }
+  return hindex;
+}
+function negate(elen, e) {
+  for (let i = 0; i < elen; i++) e[i] = -e[i];
+  return elen;
+}
+function estimate(elen, e) {
+  let Q = e[0];
+  for (let i = 1; i < elen; i++) Q += e[i];
+  return Q;
+}
+function vec(n) {
+  return new Float64Array(n);
+}
+
+/***/ }),
+
+/***/ 90169:
+/*!********************************************************************************************!*\
+  !*** ./node_modules/.pnpm/robust-predicates@3.0.2/node_modules/robust-predicates/index.js ***!
+  \********************************************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   incircle: () => (/* reexport safe */ _esm_incircle_js__WEBPACK_IMPORTED_MODULE_2__.incircle),
+/* harmony export */   incirclefast: () => (/* reexport safe */ _esm_incircle_js__WEBPACK_IMPORTED_MODULE_2__.incirclefast),
+/* harmony export */   insphere: () => (/* reexport safe */ _esm_insphere_js__WEBPACK_IMPORTED_MODULE_3__.insphere),
+/* harmony export */   inspherefast: () => (/* reexport safe */ _esm_insphere_js__WEBPACK_IMPORTED_MODULE_3__.inspherefast),
+/* harmony export */   orient2d: () => (/* reexport safe */ _esm_orient2d_js__WEBPACK_IMPORTED_MODULE_0__.orient2d),
+/* harmony export */   orient2dfast: () => (/* reexport safe */ _esm_orient2d_js__WEBPACK_IMPORTED_MODULE_0__.orient2dfast),
+/* harmony export */   orient3d: () => (/* reexport safe */ _esm_orient3d_js__WEBPACK_IMPORTED_MODULE_1__.orient3d),
+/* harmony export */   orient3dfast: () => (/* reexport safe */ _esm_orient3d_js__WEBPACK_IMPORTED_MODULE_1__.orient3dfast)
+/* harmony export */ });
+/* harmony import */ var _esm_orient2d_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./esm/orient2d.js */ 97726);
+/* harmony import */ var _esm_orient3d_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./esm/orient3d.js */ 10507);
+/* harmony import */ var _esm_incircle_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./esm/incircle.js */ 61318);
+/* harmony import */ var _esm_insphere_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./esm/insphere.js */ 5947);
+
+
+
+
 
 /***/ })
 

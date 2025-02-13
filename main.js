@@ -16,7 +16,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _auth_auth_guard__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./auth/auth.guard */ 27061);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 1888);
 /*
- * Copyright (c) 2024 Maritime Connectivity Platform Consortium
+ * Copyright (c) 2025 Maritime Connectivity Platform Consortium
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -125,7 +125,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../environments/environment */ 91083);
 /* harmony import */ var _common_version__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./common/version */ 72741);
 /*
- * Copyright (c) 2024 Maritime Connectivity Platform Consortium
+ * Copyright (c) 2025 Maritime Connectivity Platform Consortium
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -199,6 +199,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var gramli_angular_notifier__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! gramli-angular-notifier */ 1059);
 /* harmony import */ var _app_config__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./app.config */ 96370);
 /* harmony import */ var _auth_auth_interceptor__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./auth/auth.interceptor */ 14807);
+/*
+ * Copyright (c) 2025 Maritime Connectivity Platform Consortium
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 
 
@@ -318,7 +333,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _app_config__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../app.config */ 96370);
 /*
- * Copyright (c) 2024 Maritime Connectivity Platform Consortium
+ * Copyright (c) 2025 Maritime Connectivity Platform Consortium
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -412,7 +427,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _backend_api_identity_registry_model_role__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../backend-api/identity-registry/model/role */ 66488);
 /*
- * Copyright (c) 2023 Maritime Connectivity Platform Consortium
+ * Copyright (c) 2025 Maritime Connectivity Platform Consortium
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -6761,7 +6776,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   timestampKeys: () => (/* binding */ timestampKeys)
 /* harmony export */ });
 /*
- * Copyright (c) 2024 Maritime Connectivity Platform Consortium
+ * Copyright (c) 2025 Maritime Connectivity Platform Consortium
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -6897,7 +6912,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   environment: () => (/* binding */ environment)
 /* harmony export */ });
 /*
- * Copyright (c) 2024 Maritime Connectivity Platform Consortium
+ * Copyright (c) 2025 Maritime Connectivity Platform Consortium
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -6981,7 +6996,7 @@ _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__.platformBrowser().bootstr
 /***/ ((module) => {
 
 "use strict";
-module.exports = /*#__PURE__*/JSON.parse('{"name":"management-portal-clr","version":"0.6.3","license":"Apache license 2.0","repository":{"type":"git","url":"git+https://github.com/maritimeconnectivity/management-portal-clr.git"},"bugs":{"url":"https://github.com/maritimeconnectivity/management-portal-clr/issues"},"scripts":{"ng":"ng","start":"ng serve","build":"ng build","watch":"ng build --watch --configuration development","test":"ng test","lint":"ng lint"},"private":true,"dependencies":{"@angular/animations":"^18.2.3","@angular/common":"^18.2.3","@angular/compiler":"^18.2.3","@angular/core":"^18.2.3","@angular/forms":"^18.2.3","@angular/platform-browser":"^18.2.3","@angular/platform-browser-dynamic":"^18.2.3","@angular/router":"^18.2.3","@bluehalo/ngx-leaflet":"^18.0.2","@bluehalo/ngx-leaflet-draw":"^18.0.4","@cds/core":"^6.13.0","@clr/angular":"^17.3.0","@clr/ui":"^17.3.0","@ngx-translate/core":"^15.0.0","@ngx-translate/http-loader":"^8.0.0","@swimlane/ngx-charts":"^20.5.0","@terraformer/wkt":"^2.2.1","asn1js":"^3.0.5","d3-scale":"^4.0.2","d3-selection":"^3.0.0","d3-shape":"^3.2.0","file-saver":"^2.0.5","gramli-angular-notifier":"^16.0.2","jszip":"^3.10.1","keycloak-angular":"^16.0.1","keycloak-js":"^25.0.5","leaflet":"^1.9.4","leaflet-draw":"^1.0.2","lucene-query-string-builder":"^1.0.8","pkijs":"^3.2.4","pvtsutils":"^1.3.5","pvutils":"^1.1.3","rxjs":"~7.8.0","shortid":"^2.2.16","tslib":"^2.3.0","wkt":"link:@types/@terraformer/wkt","zone.js":"^0.14.10"},"devDependencies":{"@angular-devkit/build-angular":"^18.2.3","@angular/cli":"^18.2.3","@types/d3-scale":"^4.0.8","@types/d3-selection":"^3.0.11","@types/d3-shape":"^3.1.6","@types/file-saver":"^2.0.7","@types/geojson":"^7946.0.14","@types/jasmine":"~4.3.0","@types/leaflet":"^1.9.14","@types/leaflet-draw":"^1.0.11","@types/lucene-query-string-builder":"^1.0.0","@types/terraformer__wkt":"^2.0.3","angular-cli-ghpages":"2.0.3","angular-eslint":"18.3.1","eslint":"^9.9.1","jasmine-core":"~4.5.0","karma":"~6.4.0","karma-chrome-launcher":"~3.1.0","karma-coverage":"~2.2.0","karma-jasmine":"~5.1.0","karma-jasmine-html-reporter":"~2.0.0","typescript":"~5.5","typescript-eslint":"8.2.0"}}');
+module.exports = /*#__PURE__*/JSON.parse('{"name":"management-portal-clr","version":"0.6.4","license":"Apache license 2.0","repository":{"type":"git","url":"git+https://github.com/maritimeconnectivity/management-portal-clr.git"},"bugs":{"url":"https://github.com/maritimeconnectivity/management-portal-clr/issues"},"scripts":{"ng":"ng","start":"ng serve","build":"ng build","watch":"ng build --watch --configuration development","test":"ng test","lint":"ng lint"},"private":true,"dependencies":{"@angular/animations":"^18.2.3","@angular/common":"^18.2.3","@angular/compiler":"^18.2.3","@angular/core":"^18.2.3","@angular/forms":"^18.2.3","@angular/platform-browser":"^18.2.3","@angular/platform-browser-dynamic":"^18.2.3","@angular/router":"^18.2.3","@bluehalo/ngx-leaflet":"^18.0.2","@bluehalo/ngx-leaflet-draw":"^18.0.4","@cds/core":"^6.13.0","@clr/angular":"^17.3.0","@clr/ui":"^17.3.0","@ngx-translate/core":"^15.0.0","@ngx-translate/http-loader":"^8.0.0","@swimlane/ngx-charts":"^20.5.0","@terraformer/wkt":"^2.2.1","@turf/boolean-point-in-polygon":"^7.2.0","@turf/turf":"^7.2.0","asn1js":"^3.0.5","d3-scale":"^4.0.2","d3-selection":"^3.0.0","d3-shape":"^3.2.0","file-saver":"^2.0.5","gramli-angular-notifier":"^16.0.2","jszip":"^3.10.1","keycloak-angular":"^16.0.1","keycloak-js":"^25.0.5","leaflet":"^1.9.4","leaflet-draw":"^1.0.2","lucene-query-string-builder":"^1.0.8","pkijs":"^3.2.4","pvtsutils":"^1.3.5","pvutils":"^1.1.3","rxjs":"~7.8.0","shortid":"^2.2.16","tslib":"^2.3.0","wkt":"link:@types/@terraformer/wkt","zone.js":"^0.14.10"},"devDependencies":{"@angular-devkit/build-angular":"^18.2.3","@angular/cli":"^18.2.3","@types/d3-scale":"^4.0.8","@types/d3-selection":"^3.0.11","@types/d3-shape":"^3.1.6","@types/file-saver":"^2.0.7","@types/geojson":"^7946.0.14","@types/jasmine":"~4.3.0","@types/leaflet":"^1.9.14","@types/leaflet-draw":"^1.0.11","@types/lucene-query-string-builder":"^1.0.0","@types/terraformer__wkt":"^2.0.3","@types/turf":"^3.5.32","angular-cli-ghpages":"2.0.3","angular-eslint":"18.3.1","eslint":"^9.9.1","jasmine-core":"~4.5.0","karma":"~6.4.0","karma-chrome-launcher":"~3.1.0","karma-coverage":"~2.2.0","karma-jasmine":"~5.1.0","karma-jasmine-html-reporter":"~2.0.0","typescript":"~5.5","typescript-eslint":"8.2.0"}}');
 
 /***/ })
 
